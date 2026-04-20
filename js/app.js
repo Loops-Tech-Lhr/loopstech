@@ -295,7 +295,7 @@ const App = {
                             ${this.t('hero.badge')}
                         </div>
                         
-                        <h1 class="text-7xl lg:text-[10rem] font-black text-dark leading-[0.85] tracking-tighter uppercase italic">
+                        <h1 class="text-7xl lg:text-[6rem] font-black text-dark leading-[1] tracking-tighter uppercase">
                             ${this.t('hero.title_bold')} <span class="text-gradient">${this.t('hero.title_ideas')}</span><br>
                             ${this.t('hero.title_smart')} <span class="text-gradient">${this.t('hero.title_code')}</span>.
                         </h1>
