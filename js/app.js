@@ -11,12 +11,12 @@ const App = {
 
     // Eye-comforting palette for boxes
     palette: [
-        { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-100', icon: 'bg-blue-100' },
-        { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-100', icon: 'bg-orange-100' },
-        { bg: 'bg-emerald-50', text: 'text-emerald-600', border: 'border-emerald-100', icon: 'bg-emerald-100' },
-        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', icon: 'bg-purple-100' },
-        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', icon: 'bg-rose-100' },
-        { bg: 'bg-amber-50', text: 'text-amber-600', border: 'border-amber-100', icon: 'bg-amber-100' }
+        { bg: 'bg-blue-100/50', text: 'text-blue-700', border: 'border-blue-200', icon: 'bg-blue-200/50' },
+        { bg: 'bg-orange-100/50', text: 'text-orange-700', border: 'border-orange-200', icon: 'bg-orange-200/50' },
+        { bg: 'bg-emerald-100/50', text: 'text-emerald-700', border: 'border-emerald-200', icon: 'bg-emerald-200/50' },
+        { bg: 'bg-purple-100/50', text: 'text-purple-700', border: 'border-purple-200', icon: 'bg-purple-200/50' },
+        { bg: 'bg-rose-100/50', text: 'text-rose-700', border: 'border-rose-200', icon: 'bg-rose-200/50' },
+        { bg: 'bg-amber-100/50', text: 'text-amber-700', border: 'border-amber-200', icon: 'bg-amber-200/50' }
     ],
 
     async init() {
@@ -378,7 +378,7 @@ const App = {
             </section>
 
             <!-- Industry Specialized Solutions -->
-            <section class="py-32 px-4 bg-stone-50 relative overflow-hidden">
+            <section class="py-32 px-4 bg-white relative overflow-hidden">
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-24 space-y-6 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.4em] text-xs">${this.t('home.specialized_badge')}</h2>
@@ -393,12 +393,12 @@ const App = {
                         ].map((item, idx) => {
                             const color = this.palette[idx % this.palette.length];
                             return `
-                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-sm card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
+                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                     <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
                                         <i class="fa ${item.icon} text-2xl"></i>
                                     </div>
                                     <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase italic">${item.title}</h5>
-                                    <p class="text-stone-500 leading-relaxed font-bold text-sm">${item.desc}</p>
+                                    <p class="text-stone-600 leading-relaxed font-bold text-sm">${item.desc}</p>
                                 </div>
                             `;
                         }).join('')}
@@ -449,11 +449,11 @@ const App = {
             const color = this.palette[idx % this.palette.length];
             return `
                 <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                    <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
                         <i class="fa ${s.icon} text-2xl"></i>
                     </div>
-                    <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter italic group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
-                    <p class="text-stone-500 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
+                    <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter italic group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
                     <a href="/services/${s.id}" class="inline-flex items-center gap-3 ${color.text} font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
                         Learn More <i class="fa fa-chevron-right"></i>
                     </a>
