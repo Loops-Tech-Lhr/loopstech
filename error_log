@@ -1,0 +1,26 @@
+[23-Jul-2021 13:34:33 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 84085920 bytes) in /home/whyldych/public_html/loopstech.com/dropshop1.php on line 11
+[23-Jul-2021 13:37:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function var_dum() in /home/whyldych/public_html/loopstech.com/dropshop1.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/whyldych/public_html/loopstech.com/dropshop1.php on line 16
+[23-Jul-2021 13:38:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function var_dum() in /home/whyldych/public_html/loopstech.com/dropshop1.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/whyldych/public_html/loopstech.com/dropshop1.php on line 16
+[13-Mar-2023 11:07:33 America/New_York] PHP Warning:  include(php/simple-php-captcha/simple-php-captcha.php): failed to open stream: No such file or directory in /home/ouretrzh/public_html/loopstech.com/contact.php on line 4
+[13-Mar-2023 11:07:33 America/New_York] PHP Warning:  include(): Failed opening 'php/simple-php-captcha/simple-php-captcha.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ouretrzh/public_html/loopstech.com/contact.php on line 4
+[13-Mar-2023 11:07:33 America/New_York] PHP Warning:  include(php/php-mailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /home/ouretrzh/public_html/loopstech.com/contact.php on line 5
+[13-Mar-2023 11:07:33 America/New_York] PHP Warning:  include(): Failed opening 'php/php-mailer/PHPMailerAutoload.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ouretrzh/public_html/loopstech.com/contact.php on line 5
+[13-Mar-2023 11:07:33 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function simple_php_captcha() in /home/ouretrzh/public_html/loopstech.com/contact.php:295
+Stack trace:
+#0 {main}
+  thrown in /home/ouretrzh/public_html/loopstech.com/contact.php on line 295
+[14-Mar-2023 05:04:15 America/New_York] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/ouretrzh/public_html/loopstech.com/php/php-mailer/PHPMailerAutoload.php on line 45
+[14-Mar-2023 05:09:28 America/New_York] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/ouretrzh/public_html/loopstech.com/php/php-mailer/PHPMailerAutoload.php on line 45
+[14-Mar-2023 05:10:32 America/New_York] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/ouretrzh/public_html/loopstech.com/php/php-mailer/PHPMailerAutoload.php on line 45
+[14-Mar-2023 05:10:34 America/New_York] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/ouretrzh/public_html/loopstech.com/php/php-mailer/PHPMailerAutoload.php on line 45
+[14-Mar-2023 05:13:53 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function simple_php_captcha() in /home/ouretrzh/public_html/loopstech.com/contact.php:207
+Stack trace:
+#0 {main}
+  thrown in /home/ouretrzh/public_html/loopstech.com/contact.php on line 207
+[14-Mar-2023 05:17:07 America/New_York] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/ouretrzh/public_html/loopstech.com/php/php-mailer/PHPMailerAutoload.php on line 45
