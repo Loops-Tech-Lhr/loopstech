@@ -9,6 +9,16 @@ const App = {
         isTransitioning: false
     },
 
+    // Eye-comforting palette for boxes
+    palette: [
+        { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-100', icon: 'bg-blue-100' },
+        { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-100', icon: 'bg-orange-100' },
+        { bg: 'bg-emerald-50', text: 'text-emerald-600', border: 'border-emerald-100', icon: 'bg-emerald-100' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', icon: 'bg-purple-100' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', icon: 'bg-rose-100' },
+        { bg: 'bg-amber-50', text: 'text-amber-600', border: 'border-amber-100', icon: 'bg-amber-100' }
+    ],
+
     async init() {
         await this.loadData();
         this.setupEventListeners();
@@ -21,10 +31,10 @@ const App = {
     async loadData() {
         try {
             const [i18n, services, projects, pages] = await Promise.all([
-                fetch(`/data/i18n/${this.state.lang}.json`).then(res => res.json()),
-                fetch('/data/services.json').then(res => res.json()),
-                fetch('/data/projects.json').then(res => res.json()),
-                fetch('/data/pages.json').then(res => res.json())
+                fetch(`/data/i18n/${this.state.lang}.json?v=${Date.now()}`).then(res => res.json()),
+                fetch(`/data/services.json?v=${Date.now()}`).then(res => res.json()),
+                fetch(`/data/projects.json?v=${Date.now()}`).then(res => res.json()),
+                fetch(`/data/pages.json?v=${Date.now()}`).then(res => res.json())
             ]);
 
             this.state.translations = i18n;
@@ -46,7 +56,7 @@ const App = {
             const link = e.target.closest('a[href^="/"]');
             if (link && !link.getAttribute('target')) {
                 const href = link.getAttribute('href');
-                if (href.startsWith('/') && !href.includes(':')) {
+                if (href.startsWith('/') && !href.includes(':') && !href.includes('.')) {
                     e.preventDefault();
                     const newRoute = href.replace('/', '') || 'home';
                     if (newRoute !== this.state.route) {
@@ -61,6 +71,32 @@ const App = {
             if (e.target.closest('#close-menu') || e.target.closest('#mobile-menu a')) {
                 document.getElementById('mobile-menu').classList.add('hidden');
                 document.getElementById('mobile-menu').classList.remove('flex');
+            }
+        });
+
+        // Form submission intercept
+        document.addEventListener('submit', (e) => {
+            if (e.target.id === 'contact-form') {
+                e.preventDefault();
+                const form = e.target;
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerText;
+                
+                btn.innerText = this.state.lang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    form.innerHTML = `
+                        <div class="text-center py-20 animate-reveal">
+                            <div class="w-24 h-24 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 text-4xl shadow-lg">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <h3 class="text-4xl font-black text-dark mb-4">${this.t('contact.form_success_badge')}</h3>
+                            <p class="text-xl text-stone-500 font-bold">${this.t('contact.form_success_text')}</p>
+                            <button onclick="location.reload()" class="mt-10 text-primary font-black uppercase tracking-widest text-sm underline decoration-4 underline-offset-8">Send Another Inquiry</button>
+                        </div>
+                    `;
+                }, 1500);
             }
         });
     },
@@ -136,7 +172,13 @@ const App = {
     },
 
     t(path) {
-        return path.split('.').reduce((obj, key) => obj && obj[key], this.state.translations) || path;
+        const value = path.split('.').reduce((obj, key) => obj && obj[key], this.state.translations);
+        if (value === undefined) {
+            // Fallback for hero.title specifically since it was identified as an error
+            if (path === 'hero.title') return this.t('hero.title_bold') + ' ' + this.t('hero.title_ideas');
+            return path;
+        }
+        return value;
     },
 
     render() {
@@ -159,7 +201,7 @@ const App = {
             }
         }
         const page = this.state.pages.find(p => p.id === this.state.route) || this.state.pages[0];
-        document.title = `${this.t('nav.' + page.nav_key)} | Loops Technologies`;
+        document.title = `${this.t('nav.' + (page ? page.nav_key : 'home'))} | Loops Technologies`;
     },
 
     renderNavigation() {
@@ -240,7 +282,7 @@ const App = {
             <!-- Dynamic Hero -->
             <section class="relative min-h-[90vh] flex items-center px-4 pt-20 pb-32 bg-warm-gradient overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                    <svg viewBox="0 0 100 100" class="w-full h-full text-primary">
                         <defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/></pattern></defs>
                         <rect width="100" height="100" fill="url(#grid)" />
                     </svg>
@@ -270,31 +312,19 @@ const App = {
                                 ${this.t('hero.btn_services')}
                             </a>
                         </div>
-
-                        <div class="flex items-center gap-12 pt-8">
-                            <div>
-                                <p class="text-4xl font-black text-dark">250+</p>
-                                <p class="text-[10px] font-black text-stone-400 uppercase tracking-widest">Global Clients</p>
-                            </div>
-                            <div class="w-px h-12 bg-stone-200"></div>
-                            <div>
-                                <p class="text-4xl font-black text-dark">10Yrs</p>
-                                <p class="text-[10px] font-black text-stone-400 uppercase tracking-widest">Legacy</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="relative group">
                         <div class="absolute -inset-10 bg-solar-gradient rounded-full opacity-20 blur-[120px] group-hover:opacity-30 transition-opacity animate-pulse"></div>
                         <div class="relative z-10 animate-float">
                             <img src="img/loopstech-main-photograph.jpg" alt="Loops Tech" class="rounded-[80px] shadow-[0_60px_100px_-20px_rgba(0,0,0,0.3)] border-[20px] border-white ring-1 ring-stone-100">
-                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-[40px] shadow-2xl animate-float-delayed hidden xl:block">
+                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-[40px] shadow-2xl animate-float-delayed hidden xl:block border border-stone-50">
                                 <i class="fa fa-robot text-5xl text-primary mb-4"></i>
                                 <p class="font-black text-dark text-lg">AI Ready</p>
                             </div>
                             <div class="absolute -bottom-10 -left-16 bg-dark text-white p-10 rounded-[40px] shadow-2xl animate-float hidden xl:block">
                                 <i class="fa fa-code text-5xl text-accent mb-4"></i>
-                                <p class="font-black text-lg">Clean Architecture</p>
+                                <p class="font-black text-lg">Clean Code</p>
                             </div>
                         </div>
                     </div>
@@ -306,20 +336,20 @@ const App = {
                 <div class="process-line"></div>
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-32 space-y-6 reveal-on-scroll">
-                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">How We Work</h2>
-                        <h3 class="text-6xl font-black tracking-tighter uppercase italic leading-none">The <span class="text-primary">Loop</span> of Excellence.</h3>
+                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Our Strategy</h2>
+                        <h3 class="text-6xl font-black tracking-tighter uppercase italic leading-none">The <span class="text-primary">Loop</span> of Success.</h3>
                     </div>
                     
                     <div class="grid md:grid-cols-4 gap-12">
                         ${[
-                            { step: '01', title: 'Consult', icon: 'fa-comments-alt', desc: 'We dive deep into your business goals.' },
-                            { step: '02', title: 'Architect', icon: 'fa-draw-polygon', desc: 'Crafting the blueprint for success.' },
-                            { step: '03', title: 'Build', icon: 'fa-code', desc: 'High-performance engineering phase.' },
-                            { step: '04', title: 'Scale', icon: 'fa-rocket', desc: 'Deployment and ongoing growth.' }
+                            { step: '01', title: 'Consult', icon: 'fa-comments-alt', desc: 'Strategy sessions to align with your business vision.' },
+                            { step: '02', title: 'Architect', icon: 'fa-draw-polygon', desc: 'Designing high-performance technical blueprints.' },
+                            { step: '03', title: 'Build', icon: 'fa-code', desc: 'Agile development with daily progress loops.' },
+                            { step: '04', title: 'Scale', icon: 'fa-rocket', desc: 'Global launch and continuous optimization.' }
                         ].map((p, idx) => `
                             <div class="relative group reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                 <div class="text-8xl font-black text-white/5 absolute -top-10 -left-4 group-hover:text-primary/10 transition-colors">${p.step}</div>
-                                <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all">
+                                <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
                                     <i class="fa ${p.icon} text-3xl"></i>
                                 </div>
                                 <h5 class="text-3xl font-black mb-4 italic tracking-tighter uppercase">${p.title}</h5>
@@ -335,11 +365,11 @@ const App = {
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-col lg:flex-row justify-between items-end mb-24 gap-10 reveal-on-scroll">
                         <div class="space-y-6 max-w-2xl text-left">
-                            <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">What We Master</h2>
-                            <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none italic">Powering your <span class="text-gradient">Digital Core.</span></h3>
+                            <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">${this.t('home.services_badge')}</h2>
+                            <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none italic">${this.t('home.services_title')}</h3>
                         </div>
-                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
-                            View All Capabilities
+                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                            ${this.t('home.services_all')}
                         </a>
                     </div>
                     
@@ -347,36 +377,61 @@ const App = {
                 </div>
             </section>
 
-            <!-- Impact Section (Projects) -->
-            <section class="py-32 bg-stone-50 overflow-hidden">
-                <div class="max-w-7xl mx-auto px-4">
+            <!-- Industry Specialized Solutions -->
+            <section class="py-32 px-4 bg-stone-50 relative overflow-hidden">
+                <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-24 space-y-6 reveal-on-scroll">
-                        <h2 class="text-accent font-black uppercase tracking-[0.5em] text-xs">Recent Impact</h2>
-                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase italic leading-none">The <span class="text-primary">Portfolio.</span></h3>
+                        <h2 class="text-primary font-black uppercase tracking-[0.4em] text-xs">${this.t('home.specialized_badge')}</h2>
+                        <h3 class="text-5xl font-black text-dark tracking-tighter italic uppercase">${this.t('home.specialized_title')}</h3>
                     </div>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16" id="home-projects-grid">
-                        <!-- Projects loaded via JS below -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        ${[
+                            { icon: 'fa-hospital', title: 'Hospitals', desc: 'Comprehensive patient and clinical management systems.' },
+                            { icon: 'fa-cash-register', title: 'Retail POS', desc: 'Lightning-fast checkout and inventory for chains.' },
+                            { icon: 'fa-truck-fast', title: 'Logistics', desc: 'Real-time rider tracking and delivery dispatch systems.' },
+                            { icon: 'fa-bed', title: 'Hotel ERP', desc: 'Automated booking and housekeeping management.' }
+                        ].map((item, idx) => {
+                            const color = this.palette[idx % this.palette.length];
+                            return `
+                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-sm card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
+                                    <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
+                                        <i class="fa ${item.icon} text-2xl"></i>
+                                    </div>
+                                    <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase italic">${item.title}</h5>
+                                    <p class="text-stone-500 leading-relaxed font-bold text-sm">${item.desc}</p>
+                                </div>
+                            `;
+                        }).join('')}
                     </div>
                 </div>
             </section>
 
-            <!-- Call to Action -->
-            <section class="py-32 px-4">
+            <!-- Impact Section (Projects) -->
+            <section class="py-32 bg-white overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-24 space-y-6 reveal-on-scroll">
+                        <h2 class="text-accent font-black uppercase tracking-[0.5em] text-xs">The Edge</h2>
+                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase italic leading-none">Global <span class="text-primary">Impact.</span></h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16" id="home-projects-grid"></div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="py-32 px-4 bg-light">
                 <div class="max-w-7xl mx-auto">
                     <div class="bg-dark rounded-[80px] p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
                         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
-                        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px]"></div>
-                        
                         <div class="relative z-10 space-y-12">
                             <h3 class="text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none uppercase italic">
-                                Ready to <span class="text-primary">Loop</span> Us In?
+                                Built to <span class="text-primary">Win.</span>
                             </h3>
-                            <p class="text-2xl text-stone-400 font-bold max-w-2xl mx-auto leading-relaxed">
-                                Let's transform your vision into an industry-leading digital product. No generic solutions, only high-performance code.
+                            <p class="text-2xl text-stone-400 font-bold max-w-2xl mx-auto">
+                                Stop struggling with legacy tech. Let's build your future-proof digital engine today.
                             </p>
                             <div class="pt-8">
                                 <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-[0.2em]">
-                                    Start a Project <i class="fa fa-rocket ml-4"></i>
+                                    Get Started Now <i class="fa fa-arrow-right ml-4"></i>
                                 </a>
                             </div>
                         </div>
@@ -390,20 +445,22 @@ const App = {
         const grid = document.getElementById('home-services-grid');
         if (!grid) return;
         
-        grid.innerHTML = this.state.services.slice(0, 6).map((s, idx) => `
-            <div class="p-12 rounded-[60px] bg-light card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center text-primary mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-sm shadow-primary/10">
-                    <i class="fa ${s.icon} text-2xl"></i>
+        grid.innerHTML = this.state.services.slice(0, 6).map((s, idx) => {
+            const color = this.palette[idx % this.palette.length];
+            return `
+                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-sm">
+                        <i class="fa ${s.icon} text-2xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter italic group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
+                    <a href="/services/${s.id}" class="inline-flex items-center gap-3 ${color.text} font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
+                        Learn More <i class="fa fa-chevron-right"></i>
+                    </a>
                 </div>
-                <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter italic group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
-                <p class="text-stone-500 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
-                <a href="/services/${s.id}" class="inline-flex items-center gap-3 text-primary font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
-                    Explore Deeply <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-        `).join('');
+            `;
+        }).join('');
 
-        // Also render projects for home
         const projectGrid = document.getElementById('home-projects-grid');
         if (projectGrid) {
             projectGrid.innerHTML = this.state.projects.slice(0, 2).map((p, idx) => `
@@ -414,7 +471,7 @@ const App = {
                             <div class="text-center scale-90 group-hover:scale-100 transition-transform">
                                 <p class="text-primary font-black uppercase text-xs tracking-[0.5em] mb-6">${p.type[this.state.lang]}</p>
                                 <h4 class="text-white font-black text-5xl italic tracking-tighter uppercase mb-8">View Story</h4>
-                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white shadow-xl">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white">
                                     <i class="fa fa-arrow-right text-xl"></i>
                                 </div>
                             </div>
@@ -434,7 +491,7 @@ const App = {
             <div class="py-32 px-4 bg-light min-h-screen">
                 <div class="max-w-7xl mx-auto">
                     <div class="max-w-3xl mb-32 space-y-8 reveal-on-scroll">
-                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Deep Expertise</h2>
+                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Excellence</h2>
                         <h2 class="text-7xl lg:text-8xl font-black text-dark tracking-tighter uppercase leading-none italic">${isAIOnly ? 'AI Support <span class="text-gradient">Agents.</span>' : this.t('services.title')}</h2>
                         <p class="text-stone-500 text-2xl font-bold leading-relaxed border-l-8 border-primary pl-8">${this.t('services.subtitle')}</p>
                     </div>
@@ -453,18 +510,21 @@ const App = {
             list = list.filter(s => s.id.includes('ai'));
         }
 
-        grid.innerHTML = list.map((s, idx) => `
-            <div class="p-12 rounded-[60px] bg-white border border-stone-100 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                <div class="w-24 h-24 bg-stone-50 rounded-[40px] flex items-center justify-center text-primary mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg shadow-primary/5">
-                    <i class="fa ${s.icon} text-4xl"></i>
+        grid.innerHTML = list.map((s, idx) => {
+            const color = this.palette[idx % this.palette.length];
+            return `
+                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-24 h-24 bg-white rounded-[40px] flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
+                        <i class="fa ${s.icon} text-4xl"></i>
+                    </div>
+                    <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter italic leading-none group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
+                    <p class="text-stone-500 text-lg leading-relaxed mb-12 font-bold">${s.description[this.state.lang]}</p>
+                    <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
+                        View Solution
+                    </a>
                 </div>
-                <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter italic leading-none group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
-                <p class="text-stone-500 text-lg leading-relaxed mb-12 font-bold">${s.description[this.state.lang]}</p>
-                <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
-                    View Solution
-                </a>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     },
 
     getServiceDetailHTML(serviceId) {
@@ -500,15 +560,18 @@ const App = {
                             </div>
 
                             <div class="grid md:grid-cols-2 gap-10 reveal-on-scroll">
-                                ${service.features ? service.features.map(f => `
-                                    <div class="bg-stone-50 p-12 rounded-[50px] border border-stone-100 group hover:border-primary transition-colors">
-                                        <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center text-primary mb-8 shadow-md group-hover:scale-110 transition-transform">
-                                            <i class="fa ${f.icon} text-2xl"></i>
+                                ${service.features ? service.features.map((f, i) => {
+                                    const color = this.palette[i % this.palette.length];
+                                    return `
+                                        <div class="${color.bg} p-12 rounded-[50px] border ${color.border} group hover:border-primary transition-colors">
+                                            <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
+                                                <i class="fa ${f.icon} text-2xl"></i>
+                                            </div>
+                                            <h5 class="text-3xl font-black mb-4 tracking-tighter italic uppercase">${f.title[this.state.lang]}</h5>
+                                            <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
                                         </div>
-                                        <h5 class="text-3xl font-black mb-4 tracking-tighter italic uppercase">${f.title[this.state.lang]}</h5>
-                                        <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
-                                    </div>
-                                `).join('') : ''}
+                                    `;
+                                }).join('') : ''}
                             </div>
 
                             <div class="bg-dark p-16 lg:p-32 rounded-[100px] text-white space-y-12 relative overflow-hidden reveal-on-scroll">
@@ -629,7 +692,7 @@ const App = {
                         </div>
                     </div>
 
-                    <!-- Enhanced FAQ -->
+                    <!-- FAQ -->
                     <div class="bg-dark p-20 lg:p-40 rounded-[120px] text-white relative overflow-hidden reveal-on-scroll">
                         <div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"></div>
                         <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px]"></div>
