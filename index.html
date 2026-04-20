@@ -9,19 +9,19 @@
     <link rel="apple-touch-icon" href="img/loopstech-favicon.png">
     
     <!-- SEO Meta Tags -->
-    <title>Loops Technologies | Premier Software House in Riyadh & Lahore</title>
-    <meta name="description" content="Loops Technologies provides expert Web Apps, Mobile Apps, and AI Support Agents. Trusted IT partner in Riyadh and Lahore with 10+ years of experience.">
+    <title>Loops Technologies | High-Impact Digital Solutions Riyadh & Lahore</title>
+    <meta name="description" content="Loops Technologies delivers world-class Web Apps, Mobile Apps, and AI Support Agents. A creative powerhouse in Riyadh and Lahore transforming businesses with bold tech.">
     <meta name="keywords" content="Software house Riyadh, Web development Lahore, AI agents, Hospital management system, POS software, ZATCA e-invoicing">
     <meta name="author" content="Loops Technologies">
     
     <!-- Social Sharing -->
-    <meta property="og:title" content="Loops Technologies | High-Impact Software Solutions">
-    <meta property="og:description" content="Expert Web, Mobile, and AI solutions with local support in Riyadh and Lahore.">
+    <meta property="og:title" content="Loops Technologies | Bold Digital Transformation">
+    <meta property="og:description" content="Creative Web, Mobile, and AI solutions with an energetic edge.">
     <meta property="og:image" content="img/loopstech-logo.png">
     <meta property="og:url" content="https://loopstech.com">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Tailwind CSS -->
@@ -32,36 +32,53 @@
                 extend: {
                     fontFamily: { 
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        arabic: ['Noto Sans Arabic', 'sans-serif']
+                        arabic: ['Noto Sans Arabic', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
                     },
                     colors: { 
-                        primary: '#4f46e5', // Indigo-600
-                        secondary: '#10b981', // Emerald-500
-                        dark: '#0f172a', // Slate-900
-                        light: '#f8fafc' // Slate-50
+                        primary: {
+                            DEFAULT: '#ea580c', // Orange-600
+                            light: '#fb923c',   // Orange-400
+                            dark: '#c2410c'     // Orange-700
+                        },
+                        accent: {
+                            DEFAULT: '#ef4444', // Red-500
+                            light: '#f87171',   // Red-400
+                            dark: '#b91c1c'     // Red-700
+                        },
+                        gold: '#fbbf24', // Amber-400
+                        dark: '#0c0a09', // Stone-950
+                        light: '#fafaf9'  // Stone-50
                     },
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
-                        'reveal': 'reveal 0.8s ease-out forwards',
-                        'slide-up': 'slideUp 0.6s ease-out forwards',
-                        'fade-in': 'fadeIn 0.5s ease-out forwards'
+                        'float-delayed': 'float 8s ease-in-out infinite 2s',
+                        'reveal': 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'fade-in': 'fadeIn 0.6s ease-out forwards',
+                        'spin-slow': 'spin 12s linear infinite',
+                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite'
                     },
                     keyframes: {
                         float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-30px) rotate(2deg)' },
                         },
                         reveal: {
-                            'from': { opacity: '0', transform: 'scale(0.95)' },
-                            'to': { opacity: '1', transform: 'scale(1)' },
+                            'from': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
+                            'to': { opacity: '1', transform: 'scale(1) translateY(0)' },
                         },
                         slideUp: {
-                            'from': { opacity: '0', transform: 'translateY(30px)' },
+                            'from': { opacity: '0', transform: 'translateY(50px)' },
                             'to': { opacity: '1', transform: 'translateY(0)' },
                         },
                         fadeIn: {
                             'from': { opacity: '0' },
                             'to': { opacity: '1' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '0.7', transform: 'scale(1.1)' },
                         }
                     }
                 }
@@ -70,90 +87,181 @@
     </script>
 
     <style>
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
-        .bg-soft-gradient { background: radial-gradient(circle at top right, #eef2ff, #f8fafc); }
-        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .glass { background: rgba(250, 250, 249, 0.85); backdrop-filter: blur(16px); }
+        .bg-warm-gradient { background: radial-gradient(circle at top right, #fff7ed, #fafaf9); }
+        .bg-solar-gradient { background: linear-gradient(135deg, #ea580c 0%, #ef4444 100%); }
+        
+        .card-creative { 
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            border: 1px solid rgba(234, 88, 12, 0.05);
+        }
+        .card-creative:hover { 
+            transform: translateY(-20px) scale(1.05); 
+            box-shadow: 0 40px 60px -15px rgba(234, 88, 12, 0.15);
+            border-color: rgba(234, 88, 12, 0.2);
+        }
         
         [dir="rtl"] .fa-arrow-right, [dir="rtl"] .fa-chevron-right { transform: rotate(180deg); }
         
-        .reveal-on-scroll { opacity: 0; }
-        .reveal-on-scroll.is-visible { animation: slideUp 0.8s ease-out forwards; }
+        .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #4338ca; }
+        /* Custom Cursor */
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            background: #ea580c;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+            display: none;
+        }
+        @media (min-width: 1024px) { #custom-cursor { display: block; } }
 
+        /* Fancy Transitions */
         #app-transition-layer {
             position: fixed;
             inset: 0;
-            background: #4f46e5;
+            background: #0c0a09;
             z-index: 100;
-            transform: translateX(100%);
-            transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+            transform: translateY(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        #app-transition-layer.active { transform: translateX(0); }
-        #app-transition-layer.finished { transform: translateX(-100%); }
+        #app-transition-layer.active { animation: transitionIn 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+        #app-transition-layer.finished { animation: transitionOut 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+
+        @keyframes transitionIn {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes transitionOut {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .process-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: repeating-linear-gradient(90deg, transparent, transparent 10px, #ea580c 10px, #ea580c 20px);
+            opacity: 0.1;
+            z-index: 0;
+        }
     </style>
 </head>
-<body class="bg-light text-dark leading-relaxed overflow-x-hidden">
+<body class="bg-light text-dark leading-relaxed overflow-x-hidden selection:bg-primary selection:text-white">
 
-    <div id="app-transition-layer"></div>
+    <div id="custom-cursor"></div>
+    <div id="app-transition-layer">
+        <div class="flex flex-col items-center gap-6">
+            <img src="img/loopstech-logo.png" class="h-16 w-auto brightness-0 invert animate-pulse" alt="Loops Tech">
+            <div class="w-48 h-[2px] bg-stone-800 rounded-full overflow-hidden">
+                <div class="w-full h-full bg-primary animate-[loading_1.5s_infinite]"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
 
     <!-- Navigation -->
-    <header class="fixed top-0 w-full z-50 glass border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 group">
-                <img src="img/loopstech-logo.png" alt="Loops Technologies" class="h-10 md:h-12 w-auto group-hover:scale-105 transition-transform">
+    <header class="fixed top-0 w-full z-50 glass border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="img/loopstech-logo.png" alt="Loops Technologies" class="h-12 md:h-14 w-auto group-hover:rotate-6 transition-transform">
             </a>
 
-            <nav class="hidden lg:flex gap-10" id="nav-links">
+            <nav class="hidden lg:flex gap-12" id="nav-links">
                 <!-- Links injected by JS -->
             </nav>
 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-6">
                 <!-- Language Switcher -->
-                <div class="flex items-center bg-slate-100 rounded-full p-1 gap-1">
-                    <button onclick="App.setLanguage('en')" id="lang-en" class="text-[10px] font-bold px-3 py-1.5 rounded-full transition-all">EN</button>
-                    <button onclick="App.setLanguage('ar')" id="lang-ar" class="text-[10px] font-bold px-3 py-1.5 rounded-full transition-all">AR</button>
-                    <button onclick="App.setLanguage('ro')" id="lang-ro" class="text-[10px] font-bold px-3 py-1.5 rounded-full transition-all">RO</button>
+                <div class="flex items-center bg-stone-100 rounded-2xl p-1.5 gap-1 shadow-inner">
+                    <button onclick="App.setLanguage('en')" id="lang-en" class="text-[11px] font-black px-4 py-2 rounded-xl transition-all">EN</button>
+                    <button onclick="App.setLanguage('ar')" id="lang-ar" class="text-[11px] font-black px-4 py-2 rounded-xl transition-all">AR</button>
+                    <button onclick="App.setLanguage('ro')" id="lang-ro" class="text-[11px] font-black px-4 py-2 rounded-xl transition-all">RO</button>
                 </div>
 
-                <a href="https://wa.me/966597441504" target="_blank" class="hidden md:flex bg-secondary text-white px-6 py-2.5 rounded-full text-xs font-bold items-center gap-2 hover:bg-emerald-600 shadow-lg shadow-emerald-200 transition-all active:scale-95">
+                <a href="https://wa.me/966597441504" target="_blank" class="hidden md:flex bg-solar-gradient text-white px-8 py-3.5 rounded-2xl text-xs font-black items-center gap-3 hover:shadow-[0_20px_40px_-10px_rgba(234,88,12,0.4)] transition-all hover:-translate-y-1 active:scale-95">
                     <i class="fab fa-whatsapp text-lg"></i> <span id="live-chat-text">Live Chat</span>
                 </a>
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-2xl text-primary"><i class="fa fa-bars"></i></button>
+                <button id="mobile-menu-btn" class="lg:hidden p-3 text-3xl text-primary"><i class="fa fa-bars-staggered"></i></button>
             </div>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] p-8 hidden flex-col gap-8 text-center justify-center animate-fade-in">
-        <button id="close-menu" class="absolute top-6 right-6 text-3xl text-primary"><i class="fa fa-times"></i></button>
-        <div class="flex flex-col gap-8" id="mobile-nav-links">
+    <div id="mobile-menu" class="fixed inset-0 bg-dark z-[60] p-10 hidden flex-col gap-10 text-center justify-center animate-fade-in text-white">
+        <button id="close-menu" class="absolute top-10 right-10 text-4xl text-primary"><i class="fa fa-times-circle"></i></button>
+        <div class="flex flex-col gap-10" id="mobile-nav-links">
             <!-- Links injected by JS -->
         </div>
     </div>
 
     <!-- App Container -->
-    <main id="app" class="mt-20">
+    <main id="app" class="mt-24">
         <!-- Content injected by JS -->
         <div class="flex items-center justify-center min-h-[80vh]">
-            <div class="flex flex-col items-center gap-4">
-                <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
-                <p class="font-bold text-primary animate-pulse uppercase tracking-widest text-xs">Initializing Excellence...</p>
+            <div class="flex flex-col items-center gap-8">
+                <div class="relative w-24 h-24">
+                    <div class="absolute inset-0 border-8 border-stone-200 rounded-full"></div>
+                    <div class="absolute inset-0 border-8 border-primary rounded-full border-t-transparent animate-spin"></div>
+                </div>
+                <p class="font-black text-primary animate-pulse uppercase tracking-[0.4em] text-xs">Loops Technologies</p>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-slate-400 pt-24 pb-12">
+    <footer class="bg-dark text-stone-400 pt-32 pb-16">
         <!-- Footer injected by JS -->
     </footer>
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 10 + 'px';
+            cursor.style.top = e.clientY - 10 + 'px';
+        });
+        document.addEventListener('mousedown', () => cursor.style.transform = 'scale(0.8)');
+        document.addEventListener('mouseup', () => cursor.style.transform = 'scale(1)');
+        
+        // Hover effect for cursor
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
+                cursor.style.transform = 'scale(3)';
+                cursor.style.background = 'white';
+                cursor.style.opacity = '0.5';
+            }
+        });
+        document.addEventListener('mouseout', (e) => {
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.background = '#ea580c';
+                cursor.style.opacity = '1';
+            }
+        });
+    </script>
 </body>
 </html>
