@@ -1,0 +1,14 @@
+# Project files to ignore
+gemini.md
+
+# Directories to ignore
+test/
+rent/
+s_docs_5121073/
+servers/
+cicdpipeline/
+pm_crm/
+pos/
+project/
+projects/
+inv/
