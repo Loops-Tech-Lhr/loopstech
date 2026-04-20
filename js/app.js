@@ -254,8 +254,8 @@ const App = {
                         </div>
                         
                         <h1 class="text-7xl lg:text-[10rem] font-black text-dark leading-[0.85] tracking-tighter uppercase italic">
-                            Bold <span class="text-gradient">Ideas</span><br>
-                            Smart <span class="text-gradient">Code</span>.
+                            ${this.t('hero.title_bold')} <span class="text-gradient">${this.t('hero.title_ideas')}</span><br>
+                            ${this.t('hero.title_smart')} <span class="text-gradient">${this.t('hero.title_code')}</span>.
                         </h1>
 
                         <p class="text-2xl text-stone-500 leading-relaxed max-w-xl font-bold border-l-4 border-primary pl-8">

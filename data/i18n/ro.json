@@ -10,7 +10,10 @@
   },
   "hero": {
     "badge": "Experți Dezvoltatori în Riyadh și Lahore",
-    "title": "Ingineria <span class=\"text-primary\">Succesului</span> prin Cod Inteligent.",
+    "title_bold": "Idei",
+    "title_ideas": "Îndrăznețe",
+    "title_smart": "Cod",
+    "title_code": "Inteligent",
     "subtitle": "Cu peste 10 ani de experiență, ajutăm companiile să își transforme ideile în produse digitale puternice. De la aplicații web la sisteme ERP personalizate, livrăm tehnologie scalabilă.",
     "btn_audit": "Obține un Audit Gratuit",
     "btn_services": "Explorează Serviciile",

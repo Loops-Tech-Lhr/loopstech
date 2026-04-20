@@ -10,7 +10,10 @@
   },
   "hero": {
     "badge": "Expert Developers in Riyadh & Lahore",
-    "title": "Engineering <span class=\"text-primary\">Success</span> Through Smart Code.",
+    "title_bold": "Bold",
+    "title_ideas": "Ideas",
+    "title_smart": "Smart",
+    "title_code": "Code",
     "subtitle": "With over 10 years of experience, we help businesses transform their ideas into powerful digital products. From web apps to custom ERPs, we deliver tech that scales.",
     "btn_audit": "Get a Free Audit",
     "btn_services": "Explore Services",
