@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/loopstech-favicon.png">
+    <link rel="apple-touch-icon" href="img/loopstech-favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <title>Loops Technologies | Premier Software House in Riyadh & Lahore</title>
+    <meta name="description" content="Loops Technologies provides expert Web Apps, Mobile Apps, and AI Support Agents. Trusted IT partner in Riyadh and Lahore with 10+ years of experience.">
+    <meta name="keywords" content="Software house Riyadh, Web development Lahore, AI agents, Hospital management system, POS software, ZATCA e-invoicing">
+    <meta name="author" content="Mukarram Hussain">
+    
+    <!-- Social Sharing -->
+    <meta property="og:title" content="Loops Technologies | High-Impact Software Solutions">
+    <meta property="og:description" content="Expert Web, Mobile, and AI solutions with local support in Riyadh and Lahore.">
+    <meta property="og:image" content="img/loopstech-logo.png">
+    <meta property="og:url" content="https://loopstech.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Noto Sans Arabic', 'sans-serif']
+                    },
+                    colors: { primary: '#2563eb', dark: '#020617', accent: '#3b82f6' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .bg-radial-gradient { background: radial-gradient(circle at top right, #eff6ff, #ffffff); }
+        .card-hover:hover { transform: translateY(-8px); transition: all 0.4s ease; }
+        [dir="rtl"] .fa-arrow-right { transform: rotate(180deg); }
+        [dir="rtl"] .fa-chevron-right { transform: rotate(180deg); }
+        
+        /* Smooth fade in for SPA transitions */
+        #app { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-2">
+                <img src="img/loopstech-logo.png" alt="Loops Technologies" class="h-10 md:h-12 w-auto">
+            </a>
+
+            <nav class="hidden lg:flex gap-10" id="nav-links">
+                <!-- Links injected by JS -->
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-slate-100 rounded-full px-2 py-1 gap-1">
+                    <button onclick="App.setLanguage('en')" class="text-[10px] font-bold px-2 py-1 rounded-full hover:bg-white transition-all">EN</button>
+                    <button onclick="App.setLanguage('ar')" class="text-[10px] font-bold px-2 py-1 rounded-full hover:bg-white transition-all">AR</button>
+                    <button onclick="App.setLanguage('ro')" class="text-[10px] font-bold px-2 py-1 rounded-full hover:bg-white transition-all">RO</button>
+                </div>
+
+                <a href="https://wa.me/966597441504" target="_blank" class="hidden md:flex bg-green-500 text-white px-5 py-2 rounded-full text-xs font-bold items-center gap-2 hover:bg-green-600 shadow-lg transition-all">
+                    <i class="fab fa-whatsapp text-lg"></i> <span id="live-chat-text">Live Chat</span>
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-2xl"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] p-8 hidden flex-col gap-8 text-center justify-center">
+        <button id="close-menu" class="absolute top-6 right-6 text-3xl"><i class="fa fa-times"></i></button>
+        <div class="flex flex-col gap-8" id="mobile-nav-links">
+            <!-- Links injected by JS -->
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <main id="app" class="mt-20">
+        <!-- Content injected by JS -->
+        <div class="flex items-center justify-center min-h-[60vh]">
+            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 pt-20 pb-10 mt-20">
+        <!-- Footer injected by JS -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

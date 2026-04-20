@@ -1,5 +1,8 @@
 # Project files to ignore
 gemini.md
+error_log
+.htaccess
+*.log
 
 # Directories to ignore
 test/

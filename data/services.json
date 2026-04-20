@@ -1,0 +1,128 @@
+[
+  {
+    "id": "web-apps",
+    "icon": "fa-laptop-code",
+    "title": {
+      "en": "Custom Web Applications",
+      "ar": "تطبيقات الويب المخصصة",
+      "ro": "Aplicații Web Personalizate"
+    },
+    "description": {
+      "en": "High-performance web applications built with Laravel and React to streamline your business operations.",
+      "ar": "تطبيقات ويب عالية الأداء مبنية باستخدام Laravel و React لتبسيط عملياتك التجارية.",
+      "ro": "Aplicații web de înaltă performanță construite cu Laravel și React pentru a eficientiza operațiunile afacerii tale."
+    }
+  },
+  {
+    "id": "mobile-apps",
+    "icon": "fa-mobile-screen-button",
+    "title": {
+      "en": "Mobile App Development",
+      "ar": "تطوير تطبيقات الجوال",
+      "ro": "Dezvoltare Aplicații Mobile"
+    },
+    "description": {
+      "en": "Native and cross-platform mobile apps for iOS and Android using Flutter and React Native.",
+      "ar": "تطبيقات جوال أصلية وعابرة للمنصات لنظامي iOS و Android باستخدام Flutter و React Native.",
+      "ro": "Aplicații mobile native și cross-platform pentru iOS și Android folosind Flutter și React Native."
+    }
+  },
+  {
+    "id": "ai-agents",
+    "icon": "fa-robot",
+    "title": {
+      "en": "AI Support Agents",
+      "ar": "وكلاء دعم الذكاء الاصطناعي",
+      "ro": "Agenți de Suport AI"
+    },
+    "description": {
+      "en": "Intelligent AI agents for Web, WhatsApp, and Phone calls to automate customer service 24/7.",
+      "ar": "وكلاء ذكاء اصطناعي أذكياء للويب وواتساب والمكالمات الهاتفية لأتمتة خدمة العملاء على مدار الساعة.",
+      "ro": "Agenți AI inteligenți pentru Web, WhatsApp și apeluri telefonice pentru a automatiza serviciul clienți 24/7."
+    }
+  },
+  {
+    "id": "ecommerce",
+    "icon": "fa-store",
+    "title": {
+      "en": "Ecommerce Solutions",
+      "ar": "حلول التجارة الإلكترونية",
+      "ro": "Soluții Ecommerce"
+    },
+    "description": {
+      "en": "Comprehensive online stores using Shopify, WordPress, or fully custom-built solutions.",
+      "ar": "متاجر إلكترونية شاملة باستخدام Shopify أو WordPress أو حلول مبنية بالكامل حسب الطلب.",
+      "ro": "Magazine online complete folosind Shopify, WordPress sau soluții construite complet personalizat."
+    }
+  },
+  {
+    "id": "erp-crm",
+    "icon": "fa-database",
+    "title": {
+      "en": "Custom ERP & CRM",
+      "ar": "أنظمة ERP و CRM مخصصة",
+      "ro": "ERP & CRM Personalizat"
+    },
+    "description": {
+      "en": "Tailored ERP and CRM systems designed to fit your unique business workflows and data management needs.",
+      "ar": "أنظمة ERP و CRM مصممة خصيصاً لتناسب سير عملك الفريد واحتياجات إدارة البيانات.",
+      "ro": "Sisteme ERP și CRM personalizate, concepute pentru a se potrivi fluxurilor de lucru și nevoilor tale de gestionare a datelor."
+    }
+  },
+  {
+    "id": "einvoicing",
+    "icon": "fa-file-invoice-dollar",
+    "title": {
+      "en": "e-Invoicing (ZATCA & ANAF)",
+      "ar": "الفاتورة الإلكترونية (ZATCA و ANAF)",
+      "ro": "e-Facturare (ZATCA și ANAF)"
+    },
+    "description": {
+      "en": "Fully compliant electronic invoicing solutions for Saudi Arabia (ZATCA) and Romania (ANAF).",
+      "ar": "حلول الفاتورة الإلكترونية المتوافقة تماماً مع متطلبات الزكاة والدخل (السعودية) و ANAF (رومانيا).",
+      "ro": "Soluții de facturare electronică complet conforme pentru Arabia Saudită (ZATCA) și România (ANAF)."
+    }
+  },
+  {
+    "id": "industry-erp",
+    "icon": "fa-building-shield",
+    "title": {
+      "en": "Industry-Specific Solutions",
+      "ar": "حلول متخصصة للصناعات",
+      "ro": "Soluții Specifice Industriei"
+    },
+    "description": {
+      "en": "Management software for Hospitals, Schools, Restaurants, and Hotels.",
+      "ar": "برمجيات إدارية للمستشفيات والمدارس والمطاعم والفنادق.",
+      "ro": "Software de gestionare pentru spitale, școli, restaurante și hoteluri."
+    }
+  },
+  {
+    "id": "construction-ai",
+    "icon": "fa-helmet-safety",
+    "title": {
+      "en": "Construction AI Solutions",
+      "ar": "حلول الذكاء الاصطناعي للمقاولات",
+      "ro": "Soluții AI pentru Construcții"
+    },
+    "description": {
+      "en": "AI-driven document control, data analyzers, and lead generators specifically for the construction industry.",
+      "ar": "التحكم في المستندات وتحليل البيانات وتوليد العملاء المحتملين المدعوم بالذكاء الاصطناعي لقطاع المقاولات.",
+      "ro": "Controlul documentelor, analizatoare de date și generatoare de lead-uri bazate pe AI special pentru industria construcțiilor."
+    }
+  },
+  {
+    "id": "integrations",
+    "icon": "fa-gears",
+    "title": {
+      "en": "API & Third-Party Integrations",
+      "ar": "تكامل واجهات البرمجيات (API)",
+      "ro": "Integrări API și Terțe Părți"
+    },
+    "description": {
+      "en": "Seamless integration with payment gateways, shipping providers, and other third-party services.",
+      "ar": "تكامل سلس مع بوابات الدفع ومزودي الشحن والخدمات الخارجية الأخرى.",
+      "ro": "Integrare perfectă cu procesatoare de plăți, furnizori de transport și alte servicii terțe."
+    }
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "portfolio": "Portofoliu",
+    "about": "Povestea Noastră",
+    "contact": "Contact",
+    "ai_solutions": "Soluții AI",
+    "live_chat": "Chat în Direct"
+  },
+  "hero": {
+    "badge": "Experți Dezvoltatori în Riyadh și Lahore",
+    "title": "Ingineria <span class=\"text-primary\">Succesului</span> prin Cod Inteligent.",
+    "subtitle": "Cu peste 10 ani de experiență, ajutăm companiile să își transforme ideile în produse digitale puternice. De la aplicații web la sisteme ERP personalizate, livrăm tehnologie scalabilă.",
+    "btn_audit": "Obține un Audit Gratuit",
+    "btn_services": "Explorează Serviciile",
+    "expertise": "10+ Ani",
+    "expertise_text": "Expertiză în Industrie"
+  },
+  "home": {
+    "services_badge": "Ce Facem Cel Mai Bine",
+    "services_title": "Soluții Tehnice <span class=\"text-primary\">Complete.</span>",
+    "services_subtitle": "Nu construim doar site-uri, construim active care ajută afacerea dumneavoastră să câștige mai mult și să gestioneze mai puțin.",
+    "services_all": "Răsfoiește Toate Capabilitățile",
+    "stats_projects": "250+",
+    "stats_projects_text": "Proiecte Livrate",
+    "stats_riyadh": "Riyadh",
+    "stats_riyadh_text": "Hub Arabia Saudită",
+    "stats_lahore": "Lahore",
+    "stats_lahore_text": "Centru Pakistan",
+    "specialized_badge": "ERP-uri Specializate",
+    "specialized_title": "Software pentru Industria Ta."
+  },
+  "services": {
+    "title": "Lista <span class=\"text-primary\">Completă de Servicii.</span>",
+    "subtitle": "Utilizăm stive tehnologice moderne precum Laravel, PHP, WordPress și Shopify pentru a construi soluții de mare viteză.",
+    "inquire_now": "Solicită Informații"
+  },
+  "portfolio": {
+    "title": "Moștenirea <span class=\"text-primary\">Noastră.</span>",
+    "subtitle": "Proiecte reale care au rezolvat probleme reale pentru clienții noștri globali.",
+    "case_study": "Studiu de Caz"
+  },
+  "about": {
+    "title": "Călătoria Noastră.",
+    "text1": "Fondată în 2013, Loops Technologies a fost întotdeauna despre un singur lucru: soluții bazate pur pe tehnologie. Nu suntem doar dezvoltatori, suntem parteneri în creșterea dumneavoastră.",
+    "text2": "Fondatorul Mukarram Hussain a petrecut peste 10 ani perfecționând arta ingineriei software. Expertiza sa în PHP, Laravel și framework-uri moderne de JS este fundamentul a tot ceea ce construim.",
+    "text3": "Astăzi, operăm din Riyadh și Lahore, reunind cele mai bune talente pentru a servi clienții din Orientul Mijlociu și nu numai, cu onestitate și excelență.",
+    "quality_audit": "100%",
+    "quality_audit_text": "Audit de Calitate",
+    "faq_title": "Întrebări Frecvente",
+    "faq_q1": "Cum începem?",
+    "faq_a1": "Începem cu o consultație gratuită pentru a vă înțelege nevoile, urmată de o ofertă detaliată și un plan de lucru.",
+    "faq_q2": "Oferiți suport după lansare?",
+    "faq_a2": "Da. Oferim 30 de zile de suport tehnic gratuit și planuri de întreținere lunară accesibile.",
+    "faq_q3": "Soluțiile sunt personalizate?",
+    "faq_a3": "Da. Construim totul de la zero pentru a ne asigura că software-ul se potrivește perfect afacerii dumneavoastră.",
+    "faq_q4": "Unde vă aflați?",
+    "faq_a4": "Avem o echipă de bază în Riyadh, KSA și un centru mare de dezvoltare în Lahore, Pakistan."
+  },
+  "contact": {
+    "title": "Să <span class=\"text-primary\">Vorbim.</span>",
+    "subtitle": "Cu sediul în Riyadh și Lahore. Servim în întreaga lume.",
+    "form_success_badge": "Succes!",
+    "form_success_text": "Am primit solicitarea dumneavoastră. Așteptați un răspuns în termen de 24 de ore.",
+    "label_name": "Nume Complet",
+    "label_email": "Adresă de Email",
+    "label_project_type": "Tipul Proiectului",
+    "label_message": "Cum vă putem ajuta?",
+    "placeholder_name": "ex. Abdullah Hussain",
+    "placeholder_email": "nume@companie.com",
+    "placeholder_message": "Descrieți viziunea proiectului dumneavoastră...",
+    "btn_send": "Trimite Solicitarea",
+    "hq": "Sediul Central",
+    "office_riyadh": "Biroul din Riyadh",
+    "office_lahore": "Biroul din Lahore",
+    "direct_email": "Email Direct"
+  },
+  "footer": {
+    "desc": "Soluții software inovatoare din 2013. Facem legătura între nevoile de afaceri și execuția digitală cu cod expert.",
+    "expertise_title": "Expertiză",
+    "work_with_us_title": "Lucrează cu Noi",
+    "quote": "\"Expertiza nu înseamnă doar a scrie cod. Înseamnă a înțelege omul din spatele afacerii.\"",
+    "btn_contact": "Contactează-ne Astăzi",
+    "audit_badge": "Audit Gratuit de Proiect",
+    "copyright": "© 2026 LOOPS TECHNOLOGIES . Toate drepturile sunt rezervate.",
+    "link_journey": "Călătoria Noastră",
+    "link_start": "Începe Proiectul"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "home",
+    "nav_key": "home",
+    "enabled": true,
+    "show_in_nav": true
+  },
+  {
+    "id": "services",
+    "nav_key": "services",
+    "enabled": true,
+    "show_in_nav": true
+  },
+  {
+    "id": "projects",
+    "nav_key": "portfolio",
+    "enabled": true,
+    "show_in_nav": true
+  },
+  {
+    "id": "ai-solutions",
+    "nav_key": "ai_solutions",
+    "enabled": true,
+    "show_in_nav": true
+  },
+  {
+    "id": "about",
+    "nav_key": "about",
+    "enabled": true,
+    "show_in_nav": true
+  },
+  {
+    "id": "contact",
+    "nav_key": "contact",
+    "enabled": true,
+    "show_in_nav": true
+  }
+]

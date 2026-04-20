@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fixit",
+    "title": "FixIt Services",
+    "type": {
+      "en": "On-Demand Platform",
+      "ar": "منصة خدمات عند الطلب",
+      "ro": "Platformă On-Demand"
+    },
+    "description": {
+      "en": "A complete electrical and maintenance booking system connecting service providers with customers.",
+      "ar": "نظام كامل لحجز خدمات الكهرباء والصيانة يربط مزودي الخدمة بالعملاء.",
+      "ro": "Un sistem complet de rezervare pentru servicii electrice și întreținere, care conectează furnizorii cu clienții."
+    },
+    "img": "https://images.unsplash.com/photo-1581092911461-7d15cb38a71c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "myalishop",
+    "title": "MyAliShop",
+    "type": {
+      "en": "Marketplace",
+      "ar": "سوق إلكتروني",
+      "ro": "Marketplace"
+    },
+    "description": {
+      "en": "High-volume multi-vendor ecommerce store with advanced inventory and vendor management.",
+      "ar": "متجر إلكتروني متعدد التجار ذو حجم تداول عالٍ مع إدارة متقدمة للمخزون والتجار.",
+      "ro": "Magazin ecommerce multi-vendor cu volum mare, dotat cu management avansat al stocurilor și al furnizorilor."
+    },
+    "img": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "noor-news",
+    "title": "Noor News Agency",
+    "type": {
+      "en": "Media Portal",
+      "ar": "بوابة إعلامية",
+      "ro": "Portal Media"
+    },
+    "description": {
+      "en": "Real-time news distribution and Content Management System built for high traffic and speed.",
+      "ar": "نظام توزيع أخبار وإدارة محتوى في الوقت الفعلي مصمم لسرعة عالية وحجم زيارات كبير.",
+      "ro": "Sistem de distribuție a știrilor în timp real și CMS construit pentru trafic intens și viteză."
+    },
+    "img": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "chinar-hospital",
+    "title": "Chinar Hospital ERP",
+    "type": {
+      "en": "Healthcare",
+      "ar": "رعاية صحية",
+      "ro": "Sănătate"
+    },
+    "description": {
+      "en": "Complete clinical and patient management system automating hospital operations and records.",
+      "ar": "نظام كامل لإدارة العيادات والمرضى لأتمتة عمليات المستشفى والسجلات الطبية.",
+      "ro": "Sistem complet de management clinic și al pacienților care automatizează operațiunile și înregistrările spitalului."
+    },
+    "img": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "smprofit",
+    "title": "SMProfit FinTech",
+    "type": {
+      "en": "Trading App",
+      "ar": "تطبيق تداول",
+      "ro": "Aplicație de Trading"
+    },
+    "description": {
+      "en": "Forex signals and auto-trading dashboard with real-time data analysis and notifications.",
+      "ar": "لوحة تحكم لإشارات الفوركس والتداول الآلي مع تحليل بيانات في الوقت الفعلي وإشعارات.",
+      "ro": "Dashboard pentru semnale Forex și auto-trading, cu analiză de date în timp real și notificări."
+    },
+    "img": "https://images.unsplash.com/photo-1611974714851-eb607737421c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "trips-tour",
+    "title": "Trips & Tour Hub",
+    "type": {
+      "en": "Travel Tech",
+      "ar": "تقنيات السفر",
+      "ro": "Tehnologie de Călătorie"
+    },
+    "description": {
+      "en": "Comprehensive reservation platform for tour operators with automated booking and payment.",
+      "ar": "منصة حجز شاملة لمنظمي الرحلات السياحية مع نظام حجز ودفع آلي.",
+      "ro": "Platformă cuprinzătoare de rezervări pentru operatorii de turism, cu rezervare și plată automatizată."
+    },
+    "img": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80"
+  }
+]
