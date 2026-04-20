@@ -337,7 +337,7 @@ const App = {
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-32 space-y-6 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Our Strategy</h2>
-                        <h3 class="text-6xl font-black tracking-tighter uppercase italic leading-none">The <span class="text-primary">Loop</span> of Success.</h3>
+                        <h3 class="text-6xl font-black tracking-tighter uppercase  leading-none">The <span class="text-primary">Loop</span> of Success.</h3>
                     </div>
                     
                     <div class="grid md:grid-cols-4 gap-12">
@@ -352,7 +352,7 @@ const App = {
                                 <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
                                     <i class="fa ${p.icon} text-3xl"></i>
                                 </div>
-                                <h5 class="text-3xl font-black mb-4 italic tracking-tighter uppercase">${p.title}</h5>
+                                <h5 class="text-3xl font-black mb-4  tracking-tighter uppercase">${p.title}</h5>
                                 <p class="text-stone-500 font-medium leading-relaxed">${p.desc}</p>
                             </div>
                         `).join('')}
@@ -366,7 +366,7 @@ const App = {
                     <div class="flex flex-col lg:flex-row justify-between items-end mb-24 gap-10 reveal-on-scroll">
                         <div class="space-y-6 max-w-2xl text-left">
                             <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">${this.t('home.services_badge')}</h2>
-                            <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none italic">${this.t('home.services_title')}</h3>
+                            <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none ">${this.t('home.services_title')}</h3>
                         </div>
                         <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
                             ${this.t('home.services_all')}
@@ -382,7 +382,7 @@ const App = {
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-24 space-y-6 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.4em] text-xs">${this.t('home.specialized_badge')}</h2>
-                        <h3 class="text-5xl font-black text-dark tracking-tighter italic uppercase">${this.t('home.specialized_title')}</h3>
+                        <h3 class="text-5xl font-black text-dark tracking-tighter  uppercase">${this.t('home.specialized_title')}</h3>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         ${[
@@ -397,7 +397,7 @@ const App = {
                                     <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
                                         <i class="fa ${item.icon} text-2xl"></i>
                                     </div>
-                                    <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase italic">${item.title}</h5>
+                                    <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase ">${item.title}</h5>
                                     <p class="text-stone-600 leading-relaxed font-bold text-sm">${item.desc}</p>
                                 </div>
                             `;
@@ -411,7 +411,7 @@ const App = {
                 <div class="max-w-7xl mx-auto px-4">
                     <div class="text-center mb-24 space-y-6 reveal-on-scroll">
                         <h2 class="text-accent font-black uppercase tracking-[0.5em] text-xs">The Edge</h2>
-                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase italic leading-none">Global <span class="text-primary">Impact.</span></h3>
+                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase  leading-none">Global <span class="text-primary">Impact.</span></h3>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16" id="home-projects-grid"></div>
                 </div>
@@ -423,7 +423,7 @@ const App = {
                     <div class="bg-dark rounded-[80px] p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
                         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
                         <div class="relative z-10 space-y-12">
-                            <h3 class="text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none uppercase italic">
+                            <h3 class="text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none uppercase ">
                                 Built to <span class="text-primary">Win.</span>
                             </h3>
                             <p class="text-2xl text-stone-400 font-bold max-w-2xl mx-auto">
@@ -452,7 +452,7 @@ const App = {
                     <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
                         <i class="fa ${s.icon} text-2xl"></i>
                     </div>
-                    <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter italic group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
+                    <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter  group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
                     <p class="text-stone-600 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
                     <a href="/services/${s.id}" class="inline-flex items-center gap-3 ${color.text} font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
                         Learn More <i class="fa fa-chevron-right"></i>
@@ -470,7 +470,7 @@ const App = {
                         <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-12">
                             <div class="text-center scale-90 group-hover:scale-100 transition-transform">
                                 <p class="text-primary font-black uppercase text-xs tracking-[0.5em] mb-6">${p.type[this.state.lang]}</p>
-                                <h4 class="text-white font-black text-5xl italic tracking-tighter uppercase mb-8">View Story</h4>
+                                <h4 class="text-white font-black text-5xl  tracking-tighter uppercase mb-8">View Story</h4>
                                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white">
                                     <i class="fa fa-arrow-right text-xl"></i>
                                 </div>
@@ -478,7 +478,7 @@ const App = {
                         </div>
                     </div>
                     <div class="px-12">
-                        <h4 class="text-4xl font-black text-dark mb-4 tracking-tighter uppercase italic">${p.title}</h4>
+                        <h4 class="text-4xl font-black text-dark mb-4 tracking-tighter uppercase ">${p.title}</h4>
                         <p class="text-stone-500 text-xl font-bold leading-relaxed">${p.description[this.state.lang]}</p>
                     </div>
                 </div>
@@ -492,7 +492,7 @@ const App = {
                 <div class="max-w-7xl mx-auto">
                     <div class="max-w-3xl mb-32 space-y-8 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Excellence</h2>
-                        <h2 class="text-7xl lg:text-8xl font-black text-dark tracking-tighter uppercase leading-none italic">${isAIOnly ? 'AI Support <span class="text-gradient">Agents.</span>' : this.t('services.title')}</h2>
+                        <h2 class="text-7xl lg:text-8xl font-black text-dark tracking-tighter uppercase leading-none ">${isAIOnly ? 'AI Support <span class="text-gradient">Agents.</span>' : this.t('services.title')}</h2>
                         <p class="text-stone-500 text-2xl font-bold leading-relaxed border-l-8 border-primary pl-8">${this.t('services.subtitle')}</p>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" id="full-services-grid"></div>
@@ -517,7 +517,7 @@ const App = {
                     <div class="w-24 h-24 bg-white rounded-[40px] flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
                         <i class="fa ${s.icon} text-4xl"></i>
                     </div>
-                    <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter italic leading-none group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
+                    <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter  leading-none group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
                     <p class="text-stone-500 text-lg leading-relaxed mb-12 font-bold">${s.description[this.state.lang]}</p>
                     <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
                         View Solution
@@ -542,10 +542,10 @@ const App = {
                                 <a href="/services" class="inline-flex items-center gap-4 text-primary font-black uppercase tracking-[0.3em] text-xs hover:-translate-x-3 transition-transform group">
                                     <i class="fa fa-chevron-left bg-stone-100 p-4 rounded-full group-hover:bg-primary group-hover:text-white"></i> All Expertise
                                 </a>
-                                <h1 class="text-7xl lg:text-[110px] font-black text-dark tracking-tighter leading-[0.8] uppercase italic">
+                                <h1 class="text-7xl lg:text-[110px] font-black text-dark tracking-tighter leading-[0.8] uppercase ">
                                     ${service.title[this.state.lang]}
                                 </h1>
-                                <p class="text-3xl text-stone-400 font-bold leading-relaxed italic border-l-8 border-indigo-100 pl-10">
+                                <p class="text-3xl text-stone-400 font-bold leading-relaxed  border-l-8 border-indigo-100 pl-10">
                                     "${service.description[this.state.lang]}"
                                 </p>
                             </div>
@@ -567,7 +567,7 @@ const App = {
                                             <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
                                                 <i class="fa ${f.icon} text-2xl"></i>
                                             </div>
-                                            <h5 class="text-3xl font-black mb-4 tracking-tighter italic uppercase">${f.title[this.state.lang]}</h5>
+                                            <h5 class="text-3xl font-black mb-4 tracking-tighter  uppercase">${f.title[this.state.lang]}</h5>
                                             <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
                                         </div>
                                     `;
@@ -576,10 +576,10 @@ const App = {
 
                             <div class="bg-dark p-16 lg:p-32 rounded-[100px] text-white space-y-12 relative overflow-hidden reveal-on-scroll">
                                 <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px]"></div>
-                                <h3 class="text-5xl lg:text-7xl font-black tracking-tighter uppercase italic leading-none">Why Choose <span class="text-primary">Loops</span>?</h3>
+                                <h3 class="text-5xl lg:text-7xl font-black tracking-tighter uppercase  leading-none">Why Choose <span class="text-primary">Loops</span>?</h3>
                                 <ul class="space-y-10">
                                     ${service.benefits ? service.benefits.map(b => `
-                                        <li class="flex items-start gap-8 text-2xl font-black italic uppercase tracking-tighter">
+                                        <li class="flex items-start gap-8 text-2xl font-black  uppercase tracking-tighter">
                                             <i class="fa fa-bolt text-primary mt-2 text-3xl"></i>
                                             <span>${b[this.state.lang]}</span>
                                         </li>
@@ -595,7 +595,7 @@ const App = {
 
                         <div class="lg:col-span-1 space-y-16 animate-fade-in" style="animation-delay: 0.3s">
                             <div class="bg-stone-50 p-12 rounded-[60px] border border-stone-100 sticky top-32">
-                                <h4 class="text-3xl font-black mb-12 tracking-tighter uppercase border-b-8 border-primary/10 pb-6 italic">Capabilities</h4>
+                                <h4 class="text-3xl font-black mb-12 tracking-tighter uppercase border-b-8 border-primary/10 pb-6 ">Capabilities</h4>
                                 <div class="space-y-8">
                                     ${otherServices.map(s => `
                                         <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-[30px] hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
@@ -629,7 +629,7 @@ const App = {
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-32 space-y-8 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Proven Global Results</h2>
-                        <h2 class="text-7xl lg:text-9xl font-black text-dark tracking-tighter uppercase italic leading-none">The <span class="text-gradient">Legacy.</span></h2>
+                        <h2 class="text-7xl lg:text-9xl font-black text-dark tracking-tighter uppercase  leading-none">The <span class="text-gradient">Legacy.</span></h2>
                         <p class="text-stone-500 text-2xl font-bold leading-relaxed max-w-2xl mx-auto">${this.t('portfolio.subtitle')}</p>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-20" id="projects-grid"></div>
@@ -649,7 +649,7 @@ const App = {
                     <div class="absolute inset-0 bg-solar-gradient/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-16">
                         <div class="text-center translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
                             <p class="text-white font-black uppercase text-xs tracking-[0.5em] mb-8">${p.type[this.state.lang]}</p>
-                            <h4 class="text-white font-black text-6xl italic tracking-tighter uppercase mb-10">Case Study</h4>
+                            <h4 class="text-white font-black text-6xl  tracking-tighter uppercase mb-10">Case Study</h4>
                             <div class="w-20 h-24 bg-white rounded-full flex items-center justify-center mx-auto text-primary shadow-2xl">
                                 <i class="fa fa-arrow-right text-3xl"></i>
                             </div>
@@ -657,7 +657,7 @@ const App = {
                     </div>
                 </div>
                 <div class="px-16 text-center">
-                    <h4 class="text-5xl font-black text-dark mb-6 tracking-tighter uppercase italic group-hover:text-primary transition-colors underline decoration-8 decoration-primary/10 underline-offset-8">${p.title}</h4>
+                    <h4 class="text-5xl font-black text-dark mb-6 tracking-tighter uppercase  group-hover:text-primary transition-colors underline decoration-8 decoration-primary/10 underline-offset-8">${p.title}</h4>
                     <p class="text-stone-400 text-xl font-bold leading-relaxed max-w-xl mx-auto">${p.description[this.state.lang]}</p>
                 </div>
             </div>
@@ -670,14 +670,14 @@ const App = {
                 <div class="max-w-7xl mx-auto space-y-40">
                     <div class="grid lg:grid-cols-2 gap-32 items-center">
                         <div class="space-y-12 reveal-on-scroll">
-                            <h2 class="text-8xl lg:text-[140px] font-black text-dark tracking-tighter uppercase leading-[0.75] italic">
+                            <h2 class="text-8xl lg:text-[140px] font-black text-dark tracking-tighter uppercase leading-[0.75] ">
                                 Our <span class="text-gradient">Core.</span>
                             </h2>
                             <div class="space-y-10 text-2xl text-stone-500 leading-relaxed font-bold">
                                 <p>${this.t('about.text1')}</p>
                                 <div class="relative p-12 bg-dark rounded-[60px] text-white">
                                     <div class="absolute top-0 right-0 w-32 h-32 bg-primary/30 blur-3xl"></div>
-                                    <p class="relative z-10 italic text-3xl leading-tight">"${this.t('about.text2')}"</p>
+                                    <p class="relative z-10  text-3xl leading-tight">"${this.t('about.text2')}"</p>
                                 </div>
                                 <p>${this.t('about.text3')}</p>
                             </div>
@@ -697,12 +697,12 @@ const App = {
                         <div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"></div>
                         <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px]"></div>
                         
-                        <h3 class="text-6xl lg:text-8xl font-black mb-32 text-center uppercase tracking-tighter italic relative z-10 leading-none">The <span class="text-primary">Answers.</span></h3>
+                        <h3 class="text-6xl lg:text-8xl font-black mb-32 text-center uppercase tracking-tighter  relative z-10 leading-none">The <span class="text-primary">Answers.</span></h3>
                         
                         <div class="grid md:grid-cols-2 gap-24 relative z-10">
                             ${[1, 2, 3, 4].map(i => `
                                 <div class="space-y-8 group border-l-4 border-stone-800 hover:border-primary pl-12 transition-colors">
-                                    <h5 class="text-3xl font-black text-white uppercase tracking-tighter italic leading-none group-hover:text-primary transition-colors">
+                                    <h5 class="text-3xl font-black text-white uppercase tracking-tighter  leading-none group-hover:text-primary transition-colors">
                                         ${this.t(`about.faq_q${i}`)}
                                     </h5>
                                     <p class="text-stone-500 text-xl font-bold leading-relaxed max-w-lg">${this.t(`about.faq_a${i}`)}</p>
@@ -721,7 +721,7 @@ const App = {
                 <div class="max-w-7xl mx-auto w-full">
                     <div class="text-center mb-32 space-y-8 reveal-on-scroll">
                         <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Direct Connection</h2>
-                        <h2 class="text-8xl lg:text-[150px] font-black text-dark tracking-tighter uppercase leading-[0.8] italic">Start <span class="text-gradient">Now.</span></h2>
+                        <h2 class="text-8xl lg:text-[150px] font-black text-dark tracking-tighter uppercase leading-[0.8] ">Start <span class="text-gradient">Now.</span></h2>
                         <p class="text-stone-400 font-black uppercase tracking-[0.5em] text-xs">${this.t('contact.subtitle')}</p>
                     </div>
                     
@@ -757,7 +757,7 @@ const App = {
                                     <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_message')}</label>
                                     <textarea name="message" rows="5" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_message')}"></textarea>
                                 </div>
-                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-[50px] font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] italic">
+                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-[50px] font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] ">
                                     ${this.t('contact.btn_send')}
                                 </button>
                             </form>
@@ -771,12 +771,12 @@ const App = {
                                         <h5 class="text-primary font-black uppercase text-xs tracking-[0.5em] mb-10">${this.t('contact.hq')}</h5>
                                         <div class="space-y-10">
                                             <div>
-                                                <p class="text-2xl font-black text-white mb-4 tracking-tighter uppercase italic">${this.t('contact.office_riyadh')}</p>
+                                                <p class="text-2xl font-black text-white mb-4 tracking-tighter uppercase ">${this.t('contact.office_riyadh')}</p>
                                                 <p class="text-stone-400 font-bold leading-relaxed mb-6">6943 Ibn Aous Road, Riyadh, KSA</p>
                                                 <a href="tel:+966597441504" class="text-3xl font-black text-primary hover:text-white transition-colors tracking-tighter">+966 59 744 1504</a>
                                             </div>
                                             <div class="pt-10 border-t border-stone-800">
-                                                <p class="text-2xl font-black text-white mb-4 tracking-tighter uppercase italic">${this.t('contact.office_lahore')}</p>
+                                                <p class="text-2xl font-black text-white mb-4 tracking-tighter uppercase ">${this.t('contact.office_lahore')}</p>
                                                 <p class="text-stone-400 font-bold leading-relaxed mb-6">73 3 D1 Green Town, Lahore, PK</p>
                                                 <a href="tel:+923124277939" class="text-3xl font-black text-primary hover:text-white transition-colors tracking-tighter">+92 312 4277939</a>
                                             </div>
@@ -814,7 +814,7 @@ const App = {
                         </div>
                     </div>
                     <div>
-                        <h4 class="text-white font-black mb-12 uppercase text-xs tracking-[0.6em] italic">Expertise</h4>
+                        <h4 class="text-white font-black mb-12 uppercase text-xs tracking-[0.6em] ">Expertise</h4>
                         <ul class="space-y-8 text-sm font-black uppercase tracking-[0.2em]">
                             <li><a href="/services/web-apps" class="hover:text-primary transition-all">Web Applications</a></li>
                             <li><a href="/services/mobile-apps" class="hover:text-primary transition-all">Mobile Solutions</a></li>
@@ -823,8 +823,8 @@ const App = {
                         </ul>
                     </div>
                     <div class="lg:col-span-2 space-y-12">
-                        <h4 class="text-white font-black uppercase text-xs tracking-[0.6em] mb-12 italic">Work With Us</h4>
-                        <p class="text-4xl lg:text-5xl text-stone-200 italic font-black leading-[1.1] tracking-tighter uppercase">${this.t('footer.quote')}</p>
+                        <h4 class="text-white font-black uppercase text-xs tracking-[0.6em] mb-12 ">Work With Us</h4>
+                        <p class="text-4xl lg:text-5xl text-stone-200  font-black leading-[1.1] tracking-tighter uppercase">${this.t('footer.quote')}</p>
                         <div class="flex flex-col sm:flex-row items-center gap-12 pt-8">
                             <a href="/contact" class="bg-white text-dark px-14 py-6 rounded-[30px] font-black text-sm uppercase tracking-[0.3em] shadow-2xl hover:bg-primary hover:text-white transition-all w-full sm:w-auto text-center">${this.t('footer.btn_contact')}</a>
                             <span class="text-xs font-black text-primary uppercase tracking-[0.5em] flex items-center gap-4"><i class="fa fa-certificate text-3xl text-primary animate-spin-slow"></i> ${this.t('footer.audit_badge')}</span>
