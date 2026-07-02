@@ -369,10 +369,10 @@ const App = {
                         </p>
 
                         <div class="flex flex-col sm:flex-row gap-8">
-                            <a href="/contact" class="bg-solar-gradient text-white px-14 py-6 rounded-[30px] font-black text-xl shadow-[0_30px_60px_-15px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all flex items-center justify-center gap-4 group">
+                            <a href="/contact" class="bg-solar-gradient text-white px-14 py-6 rounded-xl font-black text-xl shadow-[0_30px_60px_-15px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all flex items-center justify-center gap-4 group">
                                 ${this.t('hero.btn_audit')} <i class="fa fa-bolt group-hover:rotate-12 transition-transform"></i>
                             </a>
-                            <a href="/services" class="bg-white border-4 border-stone-100 text-dark px-14 py-6 rounded-[30px] font-black text-xl hover:border-primary transition-all text-center">
+                            <a href="/services" class="bg-white border-4 border-stone-100 text-dark px-14 py-6 rounded-xl font-black text-xl hover:border-primary transition-all text-center">
                                 ${this.t('hero.btn_services')}
                             </a>
                         </div>
@@ -381,12 +381,12 @@ const App = {
                     <div class="relative group">
                         <div class="absolute -inset-10 bg-solar-gradient rounded-full opacity-20 blur-[120px] group-hover:opacity-30 transition-opacity animate-pulse"></div>
                         <div class="relative z-10 animate-float">
-                            <img src="img/loopstech-main-photograph.jpg" alt="Loops Tech" class="rounded-[80px] shadow-[0_60px_100px_-20px_rgba(0,0,0,0.3)] border-[20px] border-white ring-1 ring-stone-100">
-                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-[40px] shadow-2xl animate-float-delayed hidden xl:block border border-stone-50">
+                            <img src="img/loopstech-main-photograph.jpg" alt="Loops Tech" class="rounded-xl shadow-[0_60px_100px_-20px_rgba(0,0,0,0.3)] border-[20px] border-white ring-1 ring-stone-100">
+                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-xl shadow-2xl animate-float-delayed hidden xl:block border border-stone-50">
                                 <i class="fa fa-robot text-5xl text-primary mb-4"></i>
                                 <p class="font-black text-dark text-lg">AI Ready</p>
                             </div>
-                            <div class="absolute -bottom-10 -left-16 bg-dark text-white p-10 rounded-[40px] shadow-2xl animate-float hidden xl:block">
+                            <div class="absolute -bottom-10 -left-16 bg-dark text-white p-10 rounded-xl shadow-2xl animate-float hidden xl:block">
                                 <i class="fa fa-code text-5xl text-accent mb-4"></i>
                                 <p class="font-black text-lg">Clean Code</p>
                             </div>
@@ -435,7 +435,7 @@ const App = {
                             (p, idx) => `
                             <div class="relative group reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                 <div class="text-8xl font-black text-white/5 absolute -top-10 -left-4 group-hover:text-primary/10 transition-colors">${p.step}</div>
-                                <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
+                                <div class="w-20 h-20 bg-stone-900 rounded-xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
                                     <i class="fa ${p.icon} text-3xl"></i>
                                 </div>
                                 <h5 class="text-3xl font-black mb-4  tracking-tighter uppercase">${p.title}</h5>
@@ -456,7 +456,7 @@ const App = {
                             <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">${this.t('home.services_badge')}</h2>
                             <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none ">${this.t('home.services_title')}</h3>
                         </div>
-                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
                             ${this.t('home.services_all')}
                         </a>
                     </div>
@@ -499,8 +499,8 @@ const App = {
                             const color =
                               this.palette[idx % this.palette.length]
                             return `
-                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
-                                    <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
+                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-xl shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
+                                    <div class="w-16 h-16 ${color.icon} rounded-xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
                                         <i class="fa ${item.icon} text-2xl"></i>
                                     </div>
                                     <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase ">${item.title}</h5>
@@ -527,7 +527,7 @@ const App = {
             <!-- CTA -->
             <section class="py-32 px-4 bg-light">
                 <div class="max-w-7xl mx-auto">
-                    <div class="bg-dark rounded-[80px] p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
+                    <div class="bg-dark rounded-xl p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
                         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
                         <div class="relative z-10 space-y-12">
                             <h3 class="text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none uppercase ">
@@ -537,7 +537,7 @@ const App = {
                                 Stop struggling with legacy tech. Let's build your future-proof digital engine today.
                             </p>
                             <div class="pt-8">
-                                <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-[0.2em]">
+                                <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-xl font-black text-2xl shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-[0.2em]">
                                     Get Started Now <i class="fa fa-arrow-right ml-4"></i>
                                 </a>
                             </div>
@@ -557,8 +557,8 @@ const App = {
       .map((s, idx) => {
         const color = this.palette[idx % this.palette.length]
         return `
-                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                    <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
+                <div class="p-12 rounded-xl ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
                         <i class="fa ${s.icon} text-2xl"></i>
                     </div>
                     <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter  group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
@@ -578,7 +578,7 @@ const App = {
         .map(
           (p, idx) => `
                 <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.2}s">
-                    <div class="relative overflow-hidden rounded-[80px] shadow-2xl mb-12 border-[20px] border-white ring-1 ring-stone-100 aspect-video">
+                    <div class="relative overflow-hidden rounded-xl shadow-2xl mb-12 border-[20px] border-white ring-1 ring-stone-100 aspect-video">
                         <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
                         <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-12">
                             <div class="text-center scale-90 group-hover:scale-100 transition-transform">
@@ -629,13 +629,13 @@ const App = {
       .map((s, idx) => {
         const color = this.palette[idx % this.palette.length]
         return `
-                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                    <div class="w-24 h-24 bg-white rounded-[40px] flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
+                <div class="p-12 rounded-xl ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-24 h-24 bg-white rounded-xl flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
                         <i class="fa ${s.icon} text-4xl"></i>
                     </div>
                     <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter  leading-none group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
                     <p class="text-stone-500 text-lg leading-relaxed mb-12 font-bold">${s.description[this.state.lang]}</p>
-                    <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
+                    <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
                         View Solution
                     </a>
                 </div>
@@ -670,8 +670,8 @@ const App = {
                             </div>
 
                             <div class="relative group reveal-on-scroll">
-                                <div class="absolute inset-0 bg-solar-gradient rounded-[80px] blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                                <img src="${service.graphic || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'}" class="relative z-10 w-full h-[600px] object-cover rounded-[80px] shadow-2xl border-[15px] border-white" alt="${service.title.en}">
+                                <div class="absolute inset-0 bg-solar-gradient rounded-xl blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                                <img src="${service.graphic || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'}" class="relative z-10 w-full h-[600px] object-cover rounded-xl shadow-2xl border-[15px] border-white" alt="${service.title.en}">
                             </div>
 
                             <div class="prose prose-2xl max-w-none text-stone-600 font-bold leading-[1.8] reveal-on-scroll">
@@ -698,8 +698,8 @@ const App = {
                                               i % this.palette.length
                                             ]
                                           return `
-                                        <div class="${color.bg} p-12 rounded-[50px] border ${color.border} group hover:border-primary transition-colors">
-                                            <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
+                                        <div class="${color.bg} p-12 rounded-xl border ${color.border} group hover:border-primary transition-colors">
+                                            <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
                                                 <i class="fa ${f.icon} text-2xl"></i>
                                             </div>
                                             <h5 class="text-3xl font-black mb-4 tracking-tighter  uppercase">${f.title[this.state.lang]}</h5>
@@ -712,7 +712,7 @@ const App = {
                                 }
                             </div>
 
-                            <div class="bg-dark p-16 lg:p-32 rounded-[100px] text-white space-y-12 relative overflow-hidden reveal-on-scroll">
+                            <div class="bg-dark p-16 lg:p-32 rounded-xl text-white space-y-12 relative overflow-hidden reveal-on-scroll">
                                 <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px]"></div>
                                 <h3 class="text-5xl lg:text-7xl font-black tracking-tighter uppercase  leading-none">Why Choose <span class="text-primary">Loops</span>?</h3>
                                 <ul class="space-y-10">
@@ -732,7 +732,7 @@ const App = {
                                     }
                                 </ul>
                                 <div class="pt-16 border-t border-stone-800 flex flex-col md:flex-row items-center gap-10">
-                                    <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-center uppercase tracking-widest">
+                                    <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-xl font-black text-2xl hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-center uppercase tracking-widest">
                                         Hire Our Talent
                                     </a>
                                 </div>
@@ -740,14 +740,14 @@ const App = {
                         </div>
 
                         <div class="lg:col-span-1 space-y-16 animate-fade-in" style="animation-delay: 0.3s">
-                            <div class="bg-stone-50 p-12 rounded-[60px] border border-stone-100 sticky top-32">
+                            <div class="bg-stone-50 p-12 rounded-xl border border-stone-100 sticky top-32">
                                 <h4 class="text-3xl font-black mb-12 tracking-tighter uppercase border-b-8 border-primary/10 pb-6 ">Capabilities</h4>
                                 <div class="space-y-8">
                                     ${otherServices
                                       .map(
                                         s => `
-                                        <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-[30px] hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
-                                            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
+                                        <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-xl hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
+                                            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
                                                 <i class="fa ${s.icon}"></i>
                                             </div>
                                             <span class="font-black text-sm uppercase tracking-[0.1em] group-hover:text-primary transition-colors">${s.title[this.state.lang]}</span>
@@ -765,7 +765,7 @@ const App = {
                                             ? service.technologies
                                                 .map(
                                                   t => `
-                                            <span class="bg-white px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-stone-100 shadow-sm hover:border-primary transition-colors">${t}</span>
+                                            <span class="bg-white px-6 py-3 rounded-xl text-[11px] font-black uppercase tracking-widest border border-stone-100 shadow-sm hover:border-primary transition-colors">${t}</span>
                                         `
                                                 )
                                                 .join('')
@@ -804,7 +804,7 @@ const App = {
       .map(
         (p, idx) => `
             <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.15}s">
-                <div class="relative overflow-hidden rounded-[100px] shadow-2xl mb-12 border-[25px] border-white ring-1 ring-stone-100 aspect-video">
+                <div class="relative overflow-hidden rounded-xl shadow-2xl mb-12 border-[25px] border-white ring-1 ring-stone-100 aspect-video">
                     <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
                     <div class="absolute inset-0 bg-solar-gradient/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-16">
                         <div class="text-center translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
@@ -837,7 +837,7 @@ const App = {
                             </h2>
                             <div class="space-y-10 text-2xl text-stone-500 leading-relaxed font-bold">
                                 <p>${this.t('about.text1')}</p>
-                                <div class="relative p-12 bg-dark rounded-[60px] text-white">
+                                <div class="relative p-12 bg-dark rounded-xl text-white">
                                     <div class="absolute top-0 right-0 w-32 h-32 bg-primary/30 blur-3xl"></div>
                                     <p class="relative z-10  text-3xl leading-tight">"${this.t('about.text2')}"</p>
                                 </div>
@@ -846,8 +846,8 @@ const App = {
                         </div>
                         <div class="relative group">
                             <div class="absolute -inset-10 bg-solar-gradient blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Loops Tech" class="relative z-10 rounded-[100px] shadow-2xl border-[20px] border-white">
-                            <div class="absolute -bottom-16 -left-16 bg-solar-gradient text-white p-16 rounded-[60px] shadow-2xl animate-float">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Loops Tech" class="relative z-10 rounded-xl shadow-2xl border-[20px] border-white">
+                            <div class="absolute -bottom-16 -left-16 bg-solar-gradient text-white p-16 rounded-xl shadow-2xl animate-float">
                                 <p class="text-7xl font-black mb-2">${this.t('about.quality_audit')}</p>
                                 <p class="text-xs font-black uppercase tracking-[0.5em] opacity-80">${this.t('about.quality_audit_text')}</p>
                             </div>
@@ -855,7 +855,7 @@ const App = {
                     </div>
 
                     <!-- FAQ -->
-                    <div class="bg-dark p-20 lg:p-40 rounded-[120px] text-white relative overflow-hidden reveal-on-scroll">
+                    <div class="bg-dark p-20 lg:p-40 rounded-xl text-white relative overflow-hidden reveal-on-scroll">
                         <div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"></div>
                         <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px]"></div>
                         
@@ -892,22 +892,22 @@ const App = {
                     </div>
                     
                     <div class="grid lg:grid-cols-3 gap-20 items-start">
-                        <div class="lg:col-span-2 bg-white p-16 lg:p-24 rounded-[100px] shadow-2xl border border-stone-50 reveal-on-scroll">
+                        <div class="lg:col-span-2 bg-white p-16 lg:p-24 rounded-xl shadow-2xl border border-stone-50 reveal-on-scroll">
                             <form id="contact-form" class="space-y-16">
                                 <div class="grid md:grid-cols-2 gap-12">
                                     <div class="space-y-6">
                                         <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_name')}</label>
-                                        <input type="text" name="name" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_name')}">
+                                        <input type="text" name="name" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_name')}">
                                     </div>
                                     <div class="space-y-6">
                                         <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_email')}</label>
-                                        <input type="email" name="email" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_email')}">
+                                        <input type="email" name="email" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_email')}">
                                     </div>
                                 </div>
                                 <div class="space-y-6">
                                     <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_project_type')}</label>
                                     <div class="relative">
-                                        <select name="service" class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl appearance-none">
+                                        <select name="service" class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl appearance-none">
                                             <option>Custom Web Application</option>
                                             <option>Mobile App (Android/iOS)</option>
                                             <option>Generative AI Agent</option>
@@ -921,16 +921,16 @@ const App = {
                                 </div>
                                 <div class="space-y-6">
                                     <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_message')}</label>
-                                    <textarea name="message" rows="5" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_message')}"></textarea>
+                                    <textarea name="message" rows="5" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_message')}"></textarea>
                                 </div>
-                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-[50px] font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] ">
+                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-xl font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] ">
                                     ${this.t('contact.btn_send')}
                                 </button>
                             </form>
                         </div>
 
                         <div class="space-y-12 reveal-on-scroll" style="transition-delay: 0.3s">
-                            <div class="bg-dark text-white p-20 rounded-[80px] space-y-16 relative overflow-hidden border border-stone-800">
+                            <div class="bg-dark text-white p-20 rounded-xl space-y-16 relative overflow-hidden border border-stone-800">
                                 <div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
                                 <div class="relative z-10 space-y-16">
                                     <div>
@@ -980,7 +980,7 @@ const App = {
                             ]
                               .map(
                                 icon => `
-                                <a href="#" class="w-14 h-14 rounded-[20px] bg-stone-900 flex items-center justify-center text-white hover:bg-primary hover:-translate-y-2 transition-all shadow-xl border border-stone-800">
+                                <a href="#" class="w-14 h-14 rounded-lg bg-stone-900 flex items-center justify-center text-white hover:bg-primary hover:-translate-y-2 transition-all shadow-xl border border-stone-800">
                                     <i class="fab fa-${icon} text-xl"></i>
                                 </a>
                             `
@@ -1001,7 +1001,7 @@ const App = {
                         <h4 class="text-white font-black uppercase text-xs tracking-[0.6em] mb-12 ">Work With Us</h4>
                         <p class="text-4xl lg:text-5xl text-stone-200  font-black leading-[1.1] tracking-tighter uppercase">${this.t('footer.quote')}</p>
                         <div class="flex flex-col sm:flex-row items-center gap-12 pt-8">
-                            <a href="/contact" class="bg-white text-dark px-14 py-6 rounded-[30px] font-black text-sm uppercase tracking-[0.3em] shadow-2xl hover:bg-primary hover:text-white transition-all w-full sm:w-auto text-center">${this.t('footer.btn_contact')}</a>
+                            <a href="/contact" class="bg-white text-dark px-14 py-6 rounded-xl font-black text-sm uppercase tracking-[0.3em] shadow-2xl hover:bg-primary hover:text-white transition-all w-full sm:w-auto text-center">${this.t('footer.btn_contact')}</a>
                             <span class="text-xs font-black text-primary uppercase tracking-[0.5em] flex items-center gap-4"><i class="fa fa-certificate text-3xl text-primary animate-spin-slow"></i> ${this.t('footer.audit_badge')}</span>
                         </div>
                     </div>
