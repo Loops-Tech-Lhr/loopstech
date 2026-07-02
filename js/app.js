@@ -202,7 +202,7 @@ const App = {
   },
 
   updateLanguageSwitcherUI () {
-    ;['en', 'ar', 'ro'].forEach(l => {
+    ['en', 'ar', 'ro'].forEach(l => {
       const btn = document.getElementById(`lang-${l}`)
       if (btn) {
         if (l === this.state.lang) {
