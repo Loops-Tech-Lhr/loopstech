@@ -19,30 +19,74 @@
     },
     "features": [
       {
-        "title": { "en": "Custom Architecture", "ar": "بنية مخصصة", "ro": "Arhitectură Personalizată" },
-        "description": { "en": "Tailored backend and frontend architecture designed for your specific business logic and scaling needs.", "ar": "بنية برمجية للخلفية والواجهة الأمامية مصممة خصيصاً لمنطق عملك المحدد واحتياجات التوسع.", "ro": "Arhitectură backend și frontend personalizată, concepută pentru logica specifică a afacerii tale și nevoile de scalare." },
+        "title": {
+          "en": "Custom Architecture",
+          "ar": "بنية مخصصة",
+          "ro": "Arhitectură Personalizată"
+        },
+        "description": {
+          "en": "Tailored backend and frontend architecture designed for your specific business logic and scaling needs.",
+          "ar": "بنية برمجية للخلفية والواجهة الأمامية مصممة خصيصاً لمنطق عملك المحدد واحتياجات التوسع.",
+          "ro": "Arhitectură backend și frontend personalizată, concepută pentru logica specifică a afacerii tale și nevoile de scalare."
+        },
         "icon": "fa-sitemap"
       },
       {
-        "title": { "en": "Responsive UX/UI", "ar": "تجربة مستخدم مستجيبة", "ro": "UX/UI Responsiv" },
-        "description": { "en": "Pixel-perfect, mobile-first designs that provide a seamless experience across all screen sizes.", "ar": "تصاميم مثالية تعتمد على الجوال أولاً وتوفر تجربة سلسة عبر جميع أحجام الشاشات.", "ro": "Design-uri perfecte, optimizate pentru mobil, care oferă o experiență fluidă pe toate dimensiunile de ecran." },
+        "title": {
+          "en": "Responsive UX/UI",
+          "ar": "تجربة مستخدم مستجيبة",
+          "ro": "UX/UI Responsiv"
+        },
+        "description": {
+          "en": "Pixel-perfect, mobile-first designs that provide a seamless experience across all screen sizes.",
+          "ar": "تصاميم مثالية تعتمد على الجوال أولاً وتوفر تجربة سلسة عبر جميع أحجام الشاشات.",
+          "ro": "Design-uri perfecte, optimizate pentru mobil, care oferă o experiență fluidă pe toate dimensiunile de ecran."
+        },
         "icon": "fa-mobile-screen"
       },
       {
-        "title": { "en": "Advanced Security", "ar": "أمان متقدم", "ro": "Securitate Avansată" },
-        "description": { "en": "Enterprise-grade security protocols, data encryption, and protection against common web vulnerabilities.", "ar": "بروتوكولات أمان على مستوى المؤسسات، وتشفير البيانات، والحماية ضد ثغرات الويب الشائعة.", "ro": "Protocoale de securitate la nivel de întreprindere, criptarea datelor și protecție împotriva vulnerabilităților web comune." },
+        "title": {
+          "en": "Advanced Security",
+          "ar": "أمان متقدم",
+          "ro": "Securitate Avansată"
+        },
+        "description": {
+          "en": "Enterprise-grade security protocols, data encryption, and protection against common web vulnerabilities.",
+          "ar": "بروتوكولات أمان على مستوى المؤسسات، وتشفير البيانات، والحماية ضد ثغرات الويب الشائعة.",
+          "ro": "Protocoale de securitate la nivel de întreprindere, criptarea datelor și protecție împotriva vulnerabilităților web comune."
+        },
         "icon": "fa-shield-halved"
       },
       {
-        "title": { "en": "Cloud Integration", "ar": "تكامل السحابة", "ro": "Integrare Cloud" },
-        "description": { "en": "Seamless deployment and scaling on AWS, Google Cloud, or Azure for maximum reliability.", "ar": "نشر وتوسع سلس على AWS أو Google Cloud أو Azure لتحقيق أقصى قدر من الموثوقية.", "ro": "Implementare și scalare fără probleme pe AWS, Google Cloud sau Azure pentru fiabilitate maximă." },
+        "title": {
+          "en": "Cloud Integration",
+          "ar": "تكامل السحابة",
+          "ro": "Integrare Cloud"
+        },
+        "description": {
+          "en": "Seamless deployment and scaling on AWS, Google Cloud, or Azure for maximum reliability.",
+          "ar": "نشر وتوسع سلس على AWS أو Google Cloud أو Azure لتحقيق أقصى قدر من الموثوقية.",
+          "ro": "Implementare și scalare fără probleme pe AWS, Google Cloud sau Azure pentru fiabilitate maximă."
+        },
         "icon": "fa-cloud"
       }
     ],
     "benefits": [
-      { "en": "Enhanced Operational Efficiency", "ar": "تحسين الكفاءة التشغيلية", "ro": "Eficiență Operațională Sporită" },
-      { "en": "Future-Proof Scalability", "ar": "قابلة للتوسع في المستقبل", "ro": "Scalabilitate de Viitor" },
-      { "en": "Competitive Market Edge", "ar": "ميزة تنافسية في السوق", "ro": "Avantaj Competitiv pe Piață" }
+      {
+        "en": "Enhanced Operational Efficiency",
+        "ar": "تحسين الكفاءة التشغيلية",
+        "ro": "Eficiență Operațională Sporită"
+      },
+      {
+        "en": "Future-Proof Scalability",
+        "ar": "قابلة للتوسع في المستقبل",
+        "ro": "Scalabilitate de Viitor"
+      },
+      {
+        "en": "Competitive Market Edge",
+        "ar": "ميزة تنافسية في السوق",
+        "ro": "Avantaj Competitiv pe Piață"
+      }
     ],
     "technologies": [
       { "name": "Laravel", "icon": "fa-laravel" },
@@ -73,30 +117,74 @@
     },
     "features": [
       {
-        "title": { "en": "Cross-Platform Efficiency", "ar": "كفاءة المنصات المتعددة", "ro": "Eficiență Cross-Platform" },
-        "description": { "en": "Build once and deploy to both iOS and Android with maximum performance using Flutter.", "ar": "ابنِ مرة واحدة وانشر على كل من iOS و Android مع أقصى أداء باستخدام Flutter.", "ro": "Construiește o dată și implementează atât pe iOS, cât și pe Android cu performanță maximă folosind Flutter." },
+        "title": {
+          "en": "Cross-Platform Efficiency",
+          "ar": "كفاءة المنصات المتعددة",
+          "ro": "Eficiență Cross-Platform"
+        },
+        "description": {
+          "en": "Build once and deploy to both iOS and Android with maximum performance using Flutter.",
+          "ar": "ابنِ مرة واحدة وانشر على كل من iOS و Android مع أقصى أداء باستخدام Flutter.",
+          "ro": "Construiește o dată și implementează atât pe iOS, cât și pe Android cu performanță maximă folosind Flutter."
+        },
         "icon": "fa-layer-group"
       },
       {
-        "title": { "en": "Native-Like Experience", "ar": "تجربة شبيهة بالتطبيقات الأصلية", "ro": "Experiență de Tip Nativ" },
-        "description": { "en": "High-speed animations and UI components that feel natural on every operating system.", "ar": "رسوم متحركة عالية السرعة ومكونات واجهة مستخدم تبدو طبيعية على كل نظام تشغيل.", "ro": "Animații de mare viteză și componente UI care par naturale pe fiecare sistem de operare." },
+        "title": {
+          "en": "Native-Like Experience",
+          "ar": "تجربة شبيهة بالتطبيقات الأصلية",
+          "ro": "Experiență de Tip Nativ"
+        },
+        "description": {
+          "en": "High-speed animations and UI components that feel natural on every operating system.",
+          "ar": "رسوم متحركة عالية السرعة ومكونات واجهة مستخدم تبدو طبيعية على كل نظام تشغيل.",
+          "ro": "Animații de mare viteză și componente UI care par naturale pe fiecare sistem de operare."
+        },
         "icon": "fa-bolt"
       },
       {
-        "title": { "en": "Offline Support", "ar": "دعم العمل بدون اتصال", "ro": "Suport Offline" },
-        "description": { "en": "Local data storage and synchronization ensure your app works without an internet connection.", "ar": "يضمن تخزين البيانات المحلية والمزامنة عمل تطبيقك دون اتصال بالإنترنت.", "ro": "Stocarea locală a datelor și sincronizarea asigură funcționarea aplicației tale fără conexiune la internet." },
+        "title": {
+          "en": "Offline Support",
+          "ar": "دعم العمل بدون اتصال",
+          "ro": "Suport Offline"
+        },
+        "description": {
+          "en": "Local data storage and synchronization ensure your app works without an internet connection.",
+          "ar": "يضمن تخزين البيانات المحلية والمزامنة عمل تطبيقك دون اتصال بالإنترنت.",
+          "ro": "Stocarea locală a datelor și sincronizarea asigură funcționarea aplicației tale fără conexiune la internet."
+        },
         "icon": "fa-wifi"
       },
       {
-        "title": { "en": "Biometric Security", "ar": "الأمان البيومتري", "ro": "Securitate Biometrică" },
-        "description": { "en": "Integration with Face ID and Fingerprint sensors for secure and easy user authentication.", "ar": "التكامل مع مستشعرات بصمة الوجه والإصبع لمصادقة مستخدم آمنة وسهلة.", "ro": "Integrare cu senzorii Face ID și amprentă pentru o autentificare securizată și ușoară a utilizatorului." },
+        "title": {
+          "en": "Biometric Security",
+          "ar": "الأمان البيومتري",
+          "ro": "Securitate Biometrică"
+        },
+        "description": {
+          "en": "Integration with Face ID and Fingerprint sensors for secure and easy user authentication.",
+          "ar": "التكامل مع مستشعرات بصمة الوجه والإصبع لمصادقة مستخدم آمنة وسهلة.",
+          "ro": "Integrare cu senzorii Face ID și amprentă pentru o autentificare securizată și ușoară a utilizatorului."
+        },
         "icon": "fa-fingerprint"
       }
     ],
     "benefits": [
-      { "en": "Maximum Audience Reach", "ar": "الوصول لأكبر قدر من الجمهور", "ro": "Acoperire Maximă a Publicului" },
-      { "en": "Superior User Engagement", "ar": "تفاعل متفوق للمستخدم", "ro": "Implicare Superioară a Utilizatorului" },
-      { "en": "Reduced Development Costs", "ar": "تكاليف تطوير منخفضة", "ro": "Costuri de Dezvoltare Reduse" }
+      {
+        "en": "Maximum Audience Reach",
+        "ar": "الوصول لأكبر قدر من الجمهور",
+        "ro": "Acoperire Maximă a Publicului"
+      },
+      {
+        "en": "Superior User Engagement",
+        "ar": "تفاعل متفوق للمستخدم",
+        "ro": "Implicare Superioară a Utilizatorului"
+      },
+      {
+        "en": "Reduced Development Costs",
+        "ar": "تكاليف تطوير منخفضة",
+        "ro": "Costuri de Dezvoltare Reduse"
+      }
     ],
     "technologies": [
       { "name": "Flutter", "icon": "fa-flutter" },
@@ -127,30 +215,74 @@
     },
     "features": [
       {
-        "title": { "en": "Multi-Channel Support", "ar": "دعم قنوات متعددة", "ro": "Suport Multi-Channel" },
-        "description": { "en": "Engage customers on Web, WhatsApp, and Phone with a unified AI brain.", "ar": "تفاعل مع العملاء عبر الويب وواتساب والهاتف باستخدام عقل ذكاء اصطناعي موحد.", "ro": "Interacționează cu clienții pe Web, WhatsApp și Telefon cu un creier AI unificat." },
+        "title": {
+          "en": "Multi-Channel Support",
+          "ar": "دعم قنوات متعددة",
+          "ro": "Suport Multi-Channel"
+        },
+        "description": {
+          "en": "Engage customers on Web, WhatsApp, and Phone with a unified AI brain.",
+          "ar": "تفاعل مع العملاء عبر الويب وواتساب والهاتف باستخدام عقل ذكاء اصطناعي موحد.",
+          "ro": "Interacționează cu clienții pe Web, WhatsApp și Telefon cu un creier AI unificat."
+        },
         "icon": "fa-comments"
       },
       {
-        "title": { "en": "Natural Language Flow", "ar": "تدفق لغة طبيعي", "ro": "Flux de Limbaj Natural" },
-        "description": { "en": "Conversations that feel human, understanding slang, context, and intent perfectly.", "ar": "محادثات تبدو بشرية، مع فهم العامية والسياق والنية تماماً.", "ro": "Conversații care par umane, înțelegând perfect jargonul, contextul și intenția." },
+        "title": {
+          "en": "Natural Language Flow",
+          "ar": "تدفق لغة طبيعي",
+          "ro": "Flux de Limbaj Natural"
+        },
+        "description": {
+          "en": "Conversations that feel human, understanding slang, context, and intent perfectly.",
+          "ar": "محادثات تبدو بشرية، مع فهم العامية والسياق والنية تماماً.",
+          "ro": "Conversații care par umane, înțelegând perfect jargonul, contextul și intenția."
+        },
         "icon": "fa-brain"
       },
       {
-        "title": { "en": "Data Integration", "ar": "تكامل البيانات", "ro": "Integrare de Date" },
-        "description": { "en": "Connects to your database to provide real-time order status, booking info, and more.", "ar": "يتصل بقاعدة بياناتك لتوفير حالة الطلب الفورية ومعلومات الحجز والمزيد.", "ro": "Se conectează la baza ta de date pentru a oferi starea comenzii în timp real, informații de rezervare și multe altele." },
+        "title": {
+          "en": "Data Integration",
+          "ar": "تكامل البيانات",
+          "ro": "Integrare de Date"
+        },
+        "description": {
+          "en": "Connects to your database to provide real-time order status, booking info, and more.",
+          "ar": "يتصل بقاعدة بياناتك لتوفير حالة الطلب الفورية ومعلومات الحجز والمزيد.",
+          "ro": "Se conectează la baza ta de date pentru a oferi starea comenzii în timp real, informații de rezervare și multe altele."
+        },
         "icon": "fa-link"
       },
       {
-        "title": { "en": "Multilingual Expertise", "ar": "خبرة متعددة اللغات", "ro": "Expertiză Multilingvă" },
-        "description": { "en": "Flawless communication in English, Arabic, Romanian, and over 50 other languages.", "ar": "تواصل لا تشوبه شائبة باللغات الإنجليزية والعربية والرومانية وأكثر من 50 لغة أخرى.", "ro": "Comunicare impecabilă în engleză, arabă, română și peste 50 de alte limbi." },
+        "title": {
+          "en": "Multilingual Expertise",
+          "ar": "خبرة متعددة اللغات",
+          "ro": "Expertiză Multilingvă"
+        },
+        "description": {
+          "en": "Flawless communication in English, Arabic, Romanian, and over 50 other languages.",
+          "ar": "تواصل لا تشوبه شائبة باللغات الإنجليزية والعربية والرومانية وأكثر من 50 لغة أخرى.",
+          "ro": "Comunicare impecabilă în engleză, arabă, română și peste 50 de alte limbi."
+        },
         "icon": "fa-language"
       }
     ],
     "benefits": [
-      { "en": "24/7 Response Speed", "ar": "سرعة استجابة على مدار الساعة", "ro": "Viteză de Răspuns 24/7" },
-      { "en": "80% Support Cost Reduction", "ar": "خفض تكاليف الدعم بنسبة 80%", "ro": "Reducere cu 80% a Costurilor de Suport" },
-      { "en": "Instant Scalability", "ar": "قابلة للتوسع فوراً", "ro": "Scalabilitate Instantanee" }
+      {
+        "en": "24/7 Response Speed",
+        "ar": "سرعة استجابة على مدار الساعة",
+        "ro": "Viteză de Răspuns 24/7"
+      },
+      {
+        "en": "80% Support Cost Reduction",
+        "ar": "خفض تكاليف الدعم بنسبة 80%",
+        "ro": "Reducere cu 80% a Costurilor de Suport"
+      },
+      {
+        "en": "Instant Scalability",
+        "ar": "قابلة للتوسع فوراً",
+        "ro": "Scalabilitate Instantanee"
+      }
     ],
     "technologies": [
       { "name": "OpenAI GPT-4", "icon": "fa-microchip" },
@@ -181,30 +313,74 @@
     },
     "features": [
       {
-        "title": { "en": "Custom Storefronts", "ar": "واجهات متاجر مخصصة", "ro": "Front-end-uri Personalizate" },
-        "description": { "en": "Unique, high-converting designs that stand out and reflect your brand identity.", "ar": "تصاميم فريدة ذات معدلات تحويل عالية تبرز وتعكس هوية علامتك التجارية.", "ro": "Design-uri unice, cu rată de conversie ridicată, care ies în evidență și reflectă identitatea brandului tău." },
+        "title": {
+          "en": "Custom Storefronts",
+          "ar": "واجهات متاجر مخصصة",
+          "ro": "Front-end-uri Personalizate"
+        },
+        "description": {
+          "en": "Unique, high-converting designs that stand out and reflect your brand identity.",
+          "ar": "تصاميم فريدة ذات معدلات تحويل عالية تبرز وتعكس هوية علامتك التجارية.",
+          "ro": "Design-uri unice, cu rată de conversie ridicată, care ies în evidență și reflectă identitatea brandului tău."
+        },
         "icon": "fa-bag-shopping"
       },
       {
-        "title": { "en": "Secure Payments", "ar": "مدفوعات آمنة", "ro": "Plăți Securizate" },
-        "description": { "en": "Integration with local and global gateways like Stripe, PayPal, Moyasar, and PayTabs.", "ar": "التكامل مع بوابات الدفع المحلية والعالمية مثل Stripe و PayPal و Moyasar و PayTabs.", "ro": "Integrare cu procesatoare locale și globale precum Stripe, PayPal, Moyasar și PayTabs." },
+        "title": {
+          "en": "Secure Payments",
+          "ar": "مدفوعات آمنة",
+          "ro": "Plăți Securizate"
+        },
+        "description": {
+          "en": "Integration with local and global gateways like Stripe, PayPal, Moyasar, and PayTabs.",
+          "ar": "التكامل مع بوابات الدفع المحلية والعالمية مثل Stripe و PayPal و Moyasar و PayTabs.",
+          "ro": "Integrare cu procesatoare locale și globale precum Stripe, PayPal, Moyasar și PayTabs."
+        },
         "icon": "fa-credit-card"
       },
       {
-        "title": { "en": "Inventory Sync", "ar": "مزامنة المخزون", "ro": "Sincronizare Inventar" },
-        "description": { "en": "Real-time updates between your online store and warehouse or physical retail points.", "ar": "تحديثات فورية بين متجرك الإلكتروني والمستودعات أو نقاط البيع الفعلية.", "ro": "Actualizări în timp real între magazinul tău online și depozit sau punctele de vânzare fizice." },
+        "title": {
+          "en": "Inventory Sync",
+          "ar": "مزامنة المخزون",
+          "ro": "Sincronizare Inventar"
+        },
+        "description": {
+          "en": "Real-time updates between your online store and warehouse or physical retail points.",
+          "ar": "تحديثات فورية بين متجرك الإلكتروني والمستودعات أو نقاط البيع الفعلية.",
+          "ro": "Actualizări în timp real între magazinul tău online și depozit sau punctele de vânzare fizice."
+        },
         "icon": "fa-boxes-stacked"
       },
       {
-        "title": { "en": "Marketing Tools", "ar": "أدوات التسويق", "ro": "Instrumente de Marketing" },
-        "description": { "en": "Built-in SEO, discount systems, abandoned cart recovery, and email marketing integrations.", "ar": "تحسين محركات البحث المدمج، وأنظمة الخصم، واستعادة سلال التسوق المهجورة، وتكامل التسويق عبر البريد الإلكتروني.", "ro": "SEO încorporat, sisteme de discount, recuperarea coșului abandonat și integrări de email marketing." },
+        "title": {
+          "en": "Marketing Tools",
+          "ar": "أدوات التسويق",
+          "ro": "Instrumente de Marketing"
+        },
+        "description": {
+          "en": "Built-in SEO, discount systems, abandoned cart recovery, and email marketing integrations.",
+          "ar": "تحسين محركات البحث المدمج، وأنظمة الخصم، واستعادة سلال التسوق المهجورة، وتكامل التسويق عبر البريد الإلكتروني.",
+          "ro": "SEO încorporat, sisteme de discount, recuperarea coșului abandonat și integrări de email marketing."
+        },
         "icon": "fa-bullhorn"
       }
     ],
     "benefits": [
-      { "en": "Higher Conversion Rates", "ar": "معدلات تحويل أعلى", "ro": "Rate de Conversie mai Mari" },
-      { "en": "Global Selling Potential", "ar": "إمكانية البيع عالمياً", "ro": "Potențial de Vânzare Global" },
-      { "en": "Streamlined Management", "ar": "إدارة مبسطة", "ro": "Gestionare Eficientizată" }
+      {
+        "en": "Higher Conversion Rates",
+        "ar": "معدلات تحويل أعلى",
+        "ro": "Rate de Conversie mai Mari"
+      },
+      {
+        "en": "Global Selling Potential",
+        "ar": "إمكانية البيع عالمياً",
+        "ro": "Potențial de Vânzare Global"
+      },
+      {
+        "en": "Streamlined Management",
+        "ar": "إدارة مبسطة",
+        "ro": "Gestionare Eficientizată"
+      }
     ],
     "technologies": [
       { "name": "Shopify", "icon": "fa-shopify" },
@@ -235,30 +411,74 @@
     },
     "features": [
       {
-        "title": { "en": "Workflow Automation", "ar": "أتمتة سير العمل", "ro": "Automatizarea Fluxului de Lucru" },
-        "description": { "en": "Automate repetitive manual tasks to save time and reduce human error across your organization.", "ar": "أتمتة المهام اليدوية المتكررة لتوفير الوقت وتقليل الأخطاء البشرية في جميع أنحاء مؤسستك.", "ro": "Automatizează sarcinile manuale repetitive pentru a economisi timp și a reduce eroarea umană în organizația ta." },
+        "title": {
+          "en": "Workflow Automation",
+          "ar": "أتمتة سير العمل",
+          "ro": "Automatizarea Fluxului de Lucru"
+        },
+        "description": {
+          "en": "Automate repetitive manual tasks to save time and reduce human error across your organization.",
+          "ar": "أتمتة المهام اليدوية المتكررة لتوفير الوقت وتقليل الأخطاء البشرية في جميع أنحاء مؤسستك.",
+          "ro": "Automatizează sarcinile manuale repetitive pentru a economisi timp și a reduce eroarea umană în organizația ta."
+        },
         "icon": "fa-gears"
       },
       {
-        "title": { "en": "Advanced Reporting", "ar": "تقارير متقدمة", "ro": "Raportare Avansată" },
-        "description": { "en": "Real-time analytics and customizable dashboards for data-driven business intelligence.", "ar": "تحليلات فورية ولوحات معلومات قابلة للتخصيص لذكاء الأعمال القائم على البيانات.", "ro": "Analize în timp real și tablouri de bord personalizabile pentru business intelligence bazat pe date." },
+        "title": {
+          "en": "Advanced Reporting",
+          "ar": "تقارير متقدمة",
+          "ro": "Raportare Avansată"
+        },
+        "description": {
+          "en": "Real-time analytics and customizable dashboards for data-driven business intelligence.",
+          "ar": "تحليلات فورية ولوحات معلومات قابلة للتخصيص لذكاء الأعمال القائم على البيانات.",
+          "ro": "Analize în timp real și tablouri de bord personalizabile pentru business intelligence bazat pe date."
+        },
         "icon": "fa-chart-line"
       },
       {
-        "title": { "en": "Unified Database", "ar": "قاعدة بيانات موحدة", "ro": "Bază de Date Unificată" },
-        "description": { "en": "A single source of truth for all your business data, eliminating silos and fragmentation.", "ar": "مصدر واحد للحقيقة لجميع بيانات عملك، مما يلغي العزلة والتشتت.", "ro": "O singură sursă de adevăr pentru toate datele afacerii tale, eliminând silozurile și fragmentarea." },
+        "title": {
+          "en": "Unified Database",
+          "ar": "قاعدة بيانات موحدة",
+          "ro": "Bază de Date Unificată"
+        },
+        "description": {
+          "en": "A single source of truth for all your business data, eliminating silos and fragmentation.",
+          "ar": "مصدر واحد للحقيقة لجميع بيانات عملك، مما يلغي العزلة والتشتت.",
+          "ro": "O singură sursă de adevăr pentru toate datele afacerii tale, eliminând silozurile și fragmentarea."
+        },
         "icon": "fa-database"
       },
       {
-        "title": { "en": "Role-Based Access", "ar": "الوصول حسب الأدوار", "ro": "Acces Bazat pe Roluri" },
-        "description": { "en": "Granular permission controls to ensure that sensitive data is only seen by authorized personnel.", "ar": "ضوابط أذونات دقيقة لضمان رؤية البيانات الحساسة فقط من قبل الموظفين المصرح لهم.", "ro": "Controale granulare de permisiuni pentru a asigura că datele sensibile sunt văzute doar de personalul autorizat." },
+        "title": {
+          "en": "Role-Based Access",
+          "ar": "الوصول حسب الأدوار",
+          "ro": "Acces Bazat pe Roluri"
+        },
+        "description": {
+          "en": "Granular permission controls to ensure that sensitive data is only seen by authorized personnel.",
+          "ar": "ضوابط أذونات دقيقة لضمان رؤية البيانات الحساسة فقط من قبل الموظفين المصرح لهم.",
+          "ro": "Controale granulare de permisiuni pentru a asigura că datele sensibile sunt văzute doar de personalul autorizat."
+        },
         "icon": "fa-user-lock"
       }
     ],
     "benefits": [
-      { "en": "Increased Profitability", "ar": "زيادة الربحية", "ro": "Rentabilitate Crescută" },
-      { "en": "Better Data Visibility", "ar": "وضوح أفضل للبيانات", "ro": "Vizibilitate mai Bună a Datelor" },
-      { "en": "Scalable Infrastructure", "ar": "بنية تحتية قابلة للتطوير", "ro": "Infrastructură Scalabilă" }
+      {
+        "en": "Increased Profitability",
+        "ar": "زيادة الربحية",
+        "ro": "Rentabilitate Crescută"
+      },
+      {
+        "en": "Better Data Visibility",
+        "ar": "وضوح أفضل للبيانات",
+        "ro": "Vizibilitate mai Bună a Datelor"
+      },
+      {
+        "en": "Scalable Infrastructure",
+        "ar": "بنية تحتية قابلة للتطوير",
+        "ro": "Infrastructură Scalabilă"
+      }
     ],
     "technologies": [
       { "name": "Laravel", "icon": "fa-laravel" },
@@ -289,30 +509,74 @@
     },
     "features": [
       {
-        "title": { "en": "Government Sync", "ar": "مزامنة حكومية", "ro": "Sincronizare Guvernamentală" },
-        "description": { "en": "Automatic submission of invoices to ZATCA and ANAF portals for real-time clearance.", "ar": "تقديم تلقائي للفواتير إلى بوابات ZATCA و ANAF للتخليص الفوري.", "ro": "Trimiterea automată a facturilor către portalurile ZATCA și ANAF pentru validare în timp real." },
+        "title": {
+          "en": "Government Sync",
+          "ar": "مزامنة حكومية",
+          "ro": "Sincronizare Guvernamentală"
+        },
+        "description": {
+          "en": "Automatic submission of invoices to ZATCA and ANAF portals for real-time clearance.",
+          "ar": "تقديم تلقائي للفواتير إلى بوابات ZATCA و ANAF للتخليص الفوري.",
+          "ro": "Trimiterea automată a facturilor către portalurile ZATCA și ANAF pentru validare în timp real."
+        },
         "icon": "fa-building-columns"
       },
       {
-        "title": { "en": "Compliant XML Generation", "ar": "إنشاء XML متوافق", "ro": "Generare XML Conform" },
-        "description": { "en": "Generates perfect XML files (UBL 2.1) according to regional tax authority standards.", "ar": "يولد ملفات XML مثالية (UBL 2.1) وفقاً لمعايير السلطات الضريبية الإقليمية.", "ro": "Generează fișiere XML perfecte (UBL 2.1) conform standardelor autorităților fiscale regionale." },
+        "title": {
+          "en": "Compliant XML Generation",
+          "ar": "إنشاء XML متوافق",
+          "ro": "Generare XML Conform"
+        },
+        "description": {
+          "en": "Generates perfect XML files (UBL 2.1) according to regional tax authority standards.",
+          "ar": "يولد ملفات XML مثالية (UBL 2.1) وفقاً لمعايير السلطات الضريبية الإقليمية.",
+          "ro": "Generează fișiere XML perfecte (UBL 2.1) conform standardelor autorităților fiscale regionale."
+        },
         "icon": "fa-file-code"
       },
       {
-        "title": { "en": "Cryptographic Signing", "ar": "توقيع مشفر", "ro": "Semnătură Criptografică" },
-        "description": { "en": "Secure digital signatures and hash codes for Phase 2 ZATCA integration.", "ar": "توقيعات رقمية آمنة ورموز تجزئة لتكامل المرحلة الثانية من ZATCA.", "ro": "Semnături digitale securizate și coduri hash pentru integrarea ZATCA Faza 2." },
+        "title": {
+          "en": "Cryptographic Signing",
+          "ar": "توقيع مشفر",
+          "ro": "Semnătură Criptografică"
+        },
+        "description": {
+          "en": "Secure digital signatures and hash codes for Phase 2 ZATCA integration.",
+          "ar": "توقيعات رقمية آمنة ورموز تجزئة لتكامل المرحلة الثانية من ZATCA.",
+          "ro": "Semnături digitale securizate și coduri hash pentru integrarea ZATCA Faza 2."
+        },
         "icon": "fa-key"
       },
       {
-        "title": { "en": "QR Code Generation", "ar": "إنشاء رمز QR", "ro": "Generare Cod QR" },
-        "description": { "en": "Instant generation of TLV-encoded QR codes required for compliant simplified tax invoices.", "ar": "إنشاء فوري لرموز QR المشفرة بنظام TLV المطلوبة للفواتير الضريبية المبسطة المتوافقة.", "ro": "Generarea instantanee a codurilor QR codificate TLV, necesare pentru facturile fiscale simplificate conforme." },
+        "title": {
+          "en": "QR Code Generation",
+          "ar": "إنشاء رمز QR",
+          "ro": "Generare Cod QR"
+        },
+        "description": {
+          "en": "Instant generation of TLV-encoded QR codes required for compliant simplified tax invoices.",
+          "ar": "إنشاء فوري لرموز QR المشفرة بنظام TLV المطلوبة للفواتير الضريبية المبسطة المتوافقة.",
+          "ro": "Generarea instantanee a codurilor QR codificate TLV, necesare pentru facturile fiscale simplificate conforme."
+        },
         "icon": "fa-qrcode"
       }
     ],
     "benefits": [
-      { "en": "Zero Legal Risk", "ar": "خالٍ من المخاطر القانونية", "ro": "Risc Legal Zero" },
-      { "en": "Faster Tax Audits", "ar": "عمليات تدقيق ضريبي أسرع", "ro": "Audituri Fiscale mai Rapide" },
-      { "en": "Reduced Admin Paperwork", "ar": "تقليل المعاملات الورقية", "ro": "Reducerea Birocrației" }
+      {
+        "en": "Zero Legal Risk",
+        "ar": "خالٍ من المخاطر القانونية",
+        "ro": "Risc Legal Zero"
+      },
+      {
+        "en": "Faster Tax Audits",
+        "ar": "عمليات تدقيق ضريبي أسرع",
+        "ro": "Audituri Fiscale mai Rapide"
+      },
+      {
+        "en": "Reduced Admin Paperwork",
+        "ar": "تقليل المعاملات الورقية",
+        "ro": "Reducerea Birocrației"
+      }
     ],
     "technologies": [
       { "name": "PHP", "icon": "fa-php" },
@@ -343,30 +607,74 @@
     },
     "features": [
       {
-        "title": { "en": "Hospital Management", "ar": "إدارة المستشفيات", "ro": "Management Spitalicesc" },
-        "description": { "en": "Comprehensive EMR, appointment scheduling, and pharmacy inventory control.", "ar": "سجلات طبية إلكترونية شاملة، وجدولة المواعيد، والتحكم في مخزون الصيدلية.", "ro": "EMR cuprinzător, programarea programărilor și controlul inventarului farmaciei." },
+        "title": {
+          "en": "Hospital Management",
+          "ar": "إدارة المستشفيات",
+          "ro": "Management Spitalicesc"
+        },
+        "description": {
+          "en": "Comprehensive EMR, appointment scheduling, and pharmacy inventory control.",
+          "ar": "سجلات طبية إلكترونية شاملة، وجدولة المواعيد، والتحكم في مخزون الصيدلية.",
+          "ro": "EMR cuprinzător, programarea programărilor și controlul inventarului farmaciei."
+        },
         "icon": "fa-hospital"
       },
       {
-        "title": { "en": "School Information Systems", "ar": "أنظمة معلومات المدارس", "ro": "Sisteme Informaționale Școlare" },
-        "description": { "en": "Student life-cycle management from admission to graduation with parent portals.", "ar": "إدارة دورة حياة الطالب من القبول إلى التخرج مع بوابات لأولياء الأمور.", "ro": "Managementul ciclului de viață al elevilor, de la admitere până la absolvire, cu portaluri pentru părinți." },
+        "title": {
+          "en": "School Information Systems",
+          "ar": "أنظمة معلومات المدارس",
+          "ro": "Sisteme Informaționale Școlare"
+        },
+        "description": {
+          "en": "Student life-cycle management from admission to graduation with parent portals.",
+          "ar": "إدارة دورة حياة الطالب من القبول إلى التخرج مع بوابات لأولياء الأمور.",
+          "ro": "Managementul ciclului de viață al elevilor, de la admitere până la absolvire, cu portaluri pentru părinți."
+        },
         "icon": "fa-graduation-cap"
       },
       {
-        "title": { "en": "Restaurant POS & Inventory", "ar": "نقاط بيع ومخزون المطاعم", "ro": "POS & Inventar Restaurante" },
-        "description": { "en": "Kitchen display systems, table management, and ingredient-level tracking.", "ar": "أنظمة عرض المطبخ، وإدارة الطاولات، وتتبع المكونات.", "ro": "Sisteme de afișare pentru bucătărie, managementul meselor și urmărirea la nivel de ingredient." },
+        "title": {
+          "en": "Restaurant POS & Inventory",
+          "ar": "نقاط بيع ومخزون المطاعم",
+          "ro": "POS & Inventar Restaurante"
+        },
+        "description": {
+          "en": "Kitchen display systems, table management, and ingredient-level tracking.",
+          "ar": "أنظمة عرض المطبخ، وإدارة الطاولات، وتتبع المكونات.",
+          "ro": "Sisteme de afișare pentru bucătărie, managementul meselor și urmărirea la nivel de ingredient."
+        },
         "icon": "fa-utensils"
       },
       {
-        "title": { "en": "Hotel Property Management", "ar": "إدارة الفنادق", "ro": "Managementul Proprietății Hoteliere" },
-        "description": { "en": "Real-time room availability, online booking engine, and staff task management.", "ar": "توفر الغرف في الوقت الفعلي، ومحرك الحجز عبر الإنترنت، وإدارة مهام الموظفين.", "ro": "Disponibilitatea camerelor în timp real, motor de rezervări online și managementul sarcinilor personalului." },
+        "title": {
+          "en": "Hotel Property Management",
+          "ar": "إدارة الفنادق",
+          "ro": "Managementul Proprietății Hoteliere"
+        },
+        "description": {
+          "en": "Real-time room availability, online booking engine, and staff task management.",
+          "ar": "توفر الغرف في الوقت الفعلي، ومحرك الحجز عبر الإنترنت، وإدارة مهام الموظفين.",
+          "ro": "Disponibilitatea camerelor în timp real, motor de rezervări online și managementul sarcinilor personalului."
+        },
         "icon": "fa-hotel"
       }
     ],
     "benefits": [
-      { "en": "Operational Precision", "ar": "دقة تشغيلية", "ro": "Precizie Operațională" },
-      { "en": "Improved User Experience", "ar": "تحسين تجربة المستخدم", "ro": "Experiență de Utilizare Îmbunătățită" },
-      { "en": "Faster Decision Making", "ar": "اتخاذ قرارات أسرع", "ro": "Luarea Deciziilor mai Rapidă" }
+      {
+        "en": "Operational Precision",
+        "ar": "دقة تشغيلية",
+        "ro": "Precizie Operațională"
+      },
+      {
+        "en": "Improved User Experience",
+        "ar": "تحسين تجربة المستخدم",
+        "ro": "Experiență de Utilizare Îmbunătățită"
+      },
+      {
+        "en": "Faster Decision Making",
+        "ar": "اتخاذ قرارات أسرع",
+        "ro": "Luarea Deciziilor mai Rapidă"
+      }
     ],
     "technologies": [
       { "name": "Laravel", "icon": "fa-laravel" },
@@ -397,30 +705,74 @@
     },
     "features": [
       {
-        "title": { "en": "AI Document Control", "ar": "التحكم في المستندات بالذكاء الاصطناعي", "ro": "Controlul Documentelor cu AI" },
-        "description": { "en": "Automated filing, OCR scanning, and version control for large-scale construction blueprints.", "ar": "أرشفة تلقائية، ومسح ضوئي OCR، وتحكم في الإصدارات لمخططات المقاولات واسعة النطاق.", "ro": "Arhivare automată, scanare OCR și controlul versiunilor pentru planuri de construcție la scară largă." },
+        "title": {
+          "en": "AI Document Control",
+          "ar": "التحكم في المستندات بالذكاء الاصطناعي",
+          "ro": "Controlul Documentelor cu AI"
+        },
+        "description": {
+          "en": "Automated filing, OCR scanning, and version control for large-scale construction blueprints.",
+          "ar": "أرشفة تلقائية، ومسح ضوئي OCR، وتحكم في الإصدارات لمخططات المقاولات واسعة النطاق.",
+          "ro": "Arhivare automată, scanare OCR și controlul versiunilor pentru planuri de construcție la scară largă."
+        },
         "icon": "fa-file-lines"
       },
       {
-        "title": { "en": "Construction Lead Gen", "ar": "توليد عملاء مقاولات", "ro": "Generare Lead-uri Construcții" },
-        "description": { "en": "Identifies new project tenders and potential clients using predictive market analysis.", "ar": "يحدد مناقصات المشاريع الجديدة والعملاء المحتملين باستخدام تحليل السوق التنبؤي.", "ro": "Identifică noi licitații de proiecte și clienți potențiali folosind analiza predictivă a pieței." },
+        "title": {
+          "en": "Construction Lead Gen",
+          "ar": "توليد عملاء مقاولات",
+          "ro": "Generare Lead-uri Construcții"
+        },
+        "description": {
+          "en": "Identifies new project tenders and potential clients using predictive market analysis.",
+          "ar": "يحدد مناقصات المشاريع الجديدة والعملاء المحتملين باستخدام تحليل السوق التنبؤي.",
+          "ro": "Identifică noi licitații de proiecte și clienți potențiali folosind analiza predictivă a pieței."
+        },
         "icon": "fa-magnifying-glass-chart"
       },
       {
-        "title": { "en": "Predictive Delay Analysis", "ar": "تحليل التأخير التنبؤي", "ro": "Analiza Predictivă a Întârzierilor" },
-        "description": { "en": "Analyzes weather, logistics, and labor patterns to predict and prevent project delays.", "ar": "يحلل الطقس والخدمات اللوجستية وأنماط العمالة للتنبؤ بتأخيرات المشروع ومنعها.", "ro": "Analizează vremea, logistica și modelele de muncă pentru a prezice și preveni întârzierile proiectelor." },
+        "title": {
+          "en": "Predictive Delay Analysis",
+          "ar": "تحليل التأخير التنبؤي",
+          "ro": "Analiza Predictivă a Întârzierilor"
+        },
+        "description": {
+          "en": "Analyzes weather, logistics, and labor patterns to predict and prevent project delays.",
+          "ar": "يحلل الطقس والخدمات اللوجستية وأنماط العمالة للتنبؤ بتأخيرات المشروع ومنعها.",
+          "ro": "Analizează vremea, logistica și modelele de muncă pentru a prezice și preveni întârzierile proiectelor."
+        },
         "icon": "fa-clock-rotate-left"
       },
       {
-        "title": { "en": "Automated Safety Audits", "ar": "تدقيق السلامة الآلي", "ro": "Audituri de Siguranță Automatizate" },
-        "description": { "en": "Uses computer vision to identify missing PPE and safety violations on construction sites.", "ar": "يستخدم الرؤية الحاسوبية لتحديد معدات الوقاية المفقودة ومخالفات السلامة في مواقع البناء.", "ro": "Utilizează computer vision pentru a identifica echipamentele de protecție lipsă și încălcările de siguranță pe șantiere." },
+        "title": {
+          "en": "Automated Safety Audits",
+          "ar": "تدقيق السلامة الآلي",
+          "ro": "Audituri de Siguranță Automatizate"
+        },
+        "description": {
+          "en": "Uses computer vision to identify missing PPE and safety violations on construction sites.",
+          "ar": "يستخدم الرؤية الحاسوبية لتحديد معدات الوقاية المفقودة ومخالفات السلامة في مواقع البناء.",
+          "ro": "Utilizează computer vision pentru a identifica echipamentele de protecție lipsă și încălcările de siguranță pe șantiere."
+        },
         "icon": "fa-hard-hat"
       }
     ],
     "benefits": [
-      { "en": "Zero Project Delays", "ar": "صفر تأخير في المشاريع", "ro": "Zero Întârzieri de Proiect" },
-      { "en": "Reduced Material Waste", "ar": "تقليل هدر المواد", "ro": "Reducerea Risipei de Materiale" },
-      { "en": "Enhanced Site Safety", "ar": "تحسين سلامة الموقع", "ro": "Siguranță Sporită pe Șantier" }
+      {
+        "en": "Zero Project Delays",
+        "ar": "صفر تأخير في المشاريع",
+        "ro": "Zero Întârzieri de Proiect"
+      },
+      {
+        "en": "Reduced Material Waste",
+        "ar": "تقليل هدر المواد",
+        "ro": "Reducerea Risipei de Materiale"
+      },
+      {
+        "en": "Enhanced Site Safety",
+        "ar": "تحسين سلامة الموقع",
+        "ro": "Siguranță Sporită pe Șantier"
+      }
     ],
     "technologies": [
       { "name": "PyTorch", "icon": "fa-microchip" },
@@ -451,30 +803,74 @@
     },
     "features": [
       {
-        "title": { "en": "Payment Gateways", "ar": "بوابات الدفع", "ro": "Procesatoare de Plăți" },
-        "description": { "en": "Seamless integration with Stripe, PayPal, and regional providers like Moyasar or PayTabs.", "ar": "تكامل سلس مع Stripe و PayPal والمزودين الإقليميين مثل Moyasar أو PayTabs.", "ro": "Integrare perfectă cu Stripe, PayPal și furnizori regionali precum Moyasar sau PayTabs." },
+        "title": {
+          "en": "Payment Gateways",
+          "ar": "بوابات الدفع",
+          "ro": "Procesatoare de Plăți"
+        },
+        "description": {
+          "en": "Seamless integration with Stripe, PayPal, and regional providers like Moyasar or PayTabs.",
+          "ar": "تكامل سلس مع Stripe و PayPal والمزودين الإقليميين مثل Moyasar أو PayTabs.",
+          "ro": "Integrare perfectă cu Stripe, PayPal și furnizori regionali precum Moyasar sau PayTabs."
+        },
         "icon": "fa-credit-card"
       },
       {
-        "title": { "en": "Logistics & Shipping", "ar": "الخدمات اللوجستية والشحن", "ro": "Logistică & Transport" },
-        "description": { "en": "Automated label generation and tracking updates with Aramex, DHL, and FedEx.", "ar": "إنشاء تلقائي للملصقات وتحديثات التتبع مع Aramex و DHL و FedEx.", "ro": "Generarea automată a etichetelor și actualizări de urmărire cu Aramex, DHL și FedEx." },
+        "title": {
+          "en": "Logistics & Shipping",
+          "ar": "الخدمات اللوجستية والشحن",
+          "ro": "Logistică & Transport"
+        },
+        "description": {
+          "en": "Automated label generation and tracking updates with Aramex, DHL, and FedEx.",
+          "ar": "إنشاء تلقائي للملصقات وتحديثات التتبع مع Aramex و DHL و FedEx.",
+          "ro": "Generarea automată a etichetelor și actualizări de urmărire cu Aramex, DHL și FedEx."
+        },
         "icon": "fa-truck"
       },
       {
-        "title": { "en": "CRM & Marketing Sync", "ar": "مزامنة CRM والتسويق", "ro": "Sincronizare CRM & Marketing" },
-        "description": { "en": "Connects your leads and customer data directly to Mailchimp, HubSpot, or Salesforce.", "ar": "يربط عملاءك المحتملين وبيانات العملاء مباشرة بـ Mailchimp أو HubSpot أو Salesforce.", "ro": "Conectează lead-urile și datele clienților direct la Mailchimp, HubSpot sau Salesforce." },
+        "title": {
+          "en": "CRM & Marketing Sync",
+          "ar": "مزامنة CRM والتسويق",
+          "ro": "Sincronizare CRM & Marketing"
+        },
+        "description": {
+          "en": "Connects your leads and customer data directly to Mailchimp, HubSpot, or Salesforce.",
+          "ar": "يربط عملاءك المحتملين وبيانات العملاء مباشرة بـ Mailchimp أو HubSpot أو Salesforce.",
+          "ro": "Conectează lead-urile și datele clienților direct la Mailchimp, HubSpot sau Salesforce."
+        },
         "icon": "fa-arrows-rotate"
       },
       {
-        "title": { "en": "Cloud Storage APIs", "ar": "واجهات التخزين السحابي", "ro": "API-uri de Stocare Cloud" },
-        "description": { "en": "Secure file handling and storage with AWS S3, Google Drive, and Dropbox integrations.", "ar": "تعامل آمن مع الملفات وتخزينها مع تكاملات AWS S3 و Google Drive و Dropbox.", "ro": "Gestionarea și stocarea securizată a fișierelor cu integrări AWS S3, Google Drive și Dropbox." },
+        "title": {
+          "en": "Cloud Storage APIs",
+          "ar": "واجهات التخزين السحابي",
+          "ro": "API-uri de Stocare Cloud"
+        },
+        "description": {
+          "en": "Secure file handling and storage with AWS S3, Google Drive, and Dropbox integrations.",
+          "ar": "تعامل آمن مع الملفات وتخزينها مع تكاملات AWS S3 و Google Drive و Dropbox.",
+          "ro": "Gestionarea și stocarea securizată a fișierelor cu integrări AWS S3, Google Drive și Dropbox."
+        },
         "icon": "fa-cloud-arrow-down"
       }
     ],
     "benefits": [
-      { "en": "Eliminated Data Silos", "ar": "القضاء على عزلة البيانات", "ro": "Eliminarea Silozurilor de Date" },
-      { "en": "Automated Business Logic", "ar": "منطق عمل آلي", "ro": "Logică de Afaceri Automatizată" },
-      { "en": "Better User Experience", "ar": "تجربة مستخدم أفضل", "ro": "Experiență de Utilizare mai Bună" }
+      {
+        "en": "Eliminated Data Silos",
+        "ar": "القضاء على عزلة البيانات",
+        "ro": "Eliminarea Silozurilor de Date"
+      },
+      {
+        "en": "Automated Business Logic",
+        "ar": "منطق عمل آلي",
+        "ro": "Logică de Afaceri Automatizată"
+      },
+      {
+        "en": "Better User Experience",
+        "ar": "تجربة مستخدم أفضل",
+        "ro": "Experiență de Utilizare mai Bună"
+      }
     ],
     "technologies": [
       { "name": "REST API", "icon": "fa-link" },

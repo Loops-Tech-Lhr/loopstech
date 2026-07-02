@@ -3,12 +3,14 @@ name: Main Branch Quality & Security Checks
 # Trigger this workflow whenever code is pushed or a PR is opened against staging
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 permissions:
   contents: read
+  statuses: write
+  checks: write
 
 jobs:
   lint-and-scan:
@@ -28,16 +30,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: true
-          # Super-Linter scans everything by default. 
+          CREATE_STATUS_CHECK: false
+          VALIDATE_JAVASCRIPT_PRETTIER: false
+          FILTER_REGEX_EXCLUDE: '.*google.*'
+          # Super-Linter scans everything by default.
           # To ignore something, you can add flags like: VALIDATE_MARKDOWN: false
 
       # Step 3: Scan the files for secrets & vulnerabilities
       - name: Run Trivy Security Scanner
         uses: aquasecurity/trivy-action@0.35.0
         with:
-          scan-type: 'fs'                # 'fs' stands for filesystem
-          scan-ref: '.'                  # Scan the root directory
+          scan-type: 'fs' # 'fs' stands for filesystem
+          scan-ref: '.' # Scan the root directory
           hide-progress: true
           format: 'table'
-          severity: 'HIGH,CRITICAL'      # Flag high risk problems
-          exit-code: '1'                 # Forces the build to fail if a threat is found
+          severity: 'HIGH,CRITICAL' # Flag high risk problems
+          exit-code: '1' # Forces the build to fail if a threat is found

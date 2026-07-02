@@ -1,92 +1,132 @@
+/* global localStorage, IntersectionObserver */
+
 const App = {
-    state: {
-        lang: localStorage.getItem('lang') || 'en',
-        route: window.location.pathname.replace('/', '') || 'home',
-        translations: {},
-        services: [],
-        projects: [],
-        pages: [],
-        isTransitioning: false
+  state: {
+    lang: localStorage.getItem('lang') || 'en',
+    route: window.location.pathname.replace('/', '') || 'home',
+    translations: {},
+    services: [],
+    projects: [],
+    pages: [],
+    isTransitioning: false
+  },
+
+  // Eye-comforting palette for boxes
+  palette: [
+    {
+      bg: 'bg-blue-100/50',
+      text: 'text-blue-700',
+      border: 'border-blue-200',
+      icon: 'bg-blue-200/50'
     },
-
-    // Eye-comforting palette for boxes
-    palette: [
-        { bg: 'bg-blue-100/50', text: 'text-blue-700', border: 'border-blue-200', icon: 'bg-blue-200/50' },
-        { bg: 'bg-orange-100/50', text: 'text-orange-700', border: 'border-orange-200', icon: 'bg-orange-200/50' },
-        { bg: 'bg-emerald-100/50', text: 'text-emerald-700', border: 'border-emerald-200', icon: 'bg-emerald-200/50' },
-        { bg: 'bg-purple-100/50', text: 'text-purple-700', border: 'border-purple-200', icon: 'bg-purple-200/50' },
-        { bg: 'bg-rose-100/50', text: 'text-rose-700', border: 'border-rose-200', icon: 'bg-rose-200/50' },
-        { bg: 'bg-amber-100/50', text: 'text-amber-700', border: 'border-amber-200', icon: 'bg-amber-200/50' }
-    ],
-
-    async init() {
-        await this.loadData();
-        this.setupEventListeners();
-        this.setupRevealObserver();
-        this.render();
-        this.updateHTMLLangAttributes();
-        this.updateLanguageSwitcherUI();
+    {
+      bg: 'bg-orange-100/50',
+      text: 'text-orange-700',
+      border: 'border-orange-200',
+      icon: 'bg-orange-200/50'
     },
+    {
+      bg: 'bg-emerald-100/50',
+      text: 'text-emerald-700',
+      border: 'border-emerald-200',
+      icon: 'bg-emerald-200/50'
+    },
+    {
+      bg: 'bg-purple-100/50',
+      text: 'text-purple-700',
+      border: 'border-purple-200',
+      icon: 'bg-purple-200/50'
+    },
+    {
+      bg: 'bg-rose-100/50',
+      text: 'text-rose-700',
+      border: 'border-rose-200',
+      icon: 'bg-rose-200/50'
+    },
+    {
+      bg: 'bg-amber-100/50',
+      text: 'text-amber-700',
+      border: 'border-amber-200',
+      icon: 'bg-amber-200/50'
+    }
+  ],
 
-    async loadData() {
-        try {
-            const [i18n, services, projects, pages] = await Promise.all([
-                fetch(`/data/i18n/${this.state.lang}.json?v=${Date.now()}`).then(res => res.json()),
-                fetch(`/data/services.json?v=${Date.now()}`).then(res => res.json()),
-                fetch(`/data/projects.json?v=${Date.now()}`).then(res => res.json()),
-                fetch(`/data/pages.json?v=${Date.now()}`).then(res => res.json())
-            ]);
+  async init () {
+    await this.loadData()
+    this.setupEventListeners()
+    this.setupRevealObserver()
+    this.render()
+    this.updateHTMLLangAttributes()
+    this.updateLanguageSwitcherUI()
+  },
 
-            this.state.translations = i18n;
-            this.state.services = services;
-            this.state.projects = projects;
-            this.state.pages = pages;
-        } catch (error) {
-            console.error('Error loading data:', error);
+  async loadData () {
+    try {
+      const [i18n, services, projects, pages] = await Promise.all([
+        fetch(`/data/i18n/${this.state.lang}.json?v=${Date.now()}`).then(res =>
+          res.json()
+        ),
+        fetch(`/data/services.json?v=${Date.now()}`).then(res => res.json()),
+        fetch(`/data/projects.json?v=${Date.now()}`).then(res => res.json()),
+        fetch(`/data/pages.json?v=${Date.now()}`).then(res => res.json())
+      ])
+
+      this.state.translations = i18n
+      this.state.services = services
+      this.state.projects = projects
+      this.state.pages = pages
+    } catch (error) {
+      console.error('Error loading data:', error)
+    }
+  },
+
+  setupEventListeners () {
+    window.addEventListener('popstate', () => {
+      const newRoute = window.location.pathname.replace('/', '') || 'home'
+      this.navigateTo(newRoute)
+    })
+
+    document.addEventListener('click', e => {
+      const link = e.target.closest('a[href^="/"]')
+      if (link && !link.getAttribute('target')) {
+        const href = link.getAttribute('href')
+        if (
+          href.startsWith('/') &&
+          !href.includes(':') &&
+          !href.includes('.')
+        ) {
+          e.preventDefault()
+          const newRoute = href.replace('/', '') || 'home'
+          if (newRoute !== this.state.route) {
+            this.navigateTo(newRoute)
+          }
         }
-    },
+      }
+      if (e.target.closest('#mobile-menu-btn')) {
+        document.getElementById('mobile-menu').classList.remove('hidden')
+        document.getElementById('mobile-menu').classList.add('flex')
+      }
+      if (
+        e.target.closest('#close-menu') ||
+        e.target.closest('#mobile-menu a')
+      ) {
+        document.getElementById('mobile-menu').classList.add('hidden')
+        document.getElementById('mobile-menu').classList.remove('flex')
+      }
+    })
 
-    setupEventListeners() {
-        window.addEventListener('popstate', () => {
-            const newRoute = window.location.pathname.replace('/', '') || 'home';
-            this.navigateTo(newRoute);
-        });
+    // Form submission intercept
+    document.addEventListener('submit', e => {
+      if (e.target.id === 'contact-form') {
+        e.preventDefault()
+        const form = e.target
+        const btn = form.querySelector('button[type="submit"]')
+        btn.innerText =
+          this.state.lang === 'ar' ? 'جاري الإرسال...' : 'Sending...'
+        btn.disabled = true
 
-        document.addEventListener('click', (e) => {
-            const link = e.target.closest('a[href^="/"]');
-            if (link && !link.getAttribute('target')) {
-                const href = link.getAttribute('href');
-                if (href.startsWith('/') && !href.includes(':') && !href.includes('.')) {
-                    e.preventDefault();
-                    const newRoute = href.replace('/', '') || 'home';
-                    if (newRoute !== this.state.route) {
-                        this.navigateTo(newRoute);
-                    }
-                }
-            }
-            if (e.target.closest('#mobile-menu-btn')) {
-                document.getElementById('mobile-menu').classList.remove('hidden');
-                document.getElementById('mobile-menu').classList.add('flex');
-            }
-            if (e.target.closest('#close-menu') || e.target.closest('#mobile-menu a')) {
-                document.getElementById('mobile-menu').classList.add('hidden');
-                document.getElementById('mobile-menu').classList.remove('flex');
-            }
-        });
-
-        // Form submission intercept
-        document.addEventListener('submit', (e) => {
-            if (e.target.id === 'contact-form') {
-                e.preventDefault();
-                const form = e.target;
-                const btn = form.querySelector('button[type="submit"]');
-                const originalText = btn.innerText;
-                
-                btn.innerText = this.state.lang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
-                btn.disabled = true;
-
-                setTimeout(() => {
-                    form.innerHTML = `
+        setTimeout(() => {
+          form.innerHTML = `
                         <div class="text-center py-20 animate-reveal">
                             <div class="w-24 h-24 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 text-4xl shadow-lg">
                                 <i class="fa fa-check-circle"></i>
@@ -95,190 +135,214 @@ const App = {
                             <p class="text-xl text-stone-500 font-bold">${this.t('contact.form_success_text')}</p>
                             <button onclick="location.reload()" class="mt-10 text-primary font-black uppercase tracking-widest text-sm underline decoration-4 underline-offset-8">Send Another Inquiry</button>
                         </div>
-                    `;
-                }, 1500);
-            }
-        });
-    },
+                    `
+        }, 1500)
+      }
+    })
+  },
 
-    setupRevealObserver() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                }
-            });
-        }, { threshold: 0.1 });
+  setupRevealObserver () {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
 
-        this.observeElements = () => {
-            document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-        };
-    },
+    this.observeElements = () => {
+      document
+        .querySelectorAll('.reveal-on-scroll')
+        .forEach(el => observer.observe(el))
+    }
+  },
 
-    async navigateTo(route) {
-        if (this.state.isTransitioning) return;
-        this.state.isTransitioning = true;
+  async navigateTo (route) {
+    if (this.state.isTransitioning) return
+    this.state.isTransitioning = true
 
-        const layer = document.getElementById('app-transition-layer');
-        layer.classList.remove('finished');
-        layer.classList.add('active');
+    const layer = document.getElementById('app-transition-layer')
+    layer.classList.remove('finished')
+    layer.classList.add('active')
 
-        setTimeout(async () => {
-            this.state.route = route;
-            window.history.pushState({}, '', '/' + (route === 'home' ? '' : route));
-            this.render();
-            window.scrollTo(0, 0);
+    setTimeout(async () => {
+      this.state.route = route
+      window.history.pushState({}, '', '/' + (route === 'home' ? '' : route))
+      this.render()
+      window.scrollTo(0, 0)
 
-            setTimeout(() => {
-                layer.classList.remove('active');
-                layer.classList.add('finished');
-                this.state.isTransitioning = false;
-            }, 400);
-        }, 800);
-    },
+      setTimeout(() => {
+        layer.classList.remove('active')
+        layer.classList.add('finished')
+        this.state.isTransitioning = false
+      }, 400)
+    }, 800)
+  },
 
-    async setLanguage(lang) {
-        this.state.lang = lang;
-        localStorage.setItem('lang', lang);
-        await this.loadData();
-        this.updateHTMLLangAttributes();
-        this.updateLanguageSwitcherUI();
-        this.render();
-    },
+  async setLanguage (lang) {
+    this.state.lang = lang
+    localStorage.setItem('lang', lang)
+    await this.loadData()
+    this.updateHTMLLangAttributes()
+    this.updateLanguageSwitcherUI()
+    this.render()
+  },
 
-    updateHTMLLangAttributes() {
-        document.documentElement.lang = this.state.lang;
-        document.documentElement.dir = this.state.lang === 'ar' ? 'rtl' : 'ltr';
-        if (this.state.lang === 'ar') {
-            document.body.style.fontFamily = "'Noto Sans Arabic', sans-serif";
+  updateHTMLLangAttributes () {
+    document.documentElement.lang = this.state.lang
+    document.documentElement.dir = this.state.lang === 'ar' ? 'rtl' : 'ltr'
+    if (this.state.lang === 'ar') {
+      document.body.style.fontFamily = "'Noto Sans Arabic', sans-serif"
+    } else {
+      document.body.style.fontFamily = "'Plus Jakarta Sans', sans-serif"
+    }
+  },
+
+  updateLanguageSwitcherUI () {
+    ;['en', 'ar', 'ro'].forEach(l => {
+      const btn = document.getElementById(`lang-${l}`)
+      if (btn) {
+        if (l === this.state.lang) {
+          btn.classList.add('bg-primary', 'text-white', 'shadow-lg')
+          btn.classList.remove('text-stone-500')
         } else {
-            document.body.style.fontFamily = "'Plus Jakarta Sans', sans-serif";
+          btn.classList.remove('bg-primary', 'text-white', 'shadow-lg')
+          btn.classList.add('text-stone-500')
         }
-    },
+      }
+    })
+  },
 
-    updateLanguageSwitcherUI() {
-        ['en', 'ar', 'ro'].forEach(l => {
-            const btn = document.getElementById(`lang-${l}`);
-            if (btn) {
-                if (l === this.state.lang) {
-                    btn.classList.add('bg-primary', 'text-white', 'shadow-lg');
-                    btn.classList.remove('text-stone-500');
-                } else {
-                    btn.classList.remove('bg-primary', 'text-white', 'shadow-lg');
-                    btn.classList.add('text-stone-500');
-                }
-            }
-        });
-    },
+  t (path) {
+    const value = path
+      .split('.')
+      .reduce((obj, key) => obj && obj[key], this.state.translations)
+    if (value === undefined) {
+      // Fallback for hero.title specifically since it was identified as an error
+      if (path === 'hero.title') {
+        return this.t('hero.title_bold') + ' ' + this.t('hero.title_ideas')
+      }
+      return path
+    }
+    return value
+  },
 
-    t(path) {
-        const value = path.split('.').reduce((obj, key) => obj && obj[key], this.state.translations);
-        if (value === undefined) {
-            // Fallback for hero.title specifically since it was identified as an error
-            if (path === 'hero.title') return this.t('hero.title_bold') + ' ' + this.t('hero.title_ideas');
-            return path;
-        }
-        return value;
-    },
+  render () {
+    this.updateSEO()
+    this.renderNavigation()
+    this.renderContent()
+    this.renderFooter()
+    this.updateActiveNavLink()
+    if (this.observeElements) this.observeElements()
+  },
 
-    render() {
-        this.updateSEO();
-        this.renderNavigation();
-        this.renderContent();
-        this.renderFooter();
-        this.updateActiveNavLink();
-        if (this.observeElements) this.observeElements();
-    },
+  updateSEO () {
+    const isServiceDetail = this.state.route.startsWith('services/')
+    if (isServiceDetail) {
+      const serviceId = this.state.route.split('/')[1]
+      const service = this.state.services.find(s => s.id === serviceId)
+      if (service) {
+        document.title = `${service.title[this.state.lang]} | Loops Technologies`
+        return
+      }
+    }
+    const page =
+      this.state.pages.find(p => p.id === this.state.route) ||
+      this.state.pages[0]
+    document.title = `${this.t('nav.' + (page ? page.nav_key : 'home'))} | Loops Technologies`
+  },
 
-    updateSEO() {
-        const isServiceDetail = this.state.route.startsWith('services/');
-        if (isServiceDetail) {
-            const serviceId = this.state.route.split('/')[1];
-            const service = this.state.services.find(s => s.id === serviceId);
-            if (service) {
-                document.title = `${service.title[this.state.lang]} | Loops Technologies`;
-                return;
-            }
-        }
-        const page = this.state.pages.find(p => p.id === this.state.route) || this.state.pages[0];
-        document.title = `${this.t('nav.' + (page ? page.nav_key : 'home'))} | Loops Technologies`;
-    },
+  renderNavigation () {
+    const navContainer = document.getElementById('nav-links')
+    const mobileNavContainer = document.getElementById('mobile-nav-links')
 
-    renderNavigation() {
-        const navContainer = document.getElementById('nav-links');
-        const mobileNavContainer = document.getElementById('mobile-nav-links');
-        
-        const linksHTML = this.state.pages.filter(p => p.show_in_nav).map(page => `
+    const linksHTML = this.state.pages
+      .filter(p => p.show_in_nav)
+      .map(
+        page => `
             <a href="/${page.id}" class="nav-link font-black text-xs uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-all relative py-2">
                 ${this.t('nav.' + page.nav_key)}
             </a>
-        `).join('');
+        `
+      )
+      .join('')
 
-        const mobileLinksHTML = this.state.pages.filter(p => p.show_in_nav).map(page => `
+    const mobileLinksHTML = this.state.pages
+      .filter(p => p.show_in_nav)
+      .map(
+        page => `
             <a href="/${page.id}" class="text-4xl font-black uppercase tracking-tighter hover:text-primary transition-colors">${this.t('nav.' + page.nav_key)}</a>
-        `).join('');
+        `
+      )
+      .join('')
 
-        if (navContainer) navContainer.innerHTML = linksHTML;
-        if (mobileNavContainer) mobileNavContainer.innerHTML = mobileLinksHTML;
+    if (navContainer) navContainer.innerHTML = linksHTML
+    if (mobileNavContainer) mobileNavContainer.innerHTML = mobileLinksHTML
 
-        const liveChatBtn = document.getElementById('live-chat-text');
-        if (liveChatBtn) liveChatBtn.innerText = this.t('nav.live_chat');
-    },
+    const liveChatBtn = document.getElementById('live-chat-text')
+    if (liveChatBtn) liveChatBtn.innerText = this.t('nav.live_chat')
+  },
 
-    updateActiveNavLink() {
-        document.querySelectorAll('.nav-link').forEach(link => {
-            const href = link.getAttribute('href').replace('/', '') || 'home';
-            if (href === this.state.route || (this.state.route.startsWith('services') && href === 'services')) {
-                link.classList.add('text-primary');
-                link.classList.remove('text-stone-500');
-            } else {
-                link.classList.remove('text-primary');
-                link.classList.add('text-stone-500');
-            }
-        });
-    },
+  updateActiveNavLink () {
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const href = link.getAttribute('href').replace('/', '') || 'home'
+      if (
+        href === this.state.route ||
+        (this.state.route.startsWith('services') && href === 'services')
+      ) {
+        link.classList.add('text-primary')
+        link.classList.remove('text-stone-500')
+      } else {
+        link.classList.remove('text-primary')
+        link.classList.add('text-stone-500')
+      }
+    })
+  },
 
-    renderContent() {
-        const appContainer = document.getElementById('app');
-        if (!appContainer) return;
+  renderContent () {
+    const appContainer = document.getElementById('app')
+    if (!appContainer) return
 
-        if (this.state.route.startsWith('services/')) {
-            const serviceId = this.state.route.split('/')[1];
-            appContainer.innerHTML = this.getServiceDetailHTML(serviceId);
-            return;
-        }
+    if (this.state.route.startsWith('services/')) {
+      const serviceId = this.state.route.split('/')[1]
+      appContainer.innerHTML = this.getServiceDetailHTML(serviceId)
+      return
+    }
 
-        switch (this.state.route) {
-            case 'home':
-                appContainer.innerHTML = this.getHomeHTML();
-                this.renderHomeServices();
-                break;
-            case 'services':
-                appContainer.innerHTML = this.getServicesListHTML();
-                this.renderFullServices();
-                break;
-            case 'projects':
-                appContainer.innerHTML = this.getPortfolioHTML();
-                this.renderProjects();
-                break;
-            case 'ai-solutions':
-                appContainer.innerHTML = this.getServicesListHTML(true);
-                this.renderFullServices(true);
-                break;
-            case 'about':
-                appContainer.innerHTML = this.getAboutHTML();
-                break;
-            case 'contact':
-                appContainer.innerHTML = this.getContactHTML();
-                break;
-            default:
-                appContainer.innerHTML = this.getHomeHTML();
-                this.renderHomeServices();
-        }
-    },
+    switch (this.state.route) {
+      case 'home':
+        appContainer.innerHTML = this.getHomeHTML()
+        this.renderHomeServices()
+        break
+      case 'services':
+        appContainer.innerHTML = this.getServicesListHTML()
+        this.renderFullServices()
+        break
+      case 'projects':
+        appContainer.innerHTML = this.getPortfolioHTML()
+        this.renderProjects()
+        break
+      case 'ai-solutions':
+        appContainer.innerHTML = this.getServicesListHTML(true)
+        this.renderFullServices(true)
+        break
+      case 'about':
+        appContainer.innerHTML = this.getAboutHTML()
+        break
+      case 'contact':
+        appContainer.innerHTML = this.getContactHTML()
+        break
+      default:
+        appContainer.innerHTML = this.getHomeHTML()
+        this.renderHomeServices()
+    }
+  },
 
-    getHomeHTML() {
-        return `
+  getHomeHTML () {
+    return `
             <!-- Dynamic Hero -->
             <section class="relative min-h-[90vh] flex items-center px-4 pt-20 pb-32 bg-warm-gradient overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
@@ -342,11 +406,33 @@ const App = {
                     
                     <div class="grid md:grid-cols-4 gap-12">
                         ${[
-                            { step: '01', title: 'Consult', icon: 'fa-comments-alt', desc: 'Strategy sessions to align with your business vision.' },
-                            { step: '02', title: 'Architect', icon: 'fa-draw-polygon', desc: 'Designing high-performance technical blueprints.' },
-                            { step: '03', title: 'Build', icon: 'fa-code', desc: 'Agile development with daily progress loops.' },
-                            { step: '04', title: 'Scale', icon: 'fa-rocket', desc: 'Global launch and continuous optimization.' }
-                        ].map((p, idx) => `
+                          {
+                            step: '01',
+                            title: 'Consult',
+                            icon: 'fa-comments-alt',
+                            desc: 'Strategy sessions to align with your business vision.'
+                          },
+                          {
+                            step: '02',
+                            title: 'Architect',
+                            icon: 'fa-draw-polygon',
+                            desc: 'Designing high-performance technical blueprints.'
+                          },
+                          {
+                            step: '03',
+                            title: 'Build',
+                            icon: 'fa-code',
+                            desc: 'Agile development with daily progress loops.'
+                          },
+                          {
+                            step: '04',
+                            title: 'Scale',
+                            icon: 'fa-rocket',
+                            desc: 'Global launch and continuous optimization.'
+                          }
+                        ]
+                          .map(
+                            (p, idx) => `
                             <div class="relative group reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                 <div class="text-8xl font-black text-white/5 absolute -top-10 -left-4 group-hover:text-primary/10 transition-colors">${p.step}</div>
                                 <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
@@ -355,7 +441,9 @@ const App = {
                                 <h5 class="text-3xl font-black mb-4  tracking-tighter uppercase">${p.title}</h5>
                                 <p class="text-stone-500 font-medium leading-relaxed">${p.desc}</p>
                             </div>
-                        `).join('')}
+                        `
+                          )
+                          .join('')}
                     </div>
                 </div>
             </section>
@@ -386,12 +474,30 @@ const App = {
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         ${[
-                            { icon: 'fa-hospital', title: 'Hospitals', desc: 'Comprehensive patient and clinical management systems.' },
-                            { icon: 'fa-cash-register', title: 'Retail POS', desc: 'Lightning-fast checkout and inventory for chains.' },
-                            { icon: 'fa-truck-fast', title: 'Logistics', desc: 'Real-time rider tracking and delivery dispatch systems.' },
-                            { icon: 'fa-bed', title: 'Hotel ERP', desc: 'Automated booking and housekeeping management.' }
-                        ].map((item, idx) => {
-                            const color = this.palette[idx % this.palette.length];
+                          {
+                            icon: 'fa-hospital',
+                            title: 'Hospitals',
+                            desc: 'Comprehensive patient and clinical management systems.'
+                          },
+                          {
+                            icon: 'fa-cash-register',
+                            title: 'Retail POS',
+                            desc: 'Lightning-fast checkout and inventory for chains.'
+                          },
+                          {
+                            icon: 'fa-truck-fast',
+                            title: 'Logistics',
+                            desc: 'Real-time rider tracking and delivery dispatch systems.'
+                          },
+                          {
+                            icon: 'fa-bed',
+                            title: 'Hotel ERP',
+                            desc: 'Automated booking and housekeeping management.'
+                          }
+                        ]
+                          .map((item, idx) => {
+                            const color =
+                              this.palette[idx % this.palette.length]
                             return `
                                 <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                     <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
@@ -400,8 +506,9 @@ const App = {
                                     <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase ">${item.title}</h5>
                                     <p class="text-stone-600 leading-relaxed font-bold text-sm">${item.desc}</p>
                                 </div>
-                            `;
-                        }).join('')}
+                            `
+                          })
+                          .join('')}
                     </div>
                 </div>
             </section>
@@ -438,16 +545,18 @@ const App = {
                     </div>
                 </div>
             </section>
-        `;
-    },
+        `
+  },
 
-    renderHomeServices() {
-        const grid = document.getElementById('home-services-grid');
-        if (!grid) return;
-        
-        grid.innerHTML = this.state.services.slice(0, 6).map((s, idx) => {
-            const color = this.palette[idx % this.palette.length];
-            return `
+  renderHomeServices () {
+    const grid = document.getElementById('home-services-grid')
+    if (!grid) return
+
+    grid.innerHTML = this.state.services
+      .slice(0, 6)
+      .map((s, idx) => {
+        const color = this.palette[idx % this.palette.length]
+        return `
                 <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
                     <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
                         <i class="fa ${s.icon} text-2xl"></i>
@@ -458,12 +567,16 @@ const App = {
                         Learn More <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
-            `;
-        }).join('');
+            `
+      })
+      .join('')
 
-        const projectGrid = document.getElementById('home-projects-grid');
-        if (projectGrid) {
-            projectGrid.innerHTML = this.state.projects.slice(0, 2).map((p, idx) => `
+    const projectGrid = document.getElementById('home-projects-grid')
+    if (projectGrid) {
+      projectGrid.innerHTML = this.state.projects
+        .slice(0, 2)
+        .map(
+          (p, idx) => `
                 <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.2}s">
                     <div class="relative overflow-hidden rounded-[80px] shadow-2xl mb-12 border-[20px] border-white ring-1 ring-stone-100 aspect-video">
                         <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
@@ -482,12 +595,14 @@ const App = {
                         <p class="text-stone-500 text-xl font-bold leading-relaxed">${p.description[this.state.lang]}</p>
                     </div>
                 </div>
-            `).join('');
-        }
-    },
+            `
+        )
+        .join('')
+    }
+  },
 
-    getServicesListHTML(isAIOnly = false) {
-        return `
+  getServicesListHTML (isAIOnly = false) {
+    return `
             <div class="py-32 px-4 bg-light min-h-screen">
                 <div class="max-w-7xl mx-auto">
                     <div class="max-w-3xl mb-32 space-y-8 reveal-on-scroll">
@@ -498,21 +613,22 @@ const App = {
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" id="full-services-grid"></div>
                 </div>
             </div>
-        `;
-    },
+        `
+  },
 
-    renderFullServices(isAIOnly = false) {
-        const grid = document.getElementById('full-services-grid');
-        if (!grid) return;
+  renderFullServices (isAIOnly = false) {
+    const grid = document.getElementById('full-services-grid')
+    if (!grid) return
 
-        let list = this.state.services;
-        if (isAIOnly) {
-            list = list.filter(s => s.id.includes('ai'));
-        }
+    let list = this.state.services
+    if (isAIOnly) {
+      list = list.filter(s => s.id.includes('ai'))
+    }
 
-        grid.innerHTML = list.map((s, idx) => {
-            const color = this.palette[idx % this.palette.length];
-            return `
+    grid.innerHTML = list
+      .map((s, idx) => {
+        const color = this.palette[idx % this.palette.length]
+        return `
                 <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
                     <div class="w-24 h-24 bg-white rounded-[40px] flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
                         <i class="fa ${s.icon} text-4xl"></i>
@@ -523,17 +639,20 @@ const App = {
                         View Solution
                     </a>
                 </div>
-            `;
-        }).join('');
-    },
+            `
+      })
+      .join('')
+  },
 
-    getServiceDetailHTML(serviceId) {
-        const service = this.state.services.find(s => s.id === serviceId);
-        if (!service) return this.getHomeHTML();
+  getServiceDetailHTML (serviceId) {
+    const service = this.state.services.find(s => s.id === serviceId)
+    if (!service) return this.getHomeHTML()
 
-        const otherServices = this.state.services.filter(s => s.id !== serviceId).slice(0, 6);
+    const otherServices = this.state.services
+      .filter(s => s.id !== serviceId)
+      .slice(0, 6)
 
-        return `
+    return `
             <div class="py-32 bg-white min-h-screen">
                 <div class="max-w-7xl mx-auto px-4">
                     <div class="grid lg:grid-cols-3 gap-24">
@@ -556,13 +675,29 @@ const App = {
                             </div>
 
                             <div class="prose prose-2xl max-w-none text-stone-600 font-bold leading-[1.8] reveal-on-scroll">
-                                ${service.longDescription ? service.longDescription[this.state.lang].split('\n').map(p => `<p class="mb-10 text-xl">${p}</p>`).join('') : '<p>Detailed description coming soon...</p>'}
+                                ${
+                                  service.longDescription
+                                    ? service.longDescription[this.state.lang]
+                                        .split('\n')
+                                        .map(
+                                          p =>
+                                            `<p class="mb-10 text-xl">${p}</p>`
+                                        )
+                                        .join('')
+                                    : '<p>Detailed description coming soon...</p>'
+                                }
                             </div>
 
                             <div class="grid md:grid-cols-2 gap-10 reveal-on-scroll">
-                                ${service.features ? service.features.map((f, i) => {
-                                    const color = this.palette[i % this.palette.length];
-                                    return `
+                                ${
+                                  service.features
+                                    ? service.features
+                                        .map((f, i) => {
+                                          const color =
+                                            this.palette[
+                                              i % this.palette.length
+                                            ]
+                                          return `
                                         <div class="${color.bg} p-12 rounded-[50px] border ${color.border} group hover:border-primary transition-colors">
                                             <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
                                                 <i class="fa ${f.icon} text-2xl"></i>
@@ -570,20 +705,31 @@ const App = {
                                             <h5 class="text-3xl font-black mb-4 tracking-tighter  uppercase">${f.title[this.state.lang]}</h5>
                                             <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
                                         </div>
-                                    `;
-                                }).join('') : ''}
+                                    `
+                                        })
+                                        .join('')
+                                    : ''
+                                }
                             </div>
 
                             <div class="bg-dark p-16 lg:p-32 rounded-[100px] text-white space-y-12 relative overflow-hidden reveal-on-scroll">
                                 <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px]"></div>
                                 <h3 class="text-5xl lg:text-7xl font-black tracking-tighter uppercase  leading-none">Why Choose <span class="text-primary">Loops</span>?</h3>
                                 <ul class="space-y-10">
-                                    ${service.benefits ? service.benefits.map(b => `
+                                    ${
+                                      service.benefits
+                                        ? service.benefits
+                                            .map(
+                                              b => `
                                         <li class="flex items-start gap-8 text-2xl font-black  uppercase tracking-tighter">
                                             <i class="fa fa-bolt text-primary mt-2 text-3xl"></i>
                                             <span>${b[this.state.lang]}</span>
                                         </li>
-                                    `).join('') : ''}
+                                    `
+                                            )
+                                            .join('')
+                                        : ''
+                                    }
                                 </ul>
                                 <div class="pt-16 border-t border-stone-800 flex flex-col md:flex-row items-center gap-10">
                                     <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-center uppercase tracking-widest">
@@ -597,22 +743,34 @@ const App = {
                             <div class="bg-stone-50 p-12 rounded-[60px] border border-stone-100 sticky top-32">
                                 <h4 class="text-3xl font-black mb-12 tracking-tighter uppercase border-b-8 border-primary/10 pb-6 ">Capabilities</h4>
                                 <div class="space-y-8">
-                                    ${otherServices.map(s => `
+                                    ${otherServices
+                                      .map(
+                                        s => `
                                         <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-[30px] hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
                                             <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
                                                 <i class="fa ${s.icon}"></i>
                                             </div>
                                             <span class="font-black text-sm uppercase tracking-[0.1em] group-hover:text-primary transition-colors">${s.title[this.state.lang]}</span>
                                         </a>
-                                    `).join('')}
+                                    `
+                                      )
+                                      .join('')}
                                 </div>
 
                                 <div class="mt-20 pt-12 border-t-4 border-stone-200 border-dashed">
                                     <h4 class="text-xs font-black text-stone-400 uppercase tracking-[0.4em] mb-10">Modern Stack</h4>
                                     <div class="flex flex-wrap gap-4">
-                                        ${service.technologies ? service.technologies.map(t => `
+                                        ${
+                                          service.technologies
+                                            ? service.technologies
+                                                .map(
+                                                  t => `
                                             <span class="bg-white px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-stone-100 shadow-sm hover:border-primary transition-colors">${t}</span>
-                                        `).join('') : ''}
+                                        `
+                                                )
+                                                .join('')
+                                            : ''
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -620,11 +778,11 @@ const App = {
                     </div>
                 </div>
             </div>
-        `;
-    },
+        `
+  },
 
-    getPortfolioHTML() {
-        return `
+  getPortfolioHTML () {
+    return `
             <div class="py-32 px-4 bg-light min-h-screen">
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-32 space-y-8 reveal-on-scroll">
@@ -635,14 +793,16 @@ const App = {
                     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-20" id="projects-grid"></div>
                 </div>
             </div>
-        `;
-    },
+        `
+  },
 
-    renderProjects() {
-        const grid = document.getElementById('projects-grid');
-        if (!grid) return;
+  renderProjects () {
+    const grid = document.getElementById('projects-grid')
+    if (!grid) return
 
-        grid.innerHTML = this.state.projects.map((p, idx) => `
+    grid.innerHTML = this.state.projects
+      .map(
+        (p, idx) => `
             <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.15}s">
                 <div class="relative overflow-hidden rounded-[100px] shadow-2xl mb-12 border-[25px] border-white ring-1 ring-stone-100 aspect-video">
                     <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
@@ -661,11 +821,13 @@ const App = {
                     <p class="text-stone-400 text-xl font-bold leading-relaxed max-w-xl mx-auto">${p.description[this.state.lang]}</p>
                 </div>
             </div>
-        `).join('');
-    },
+        `
+      )
+      .join('')
+  },
 
-    getAboutHTML() {
-        return `
+  getAboutHTML () {
+    return `
             <div class="py-32 px-4 bg-white">
                 <div class="max-w-7xl mx-auto space-y-40">
                     <div class="grid lg:grid-cols-2 gap-32 items-center">
@@ -700,23 +862,27 @@ const App = {
                         <h3 class="text-6xl lg:text-8xl font-black mb-32 text-center uppercase tracking-tighter  relative z-10 leading-none">The <span class="text-primary">Answers.</span></h3>
                         
                         <div class="grid md:grid-cols-2 gap-24 relative z-10">
-                            ${[1, 2, 3, 4].map(i => `
+                            ${[1, 2, 3, 4]
+                              .map(
+                                i => `
                                 <div class="space-y-8 group border-l-4 border-stone-800 hover:border-primary pl-12 transition-colors">
                                     <h5 class="text-3xl font-black text-white uppercase tracking-tighter  leading-none group-hover:text-primary transition-colors">
                                         ${this.t(`about.faq_q${i}`)}
                                     </h5>
                                     <p class="text-stone-500 text-xl font-bold leading-relaxed max-w-lg">${this.t(`about.faq_a${i}`)}</p>
                                 </div>
-                            `).join('')}
+                            `
+                              )
+                              .join('')}
                         </div>
                     </div>
                 </div>
             </div>
-        `;
-    },
+        `
+  },
 
-    getContactHTML() {
-        return `
+  getContactHTML () {
+    return `
             <div class="py-32 px-4 bg-warm-gradient min-h-screen flex items-center">
                 <div class="max-w-7xl mx-auto w-full">
                     <div class="text-center mb-32 space-y-8 reveal-on-scroll">
@@ -792,25 +958,34 @@ const App = {
                     </div>
                 </div>
             </div>
-        `;
-    },
+        `
+  },
 
-    renderFooter() {
-        const footer = document.querySelector('footer');
-        if (!footer) return;
+  renderFooter () {
+    const footer = document.querySelector('footer')
+    if (!footer) return
 
-        footer.innerHTML = `
+    footer.innerHTML = `
             <div class="max-w-7xl mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-24 mb-32">
                     <div class="space-y-10">
                         <img src="img/loopstech-logo.png" alt="Loops Technologies" class="h-14 w-auto brightness-0 invert hover:rotate-3 transition-transform">
                         <p class="text-xl leading-relaxed font-bold text-stone-500">${this.t('footer.desc')}</p>
                         <div class="flex gap-6">
-                            ${['facebook-f', 'linkedin-in', 'instagram', 'twitter'].map(icon => `
+                            ${[
+                              'facebook-f',
+                              'linkedin-in',
+                              'instagram',
+                              'twitter'
+                            ]
+                              .map(
+                                icon => `
                                 <a href="#" class="w-14 h-14 rounded-[20px] bg-stone-900 flex items-center justify-center text-white hover:bg-primary hover:-translate-y-2 transition-all shadow-xl border border-stone-800">
                                     <i class="fab fa-${icon} text-xl"></i>
                                 </a>
-                            `).join('')}
+                            `
+                              )
+                              .join('')}
                         </div>
                     </div>
                     <div>
@@ -839,8 +1014,8 @@ const App = {
                     </div>
                 </div>
             </div>
-        `;
-    }
-};
+        `
+  }
+}
 
-window.addEventListener('DOMContentLoaded', () => App.init());
+window.addEventListener('DOMContentLoaded', () => App.init())
