@@ -2,13 +2,58 @@
 
 const App = {
   state: {
-    lang: localStorage.getItem('lang') || 'en',
-    route: window.location.pathname.replace('/', '') || 'home',
+    lang: 'en',
+    route: 'home',
     translations: {},
     services: [],
     projects: [],
     pages: [],
     isTransitioning: false
+  },
+
+  parseRouteAndLang () {
+    const path = window.location.pathname.replace(/^\/|\/$/g, '')
+    const segments = path.split('/')
+    let lang = localStorage.getItem('lang') || 'en'
+    let route = 'home'
+
+    if (segments[0] === 'ar' || segments[0] === 'ro') {
+      lang = segments[0]
+      route = segments.slice(1).join('/') || 'home'
+    } else {
+      lang = 'en'
+      route = path || 'home'
+    }
+
+    localStorage.setItem('lang', lang)
+    return { route, lang }
+  },
+
+  resolveRouteFromPath (href) {
+    const path = href.replace(/^\/|\/$/g, '')
+    const segments = path.split('/')
+    if (segments[0] === 'ar' || segments[0] === 'ro') {
+      return segments.slice(1).join('/') || 'home'
+    }
+    return path || 'home'
+  },
+
+  toggleMobileMenu (isOpen) {
+    const menu = document.getElementById('mobile-menu')
+    const openBtn = document.getElementById('mobile-menu-btn')
+    if (menu) {
+      if (isOpen) {
+        menu.classList.remove('hidden')
+        menu.classList.add('flex')
+        document.body.classList.add('overflow-hidden')
+        if (openBtn) openBtn.setAttribute('aria-expanded', 'true')
+      } else {
+        menu.classList.add('hidden')
+        menu.classList.remove('flex')
+        document.body.classList.remove('overflow-hidden')
+        if (openBtn) openBtn.setAttribute('aria-expanded', 'false')
+      }
+    }
   },
 
   // Eye-comforting palette for boxes
@@ -52,6 +97,10 @@ const App = {
   ],
 
   async init () {
+    const { route, lang } = this.parseRouteAndLang()
+    this.state.route = route
+    this.state.lang = lang
+
     await this.loadData()
     this.setupEventListeners()
     this.setupRevealObserver()
@@ -63,12 +112,12 @@ const App = {
   async loadData () {
     try {
       const [i18n, services, projects, pages] = await Promise.all([
-        fetch(`/data/i18n/${this.state.lang}.json?v=${Date.now()}`).then(res =>
+        fetch(`/data/i18n/${this.state.lang}.json?v=1.0.1`).then(res =>
           res.json()
         ),
-        fetch(`/data/services.json?v=${Date.now()}`).then(res => res.json()),
-        fetch(`/data/projects.json?v=${Date.now()}`).then(res => res.json()),
-        fetch(`/data/pages.json?v=${Date.now()}`).then(res => res.json())
+        fetch(`/data/services.json?v=1.0.1`).then(res => res.json()),
+        fetch(`/data/projects.json?v=1.0.1`).then(res => res.json()),
+        fetch(`/data/pages.json?v=1.0.1`).then(res => res.json())
       ])
 
       this.state.translations = i18n
@@ -82,8 +131,13 @@ const App = {
 
   setupEventListeners () {
     window.addEventListener('popstate', () => {
-      const newRoute = window.location.pathname.replace('/', '') || 'home'
-      this.navigateTo(newRoute)
+      const { route, lang } = this.parseRouteAndLang()
+      if (lang !== this.state.lang) {
+        this.state.lang = lang
+        this.loadData().then(() => this.navigateTo(window.location.pathname))
+      } else {
+        this.navigateTo(window.location.pathname)
+      }
     })
 
     document.addEventListener('click', e => {
@@ -96,47 +150,72 @@ const App = {
           !href.includes('.')
         ) {
           e.preventDefault()
-          const newRoute = href.replace('/', '') || 'home'
-          if (newRoute !== this.state.route) {
-            this.navigateTo(newRoute)
+          if (href !== window.location.pathname) {
+            this.navigateTo(href)
           }
         }
       }
       if (e.target.closest('#mobile-menu-btn')) {
-        document.getElementById('mobile-menu').classList.remove('hidden')
-        document.getElementById('mobile-menu').classList.add('flex')
+        this.toggleMobileMenu(true)
       }
       if (
         e.target.closest('#close-menu') ||
         e.target.closest('#mobile-menu a')
       ) {
-        document.getElementById('mobile-menu').classList.add('hidden')
-        document.getElementById('mobile-menu').classList.remove('flex')
+        this.toggleMobileMenu(false)
+      }
+    })
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        this.toggleMobileMenu(false)
       }
     })
 
     // Form submission intercept
-    document.addEventListener('submit', e => {
+    document.addEventListener('submit', async e => {
       if (e.target.id === 'contact-form') {
         e.preventDefault()
         const form = e.target
         const btn = form.querySelector('button[type="submit"]')
+        const originalText = btn.innerText
         btn.innerText =
           this.state.lang === 'ar' ? 'جاري الإرسال...' : 'Sending...'
         btn.disabled = true
 
-        setTimeout(() => {
-          form.innerHTML = `
-                        <div class="text-center py-20 animate-reveal">
-                            <div class="w-24 h-24 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 text-4xl shadow-lg">
-                                <i class="fa fa-check-circle"></i>
-                            </div>
-                            <h3 class="text-4xl font-black text-dark mb-4">${this.t('contact.form_success_badge')}</h3>
-                            <p class="text-xl text-stone-500 font-bold">${this.t('contact.form_success_text')}</p>
-                            <button onclick="location.reload()" class="mt-10 text-primary font-black uppercase tracking-widest text-sm underline decoration-4 underline-offset-8">Send Another Inquiry</button>
-                        </div>
-                    `
-        }, 1500)
+        try {
+          const formData = new FormData(form)
+          const data = Object.fromEntries(formData.entries())
+          const response = await fetch('/contact_handler.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+          const result = await response.json()
+          if (result.success) {
+            form.innerHTML = `
+              <div class="text-center py-20 animate-reveal">
+                  <div class="w-24 h-24 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 text-4xl shadow-lg">
+                      <i class="fa fa-check-circle"></i>
+                  </div>
+                  <h3 class="text-4xl font-black text-dark mb-4">${this.t('contact.form_success_badge')}</h3>
+                  <p class="text-xl text-stone-500 font-bold">${this.t('contact.form_success_text')}</p>
+                  <button onclick="location.reload()" class="mt-10 text-primary font-black uppercase tracking-widest text-sm underline decoration-4 underline-offset-8">Send Another Inquiry</button>
+              </div>
+            `
+          } else {
+            alert(result.message || 'An error occurred. Please try again.')
+            btn.disabled = false
+            btn.innerText = originalText
+          }
+        } catch (error) {
+          console.error('Submission error:', error)
+          alert('Network error. Please check your connection and try again.')
+          btn.disabled = false
+          btn.innerText = originalText
+        }
       }
     })
   },
@@ -169,8 +248,26 @@ const App = {
     layer.classList.add('active')
 
     setTimeout(async () => {
-      this.state.route = route
-      window.history.pushState({}, '', '/' + (route === 'home' ? '' : route))
+      let targetPath = route
+      let cleanRoute = route.replace(/^\/|\/$/g, '')
+      let prefix = ''
+      if (cleanRoute.startsWith('ar/') || cleanRoute.startsWith('ro/')) {
+        prefix = cleanRoute.slice(0, 2)
+        cleanRoute = cleanRoute.slice(3) || 'home'
+      } else if (cleanRoute === 'ar' || cleanRoute === 'ro') {
+        prefix = cleanRoute
+        cleanRoute = 'home'
+      } else {
+        prefix = this.state.lang === 'en' ? '' : this.state.lang
+      }
+
+      this.state.route = cleanRoute || 'home'
+
+      let historyUrl = '/'
+      if (prefix) historyUrl += prefix + '/'
+      if (cleanRoute !== 'home') historyUrl += cleanRoute
+
+      window.history.pushState({}, '', historyUrl)
       this.render()
       window.scrollTo(0, 0)
 
@@ -188,6 +285,12 @@ const App = {
     await this.loadData()
     this.updateHTMLLangAttributes()
     this.updateLanguageSwitcherUI()
+
+    let historyUrl = '/'
+    if (lang !== 'en') historyUrl += lang + '/'
+    if (this.state.route !== 'home') historyUrl += this.state.route
+    window.history.pushState({}, '', historyUrl)
+
     this.render()
   },
 
@@ -259,23 +362,31 @@ const App = {
     const navContainer = document.getElementById('nav-links')
     const mobileNavContainer = document.getElementById('mobile-nav-links')
 
+    const langPrefix = this.state.lang === 'en' ? '' : `/${this.state.lang}`
+
     const linksHTML = this.state.pages
       .filter(p => p.show_in_nav)
       .map(
-        page => `
-            <a href="/${page.id}" class="nav-link font-black text-xs uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-all relative py-2">
+        page => {
+          const path = page.id === 'home' ? '' : page.id
+          return `
+            <a href="${langPrefix}/${path}" class="nav-link font-black text-xs uppercase tracking-[0.2em] text-stone-500 hover:text-primary transition-all relative py-2">
                 ${this.t('nav.' + page.nav_key)}
             </a>
-        `
+          `
+        }
       )
       .join('')
 
     const mobileLinksHTML = this.state.pages
       .filter(p => p.show_in_nav)
       .map(
-        page => `
-            <a href="/${page.id}" class="text-4xl font-black uppercase tracking-tighter hover:text-primary transition-colors">${this.t('nav.' + page.nav_key)}</a>
-        `
+        page => {
+          const path = page.id === 'home' ? '' : page.id
+          return `
+            <a href="${langPrefix}/${path}" class="text-4xl font-black uppercase tracking-tighter hover:text-primary transition-colors">${this.t('nav.' + page.nav_key)}</a>
+          `
+        }
       )
       .join('')
 
@@ -288,10 +399,11 @@ const App = {
 
   updateActiveNavLink () {
     document.querySelectorAll('.nav-link').forEach(link => {
-      const href = link.getAttribute('href').replace('/', '') || 'home'
+      const href = link.getAttribute('href')
+      const route = this.resolveRouteFromPath(href)
       if (
-        href === this.state.route ||
-        (this.state.route.startsWith('services') && href === 'services')
+        route === this.state.route ||
+        (this.state.route.startsWith('services') && route === 'services')
       ) {
         link.classList.add('text-primary')
         link.classList.remove('text-stone-500')
@@ -369,10 +481,10 @@ const App = {
                         </p>
 
                         <div class="flex flex-col sm:flex-row gap-8">
-                            <a href="/contact" class="bg-solar-gradient text-white px-14 py-6 rounded-[30px] font-black text-xl shadow-[0_30px_60px_-15px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all flex items-center justify-center gap-4 group">
+                            <a href="/contact" class="bg-solar-gradient text-white px-14 py-6 rounded-xl font-black text-xl shadow-[0_30px_60px_-15px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all flex items-center justify-center gap-4 group">
                                 ${this.t('hero.btn_audit')} <i class="fa fa-bolt group-hover:rotate-12 transition-transform"></i>
                             </a>
-                            <a href="/services" class="bg-white border-4 border-stone-100 text-dark px-14 py-6 rounded-[30px] font-black text-xl hover:border-primary transition-all text-center">
+                            <a href="/services" class="bg-white border-4 border-stone-100 text-dark px-14 py-6 rounded-xl font-black text-xl hover:border-primary transition-all text-center">
                                 ${this.t('hero.btn_services')}
                             </a>
                         </div>
@@ -381,12 +493,12 @@ const App = {
                     <div class="relative group">
                         <div class="absolute -inset-10 bg-solar-gradient rounded-full opacity-20 blur-[120px] group-hover:opacity-30 transition-opacity animate-pulse"></div>
                         <div class="relative z-10 animate-float">
-                            <img src="img/loopstech-main-photograph.jpg" alt="Loops Tech" class="rounded-[80px] shadow-[0_60px_100px_-20px_rgba(0,0,0,0.3)] border-[20px] border-white ring-1 ring-stone-100">
-                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-[40px] shadow-2xl animate-float-delayed hidden xl:block border border-stone-50">
+                            <img src="/img/loopstech-main-photograph.jpg" alt="Loops Tech" class="rounded-xl shadow-[0_60px_100px_-20px_rgba(0,0,0,0.3)] border-[20px] border-white ring-1 ring-stone-100">
+                            <div class="absolute top-20 -right-16 bg-white p-10 rounded-xl shadow-2xl animate-float-delayed hidden xl:block border border-stone-50">
                                 <i class="fa fa-robot text-5xl text-primary mb-4"></i>
                                 <p class="font-black text-dark text-lg">AI Ready</p>
                             </div>
-                            <div class="absolute -bottom-10 -left-16 bg-dark text-white p-10 rounded-[40px] shadow-2xl animate-float hidden xl:block">
+                            <div class="absolute -bottom-10 -left-16 bg-dark text-white p-10 rounded-xl shadow-2xl animate-float hidden xl:block">
                                 <i class="fa fa-code text-5xl text-accent mb-4"></i>
                                 <p class="font-black text-lg">Clean Code</p>
                             </div>
@@ -400,42 +512,42 @@ const App = {
                 <div class="process-line"></div>
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="text-center mb-32 space-y-6 reveal-on-scroll">
-                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">Our Strategy</h2>
-                        <h3 class="text-6xl font-black tracking-tighter uppercase  leading-none">The <span class="text-primary">Loop</span> of Success.</h3>
+                        <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">${this.t('home.process_badge')}</h2>
+                        <h3 class="text-6xl font-black tracking-tighter uppercase  leading-none">${this.t('home.process_title')}</h3>
                     </div>
                     
                     <div class="grid md:grid-cols-4 gap-12">
                         ${[
                           {
                             step: '01',
-                            title: 'Consult',
+                            title: this.t('home.process_step1_title'),
                             icon: 'fa-comments-alt',
-                            desc: 'Strategy sessions to align with your business vision.'
+                            desc: this.t('home.process_step1_desc')
                           },
                           {
                             step: '02',
-                            title: 'Architect',
+                            title: this.t('home.process_step2_title'),
                             icon: 'fa-draw-polygon',
-                            desc: 'Designing high-performance technical blueprints.'
+                            desc: this.t('home.process_step2_desc')
                           },
                           {
                             step: '03',
-                            title: 'Build',
+                            title: this.t('home.process_step3_title'),
                             icon: 'fa-code',
-                            desc: 'Agile development with daily progress loops.'
+                            desc: this.t('home.process_step3_desc')
                           },
                           {
                             step: '04',
-                            title: 'Scale',
+                            title: this.t('home.process_step4_title'),
                             icon: 'fa-rocket',
-                            desc: 'Global launch and continuous optimization.'
+                            desc: this.t('home.process_step4_desc')
                           }
                         ]
                           .map(
                             (p, idx) => `
                             <div class="relative group reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
                                 <div class="text-8xl font-black text-white/5 absolute -top-10 -left-4 group-hover:text-primary/10 transition-colors">${p.step}</div>
-                                <div class="w-20 h-20 bg-stone-900 rounded-3xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
+                                <div class="w-20 h-20 bg-stone-900 rounded-xl flex items-center justify-center mb-8 border border-stone-800 group-hover:bg-primary transition-all shadow-xl">
                                     <i class="fa ${p.icon} text-3xl"></i>
                                 </div>
                                 <h5 class="text-3xl font-black mb-4  tracking-tighter uppercase">${p.title}</h5>
@@ -456,7 +568,7 @@ const App = {
                             <h2 class="text-primary font-black uppercase tracking-[0.5em] text-xs">${this.t('home.services_badge')}</h2>
                             <h3 class="text-6xl font-black text-dark tracking-tighter uppercase leading-none ">${this.t('home.services_title')}</h3>
                         </div>
-                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                        <a href="/services" class="bg-stone-100 text-dark px-10 py-5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
                             ${this.t('home.services_all')}
                         </a>
                     </div>
@@ -476,31 +588,31 @@ const App = {
                         ${[
                           {
                             icon: 'fa-hospital',
-                            title: 'Hospitals',
-                            desc: 'Comprehensive patient and clinical management systems.'
+                            title: this.t('home.industry1_title'),
+                            desc: this.t('home.industry1_desc')
                           },
                           {
                             icon: 'fa-cash-register',
-                            title: 'Retail POS',
-                            desc: 'Lightning-fast checkout and inventory for chains.'
+                            title: this.t('home.industry2_title'),
+                            desc: this.t('home.industry2_desc')
                           },
                           {
                             icon: 'fa-truck-fast',
-                            title: 'Logistics',
-                            desc: 'Real-time rider tracking and delivery dispatch systems.'
+                            title: this.t('home.industry3_title'),
+                            desc: this.t('home.industry3_desc')
                           },
                           {
                             icon: 'fa-bed',
-                            title: 'Hotel ERP',
-                            desc: 'Automated booking and housekeeping management.'
+                            title: this.t('home.industry4_title'),
+                            desc: this.t('home.industry4_desc')
                           }
                         ]
                           .map((item, idx) => {
                             const color =
                               this.palette[idx % this.palette.length]
                             return `
-                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-[40px] shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
-                                    <div class="w-16 h-16 ${color.icon} rounded-2xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
+                                <div class="${color.bg} ${color.border} border-2 p-10 rounded-xl shadow-lg shadow-stone-100 card-creative reveal-on-scroll" style="transition-delay: ${idx * 0.1}s">
+                                    <div class="w-16 h-16 ${color.icon} rounded-xl flex items-center justify-center ${color.text} mb-8 shadow-sm">
                                         <i class="fa ${item.icon} text-2xl"></i>
                                     </div>
                                     <h5 class="text-2xl font-black mb-4 tracking-tighter uppercase ">${item.title}</h5>
@@ -517,8 +629,8 @@ const App = {
             <section class="py-32 bg-white overflow-hidden">
                 <div class="max-w-7xl mx-auto px-4">
                     <div class="text-center mb-24 space-y-6 reveal-on-scroll">
-                        <h2 class="text-accent font-black uppercase tracking-[0.5em] text-xs">The Edge</h2>
-                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase  leading-none">Global <span class="text-primary">Impact.</span></h3>
+                        <h2 class="text-accent font-black uppercase tracking-[0.5em] text-xs">${this.t('home.edge_badge')}</h2>
+                        <h3 class="text-7xl font-black text-dark tracking-tighter uppercase  leading-none">${this.t('home.edge_title')}</h3>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16" id="home-projects-grid"></div>
                 </div>
@@ -527,18 +639,18 @@ const App = {
             <!-- CTA -->
             <section class="py-32 px-4 bg-light">
                 <div class="max-w-7xl mx-auto">
-                    <div class="bg-dark rounded-[80px] p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
+                    <div class="bg-dark rounded-xl p-16 lg:p-32 text-center relative overflow-hidden reveal-on-scroll">
                         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
                         <div class="relative z-10 space-y-12">
                             <h3 class="text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none uppercase ">
-                                Built to <span class="text-primary">Win.</span>
+                                ${this.t('home.cta_title')}
                             </h3>
                             <p class="text-2xl text-stone-400 font-bold max-w-2xl mx-auto">
-                                Stop struggling with legacy tech. Let's build your future-proof digital engine today.
+                                ${this.t('home.cta_desc')}
                             </p>
                             <div class="pt-8">
-                                <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-[0.2em]">
-                                    Get Started Now <i class="fa fa-arrow-right ml-4"></i>
+                                <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-xl font-black text-2xl shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-[0.2em]">
+                                    ${this.t('home.cta_btn')} <i class="fa fa-arrow-right ml-4"></i>
                                 </a>
                             </div>
                         </div>
@@ -552,19 +664,21 @@ const App = {
     const grid = document.getElementById('home-services-grid')
     if (!grid) return
 
+    const langPrefix = this.state.lang === 'en' ? '' : `/${this.state.lang}`
+
     grid.innerHTML = this.state.services
       .slice(0, 6)
       .map((s, idx) => {
         const color = this.palette[idx % this.palette.length]
         return `
-                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                    <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
+                <div class="p-12 rounded-xl ${color.bg} ${color.border} border-2 card-creative group text-left reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center ${color.text} mb-10 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 shadow-md">
                         <i class="fa ${s.icon} text-2xl"></i>
                     </div>
                     <h4 class="text-3xl font-black mb-4 uppercase tracking-tighter  group-hover:text-primary transition-colors">${s.title[this.state.lang]}</h4>
                     <p class="text-stone-600 text-sm leading-relaxed mb-10 font-bold">${s.description[this.state.lang]}</p>
-                    <a href="/services/${s.id}" class="inline-flex items-center gap-3 ${color.text} font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
-                        Learn More <i class="fa fa-chevron-right"></i>
+                    <a href="${langPrefix}/services/${s.id}" class="inline-flex items-center gap-3 ${color.text} font-black uppercase tracking-[0.2em] text-[10px] group-hover:gap-5 transition-all">
+                        ${this.t('services.learn_more')} <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             `
@@ -578,12 +692,12 @@ const App = {
         .map(
           (p, idx) => `
                 <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.2}s">
-                    <div class="relative overflow-hidden rounded-[80px] shadow-2xl mb-12 border-[20px] border-white ring-1 ring-stone-100 aspect-video">
+                    <div class="relative overflow-hidden rounded-xl shadow-2xl mb-12 border-[20px] border-white ring-1 ring-stone-100 aspect-video">
                         <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
                         <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-12">
                             <div class="text-center scale-90 group-hover:scale-100 transition-transform">
                                 <p class="text-primary font-black uppercase text-xs tracking-[0.5em] mb-6">${p.type[this.state.lang]}</p>
-                                <h4 class="text-white font-black text-5xl  tracking-tighter uppercase mb-8">View Story</h4>
+                                <h4 class="text-white font-black text-5xl  tracking-tighter uppercase mb-8">${this.t('portfolio.view_story')}</h4>
                                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white">
                                     <i class="fa fa-arrow-right text-xl"></i>
                                 </div>
@@ -629,13 +743,13 @@ const App = {
       .map((s, idx) => {
         const color = this.palette[idx % this.palette.length]
         return `
-                <div class="p-12 rounded-[60px] ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
-                    <div class="w-24 h-24 bg-white rounded-[40px] flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
+                <div class="p-12 rounded-xl ${color.bg} ${color.border} border-2 card-creative group reveal-on-scroll" style="transition-delay: ${idx * 0.05}s">
+                    <div class="w-24 h-24 bg-white rounded-xl flex items-center justify-center ${color.text} mb-12 group-hover:bg-solar-gradient group-hover:text-white transition-all duration-500 rotate-6 group-hover:rotate-0 shadow-lg">
                         <i class="fa ${s.icon} text-4xl"></i>
                     </div>
                     <h4 class="text-4xl font-black mb-6 uppercase tracking-tighter  leading-none group-hover:${color.text} transition-colors">${s.title[this.state.lang]}</h4>
                     <p class="text-stone-500 text-lg leading-relaxed mb-12 font-bold">${s.description[this.state.lang]}</p>
-                    <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
+                    <a href="/services/${s.id}" class="bg-stone-900 text-white px-10 py-5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-primary transition-all inline-block shadow-2xl">
                         View Solution
                     </a>
                 </div>
@@ -670,49 +784,212 @@ const App = {
                             </div>
 
                             <div class="relative group reveal-on-scroll">
-                                <div class="absolute inset-0 bg-solar-gradient rounded-[80px] blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                                <img src="${service.graphic || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'}" class="relative z-10 w-full h-[600px] object-cover rounded-[80px] shadow-2xl border-[15px] border-white" alt="${service.title.en}">
+                                <div class="absolute inset-0 bg-solar-gradient rounded-xl blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                                <img src="${service.graphic || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'}" class="relative z-10 w-full h-[600px] object-cover rounded-xl shadow-2xl border-[15px] border-white" alt="${service.title.en}">
                             </div>
 
-                            <div class="prose prose-2xl max-w-none text-stone-600 font-bold leading-[1.8] reveal-on-scroll">
-                                ${
-                                  service.longDescription
-                                    ? service.longDescription[this.state.lang]
-                                        .split('\n')
-                                        .map(
-                                          p =>
-                                            `<p class="mb-10 text-xl">${p}</p>`
-                                        )
-                                        .join('')
-                                    : '<p>Detailed description coming soon...</p>'
+                             <div class="prose prose-2xl max-w-none text-stone-600 font-bold leading-[1.8] reveal-on-scroll">
+                                 ${
+                                   service.longDescription
+                                     ? service.longDescription[this.state.lang]
+                                         .split('\n')
+                                         .map(
+                                           p =>
+                                             `<p class="mb-10 text-xl">${p}</p>`
+                                         )
+                                         .join('')
+                                     : '<p>Detailed description coming soon...</p>'
+                                 }
+                             </div>
+
+                             ${(() => {
+                               if (serviceId === 'web-apps') {
+                                 return `
+                                 <div class="bg-stone-50 rounded-xl p-12 border border-stone-100 reveal-on-scroll space-y-8 my-16">
+                                     <h4 class="text-2xl font-black uppercase tracking-tighter text-dark mb-6 text-left">System Architecture Flow</h4>
+                                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-center">
+                                         <div class="bg-white p-6 rounded-xl border-2 border-stone-200 shadow-sm">
+                                             <i class="fa fa-users text-primary text-2xl mb-2"></i>
+                                             <p class="font-black text-xs uppercase tracking-wider text-dark">User Client</p>
+                                         </div>
+                                         <div class="text-stone-400 text-2xl"><i class="fa fa-arrow-right hidden md:block"></i><i class="fa fa-arrow-down block md:hidden"></i></div>
+                                         <div class="bg-white p-6 rounded-xl border-2 border-primary shadow-sm ring-4 ring-primary/5">
+                                             <i class="fa fa-laptop-code text-primary text-2xl mb-2"></i>
+                                             <p class="font-black text-xs uppercase tracking-wider text-dark">React Frontend</p>
+                                         </div>
+                                         <div class="text-stone-400 text-2xl"><i class="fa fa-arrow-right hidden md:block"></i><i class="fa fa-arrow-down block md:hidden"></i></div>
+                                         <div class="bg-white p-6 rounded-xl border-2 border-accent shadow-sm">
+                                             <i class="fa fa-gears text-accent text-2xl mb-2"></i>
+                                             <p class="font-black text-xs uppercase tracking-wider text-dark">Laravel API</p>
+                                         </div>
+                                         <div class="text-stone-400 text-2xl"><i class="fa fa-arrow-right hidden md:block"></i><i class="fa fa-arrow-down block md:hidden"></i></div>
+                                         <div class="bg-white p-6 rounded-xl border-2 border-dark shadow-sm">
+                                             <i class="fa fa-database text-dark text-2xl mb-2"></i>
+                                             <p class="font-black text-xs uppercase tracking-wider text-dark">Secure MySQL</p>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               } else if (serviceId === 'ai-solutions') {
+                                 return `
+                                 <div class="bg-stone-900 rounded-xl p-12 border border-stone-800 reveal-on-scroll text-white space-y-6 my-16">
+                                     <div class="flex items-center justify-between border-b border-stone-800 pb-6">
+                                         <div class="flex items-center gap-4">
+                                             <span class="w-3 h-3 bg-emerald-500 rounded-full animate-ping"></span>
+                                             <span class="font-black text-xs uppercase tracking-widest text-emerald-400">Live Assistant Preview</span>
+                                         </div>
+                                         <span class="text-stone-500 font-bold text-xs uppercase">LoopsAI Agent v1.2</span>
+                                     </div>
+                                     <div class="space-y-6 text-left">
+                                         <div class="flex items-start gap-4">
+                                             <div class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center font-black text-xs text-white">U</div>
+                                             <div class="bg-stone-800 p-6 rounded-2xl rounded-tl-none max-w-md">
+                                                 <p class="font-bold text-sm">Hi, can I check my order status for booking #8829?</p>
+                                             </div>
+                                         </div>
+                                         <div class="flex items-start gap-4 justify-end">
+                                             <div class="bg-primary p-6 rounded-2xl rounded-tr-none max-w-md text-left">
+                                                 <p class="font-bold text-sm text-white">Hello! I've located booking #8829. Your developer team is currently on step 03 (Build), with 85% of tasks completed. Uptime is at 99.9%.</p>
+                                             </div>
+                                             <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center font-black text-xs text-white">AI</div>
+                                         </div>
+                                         <div class="flex items-center gap-3 text-stone-500 text-xs">
+                                             <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                                             <span>Agent typing response...</span>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               } else if (serviceId === 'ai-infrastructure') {
+                                 return `
+                                 <div class="bg-stone-950 rounded-xl p-12 border border-stone-800 text-white reveal-on-scroll space-y-8 my-16">
+                                     <div class="flex items-center justify-between border-b border-stone-800 pb-6">
+                                         <span class="font-black text-xs uppercase tracking-widest text-stone-400">MLOps Cluster Monitor</span>
+                                         <span class="bg-primary/20 text-primary border border-primary/30 px-4 py-1.5 rounded-full font-black text-[10px] uppercase tracking-widest">Active</span>
+                                     </div>
+                                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                                         <div class="space-y-3">
+                                             <div class="flex justify-between font-black text-xs uppercase text-stone-500">
+                                                 <span>GPU Usage</span>
+                                                 <span class="text-white">94%</span>
+                                             </div>
+                                             <div class="w-full bg-stone-800 h-3 rounded-full overflow-hidden">
+                                                 <div class="bg-solar-gradient h-full rounded-full" style="width: 94%"></div>
+                                             </div>
+                                         </div>
+                                         <div class="space-y-3">
+                                             <div class="flex justify-between font-black text-xs uppercase text-stone-500">
+                                                 <span>Model Load (LLM)</span>
+                                                 <span class="text-white">82%</span>
+                                             </div>
+                                             <div class="w-full bg-stone-800 h-3 rounded-full overflow-hidden">
+                                                 <div class="bg-emerald-500 h-full rounded-full" style="width: 82%"></div>
+                                             </div>
+                                         </div>
+                                         <div class="space-y-3">
+                                             <div class="flex justify-between font-black text-xs uppercase text-stone-500">
+                                                 <span>Compute Nodes</span>
+                                                 <span class="text-white">16 / 16</span>
+                                             </div>
+                                             <div class="w-full bg-stone-800 h-3 rounded-full overflow-hidden">
+                                                 <div class="bg-blue-500 h-full rounded-full" style="width: 100%"></div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               } else if (serviceId === 'mobile-apps') {
+                                 return `
+                                 <div class="bg-stone-50 rounded-xl p-12 border border-stone-100 reveal-on-scroll grid lg:grid-cols-2 gap-12 items-center my-16 text-left">
+                                     <div class="space-y-6">
+                                         <h4 class="text-3xl font-black uppercase tracking-tighter text-dark">Mobile UX Blueprint</h4>
+                                         <p class="text-stone-600 font-bold leading-relaxed text-sm">We prototype high-speed native feel frameworks. Drag-and-drop structures and native navigation controls are compiled directly from clean, cross-platform layouts.</p>
+                                         <div class="flex gap-4">
+                                             <span class="bg-white px-4 py-2 border border-stone-200 rounded-lg text-xs font-black text-dark"><i class="fab fa-apple mr-2"></i> iOS Ready</span>
+                                             <span class="bg-white px-4 py-2 border border-stone-200 rounded-lg text-xs font-black text-dark"><i class="fab fa-android mr-2"></i> Android Ready</span>
+                                         </div>
+                                     </div>
+                                     <div class="flex justify-center">
+                                         <div class="w-64 h-[400px] bg-dark rounded-[40px] border-[12px] border-stone-800 shadow-2xl p-6 relative overflow-hidden flex flex-col justify-between">
+                                             <div class="w-20 h-4 bg-stone-800 rounded-full mx-auto -mt-2"></div>
+                                             <div class="space-y-4 my-auto">
+                                                 <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white text-xl mx-auto"><i class="fa fa-bolt"></i></div>
+                                                 <div class="text-center text-white">
+                                                     <p class="font-black text-sm uppercase">Loops Wallet</p>
+                                                     <p class="text-stone-500 text-[10px] mt-1">Transaction Completed</p>
+                                                 </div>
+                                                 <div class="bg-stone-900 border border-stone-800 p-4 rounded-xl text-center text-xs font-bold text-stone-400">$1,420.00</div>
+                                             </div>
+                                             <div class="w-32 h-1 bg-stone-700 rounded-full mx-auto -mb-2"></div>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               } else if (serviceId === 'marketing') {
+                                 return `
+                                 <div class="bg-stone-50 rounded-xl p-12 border border-stone-100 reveal-on-scroll space-y-8 my-16 text-left">
+                                     <h4 class="text-2xl font-black uppercase tracking-tighter text-dark">Organic Conversion Loop</h4>
+                                     <div class="space-y-6 max-w-xl mx-auto">
+                                         <div class="flex items-center gap-6">
+                                             <div class="bg-blue-500/10 border border-blue-500/20 p-4 rounded-xl text-center text-blue-700 font-black text-xs uppercase tracking-widest" style="width: 100%">Organic Traffic (SEO Audits) - 100%</div>
+                                         </div>
+                                         <div class="flex items-center gap-6">
+                                             <div class="bg-orange-500/10 border border-orange-500/20 p-4 rounded-xl text-center text-orange-700 font-black text-xs uppercase tracking-widest mx-auto" style="width: 80%">User Engagement (Funnel Speed) - 45%</div>
+                                         </div>
+                                         <div class="flex items-center gap-6">
+                                             <div class="bg-emerald-500/10 border border-emerald-500/20 p-4 rounded-xl text-center text-emerald-700 font-black text-xs uppercase tracking-widest mx-auto" style="width: 50%">Converted Customers (ROI Sales) - 18%</div>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               } else if (serviceId === 'iot-solutions') {
+                                 return `
+                                 <div class="bg-stone-950 rounded-xl p-12 border border-stone-900 text-white reveal-on-scroll space-y-8 my-16 text-left">
+                                     <div class="flex items-center justify-between border-b border-stone-900 pb-6">
+                                         <span class="font-black text-xs uppercase tracking-widest text-stone-500">Live Device Logs</span>
+                                         <span class="flex items-center gap-2 text-xs font-bold text-emerald-400"><i class="fa fa-wifi"></i> Active Sensor Sync</span>
+                                     </div>
+                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs font-mono">
+                                         <div class="bg-stone-900 p-6 rounded-xl border border-stone-800 space-y-2">
+                                             <p class="text-stone-500 uppercase font-black text-[10px] tracking-wider">Device Log #1</p>
+                                             <p><span class="text-primary">DEVICE_ID:</span> LogiTrack-99</p>
+                                             <p><span class="text-primary">BATTERY:</span> 89%</p>
+                                             <p><span class="text-primary">COORDINATES:</span> 24.71° N, 46.67° E</p>
+                                             <p><span class="text-emerald-400">STATUS: Online</span></p>
+                                         </div>
+                                         <div class="bg-stone-900 p-6 rounded-xl border border-stone-800 space-y-2">
+                                             <p class="text-stone-500 uppercase font-black text-[10px] tracking-wider">Device Log #2</p>
+                                             <p><span class="text-primary">DEVICE_ID:</span> ThermoSens-04</p>
+                                             <p><span class="text-primary">TEMPERATURE:</span> 22.4°C</p>
+                                             <p><span class="text-primary">PING:</span> 12ms</p>
+                                             <p><span class="text-emerald-400">STATUS: Online</span></p>
+                                         </div>
+                                     </div>
+                                 </div>`;
+                               }
+                               return "";
+                             })()}
+
+                             <div class="grid md:grid-cols-2 gap-10 reveal-on-scroll">
+                                 ${
+                                   service.features
+                                     ? service.features
+                                         .map((f, i) => {
+                                           const color =
+                                             this.palette[
+                                               i % this.palette.length
+                                             ]
+                                           return `
+                                         <div class="${color.bg} p-12 rounded-xl border ${color.border} group hover:border-primary transition-colors">
+                                             <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
+                                                 <i class="fa ${f.icon} text-2xl"></i>
+                                             </div>
+                                             <h5 class="text-3xl font-black mb-4 tracking-tighter  uppercase">${f.title[this.state.lang]}</h5>
+                                             <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
+                                         </div>
+                                     `
+                                         })
+                                         .join('')
+                                     : ''
                                 }
                             </div>
 
-                            <div class="grid md:grid-cols-2 gap-10 reveal-on-scroll">
-                                ${
-                                  service.features
-                                    ? service.features
-                                        .map((f, i) => {
-                                          const color =
-                                            this.palette[
-                                              i % this.palette.length
-                                            ]
-                                          return `
-                                        <div class="${color.bg} p-12 rounded-[50px] border ${color.border} group hover:border-primary transition-colors">
-                                            <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center ${color.text} mb-8 shadow-md group-hover:scale-110 transition-transform">
-                                                <i class="fa ${f.icon} text-2xl"></i>
-                                            </div>
-                                            <h5 class="text-3xl font-black mb-4 tracking-tighter  uppercase">${f.title[this.state.lang]}</h5>
-                                            <p class="text-stone-400 font-bold leading-relaxed uppercase text-xs tracking-widest">${f.description[this.state.lang]}</p>
-                                        </div>
-                                    `
-                                        })
-                                        .join('')
-                                    : ''
-                                }
-                            </div>
-
-                            <div class="bg-dark p-16 lg:p-32 rounded-[100px] text-white space-y-12 relative overflow-hidden reveal-on-scroll">
+                            <div class="bg-dark p-16 lg:p-32 rounded-xl text-white space-y-12 relative overflow-hidden reveal-on-scroll">
                                 <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px]"></div>
                                 <h3 class="text-5xl lg:text-7xl font-black tracking-tighter uppercase  leading-none">Why Choose <span class="text-primary">Loops</span>?</h3>
                                 <ul class="space-y-10">
@@ -732,7 +1009,7 @@ const App = {
                                     }
                                 </ul>
                                 <div class="pt-16 border-t border-stone-800 flex flex-col md:flex-row items-center gap-10">
-                                    <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-[40px] font-black text-2xl hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-center uppercase tracking-widest">
+                                    <a href="/contact" class="bg-solar-gradient text-white px-16 py-8 rounded-xl font-black text-2xl hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-center uppercase tracking-widest">
                                         Hire Our Talent
                                     </a>
                                 </div>
@@ -740,14 +1017,14 @@ const App = {
                         </div>
 
                         <div class="lg:col-span-1 space-y-16 animate-fade-in" style="animation-delay: 0.3s">
-                            <div class="bg-stone-50 p-12 rounded-[60px] border border-stone-100 sticky top-32">
+                            <div class="bg-stone-50 p-12 rounded-xl border border-stone-100 sticky top-32">
                                 <h4 class="text-3xl font-black mb-12 tracking-tighter uppercase border-b-8 border-primary/10 pb-6 ">Capabilities</h4>
                                 <div class="space-y-8">
                                     ${otherServices
                                       .map(
                                         s => `
-                                        <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-[30px] hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
-                                            <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
+                                        <a href="/services/${s.id}" class="flex items-center gap-6 p-6 rounded-xl hover:bg-white transition-all group ${s.id === serviceId ? 'bg-white pointer-events-none opacity-50' : ''}">
+                                            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
                                                 <i class="fa ${s.icon}"></i>
                                             </div>
                                             <span class="font-black text-sm uppercase tracking-[0.1em] group-hover:text-primary transition-colors">${s.title[this.state.lang]}</span>
@@ -765,7 +1042,7 @@ const App = {
                                             ? service.technologies
                                                 .map(
                                                   t => `
-                                            <span class="bg-white px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-stone-100 shadow-sm hover:border-primary transition-colors">${t}</span>
+                                            <span class="bg-white px-6 py-3 rounded-xl text-[11px] font-black uppercase tracking-widest border border-stone-100 shadow-sm hover:border-primary transition-colors">${t.name || t}</span>
                                         `
                                                 )
                                                 .join('')
@@ -804,7 +1081,7 @@ const App = {
       .map(
         (p, idx) => `
             <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: ${idx * 0.15}s">
-                <div class="relative overflow-hidden rounded-[100px] shadow-2xl mb-12 border-[25px] border-white ring-1 ring-stone-100 aspect-video">
+                <div class="relative overflow-hidden rounded-xl shadow-2xl mb-12 border-[25px] border-white ring-1 ring-stone-100 aspect-video">
                     <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
                     <div class="absolute inset-0 bg-solar-gradient/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-16">
                         <div class="text-center translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
@@ -837,7 +1114,7 @@ const App = {
                             </h2>
                             <div class="space-y-10 text-2xl text-stone-500 leading-relaxed font-bold">
                                 <p>${this.t('about.text1')}</p>
-                                <div class="relative p-12 bg-dark rounded-[60px] text-white">
+                                <div class="relative p-12 bg-dark rounded-xl text-white">
                                     <div class="absolute top-0 right-0 w-32 h-32 bg-primary/30 blur-3xl"></div>
                                     <p class="relative z-10  text-3xl leading-tight">"${this.t('about.text2')}"</p>
                                 </div>
@@ -846,8 +1123,8 @@ const App = {
                         </div>
                         <div class="relative group">
                             <div class="absolute -inset-10 bg-solar-gradient blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Loops Tech" class="relative z-10 rounded-[100px] shadow-2xl border-[20px] border-white">
-                            <div class="absolute -bottom-16 -left-16 bg-solar-gradient text-white p-16 rounded-[60px] shadow-2xl animate-float">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Loops Tech" class="relative z-10 rounded-xl shadow-2xl border-[20px] border-white">
+                            <div class="absolute -bottom-16 -left-16 bg-solar-gradient text-white p-16 rounded-xl shadow-2xl animate-float">
                                 <p class="text-7xl font-black mb-2">${this.t('about.quality_audit')}</p>
                                 <p class="text-xs font-black uppercase tracking-[0.5em] opacity-80">${this.t('about.quality_audit_text')}</p>
                             </div>
@@ -855,7 +1132,7 @@ const App = {
                     </div>
 
                     <!-- FAQ -->
-                    <div class="bg-dark p-20 lg:p-40 rounded-[120px] text-white relative overflow-hidden reveal-on-scroll">
+                    <div class="bg-dark p-20 lg:p-40 rounded-xl text-white relative overflow-hidden reveal-on-scroll">
                         <div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"></div>
                         <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px]"></div>
                         
@@ -892,22 +1169,22 @@ const App = {
                     </div>
                     
                     <div class="grid lg:grid-cols-3 gap-20 items-start">
-                        <div class="lg:col-span-2 bg-white p-16 lg:p-24 rounded-[100px] shadow-2xl border border-stone-50 reveal-on-scroll">
+                        <div class="lg:col-span-2 bg-white p-16 lg:p-24 rounded-xl shadow-2xl border border-stone-50 reveal-on-scroll">
                             <form id="contact-form" class="space-y-16">
                                 <div class="grid md:grid-cols-2 gap-12">
                                     <div class="space-y-6">
                                         <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_name')}</label>
-                                        <input type="text" name="name" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_name')}">
+                                        <input type="text" name="name" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_name')}">
                                     </div>
                                     <div class="space-y-6">
                                         <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_email')}</label>
-                                        <input type="email" name="email" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_email')}">
+                                        <input type="email" name="email" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_email')}">
                                     </div>
                                 </div>
                                 <div class="space-y-6">
                                     <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_project_type')}</label>
                                     <div class="relative">
-                                        <select name="service" class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl appearance-none">
+                                        <select name="service" class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl appearance-none">
                                             <option>Custom Web Application</option>
                                             <option>Mobile App (Android/iOS)</option>
                                             <option>Generative AI Agent</option>
@@ -921,16 +1198,16 @@ const App = {
                                 </div>
                                 <div class="space-y-6">
                                     <label class="text-xs font-black uppercase text-stone-400 ml-8 tracking-[0.5em]">${this.t('contact.label_message')}</label>
-                                    <textarea name="message" rows="5" required class="w-full bg-stone-50 p-8 rounded-[40px] outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_message')}"></textarea>
+                                    <textarea name="message" rows="5" required class="w-full bg-stone-50 p-8 rounded-xl outline-none focus:ring-8 focus:ring-primary/10 border-4 border-transparent focus:border-primary transition-all font-black text-xl" placeholder="${this.t('contact.placeholder_message')}"></textarea>
                                 </div>
-                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-[50px] font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] ">
+                                <button type="submit" class="w-full bg-solar-gradient text-white p-10 rounded-xl font-black text-3xl shadow-[0_40px_80px_-20px_rgba(234,88,12,0.4)] hover:-translate-y-2 transition-all uppercase tracking-[0.2em] ">
                                     ${this.t('contact.btn_send')}
                                 </button>
                             </form>
                         </div>
 
                         <div class="space-y-12 reveal-on-scroll" style="transition-delay: 0.3s">
-                            <div class="bg-dark text-white p-20 rounded-[80px] space-y-16 relative overflow-hidden border border-stone-800">
+                            <div class="bg-dark text-white p-20 rounded-xl space-y-16 relative overflow-hidden border border-stone-800">
                                 <div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
                                 <div class="relative z-10 space-y-16">
                                     <div>
@@ -965,11 +1242,13 @@ const App = {
     const footer = document.querySelector('footer')
     if (!footer) return
 
+    const langPrefix = this.state.lang === 'en' ? '' : `/${this.state.lang}`
+
     footer.innerHTML = `
             <div class="max-w-7xl mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-24 mb-32">
                     <div class="space-y-10">
-                        <img src="img/loopstech-logo.png" alt="Loops Technologies" class="h-14 w-auto brightness-0 invert hover:rotate-3 transition-transform">
+                        <img src="/img/loopstech-logo.png" alt="Loops Technologies" class="h-14 w-auto brightness-0 invert hover:rotate-3 transition-transform">
                         <p class="text-xl leading-relaxed font-bold text-stone-500">${this.t('footer.desc')}</p>
                         <div class="flex gap-6">
                             ${[
@@ -980,7 +1259,7 @@ const App = {
                             ]
                               .map(
                                 icon => `
-                                <a href="#" class="w-14 h-14 rounded-[20px] bg-stone-900 flex items-center justify-center text-white hover:bg-primary hover:-translate-y-2 transition-all shadow-xl border border-stone-800">
+                                <a href="#" class="w-14 h-14 rounded-lg bg-stone-900 flex items-center justify-center text-white hover:bg-primary hover:-translate-y-2 transition-all shadow-xl border border-stone-800">
                                     <i class="fab fa-${icon} text-xl"></i>
                                 </a>
                             `
@@ -989,19 +1268,19 @@ const App = {
                         </div>
                     </div>
                     <div>
-                        <h4 class="text-white font-black mb-12 uppercase text-xs tracking-[0.6em] ">Expertise</h4>
+                        <h4 class="text-white font-black mb-12 uppercase text-xs tracking-[0.6em] ">${this.t('footer.expertise_title')}</h4>
                         <ul class="space-y-8 text-sm font-black uppercase tracking-[0.2em]">
-                            <li><a href="/services/web-apps" class="hover:text-primary transition-all">Web Applications</a></li>
-                            <li><a href="/services/mobile-apps" class="hover:text-primary transition-all">Mobile Solutions</a></li>
-                            <li><a href="/ai-solutions" class="hover:text-primary transition-all">AI Business Core</a></li>
-                            <li><a href="/services/erp-crm" class="hover:text-primary transition-all">ERP & CRM</a></li>
+                            <li><a href="${langPrefix}/services/web-apps" class="hover:text-primary transition-all">Web Applications</a></li>
+                            <li><a href="${langPrefix}/services/mobile-apps" class="hover:text-primary transition-all">Mobile Solutions</a></li>
+                            <li><a href="${langPrefix}/ai-solutions" class="hover:text-primary transition-all">AI Business Core</a></li>
+                            <li><a href="${langPrefix}/services/erp-crm" class="hover:text-primary transition-all">ERP & CRM</a></li>
                         </ul>
                     </div>
                     <div class="lg:col-span-2 space-y-12">
-                        <h4 class="text-white font-black uppercase text-xs tracking-[0.6em] mb-12 ">Work With Us</h4>
+                        <h4 class="text-white font-black uppercase text-xs tracking-[0.6em] mb-12 ">${this.t('footer.work_with_us_title')}</h4>
                         <p class="text-4xl lg:text-5xl text-stone-200  font-black leading-[1.1] tracking-tighter uppercase">${this.t('footer.quote')}</p>
                         <div class="flex flex-col sm:flex-row items-center gap-12 pt-8">
-                            <a href="/contact" class="bg-white text-dark px-14 py-6 rounded-[30px] font-black text-sm uppercase tracking-[0.3em] shadow-2xl hover:bg-primary hover:text-white transition-all w-full sm:w-auto text-center">${this.t('footer.btn_contact')}</a>
+                            <a href="${langPrefix}/contact" class="bg-white text-dark px-14 py-6 rounded-xl font-black text-sm uppercase tracking-[0.3em] shadow-2xl hover:bg-primary hover:text-white transition-all w-full sm:w-auto text-center">${this.t('footer.btn_contact')}</a>
                             <span class="text-xs font-black text-primary uppercase tracking-[0.5em] flex items-center gap-4"><i class="fa fa-certificate text-3xl text-primary animate-spin-slow"></i> ${this.t('footer.audit_badge')}</span>
                         </div>
                     </div>
@@ -1009,8 +1288,8 @@ const App = {
                 <div class="pt-16 border-t border-stone-900 flex flex-col md:flex-row justify-between items-center text-[11px] font-black uppercase tracking-[0.6em] gap-10">
                     <p class="text-stone-600">${this.t('footer.copyright')}</p>
                     <div class="flex gap-16">
-                        <a href="/about" class="hover:text-white transition-colors">The Journey</a>
-                        <a href="/contact" class="hover:text-white transition-colors">Scale Now</a>
+                        <a href="${langPrefix}/about" class="hover:text-white transition-colors">${this.t('footer.link_journey')}</a>
+                        <a href="${langPrefix}/contact" class="hover:text-white transition-colors">${this.t('footer.link_start')}</a>
                     </div>
                 </div>
             </div>

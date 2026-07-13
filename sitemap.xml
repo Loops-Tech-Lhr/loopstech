@@ -1,16 +1,350 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://loopstech.com/</loc><priority>1.0</priority></url>
-    <url><loc>https://loopstech.com/services</loc><priority>0.9</priority></url>
-    <url><loc>https://loopstech.com/projects</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/about</loc><priority>0.7</priority></url>
-    <url><loc>https://loopstech.com/contact</loc><priority>0.9</priority></url>
-    <url><loc>https://loopstech.com/ai-solutions</loc><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Home -->
+    <url>
+        <loc>https://loopstech.com/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/" />
+    </url>
+
     <!-- Services -->
-    <url><loc>https://loopstech.com/services/web-apps</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/services/mobile-apps</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/services/ai-agents</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/services/ecommerce</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/services/erp-crm</loc><priority>0.8</priority></url>
-    <url><loc>https://loopstech.com/services/einvoicing</loc><priority>0.8</priority></url>
+    <url>
+        <loc>https://loopstech.com/services</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services" />
+    </url>
+
+    <!-- Projects -->
+    <url>
+        <loc>https://loopstech.com/projects</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/projects" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/projects" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/projects" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/projects</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/projects" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/projects" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/projects" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/projects</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/projects" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/projects" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/projects" />
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://loopstech.com/about</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/about" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/about" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/about" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/about</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/about" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/about" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/about" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/about</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/about" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/about" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/about" />
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://loopstech.com/contact</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/contact" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/contact" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/contact" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/contact</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/contact" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/contact" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/contact" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/contact</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/contact" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/contact" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/contact" />
+    </url>
+
+    <!-- AI Solutions -->
+    <url>
+        <loc>https://loopstech.com/ai-solutions</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/ai-solutions" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/ai-solutions</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/ai-solutions" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/ai-solutions</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/ai-solutions" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/ai-solutions" />
+    </url>
+
+    <!-- Deep Links: Web Apps -->
+    <url>
+        <loc>https://loopstech.com/services/web-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/web-apps" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/web-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/web-apps" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/web-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/web-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/web-apps" />
+    </url>
+
+    <!-- Deep Links: Mobile Apps -->
+    <url>
+        <loc>https://loopstech.com/services/mobile-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/mobile-apps" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/mobile-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/mobile-apps" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/mobile-apps</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/mobile-apps" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/mobile-apps" />
+    </url>
+
+    <!-- Deep Links: AI Agents -->
+    <url>
+        <loc>https://loopstech.com/services/ai-agents</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ai-agents" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/ai-agents</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ai-agents" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/ai-agents</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ai-agents" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ai-agents" />
+    </url>
+
+    <!-- Deep Links: Ecommerce -->
+    <url>
+        <loc>https://loopstech.com/services/ecommerce</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ecommerce" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/ecommerce</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ecommerce" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/ecommerce</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/ecommerce" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/ecommerce" />
+    </url>
+
+    <!-- Deep Links: ERP & CRM -->
+    <url>
+        <loc>https://loopstech.com/services/erp-crm</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/erp-crm" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/erp-crm</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/erp-crm" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/erp-crm</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/erp-crm" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/erp-crm" />
+    </url>
+
+    <!-- Deep Links: ZATCA eInvoicing -->
+    <url>
+        <loc>https://loopstech.com/services/einvoicing</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/einvoicing" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ar/services/einvoicing</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/einvoicing" />
+    </url>
+    <url>
+        <loc>https://loopstech.com/ro/services/einvoicing</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loopstech.com/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://loopstech.com/ar/services/einvoicing" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://loopstech.com/ro/services/einvoicing" />
+    </url>
 </urlset>

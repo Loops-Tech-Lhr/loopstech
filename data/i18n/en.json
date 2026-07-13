@@ -33,17 +33,42 @@
     "stats_lahore": "Lahore",
     "stats_lahore_text": "Pakistan Center",
     "specialized_badge": "Specialized ERPs",
-    "specialized_title": "Software for Your Industry."
+    "specialized_title": "Software for Your Industry.",
+    "process_badge": "Our Strategy",
+    "process_title": "The <span class=\"text-primary\">Loop</span> of Success.",
+    "process_step1_title": "Consult",
+    "process_step1_desc": "Strategy sessions to align with your business vision.",
+    "process_step2_title": "Architect",
+    "process_step2_desc": "Designing high-performance technical blueprints.",
+    "process_step3_title": "Build",
+    "process_step3_desc": "Agile development with daily progress loops.",
+    "process_step4_title": "Scale",
+    "process_step4_desc": "Global launch and continuous optimization.",
+    "industry1_title": "Hospitals",
+    "industry1_desc": "Comprehensive patient and clinical management systems.",
+    "industry2_title": "Retail POS",
+    "industry2_desc": "Lightning-fast checkout and inventory for chains.",
+    "industry3_title": "Logistics",
+    "industry3_desc": "Real-time rider tracking and delivery dispatch systems.",
+    "industry4_title": "Hotel ERP",
+    "industry4_desc": "Automated booking and housekeeping management.",
+    "edge_badge": "The Edge",
+    "edge_title": "Global <span class=\"text-primary\">Impact.</span>",
+    "cta_title": "Built to <span class=\"text-primary\">Win.</span>",
+    "cta_desc": "Stop struggling with legacy tech. Let's build your future-proof digital engine today.",
+    "cta_btn": "Get Started Now"
   },
   "services": {
     "title": "Full <span class=\"text-primary\">Service List.</span>",
     "subtitle": "We use modern tech stacks like Laravel, PHP, WordPress, and Shopify to build high-speed solutions.",
-    "inquire_now": "Inquire Now"
+    "inquire_now": "Inquire Now",
+    "learn_more": "Learn More"
   },
   "portfolio": {
     "title": "Our <span class=\"text-primary\">Legacy.</span>",
     "subtitle": "Real projects that solved real problems for our global clients.",
-    "case_study": "Case Study"
+    "case_study": "Case Study",
+    "view_story": "View Story"
   },
   "about": {
     "title": "Our Journey.",
@@ -75,6 +100,7 @@
     "placeholder_email": "name@company.com",
     "placeholder_message": "Describe your project vision...",
     "btn_send": "Send Inquiry",
+    "btn_sending": "Sending...",
     "hq": "Headquarters",
     "office_riyadh": "Riyadh Office",
     "office_lahore": "Lahore Office",
@@ -87,7 +113,7 @@
     "quote": "\"Expertise is not just about writing code. it's about understanding the human behind the business.\"",
     "btn_contact": "Contact Today",
     "audit_badge": "Free Project Audit",
-    "copyright": "© 2026 LOOPS TECHNOLOGIES . All Right are reserved.",
+    "copyright": "© 2026 LOOPS TECHNOLOGIES . All Rights Reserved.",
     "link_journey": "Our Journey",
     "link_start": "Start Project"
   }

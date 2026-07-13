@@ -3,19 +3,19 @@
     "id": "web-apps",
     "icon": "fa-laptop-code",
     "title": {
-      "en": "Custom Web Applications",
-      "ar": "تطبيقات الويب المخصصة",
-      "ro": "Aplicații Web Personalizate"
+      "en": "Web App Development",
+      "ar": "تطوير تطبيقات الويب",
+      "ro": "Dezvoltare Aplicații Web"
     },
     "description": {
-      "en": "High-performance web applications built with Laravel and React to streamline your business operations.",
-      "ar": "تطبيقات ويب عالية الأداء مبنية باستخدام Laravel و React لتبسيط عملياتك التجارية.",
-      "ro": "Aplicații web de înaltă performanță construite cu Laravel și React pentru a eficientiza operațiunile afacerii tale."
+      "en": "Build high-performance, custom web applications that streamline your operations and engage your audience.",
+      "ar": "ابنِ تطبيقات ويب مخصصة عالية الأداء تبسط عملياتك وتجذب جمهورك.",
+      "ro": "Construiește aplicații web personalizate, de înaltă performanță, care îți eficientizează operațiunile și îți atrag publicul."
     },
     "longDescription": {
-      "en": "At Loops Tech, we specialize in building high-performance, scalable custom web applications that drive business growth and operational excellence. Our approach combines the latest frontend and backend technologies with a deep understanding of your unique business needs, ensuring that every line of code serves a strategic purpose. We leverage powerful frameworks like Laravel for robust backends and React for dynamic, intuitive user interfaces that engage users and deliver results.\n\nOur development process is designed for transparency and agility, allowing us to pivot as your requirements evolve. We work closely with our clients from the initial discovery phase through to deployment and ongoing maintenance, ensuring that the final product not only meets but exceeds expectations. Whether you need a sophisticated enterprise portal, a dynamic customer-facing dashboard, or a specialized internal tool, our team of expert developers delivers solutions that are functional, visually stunning, and highly secure.\n\nWe prioritize speed, security, and SEO in every project we undertake. In today's competitive digital landscape, a web application must be fast, secure, and easily discoverable. We implement best practices for on-page SEO and technical optimization to ensure your web app ranks well and provides a safe environment for your users. With Loops Tech, you gain a partner dedicated to your long-term success and technical superiority.",
-      "ar": "في لوبس تيك (Loops Tech)، نحن متخصصون في بناء تطبيقات ويب مخصصة عالية الأداء وقابلة للتطوير تدفع نمو الأعمال والتميز التشغيلي. يجمع نهجنا بين أحدث تقنيات الواجهة الأمامية والخلفية مع فهم عميق لاحتياجات عملك الفريدة، مما يضمن أن كل سطر من الأكواد يخدم غرضاً استراتيجياً. نحن نستفيد من أطر العمل القوية مثل Laravel للخلفيات البرمجية القوية و React لواجهات المستخدم الديناميكية والبديهية التي تجذب المستخدمين وتحقق النتائج.\n\nتم تصميم عملية التطوير لدينا من أجل الشفافية والرشاقة، مما يسمح لنا بالتحول مع تطور متطلباتك. نحن نعمل بشكل وثيق مع عملائنا من مرحلة الاكتشاف الأولية وحتى النشر والصيانة المستمرة، مما يضمن أن المنتج النهائي لا يلبي التوقعات فحسب، بل يتجاوزها. سواء كنت بحاجة إلى بوابة مؤسسة متطورة، أو لوحة معلومات ديناميكية مواجهة للعملاء، أو أداة داخلية متخصصة، فإن فريقنا من المطورين الخبراء يقدم حلولاً وظيفية ومذهلة بصرياً وآمنة للغاية.\n\nنحن نعطي الأولوية للسرعة والأمان وتحسين محركات البحث (SEO) في كل مشروع نقوم به. في المشهد الرقمي التنافسي اليوم، يجب أن يكون تطبيق الويب سريعاً وآمناً وسهل الاكتشاف. نحن ننفذ أفضل الممارسات لتحسين محركات البحث على الصفحة والتحسين الفني لضمان ترتيب تطبيق الويب الخاص بك بشكل جيد وتوفير بيئة آمنة لمستخدميك. مع لوبس تيك، ستحصل على شريك مكرس لنجاحك على المدى الطويل والتفوق التقني.",
-      "ro": "La Loops Tech, suntem specializați în construirea de aplicații web personalizate de înaltă performanță și scalabile, care stimulează creșterea afacerii și excelența operațională. Abordarea noastră combină cele mai recente tehnologii frontend și backend cu o înțelegere profundă a nevoilor tale unice de afaceri, asigurându-ne că fiecare linie de cod servește unui scop strategic. Utilizăm framework-uri puternice precum Laravel pentru backend-uri robuste și React pentru interfețe de utilizator dinamice și intuitive care implică utilizatorii și oferă rezultate.\n\nProcesul nostru de dezvoltare este conceput pentru transparență și agilitate, permițându-ne să ne adaptăm pe măsură ce cerințele tale evoluează. Lucrăm îndeaproape cu clienții noștri de la faza inițială de descoperire până la implementare și întreținere continuă, asigurându-ne că produsul final nu doar îndeplinește, ci depășește așteptările. Indiferent dacă ai nevoie de un portal de întreprindere sofisticat, un tablou de bord dinamic pentru clienți sau un instrument intern specializat, echipa noastră de dezvoltatori experți oferă soluții funcționale, uimitoare vizual și extrem de sigure.\n\nPrioritizăm viteza, securitatea și SEO în fiecare proiect pe care îl întreprindem. În peisajul digital competitiv de astăzi, o aplicație web trebuie să fie rapidă, sigură și ușor de descoperit. Implementăm cele mai bune practici pentru SEO on-page și optimizare tehnică pentru a ne asigura că aplicația ta web ocupă un loc bun în căutări și oferă un mediu sigur pentru utilizatori. Cu Loops Tech, ai un partener dedicat succesului tău pe termen lung și superiorității tehnice."
+      "en": "At Loops Tech, we specialize in building high-performance, scalable custom web applications that drive business growth and operational excellence. Our approach combines the latest frontend and backend technologies with a deep understanding of your unique business needs, ensuring that every line of code serves a strategic purpose. We leverage powerful frameworks like Laravel for robust backends and React for dynamic, intuitive user interfaces that engage users and deliver results.\n\nOur development process is designed for transparency and agility, allowing us to pivot as your requirements evolve. We work closely with our clients from the initial discovery phase through to deployment and ongoing maintenance, ensuring that the final product not only meets but exceeds expectations. Whether you need a sophisticated enterprise portal, a dynamic customer-facing dashboard, or a specialized internal tool, our team of expert developers delivers solutions that are functional, visually stunning, and highly secure.",
+      "ar": "في لوبس تيك (Loops Tech)، نحن متخصصون في بناء تطبيقات ويب مخصصة عالية الأداء وقابلة للتطوير تدفع نمو الأعمال والتميز التشغيلي. يجمع نهجنا بين أحدث تقنيات الواجهة الأمامية والخلفية مع فهم عميق لاحتياجات عملك الفريدة، مما يضمن أن كل سطر من الأكواد يخدم غرضاً استراتيجياً. نحن نستفيد من أطر العمل القوية مثل Laravel للخلفيات البرمجية القوية و React لواجهات المستخدم الديناميكية والبديهية التي تجذب المستخدمين وتحقق النتائج.\n\nتم تصميم عملية التطوير لدينا من أجل الشفافية والرشاقة، مما يسمح لنا بالتحول مع تطور متطلباتك. نحن نعمل بشكل وثيق مع عملائنا من مرحلة الاكتشاف الأولية وحتى النشر والصيانة المستمرة، مما يضمن أن المنتج النهائي لا يلبي التوقعات فحسب، بل يتجاوزها. سواء كنت بحاجة إلى بوابة مؤسسة متطورة، أو لوحة معلومات ديناميكية مواجهة للعملاء، أو أداة داخلية متخصصة، فإن فريقنا من المطورين الخبراء يقدم حلولاً وظيفية ومذهلة بصرياً وآمنة للغاية.",
+      "ro": "La Loops Tech, suntem specializați în construirea de aplicații web personalizate de înaltă performanță și scalabile, care stimulează creșterea afacerii și excelența operațională. Abordarea noastră combină cele mai recente tehnologii frontend și backend cu o înțelegere profundă a nevoilor tale unice de afaceri, asigurându-ne că fiecare linie de cod servește unui scop strategic. Utilizăm framework-uri puternice precum Laravel pentru backend-uri robuste și React pentru interfețe de utilizator dinamice și intuitive care implică utilizatorii și oferă rezultate.\n\nProcesul nostru de dezvoltare este conceput pentru transparență și agilitate, permițându-ne să ne adaptăm pe măsură ce cerințele tale evoluează. Lucrăm îndeaproape cu clienții noștri de la faza inițială de descoperire până la implementare și întreținere continuă, asigurându-ne că produsul final nu doar îndeplinește, ci depășește așteptările. Indiferent dacă ai nevoie de un portal de întreprindere sofisticat, un tablou de bord dinamic pentru clienți sau un instrument intern specializat, echipa noastră de dezvoltatori experți oferă soluții funcționale, uimitoare vizual și extrem de sigure."
     },
     "features": [
       {
@@ -98,6 +98,200 @@
     "graphic": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },
   {
+    "id": "ai-solutions",
+    "icon": "fa-robot",
+    "title": {
+      "en": "AI Solutions",
+      "ar": "حلول الذكاء الاصطناعي",
+      "ro": "Soluții AI"
+    },
+    "description": {
+      "en": "Automate workflows and elevate customer experiences with intelligent Generative AI integrations and support agents.",
+      "ar": "أتمت سير العمل وارتقِ بتجارب العملاء من خلال تكاملات الذكاء الاصطناعي التوليدي الأذكياء ووكلاء الدعم.",
+      "ro": "Automatizează fluxurile de lucru și îmbunătățește experiența clienților cu integrări inteligente de AI generativ și agenți de suport."
+    },
+    "longDescription": {
+      "en": "Transform your business operations and user experiences with custom AI Solutions from Loops Tech. We specialize in developing and integrating intelligent Generative AI workflows, cognitive automated reasoning platforms, and multi-channel AI support agents that handle inquiries round-the-clock. By analyzing internal datasets, our solutions deliver natural conversations tailored to your brand voice.\n\nFrom customer-facing chat networks to intelligent database search engines, our systems integrate smoothly with your existing ERPs and CRMs. We provide full localization features, optimized for multiple dialects and regional language nuances. Partner with Loops Tech to deploy automated logic structures that decrease human workloads and scale operating capabilities.",
+      "ar": "حوّل عمليات عملك وتجارب المستخدمين من خلال حلول الذكاء الاصطناعي المخصصة من لوبس تيك (Loops Tech). نحن متخصصون في تطوير ودمج سير عمل الذكاء الاصطناعي التوليدي الذكي، ومنصات التفكير الآلي المعرفي، ووكلاء دعم الذكاء الاصطناعي متعدد القنوات الذين يتعاملون مع الاستفسارات على مدار الساعة. من خلال تحليل مجموعات البيانات الداخلية، تقدم حلولنا محادثات طبيعية مصممة لتناسب صوت علامتك التجارية.\n\nمن شبكات الدردشة المواجهة للعملاء إلى محركات البحث الذكية في قواعد البيانات، تتكامل أنظمتنا بسلاسة مع أنظمة ERP و CRM الحالية لديك. نحن نقدم ميزات تعريب كاملة، ومحسنة للهجات متعددة والفروق اللغوية الإقليمية. شارك مع لوبس تيك لنشر هياكل منطقية مؤتمتة تقلل من أعباء العمل البشري وتوسع القدرات التشغيلية.",
+      "ro": "Transformă operațiunile de business și experiențele utilizatorilor cu soluții AI personalizate de la Loops Tech. Suntem specializați în dezvoltarea și integrarea fluxurilor inteligente de AI generativ, platforme cognitive de raționament automatizat și agenți de suport AI multi-canal care gestionează solicitările non-stop. Prin analiza seturilor de date interne, soluțiile noastre oferă conversații naturale, adaptate vocii brandului tău.\n\nDe la rețele de chat orientate către clienți până la motoare de căutare inteligente în bazele de date, sistemele noastre se integrează perfect cu ERP-urile și CRM-urile existente. Oferim funcționalități complete de localizare, optimizate pentru multiple dialecte și nuanțe lingvistice. Parteneriatul cu Loops Tech îți permite să implementezi structuri logice automatizate care reduc volumul de muncă uman și extind capacitățile operaționale."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Generative Workflows",
+          "ar": "سير العمل التوليدي",
+          "ro": "Fluxuri de Lucru Generative"
+        },
+        "description": {
+          "en": "Integrate LLMs to generate high-quality text, summarize documents, and resolve user requests.",
+          "ar": "دمج نماذج اللغة الكبيرة (LLMs) لإنشاء نصوص عالية الجودة وتلخيص المستندات وحل طلبات المستخدمين.",
+          "ro": "Integrează LLM-uri pentru a genera text de înaltă calitate, a rezuma documente și a rezolva cererile utilizatorilor."
+        },
+        "icon": "fa-brain"
+      },
+      {
+        "title": {
+          "en": "Cognitive Agents",
+          "ar": "الوكلاء المعرفيون",
+          "ro": "Agenți Cognitivi"
+        },
+        "description": {
+          "en": "Deploy conversational assistants on Web, WhatsApp, and Voice platforms.",
+          "ar": "نشر مساعدي المحادثة على منصات الويب وواتساب والصوت.",
+          "ro": "Implementează asistenți conversaționali pe Web, WhatsApp și platforme de Voce."
+        },
+        "icon": "fa-robot"
+      },
+      {
+        "title": {
+          "en": "Vector Databases",
+          "ar": "قواعد البيانات المتجهة",
+          "ro": "Baze de Date Vectoriale"
+        },
+        "description": {
+          "en": "Index corporate knowledge repositories for secure semantic search and retrieval.",
+          "ar": "فهرسة مستودعات المعرفة الخاصة بالمؤسسة للبحث الدلالي الآمن والاسترجاع.",
+          "ro": "Indexează depozitele de cunoștințe corporative pentru căutare semantică securizată și recuperare a informațiilor."
+        },
+        "icon": "fa-magnifying-glass-nodes"
+      },
+      {
+        "title": {
+          "en": "Analytics Pipelines",
+          "ar": "أنابيب التحليلات",
+          "ro": "Fluxuri Analitice"
+        },
+        "description": {
+          "en": "Setup analytics to evaluate AI agent response quality, intent detection, and accuracy.",
+          "ar": "إعداد التحليلات لتقييم جودة استجابة وكيل الذكاء الاصطناعي والكشف عن النية والدقة.",
+          "ro": "Configurează analize pentru a evalua calitatea răspunsurilor agenților AI, detectarea intenției și acuratețea."
+        },
+        "icon": "fa-chart-line"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "24/7 Operation Uptime",
+        "ar": "تشغيل على مدار الساعة",
+        "ro": "Timp de Funcționare 24/7"
+      },
+      {
+        "en": "80% Cost Reduction",
+        "ar": "خفض التكاليف بنسبة 80%",
+        "ro": "Reducere de Costuri cu 80%"
+      },
+      {
+        "en": "Automated Content Audits",
+        "ar": "تدقيق تلقائي للمحتوى",
+        "ro": "Audituri Automate de Conținut"
+      }
+    ],
+    "technologies": [
+      { "name": "OpenAI GPT-4", "icon": "fa-microchip" },
+      { "name": "Python", "icon": "fa-python" },
+      { "name": "LangChain", "icon": "fa-link" },
+      { "name": "Node.js", "icon": "fa-node-js" }
+    ],
+    "graphic": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+  },
+  {
+    "id": "ai-infrastructure",
+    "icon": "fa-server",
+    "title": {
+      "en": "AI Infrastructure",
+      "ar": "البنية التحتية للذكاء الاصطناعي",
+      "ro": "Infrastructură AI"
+    },
+    "description": {
+      "en": "Deploy and scale machine learning workloads with high-performance, custom-built cloud configurations.",
+      "ar": "انشر ونمّ أعباء عمل تعلم الآلة من خلال تكوينات سحابية مخصصة وعالية الأداء.",
+      "ro": "Implementează și scalează fluxuri de lucru de machine learning cu configurații cloud personalizate, de înaltă performanță."
+    },
+    "longDescription": {
+      "en": "Scale deep learning applications and large models with custom AI Infrastructure solutions from Loops Tech. Training models and running real-time inference workflows requires robust, specialized environments. We assemble clusters, optimize GPU usage, and build automated systems to ensure efficient compute operations with zero resource bottlenecks.\n\nUsing tools like Kubernetes and Terraform, we design auto-scaling setups on AWS, GCP, and private bare-metal nodes. We implement security protocols to keep sensitive training datasets protected at rest and in transit. Rely on Loops Tech to engineer high-throughput cloud networks that power your machine learning engines.",
+      "ar": "قم بتوسيع نطاق تطبيقات التعلم العميق والنماذج الكبيرة من خلال حلول البنية التحتية للذكاء الاصطناعي المخصصة من لوبس تيك (Loops Tech). يتطلب تدريب النماذج وتشغيل سير عمل الاستدلال في الوقت الفعلي بيئات قوية ومتخصصة. نحن نجمع المجموعات ونحسن استخدام وحدات معالجة الرسومات (GPU) ونبني أنظمة مؤتمتة لضمان عمليات حوسبة فعالة دون أي اختناقات في الموارد.\n\nباستخدام أدوات مثل Kubernetes و Terraform، نصمم إعدادات التوسع التلقائي على AWS و GCP وعقد bare-metal الخاصة. نحن ننفذ بروتوكولات الأمان للحفاظ على حماية مجموعات بيانات التدريب الحساسة أثناء التخزين والنقل. اعتمد على لوبس تيك لهندسة شبكات سحابية عالية الإنتاجية تدعم محركات تعلم الآلة الخاصة بك.",
+      "ro": "Scalează aplicațiile de deep learning și modelele mari cu soluții personalizate de Infrastructură AI de la Loops Tech. Antrenarea modelelor și rularea fluxurilor de lucru pentru inferență în timp real necesită medii robuste și specializate. Asamblăm clustere, optimizăm utilizarea GPU-urilor și construim sisteme automatizate pentru a asigura operațiuni de calcul eficiente, fără blocaje de resurse.\n\nUtilizând instrumente precum Kubernetes și Terraform, proiectăm configurații de auto-scalare pe AWS, GCP și noduri private bare-metal. Implementăm protocoale de securitate pentru a proteja seturile sensibile de date de antrenament, atât în repaus, cât și în tranzit. Bazează-te pe Loops Tech pentru a proiecta rețele cloud cu capacitate mare de procesare care să îți susțină motoarele de machine learning."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "GPU Optimization",
+          "ar": "تحسين وحدات معالجة الرسومات",
+          "ro": "Optimizare GPU"
+        },
+        "description": {
+          "en": "Configure CUDA execution environments and drivers to utilize graphics processing chips efficiently.",
+          "ar": "تهيئة بيئات تشغيل وبرامج تشغيل CUDA لاستخدام شرائح معالجة الرسومات بكفاءة.",
+          "ro": "Configurează medii de execuție și drivere CUDA pentru a utiliza eficient cipurile de procesare grafică."
+        },
+        "icon": "fa-bolt"
+      },
+      {
+        "title": {
+          "en": "Cluster Orchestration",
+          "ar": "تنسيق المجموعات (Clusters)",
+          "ro": "Orchestrare Clustere"
+        },
+        "description": {
+          "en": "Manage containers with Kubernetes to automatically balance loads and scale compute instances.",
+          "ar": "إدارة الحاويات باستخدام Kubernetes لموازنة الأحمال وتوسيع مثيلات الحوسبة تلقائياً.",
+          "ro": "Gestionează containerele cu Kubernetes pentru a echilibra automat sarcinile și a scala instanțele de calcul."
+        },
+        "icon": "fa-cubes"
+      },
+      {
+        "title": {
+          "en": "Storage Architectures",
+          "ar": "بنيات التخزين",
+          "ro": "Arhitecturi de Stocare"
+        },
+        "description": {
+          "en": "Configure high-throughput object and block storages optimized for rapid ingestion of large training data.",
+          "ar": "تهيئة مخازن الكائنات والكتل عالية الإنتاجية والمحسنة للاستيعاب السريع لبيانات التدريب الضخمة.",
+          "ro": "Configurează stocări de obiecte și blocuri cu capacitate mare de procesare, optimizate pentru citirea rapidă a seturilor mari de date."
+        },
+        "icon": "fa-database"
+      },
+      {
+        "title": {
+          "en": "Security Boundaries",
+          "ar": "الحدود الأمنية",
+          "ro": "Limite de Securitate"
+        },
+        "description": {
+          "en": "Enforce strict isolation, private networking, and data encryption for compliant model operations.",
+          "ar": "فرض عزل صارم وشبكات خاصة وتشفير بيانات لعمليات النماذج المتوافقة.",
+          "ro": "Impune izolare strictă, rețele private și criptarea datelor pentru operațiuni conforme ale modelelor."
+        },
+        "icon": "fa-lock"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "Maximum Scale Performance",
+        "ar": "أقصى أداء للتوسع",
+        "ro": "Performanță de Scalare Maximă"
+      },
+      {
+        "en": "Optimized Compute Costs",
+        "ar": "تكاليف حوسبة محسنة",
+        "ro": "Costuri de Calcul Optimizate"
+      },
+      {
+        "en": "Compliant Training Setups",
+        "ar": "إعدادات تدريب متوافقة",
+        "ro": "Configurații de Antrenament Conforme"
+      }
+    ],
+    "technologies": [
+      { "name": "Nvidia CUDA", "icon": "fa-bolt" },
+      { "name": "Docker", "icon": "fa-docker" },
+      { "name": "Kubernetes", "icon": "fa-dharmachakra" },
+      { "name": "Terraform", "icon": "fa-cubes" }
+    ],
+    "graphic": "/img/ai-infrastructure.jpg"
+  },
+  {
     "id": "mobile-apps",
     "icon": "fa-mobile-screen-button",
     "title": {
@@ -106,21 +300,21 @@
       "ro": "Dezvoltare Aplicații Mobile"
     },
     "description": {
-      "en": "Native and cross-platform mobile apps for iOS and Android using Flutter and React Native.",
-      "ar": "تطبيقات جوال أصلية وعابرة للمنصات لنظامي iOS و Android باستخدام Flutter و React Native.",
-      "ro": "Aplicații mobile native și cross-platform pentru iOS și Android folosind Flutter și React Native."
+      "en": "Reach your global audience on iOS and Android with premium native and cross-platform mobile apps.",
+      "ar": "تصل إلى جمهورك العالمي على نظامي iOS و Android من خلال تطبيقات جوال متميزة أصلية وعابرة للمنصات.",
+      "ro": "Conectează-te cu publicul tău global pe iOS și Android cu aplicații mobile premium, native și cross-platform."
     },
     "longDescription": {
-      "en": "In a mobile-first world, having a powerful application is no longer optional; it's a necessity. Loops Tech provides end-to-end mobile app development services, specializing in high-performance native and cross-platform solutions for iOS and Android. Our expertise in Flutter and React Native allows us to build beautiful, fast, and feature-rich apps from a single codebase, significantly reducing time-to-market without compromising on quality or performance.\n\nFrom initial concept and wireframing to design, development, and App Store submission, our team handles every aspect of the lifecycle. We focus on creating engaging user experiences with intuitive navigation and smooth animations that keep users coming back. Whether you're a startup looking to disrupt the market or an established enterprise needing to mobilize your workforce, we deliver mobile solutions that drive engagement and business value.\n\nSecurity and offline functionality are core components of our mobile development strategy. We ensure your app is secure and reliable, implementing robust data synchronization methods that allow it to function even in low-connectivity environments. With Loops Tech, you get a mobile app that is not just a tool, but a powerful extension of your brand that resonates with your audience and delivers a measurable return on investment.",
-      "ar": "في عالم يعتمد على الجوال أولاً، لم يعد امتلاك تطبيق قوي خياراً؛ بل أصبح ضرورة. تقدم لوبس تيك (Loops Tech) خدمات تطوير تطبيقات الجوال من البداية إلى النهاية، مع التخصص في الحلول الأصلية وعابرة للمنصات عالية الأداء لنظامي iOS و Android. تتيح لنا خبرتنا في Flutter و React Native بناء تطبيقات جميلة وسريعة وغنية بالميزات من قاعدة أكواد واحدة، مما يقلل بشكل كبير من وقت الوصول إلى السوق دون المساومة على الجودة أو الأداء.\n\nمن المفهوم الأولي والخطوط العريضة إلى التصميم والتطوير وتقديم التطبيق إلى المتاجر، يتعامل فريقنا مع كل جانب من جوانب دورة الحياة. نحن نركز على إنشاء تجارب مستخدم جذابة مع تنقل بديهي ورسوم متحركة سلسة تجعل المستخدمين يعودون دائماً. سواء كنت شركة ناشئة تتطلع إلى إحداث تغيير في السوق أو مؤسسة راسخة تحتاج إلى تمكين القوى العاملة لديك عبر الجوال، فنحن نقدم حلولاً تدفع التفاعل وقيمة الأعمال.\n\nيعد الأمان والوظائف في وضع عدم الاتصال مكونات أساسية لاستراتيجية تطوير تطبيقات الجوال لدينا. نحن نضمن أن تطبيقك آمن وموثوق، وننفذ طرقاً قوية لمزامنة البيانات تسمح له بالعمل حتى في البيئات ذات الاتصال الضعيف. مع لوبس تيك، ستحصل على تطبيق جوال ليس مجرد أداة، بل امتداداً قوياً لعلامتك التجارية يلقى صدى لدى جمهورك ويحقق عائداً ملموساً على الاستثمار.",
-      "ro": "Într-o lume orientată spre mobil, a avea o aplicație puternică nu mai este opțional; este o necesitate. Loops Tech oferă servicii complete de dezvoltare a aplicațiilor mobile, specializându-se în soluții native și cross-platform de înaltă performanță pentru iOS și Android. Expertiza noastră în Flutter și React Native ne permite să construim aplicații frumoase, rapide și bogate în funcționalități dintr-o singură bază de cod, reducând semnificativ timpul de lansare pe piață fără a compromite calitatea sau performanța.\n\nDe la conceptul inițial și wireframing până la design, dezvoltare și trimiterea în App Store, echipa noastră se ocupă de fiecare aspect al ciclului de viață. Ne concentrăm pe crearea de experiențe de utilizare captivante, cu navigare intuitivă și animații fluide care îi fac pe utilizatori să revină. Indiferent dacă ești un startup care dorește să revoluționeze piața sau o întreprindere stabilită care are nevoie să își mobilizeze forța de muncă, oferim soluții mobile care stimulează implicarea și valoarea afacerii.\n\nSecuritatea și funcționalitatea offline sunt componente de bază ale strategiei noastre de dezvoltare mobilă. Ne asigurăm că aplicația ta este sigură și fiabilă, implementând metode robuste de sincronizare a datelor care îi permit să funcționeze chiar și în medii cu conectivitate scăzută. Cu Loops Tech, obții o aplicație mobilă care nu este doar un instrument, ci o extensie puternică a brandului tău, care rezonează cu publicul tău și oferă un randament măsurabil al investiției."
+      "en": "In a mobile-first world, having a powerful application is no longer optional; it's a necessity. Loops Tech provides end-to-end mobile app development services, specializing in high-performance native and cross-platform solutions for iOS and Android. Our expertise in Flutter and React Native allows us to build beautiful, fast, and feature-rich apps from a single codebase, significantly reducing time-to-market without compromising on quality or performance.\n\nFrom initial concept and wireframing to design, development, and App Store submission, our team handles every aspect of the lifecycle. We focus on creating engaging user experiences with intuitive navigation and smooth animations that keep users coming back. Whether you're a startup looking to disrupt the market or an established enterprise needing to mobilize your workforce, we deliver mobile solutions that drive engagement and business value.",
+      "ar": "في عالم يعتمد على الجوال أولاً، لم يعد امتلاك تطبيق قوي خياراً؛ بل أصبح ضرورة. تقدم لوبس تيك (Loops Tech) خدمات تطوير تطبيقات الجوال من البداية إلى النهاية، مع التخصص في الحلول الأصلية وعابرة للمنصات عالية الأداء لنظامي iOS و Android. تتيح لنا خبرتنا في Flutter و React Native بناء تطبيقات جميلة وسريعة وغنية بالميزات من قاعدة أكواد واحدة، مما يقلل بشكل كبير من وقت الوصول إلى السوق دون المساومة على الجودة أو الأداء.\n\nمن المفهوم الأولي والخطوط العريضة إلى التصميم والتطوير وتقديم التطبيق إلى المتاجر، يتعامل فريقنا مع كل جانب من جوانب دورة الحياة. نحن نركز على إنشاء تجارب مستخدم جذابة مع تنقل بديهي ورسوم متحركة سلسة تجعل المستخدمين يعودون دائماً. سواء كنت شركة ناشئة تتطلع إلى إحداث تغيير في السوق أو مؤسسة راسخة تحتاج إلى تمكين القوى العاملة لديك عبر الجوال، فنحن نقدم حلولاً تدفع التفاعل وقيمة الأعمال.",
+      "ro": "Într-o lume orientată spre mobil, a avea o aplicație puternică nu mai este opțional; este o necesitate. Loops Tech oferă servicii complete de dezvoltare a aplicațiilor mobile, specializându-se în soluții native și cross-platform de înaltă performanță pentru iOS și Android. Expertiza noastră în Flutter și React Native ne permite să construim aplicații frumoase, rapide și bogate în funcționalități dintr-o singură bază de cod, reducând semnificativ timpul de lansare pe piață fără a compromite calitatea sau performanța.\n\nDe la conceptul inițial și wireframing până la design, dezvoltare și trimiterea în App Store, echipa noastră se ocupă de fiecare aspect al ciclului de viață. Ne concentrăm pe crearea de experiențe de utilizare captivante, cu navigare de tip nativ și animații fluide."
     },
     "features": [
       {
         "title": {
-          "en": "Cross-Platform Efficiency",
-          "ar": "كفاءة المنصات المتعددة",
-          "ro": "Eficiență Cross-Platform"
+          "en": "Cross-Platform",
+          "ar": "عابر للمنصات",
+          "ro": "Cross-Platform"
         },
         "description": {
           "en": "Build once and deploy to both iOS and Android with maximum performance using Flutter.",
@@ -131,9 +325,9 @@
       },
       {
         "title": {
-          "en": "Native-Like Experience",
-          "ar": "تجربة شبيهة بالتطبيقات الأصلية",
-          "ro": "Experiență de Tip Nativ"
+          "en": "Native Performance",
+          "ar": "الأداء الأصلي",
+          "ro": "Performanță Nativă"
         },
         "description": {
           "en": "High-speed animations and UI components that feel natural on every operating system.",
@@ -196,173 +390,75 @@
     "graphic": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2670&auto=format&fit=crop"
   },
   {
-    "id": "ai-agents",
-    "icon": "fa-robot",
+    "id": "marketing",
+    "icon": "fa-magnifying-glass-chart",
     "title": {
-      "en": "AI Support Agents",
-      "ar": "وكلاء دعم الذكاء الاصطناعي",
-      "ro": "Agenți de Suport AI"
+      "en": "Growth Marketing & SEO",
+      "ar": "التسويق النمو والـ SEO",
+      "ro": "Marketing de Creștere și SEO"
     },
     "description": {
-      "en": "Intelligent AI agents for Web, WhatsApp, and Phone calls to automate customer service 24/7.",
-      "ar": "وكلاء ذكاء اصطناعي أذكياء للويب وواتساب والمكالمات الهاتفية لأتمتة خدمة العملاء على مدار الساعة.",
-      "ro": "Agenți AI inteligenți pentru Web, WhatsApp și apeluri telefonice pentru a automatiza serviciul clienți 24/7."
+      "en": "Maximize your digital footprint and drive high conversions with data-backed marketing strategies and SEO audits.",
+      "ar": "عظم بصمتك الرقمية وحقق معدلات تحويل عالية من خلال استراتيجيات تسويق مدعومة بالبيانات وتدقيق تحسين محركات البحث (SEO).",
+      "ro": "Maximizează-ți amprenta digitală și generează conversii ridicate prin strategii de marketing bazate pe date și audituri SEO."
     },
     "longDescription": {
-      "en": "Transform your customer experience with intelligent AI Support Agents from Loops Tech. In today's fast-paced market, customers expect instant responses at any hour. Our AI solutions for Web, WhatsApp, and Phone calls provide 24/7 automated support that feels natural and helpful. Using advanced Generative AI and Large Language Models, our agents can understand context, answer complex queries, and even perform tasks like booking appointments or tracking orders without human intervention.\n\nOur AI agents are designed to integrate seamlessly with your existing business tools, including CRMs, ERPs, and databases. This means they don't just chat; they provide personalized assistance based on real-time data. For businesses in Saudi Arabia, our AI solutions are optimized for local dialects and cultural nuances, providing a superior experience for your customers while significantly reducing operational costs and human workload.\n\nImplementation is fast and data-driven. We work with you to train the AI on your specific business knowledge, ensuring accuracy and brand consistency. Whether you're looking to scale your support team without increasing headcount or want to provide a more modern, efficient service, Loops Tech's AI Support Agents are the future of business communication. Stay ahead of the curve with AI that works for you around the clock.",
-      "ar": "حول تجربة عملائك مع وكلاء دعم الذكاء الاصطناعي الأذكياء من لوبس تيك (Loops Tech). في سوق اليوم المتسارع، يتوقع العملاء استجابات فورية في أي ساعة. توفر حلول الذكاء الاصطناعي لدينا للويب وواتساب والمكالمات الهاتفية دعماً آلياً على مدار الساعة طوال أيام الأسبوع يبدو طبيعياً ومفيداً. باستخدام الذكاء الاصطناعي التوليدي المتقدم ونماذج اللغة الكبيرة، يمكن لوكلائنا فهم السياق والإجابة على الاستفسارات المعقدة وحتى أداء مهام مثل حجز المواعيد أو تتبع الطلبات دون تدخل بشري.\n\nتم تصميم وكلاء الذكاء الاصطناعي لدينا للتكامل بسلاسة مع أدوات عملك الحالية، بما في ذلك أنظمة CRM و ERP وقواعد البيانات. هذا يعني أنهم لا يدردشون فحسب؛ بل يقدمون مساعدة شخصية بناءً على بيانات فورية. بالنسبة للشركات في المملكة العربية السعودية، تم تحسين حلول الذكاء الاصطناعي لدينا للهجات المحلية والفروق الثقافية، مما يوفر تجربة فائقة لعملائك مع تقليل التكاليف التشغيلية وضغط العمل البشري بشكل كبير.\n\nالتنفيذ سريع ويعتمد على البيانات. نحن نعمل معك لتدريب الذكاء الاصطناعي على معرفة عملك المحددة، مما يضمن الدقة واتساق العلامة التجارية. سواء كنت تتطلع إلى توسيع فريق الدعم الخاص بك دون زيادة عدد الموظفين أو ترغب في تقديم خدمة أكثر حداثة وكفاءة، فإن وكلاء دعم الذكاء الاصطناعي من لوبس تيك هم مستقبل تواصل الأعمال. ابق في الطليعة مع ذكاء اصطناعي يعمل لأجلك على مدار الساعة.",
-      "ro": "Transformă experiența clienților tăi cu agenți de suport AI inteligenți de la Loops Tech. În piața rapidă de astăzi, clienții se așteaptă la răspunsuri instantanee la orice oră. Soluțiile noastre AI pentru Web, WhatsApp și apeluri telefonice oferă suport automatizat 24/7, care pare natural și util. Folosind AI generativ avansat și modele de limbaj mari, agenții noștri pot înțelege contextul, pot răspunde la întrebări complexe și pot chiar efectua sarcini precum rezervarea programărilor sau urmărirea comenzilor fără intervenție umană.\n\nAgenții noștri AI sunt concepuți pentru a se integra perfect cu instrumentele tale de afaceri existente, inclusiv CRM-uri, ERP-uri și baze de date. Aceasta înseamnă că nu doar discută; oferă asistență personalizată bazată pe date în timp real. Pentru afacerile din România, soluțiile noastre AI sunt optimizate pentru specificul local, oferind o experiență superioară clienților tăi, reducând în același timp semnificativ costurile operaționale și volumul de muncă uman.\n\nImplementarea este rapidă și bazată pe date. Lucrăm cu tine pentru a antrena AI-ul pe cunoștințele specifice afacerii tale, asigurând acuratețea și consecvența brandului. Indiferent dacă dorești să îți extinzi echipa de suport fără a crește numărul de angajați sau vrei să oferi un serviciu mai modern și mai eficient, agenții de suport AI de la Loops Tech reprezintă viitorul comunicării în afaceri. Rămâneți în fața concurenței cu un AI care lucrează pentru voi non-stop."
+      "en": "Boost traffic and acquire high-value customers with digital marketing and SEO packages from Loops Tech. Merely launching an application is only the first step. We compile thorough market studies, implement custom semantic schema tags, and build organic backlinks to guarantee that your brand stands out in competitive rankings.\n\nFrom user-behavior analytics to conversion-loop testing, we help you understand your target audience better. We establish clean dashboards showing click-through ratios, acquisition costs, and customer conversion rates. Work with Loops Tech to attract global audiences and drive long-term business growth.",
+      "ar": "عزز الزيارات واكتسب عملاء ذوي قيمة عالية من خلال باقات التسويق الرقمي وتحسين محركات البحث (SEO) من لوبس تيك (Loops Tech). مجرد إطلاق تطبيق هو الخطوة الأولى فقط. نحن نجمع دراسات سوق شاملة، وننفذ علامات مخططة دلالية مخصصة، ونبني روابط خلفية عضوية لضمان تميز علامتك التجارية في التصنيفات التنافسية.\n\nمن تحليلات سلوك المستخدم إلى اختبار دورة التحويل، نساعدك على فهم جمهورك المستهدف بشكل أفضل. نحن ننشئ لوحات معلومات واضحة تعرض نسب النقر إلى الظهور، وتكاليف الاستحواذ، ومعدلات تحويل العملاء. اعمل مع لوبس تيك لجذب الجماهير العالمية ودفع نمو الأعمال على المدى الطويل.",
+      "ro": "Crește traficul și atrage clienți de mare valoare cu pachete de marketing digital și SEO de la Loops Tech. Simpla lansare a unei aplicații este doar primul pas. Realizăm studii de piață aprofundate, implementăm etichete structurate semantice și construim backlink-uri organice pentru a garanta că brandul tău se evidențiază în căutări.\n\nDe la analize de comportament ale utilizatorilor la testarea fluxurilor de conversie, te ajutăm să îți înțelegi mai bine publicul țintă. Configurăm tablouri de bord clare care arată ratele de click, costurile de achiziție și ratele de conversie. Lucrează cu Loops Tech pentru a atrage audiențe globale și a stimula creșterea afacerii pe termen lung."
     },
     "features": [
       {
         "title": {
-          "en": "Multi-Channel Support",
-          "ar": "دعم قنوات متعددة",
-          "ro": "Suport Multi-Channel"
+          "en": "SEO Audits",
+          "ar": "تدقيق الـ SEO",
+          "ro": "Audituri SEO"
         },
         "description": {
-          "en": "Engage customers on Web, WhatsApp, and Phone with a unified AI brain.",
-          "ar": "تفاعل مع العملاء عبر الويب وواتساب والهاتف باستخدام عقل ذكاء اصطناعي موحد.",
-          "ro": "Interacționează cu clienții pe Web, WhatsApp și Telefon cu un creier AI unificat."
+          "en": "Analyze content quality, metadata tags, and internal link trees to boost search engines indexing.",
+          "ar": "تحليل جودة المحتوى، وعلامات البيانات الوصفية، وأشجار الروابط الداخلية لتعزيز فهرسة محركات البحث.",
+          "ro": "Analizează calitatea conținutului, etichetele meta și structura de link-uri pentru a îmbunătăți indexarea."
         },
-        "icon": "fa-comments"
+        "icon": "fa-magnifying-glass"
       },
       {
         "title": {
-          "en": "Natural Language Flow",
-          "ar": "تدفق لغة طبيعي",
-          "ro": "Flux de Limbaj Natural"
+          "en": "Conversion Optimization",
+          "ar": "تحسين التحويل",
+          "ro": "Optimizarea Conversiilor"
         },
         "description": {
-          "en": "Conversations that feel human, understanding slang, context, and intent perfectly.",
-          "ar": "محادثات تبدو بشرية، مع فهم العامية والسياق والنية تماماً.",
-          "ro": "Conversații care par umane, înțelegând perfect jargonul, contextul și intenția."
+          "en": "Optimize key digital funnels to turn normal site visitors into paying subscribers.",
+          "ar": "تحسين مسارات الرقمنة الرئيسية لتحويل زوار الموقع العاديين إلى مشتركين يدفعون رسوماً.",
+          "ro": "Optimizează pâlniile digitale cheie pentru a transforma vizitatorii în clienți plătitori."
         },
-        "icon": "fa-brain"
+        "icon": "fa-chart-pie"
       },
       {
         "title": {
-          "en": "Data Integration",
-          "ar": "تكامل البيانات",
-          "ro": "Integrare de Date"
+          "en": "Audience Analytics",
+          "ar": "تحليلات الجمهور",
+          "ro": "Analiza Audienței"
         },
         "description": {
-          "en": "Connects to your database to provide real-time order status, booking info, and more.",
-          "ar": "يتصل بقاعدة بياناتك لتوفير حالة الطلب الفورية ومعلومات الحجز والمزيد.",
-          "ro": "Se conectează la baza ta de date pentru a oferi starea comenzii în timp real, informații de rezervare și multe altele."
+          "en": "Setup analytics systems to evaluate user behavior and scroll rates across your pages.",
+          "ar": "إعداد أنظمة التحليلات لتقييم سلوك المستخدم ومعدلات التمرير عبر صفحاتك.",
+          "ro": "Configurează sisteme de analiză pentru a evalua comportamentul utilizatorilor și ratele de scroll."
+        },
+        "icon": "fa-eye"
+      },
+      {
+        "title": {
+          "en": "Backlinks Framework",
+          "ar": "إطار الروابط الخلفية",
+          "ro": "Strategie Backlink-uri"
+        },
+        "description": {
+          "en": "Establish authoritative mentions across trusted digital domains to build page authority.",
+          "ar": "إنشاء إشارات موثوقة عبر النطاقات الرقمية الموثوقة لبناء سلطة الصفحة.",
+          "ro": "Obține mențiuni pe domenii digitale de încredere pentru a crește autoritatea paginii."
         },
         "icon": "fa-link"
-      },
-      {
-        "title": {
-          "en": "Multilingual Expertise",
-          "ar": "خبرة متعددة اللغات",
-          "ro": "Expertiză Multilingvă"
-        },
-        "description": {
-          "en": "Flawless communication in English, Arabic, Romanian, and over 50 other languages.",
-          "ar": "تواصل لا تشوبه شائبة باللغات الإنجليزية والعربية والرومانية وأكثر من 50 لغة أخرى.",
-          "ro": "Comunicare impecabilă în engleză, arabă, română și peste 50 de alte limbi."
-        },
-        "icon": "fa-language"
-      }
-    ],
-    "benefits": [
-      {
-        "en": "24/7 Response Speed",
-        "ar": "سرعة استجابة على مدار الساعة",
-        "ro": "Viteză de Răspuns 24/7"
-      },
-      {
-        "en": "80% Support Cost Reduction",
-        "ar": "خفض تكاليف الدعم بنسبة 80%",
-        "ro": "Reducere cu 80% a Costurilor de Suport"
-      },
-      {
-        "en": "Instant Scalability",
-        "ar": "قابلة للتوسع فوراً",
-        "ro": "Scalabilitate Instantanee"
-      }
-    ],
-    "technologies": [
-      { "name": "OpenAI GPT-4", "icon": "fa-microchip" },
-      { "name": "Python", "icon": "fa-python" },
-      { "name": "Twilio", "icon": "fa-headset" },
-      { "name": "LangChain", "icon": "fa-link" },
-      { "name": "Node.js", "icon": "fa-node-js" }
-    ],
-    "graphic": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
-  },
-  {
-    "id": "ecommerce",
-    "icon": "fa-store",
-    "title": {
-      "en": "Ecommerce Solutions",
-      "ar": "حلول التجارة الإلكترونية",
-      "ro": "Soluții Ecommerce"
-    },
-    "description": {
-      "en": "Comprehensive online stores using Shopify, WordPress, or fully custom-built solutions.",
-      "ar": "متاجر إلكترونية شاملة باستخدام Shopify أو WordPress أو حلول مبنية بالكامل حسب الطلب.",
-      "ro": "Magazine online complete folosind Shopify, WordPress sau soluții construite complet personalizat."
-    },
-    "longDescription": {
-      "en": "Elevate your retail business with cutting-edge Ecommerce Solutions from Loops Tech. Whether you're looking for a user-friendly Shopify setup, a flexible WordPress/WooCommerce site, or a fully bespoke, high-performance custom store, we have the expertise to deliver. Our focus is on creating high-converting online experiences that blend beautiful aesthetics with seamless functionality, ensuring your customers enjoy every step of their shopping journey from landing page to checkout.\n\nWe understand that a successful online store requires more than just a pretty design. We integrate advanced features like real-time inventory management, multi-currency support, localized payment gateways, and sophisticated shipping calculators. For businesses in the Middle East and Europe, we ensure full compliance with regional regulations and localized user preferences, including Arabic RTL support and Romanian localized checkout experiences.\n\nPerformance and mobile optimization are at the heart of our ecommerce strategy. Slow load times and clunky mobile interfaces lead to abandoned carts. At Loops Tech, we build stores that are lightning-fast and perfectly responsive on all devices. Combined with our data-driven approach to SEO and marketing integration, your new ecommerce platform will be equipped with everything it needs to attract visitors and turn them into loyal customers. Let us build the foundation for your online retail success.",
-      "ar": "ارتقِ بعملك التجاري مع حلول التجارة الإلكترونية المتطورة من لوبس تيك (Loops Tech). سواء كنت تبحث عن إعداد Shopify سهل الاستخدام، أو موقع WordPress/WooCommerce مرن، أو متجر مخصص بالكامل وعالي الأداء، فلدينا الخبرة اللازمة لتقديمه. ينصب تركيزنا على إنشاء تجارب عبر الإنترنت ذات معدلات تحويل عالية تمزج بين الجماليات الرائعة والوظائف السلسة، مما يضمن تمتع عملائك بكل خطوة في رحلة التسوق الخاصة بهم من الصفحة الرئيسية إلى إتمام الشراء.\n\nنحن ندرك أن المتجر الناجح عبر الإنترنت يتطلب أكثر من مجرد تصميم جميل. نحن ندمج ميزات متقدمة مثل إدارة المخزون في الوقت الفعلي، ودعم العملات المتعددة، وبوابات الدفع المحلية، وحاسبات الشحن المتطورة. بالنسبة للشركات في الشرق الأوسط وأوروبا، نضمن الامتثال الكامل للوائح الإقليمية وتفضيلات المستخدم المحلية، بما في ذلك دعم اللغة العربية (من اليمين إلى اليسار) وتجارب الدفع المخصصة لرومانيا.\n\nالأداء والتحسين للجوال هما في صميم استراتيجيتنا للتجارة الإلكترونية. تؤدي أوقات التحميل البطيئة وواجهات الجوال الضعيفة إلى سلال تسوق مهجورة. في لوبس تيك، نبني متاجر سريعة للغاية ومستجيبة تماماً على جميع الأجهزة. جنباً إلى جنب مع نهجنا القائم على البيانات لتكامل تحسين محركات البحث والتسويق، ستكون منصة التجارة الإلكترونية الجديدة الخاصة بك مجهزة بكل ما تحتاجه لجذب الزوار وتحويلهم إلى عملاء مخلصين. دعنا نبني الأساس لنجاحك في تجارة التجزئة عبر الإنترنت.",
-      "ro": "Elevează-ți afacerea de retail cu soluții Ecommerce de ultimă generație de la Loops Tech. Indiferent dacă dorești o configurare Shopify ușor de utilizat, un site flexibil WordPress/WooCommerce sau un magazin personalizat complet, de înaltă performanță, avem expertiza necesară pentru a le oferi. Ne concentrăm pe crearea de experiențe online cu rată de conversie ridicată, care îmbină estetica frumoasă cu funcționalitatea fluidă, asigurându-ne că clienții tăi se bucură de fiecare pas al călătoriei lor de cumpărături, de la pagina de aterizare până la finalizarea comenzii.\n\nÎnțelegem că un magazin online de succes necesită mai mult decât un design frumos. Integrăm funcționalități avansate, cum ar fi gestionarea inventarului în timp real, suport multi-valută, procesatoare de plăți localizate și calculatoare de transport sofisticate. Pentru afacerile din Orientul Mijlociu și Europa, asigurăm conformitatea deplină cu reglementările regionale și preferințele utilizatorilor localizați, inclusiv suport pentru limba arabă (RTL) și experiențe de checkout localizate pentru România.\n\nPerformanța și optimizarea pentru mobil sunt în centrul strategiei noastre de ecommerce. Timpii de încărcare lenți și interfețele mobile greoaie duc la coșuri abandonate. La Loops Tech, construim magazine care sunt extrem de rapide și perfect responsive pe toate dispozitivele. Combinat cu abordarea noastră bazată pe date pentru SEO și integrarea marketingului, noua ta platformă de ecommerce va fi echipată cu tot ce are nevoie pentru a atrage vizitatori și a-i transforma în clienți fideli. Lasă-ne să construim fundația pentru succesul tău în retailul online."
-    },
-    "features": [
-      {
-        "title": {
-          "en": "Custom Storefronts",
-          "ar": "واجهات متاجر مخصصة",
-          "ro": "Front-end-uri Personalizate"
-        },
-        "description": {
-          "en": "Unique, high-converting designs that stand out and reflect your brand identity.",
-          "ar": "تصاميم فريدة ذات معدلات تحويل عالية تبرز وتعكس هوية علامتك التجارية.",
-          "ro": "Design-uri unice, cu rată de conversie ridicată, care ies în evidență și reflectă identitatea brandului tău."
-        },
-        "icon": "fa-bag-shopping"
-      },
-      {
-        "title": {
-          "en": "Secure Payments",
-          "ar": "مدفوعات آمنة",
-          "ro": "Plăți Securizate"
-        },
-        "description": {
-          "en": "Integration with local and global gateways like Stripe, PayPal, Moyasar, and PayTabs.",
-          "ar": "التكامل مع بوابات الدفع المحلية والعالمية مثل Stripe و PayPal و Moyasar و PayTabs.",
-          "ro": "Integrare cu procesatoare locale și globale precum Stripe, PayPal, Moyasar și PayTabs."
-        },
-        "icon": "fa-credit-card"
-      },
-      {
-        "title": {
-          "en": "Inventory Sync",
-          "ar": "مزامنة المخزون",
-          "ro": "Sincronizare Inventar"
-        },
-        "description": {
-          "en": "Real-time updates between your online store and warehouse or physical retail points.",
-          "ar": "تحديثات فورية بين متجرك الإلكتروني والمستودعات أو نقاط البيع الفعلية.",
-          "ro": "Actualizări în timp real între magazinul tău online și depozit sau punctele de vânzare fizice."
-        },
-        "icon": "fa-boxes-stacked"
-      },
-      {
-        "title": {
-          "en": "Marketing Tools",
-          "ar": "أدوات التسويق",
-          "ro": "Instrumente de Marketing"
-        },
-        "description": {
-          "en": "Built-in SEO, discount systems, abandoned cart recovery, and email marketing integrations.",
-          "ar": "تحسين محركات البحث المدمج، وأنظمة الخصم، واستعادة سلال التسوق المهجورة، وتكامل التسويق عبر البريد الإلكتروني.",
-          "ro": "SEO încorporat, sisteme de discount, recuperarea coșului abandonat și integrări de email marketing."
-        },
-        "icon": "fa-bullhorn"
       }
     ],
     "benefits": [
@@ -372,513 +468,119 @@
         "ro": "Rate de Conversie mai Mari"
       },
       {
-        "en": "Global Selling Potential",
-        "ar": "إمكانية البيع عالمياً",
-        "ro": "Potențial de Vânzare Global"
+        "en": "Organic Traffic Growth",
+        "ar": "نمو حركة المرور العضوية",
+        "ro": "Creșterea Traficului Organic"
       },
       {
-        "en": "Streamlined Management",
-        "ar": "إدارة مبسطة",
-        "ro": "Gestionare Eficientizată"
+        "en": "Clear Performance Tracking",
+        "ar": "تتبع أداء واضح",
+        "ro": "Urmărire Clară a Performanței"
       }
     ],
     "technologies": [
-      { "name": "Shopify", "icon": "fa-shopify" },
-      { "name": "WordPress", "icon": "fa-wordpress" },
-      { "name": "WooCommerce", "icon": "fa-cart-shopping" },
-      { "name": "Stripe", "icon": "fa-stripe-s" },
-      { "name": "JavaScript", "icon": "fa-js" }
+      { "name": "Google Analytics", "icon": "fa-google" },
+      { "name": "SEMrush tools", "icon": "fa-magnifying-glass-chart" },
+      { "name": "HTML5 Semantics", "icon": "fa-html5" },
+      { "name": "Schema Markup", "icon": "fa-code" }
     ],
-    "graphic": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2670&auto=format&fit=crop"
+    "graphic": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },
   {
-    "id": "erp-crm",
-    "icon": "fa-database",
+    "id": "iot-solutions",
+    "icon": "fa-microchip",
     "title": {
-      "en": "Custom ERP & CRM",
-      "ar": "أنظمة ERP و CRM مخصصة",
-      "ro": "ERP & CRM Personalizat"
+      "en": "Custom IoT Systems",
+      "ar": "أنظمة إنترنت الأشياء المخصصة",
+      "ro": "Sisteme IoT Personalizate"
     },
     "description": {
-      "en": "Tailored ERP and CRM systems designed to fit your unique business workflows and data management needs.",
-      "ar": "أنظمة ERP و CRM مصممة خصيصاً لتناسب سير عملك الفريد واحتياجات إدارة البيانات.",
-      "ro": "Sisteme ERP și CRM personalizate, concepute pentru a se potrivi fluxurilor de lucru și nevoilor tale de gestionare a datelor."
+      "en": "Connect your physical operations directly to the cloud with secure IoT software, embedded firmware, and smart device monitoring dashboards.",
+      "ar": "اربط عملياتك المادية مباشرة بالسحابة من خلال برمجيات إنترنت أشياء آمنة، وبرمجيات مدمجة، ولوحات معلومات مراقبة الأجهزة الذكية.",
+      "ro": "Conectează-ți operațiunile fizice direct la cloud cu software IoT securizat, firmware integrat și panouri de control pentru dispozitive inteligente."
     },
     "longDescription": {
-      "en": "Streamline your entire business operation with custom ERP and CRM solutions from Loops Tech. Off-the-shelf software often forces you to change your processes to fit the tool. We do the opposite: we build the tool to fit your processes. Our customized Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) systems are designed to centralize your data, automate repetitive tasks, and provide actionable insights that drive smarter decision-making.\n\nFrom human resources and payroll to supply chain management and sales forecasting, our ERP solutions connect all departments of your organization in one secure, unified platform. Our CRM modules help you manage customer interactions, track leads, and improve retention through data-driven insights. Whether you're a small business needing to organize your data or a large corporation looking to optimize complex workflows, we deliver scalable solutions that grow with you.\n\nSecurity and data integrity are our top priorities. We implement multi-layered security protocols and regular backups to ensure your business information is always safe. Our systems are also built with integration in mind, allowing them to work seamlessly with your existing tools and APIs. With Loops Tech, you get a powerful management ecosystem that eliminates bottlenecks and empowers your team to focus on what they do best: growing your business.",
-      "ar": "بسط عمليات عملك بالكامل من خلال حلول ERP و CRM المخصصة من لوبس تيك (Loops Tech). غالباً ما تجبرك البرمجيات الجاهزة على تغيير عملياتك لتناسب الأداة. نحن نفعل العكس: نحن نبني الأداة لتناسب عملياتك. تم تصميم أنظمة تخطيط موارد المؤسسات (ERP) وإدارة علاقات العملاء (CRM) المخصصة لدينا لمركزية بياناتك، وأتمتة المهام المتكررة، وتوفير رؤى قابلة للتنفيذ تدفع نحو اتخاذ قرارات أكثر ذكاءً.\n\nمن الموارد البشرية وكشوف المرتبات إلى إدارة سلسلة التوريد وتوقعات المبيعات، تربط حلول ERP الخاصة بنا جميع أقسام مؤسستك في منصة واحدة آمنة وموحدة. تساعدك وحدات CRM لدينا على إدارة تفاعلات العملاء وتتبع العملاء المحتملين وتحسين الاحتفاظ بهم من خلال رؤى مستندة إلى البيانات. سواء كنت شركة صغيرة تحتاج إلى تنظيم بياناتك أو مؤسسة كبيرة تتطلع إلى تحسين سير العمل المعقد، فنحن نقدم حلولاً قابلة للتطوير تنمو معك.\n\nالأمان وسلامة البيانات هي أهم أولوياتنا. نحن ننفذ بروتوكولات أمان متعددة الطبقات ونسخاً احتياطية منتظمة لضمان سلامة معلومات عملك دائماً. تم بناء أنظمتنا أيضاً مع مراعاة التكامل، مما يسمح لها بالعمل بسلاسة مع أدواتك وواجهات البرمجيات الحالية. مع لوبس تيك، ستحصل على نظام إدارة قوي يزيل الاختناقات ويمكّن فريقك من التركيز على ما يفعلونه بشكل أفضل: تنمية عملك.",
-      "ro": "Eficientizează întreaga operațiune a afacerii tale cu soluții ERP și CRM personalizate de la Loops Tech. Software-ul gata făcut te obligă adesea să îți schimbi procesele pentru a se potrivi instrumentului. Noi facem invers: construim instrumentul pentru a se potrivi proceselor tale. Sistemele noastre personalizate de Planificare a Resurselor Întreprinderii (ERP) și de Gestionare a Relațiilor cu Clienții (CRM) sunt concepute pentru a centraliza datele tale, a automatiza sarcinile repetitive și a oferi perspective acționabile care conduc la decizii mai inteligente.\n\nDe la resurse umane și salarizare până la managementul lanțului de aprovizionare și prognoza vânzărilor, soluțiile noastre ERP conectează toate departamentele organizației tale într-o singură platformă sigură și unificată. Modulele noastre CRM te ajută să gestionezi interacțiunile cu clienții, să urmărești lead-urile și să îmbunătățești retenția prin informații bazate pe date. Indiferent dacă ești o afacere mică care are nevoie să își organizeze datele sau o corporație mare care dorește să optimizeze fluxuri de lucru complexe, oferim soluții scalabile care cresc odată cu tine.\n\nSecuritatea și integritatea datelor sunt prioritățile noastre principale. Implementăm protocoale de securitate pe mai multe niveluri și copii de rezervă regulate pentru a ne asigura că informațiile afacerii tale sunt întotdeauna în siguranță. Sistemele noastre sunt, de asemenea, construite având în vedere integrarea, permițându-le să funcționeze perfect cu instrumentele și API-urile tale existente. Cu Loops Tech, obții un ecosistem de management puternic care elimină blocajele și îți împuternicește echipa să se concentreze pe ceea ce fac cel mai bine: creșterea afacerii tale."
+      "en": "Connect your physical equipment and devices to the cloud with tailored IoT Engineering from Loops Tech. The modern operational landscape requires real-time telemetry from vehicles, sensors, and remote hardware components. We build secure embedded firmware, connect device networks via low-latency protocols, and assemble responsive control interfaces for real-time asset oversight.\n\nFrom smart asset tracking in shipping routes to automated machine operations on factory floors, we build end-to-end hardware-software loops. Our systems are optimized to consume low battery power and exchange telemetry reliably, even over unstable networks. Trust Loops Tech to turn your machines into smart data transmitters and unlock new levels of efficiency.",
+      "ar": "اربط أجهزتك ومعداتك المادية بالسحابة من خلال خدمات هندسة إنترنت الأشياء (IoT) المخصصة من لوبس تيك (Loops Tech). يتطلب مشهد التشغيل الحديث قياساً عن بعد في الوقت الفعلي من المركبات والمستشعرات والمكونات البرمجية عن بعد. نحن نبني البرامج الثابتة المدمجة والآمنة، ونربط شبكات الأجهزة عبر بروتوكولات منخفضة التأخير، ونجمع واجهات تحكم مستجيبة لمراقبة الأصول في الوقت الفعلي.\n\nمن تتبع الأصول الذكي في مسارات الشحن إلى عمليات الآلات المؤتمتة في المصانع، نقوم ببناء دورات متكاملة من الأجهزة والبرمجيات. تم تحسين أنظمتنا لاستهلاك طاقة بطارية منخفضة وتبادل البيانات بشكل موثوق، حتى عبر الشبكات غير المستقرة. ثق في لوبس تيك لتحويل أجهزتك إلى أجهزة إرسال بيانات ذكية وفتح مستويات جديدة من الكفاءة.",
+      "ro": "Conectează-ți echipamentele și dispozitivele fizice la cloud cu ajutorul ingineriei IoT personalizate de la Loops Tech. Peisajul operațional modern necesită telemetrie în timp real de la vehicule, senzori și componente hardware de la distanță. Construim firmware integrat securizat, conectăm rețelele de dispozitive prin protocoale cu latență redusă și asamblăm interfețe de control responsive pentru supravegherea activelor în timp real.\n\nDe la urmărirea inteligentă a activelor pe rutele de transport la operațiuni automatizate ale mașinilor în fabrici, construim legături hardware-software end-to-end. Sistemele noastre sunt optimizate pentru un consum redus de energie și pentru a transmite datele în siguranță, chiar și prin rețele instabile. Ai încredere în Loops Tech pentru a transforma echipamentele tale în transmițătoare inteligente de date și pentru a atinge noi niveluri de eficiență."
     },
     "features": [
       {
         "title": {
-          "en": "Workflow Automation",
-          "ar": "أتمتة سير العمل",
-          "ro": "Automatizarea Fluxului de Lucru"
+          "en": "Firmware Engineering",
+          "ar": "هندسة البرمجيات الثابتة",
+          "ro": "Inginerie de Firmware"
         },
         "description": {
-          "en": "Automate repetitive manual tasks to save time and reduce human error across your organization.",
-          "ar": "أتمتة المهام اليدوية المتكررة لتوفير الوقت وتقليل الأخطاء البشرية في جميع أنحاء مؤسستك.",
-          "ro": "Automatizează sarcinile manuale repetitive pentru a economisi timp și a reduce eroarea umană în organizația ta."
+          "en": "Develop optimized hardware instructions in C++ and Python for microcontrollers.",
+          "ar": "تطوير تعليمات برمجية محسنة للأجهزة بلغة C++ و Python للمتحكمات الدقيقة.",
+          "ro": "Dezvoltă instrucțiuni hardware optimizate în C++ și Python pentru microcontrolere."
         },
-        "icon": "fa-gears"
+        "icon": "fa-microchip"
       },
       {
         "title": {
-          "en": "Advanced Reporting",
-          "ar": "تقارير متقدمة",
-          "ro": "Raportare Avansată"
+          "en": "Sensor Telemetry",
+          "ar": "القياس عن بعد للمستشعرات",
+          "ro": "Telemetrie Senzori"
         },
         "description": {
-          "en": "Real-time analytics and customizable dashboards for data-driven business intelligence.",
-          "ar": "تحليلات فورية ولوحات معلومات قابلة للتخصيص لذكاء الأعمال القائم على البيانات.",
-          "ro": "Analize în timp real și tablouri de bord personalizabile pentru business intelligence bazat pe date."
+          "en": "Capture and transmit real-time physical variables including temperature and GPS tracks.",
+          "ar": "التقاط ونقل المتغيرات المادية في الوقت الفعلي بما في ذلك درجة الحرارة ومسارات GPS.",
+          "ro": "Captează și transmite variabile fizice în timp real, inclusiv temperatura și coordonatele GPS."
         },
-        "icon": "fa-chart-line"
+        "icon": "fa-location-dot"
       },
       {
         "title": {
-          "en": "Unified Database",
-          "ar": "قاعدة بيانات موحدة",
-          "ro": "Bază de Date Unificată"
+          "en": "Over-The-Air Updates",
+          "ar": "التحديثات عبر الهواء (OTA)",
+          "ro": "Actualizări Over-The-Air"
         },
         "description": {
-          "en": "A single source of truth for all your business data, eliminating silos and fragmentation.",
-          "ar": "مصدر واحد للحقيقة لجميع بيانات عملك، مما يلغي العزلة والتشتت.",
-          "ro": "O singură sursă de adevăr pentru toate datele afacerii tale, eliminând silozurile și fragmentarea."
+          "en": "Deploy software patches and system updates to active hardware fleets wirelessly.",
+          "ar": "نشر تحديثات البرمجيات وتحديثات النظام إلى الأجهزة النشطة لاسلكياً.",
+          "ro": "Implementează actualizări de software la distanță, prin conexiune wireless, pe dispozitivele active."
         },
-        "icon": "fa-database"
+        "icon": "fa-tower-broadcast"
       },
       {
         "title": {
-          "en": "Role-Based Access",
-          "ar": "الوصول حسب الأدوار",
-          "ro": "Acces Bazat pe Roluri"
+          "en": "Hardware Cloud APIs",
+          "ar": "واجهات برمجة التطبيقات السحابية للأجهزة",
+          "ro": "API-uri Cloud Hardware"
         },
         "description": {
-          "en": "Granular permission controls to ensure that sensitive data is only seen by authorized personnel.",
-          "ar": "ضوابط أذونات دقيقة لضمان رؤية البيانات الحساسة فقط من قبل الموظفين المصرح لهم.",
-          "ro": "Controale granulare de permisiuni pentru a asigura că datele sensibile sunt văzute doar de personalul autorizat."
+          "en": "Build high-throughput endpoints to bridge physical devices to server databases.",
+          "ar": "بناء نقاط اتصال عالية الإنتاجية لربط الأجهزة المادية بقواعد بيانات الخادم.",
+          "ro": "Construiește API-uri cu capacitate mare de procesare pentru a conecta dispozitivele fizice la baze de date."
         },
-        "icon": "fa-user-lock"
+        "icon": "fa-network-wired"
       }
     ],
     "benefits": [
       {
-        "en": "Increased Profitability",
-        "ar": "زيادة الربحية",
-        "ro": "Rentabilitate Crescută"
+        "en": "Physical & Digital Bridge",
+        "ar": "جسر بين المادي والرقمي",
+        "ro": "Conexiune Fizic-Digital"
       },
       {
-        "en": "Better Data Visibility",
-        "ar": "وضوح أفضل للبيانات",
-        "ro": "Vizibilitate mai Bună a Datelor"
+        "en": "Real-Time Fleet Tracking",
+        "ar": "تتبع الأسطول في الوقت الفعلي",
+        "ro": "Urmărire Flotă în Timp Real"
       },
       {
-        "en": "Scalable Infrastructure",
-        "ar": "بنية تحتية قابلة للتطوير",
-        "ro": "Infrastructură Scalabilă"
+        "en": "Unmatched Automation Scale",
+        "ar": "نطاق أتمتة لا مثيل له",
+        "ro": "Scală de Automatizare Excelentă"
       }
     ],
     "technologies": [
-      { "name": "Laravel", "icon": "fa-laravel" },
-      { "name": "MySQL", "icon": "fa-database" },
-      { "name": "Vue.js", "icon": "fa-vuejs" },
-      { "name": "Redis", "icon": "fa-server" },
-      { "name": "Docker", "icon": "fa-docker" }
-    ],
-    "graphic": "https://images.unsplash.com/photo-1551288049-bbbda536339a?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "einvoicing",
-    "icon": "fa-file-invoice-dollar",
-    "title": {
-      "en": "e-Invoicing (ZATCA & ANAF)",
-      "ar": "الفاتورة الإلكترونية (ZATCA و ANAF)",
-      "ro": "e-Facturare (ZATCA și ANAF)"
-    },
-    "description": {
-      "en": "Fully compliant electronic invoicing solutions for Saudi Arabia (ZATCA) and Romania (ANAF).",
-      "ar": "حلول الفاتورة الإلكترونية المتوافقة تماماً مع متطلبات الزكاة والدخل (السعودية) و ANAF (رومانيا).",
-      "ro": "Soluții de facturare electronică complet conforme pentru Arabia Saudită (ZATCA) și România (ANAF)."
-    },
-    "longDescription": {
-      "en": "Navigate the complexities of modern tax regulations with ease through Loops Tech's e-Invoicing solutions. We specialize in providing fully compliant electronic invoicing systems tailored for the specific requirements of Saudi Arabia's ZATCA (Fatoora) and Romania's ANAF (e-Factura). Our software ensures that your business stays compliant with the latest digital tax laws, avoiding heavy penalties while streamlining your billing processes. Whether you're in Riyadh, Lahore, or Bucharest, we bring your invoicing into the digital age.\n\nOur e-Invoicing system is designed to integrate directly with your existing ERP, POS, or accounting software. We handle the technical heavy lifting—from generating compliant XML files and cryptographic stamps to real-time integration with government servers. Our solution supports Phase 1 and Phase 2 requirements for ZATCA, including the generation of QR codes and secure archiving. For ANAF, we ensure perfect synchronization with the national e-Factura system, providing you with a seamless experience that reduces administrative burden.\n\nBeyond compliance, our e-Invoicing tools provide better visibility into your finances. Automated tracking of invoice statuses, simplified reconciliation, and digital archiving help you manage your cash flow more effectively. Don't let tax regulations slow your business down. Partner with Loops Tech for an e-Invoicing solution that is secure, reliable, and perfectly tailored to your regional compliance needs. We make digital tax transformation simple and stress-free.",
-      "ar": "تنقل في تعقيدات اللوائح الضريبية الحديثة بسهولة من خلال حلول الفاتورة الإلكترونية من لوبس تيك (Loops Tech). نحن متخصصون في تقديم أنظمة فوترة إلكترونية متوافقة تماماً ومصممة خصيصاً للمتطلبات المحددة لهيئة الزكاة والضريبة والجمارك (ZATCA - فاتورة) في السعودية و ANAF (e-Factura) في رومانيا. يضمن برنامجنا بقاء عملك متوافقاً مع أحدث قوانين الضرائب الرقمية، وتجنب العقوبات الثقيلة مع تبسيط عمليات الفوترة لديك. سواء كنت في الرياض أو لاهور أو بوخارست، فنحن ننقل فواتيرك إلى العصر الرقمي.\n\nتم تصميم نظام الفاتورة الإلكترونية لدينا للتكامل مباشرة مع أنظمة ERP أو POS أو برامج المحاسبة الحالية لديك. نحن نتعامل مع الجوانب التقنية المعقدة - من إنشاء ملفات XML المتوافقة والأختام المشفرة إلى التكامل في الوقت الفعلي مع الخوادم الحكومية. يدعم حلنا متطلبات المرحلة الأولى والمرحلة الثانية لـ ZATCA، بما في ذلك إنشاء رموز الاستجابة السريعة (QR codes) والأرشفة الآمنة. بالنسبة لـ ANAF، نضمن التزامن المثالي مع النظام الوطني e-Factura، مما يوفر لك تجربة سلسة تقلل العبء الإداري.\n\nبعيداً عن الامتثال، توفر أدوات الفاتورة الإلكترونية لدينا رؤية أفضل لمواردك المالية. يساعدك التتبع الآلي لحالات الفواتير، والتسوية المبسطة، والأرشفة الرقمية على إدارة تدفقك النقدي بشكل أكثر فعالية. لا تدع اللوائح الضريبية تبطئ عملك. شارك مع لوبس تيك للحصول على حل فوترة إلكترونية آمن وموثوق ومصمم تماماً لاحتياجات الامتثال الإقليمية الخاصة بك. نحن نجعل التحول الضريبي الرقمي بسيطاً وخالياً من الإجهاد.",
-      "ro": "Navighează prin complexitatea reglementărilor fiscale moderne cu ușurință prin soluțiile de e-Facturare de la Loops Tech. Suntem specializați în furnizarea de sisteme de facturare electronică complet conforme, adaptate cerințelor specifice ale ZATCA (Fatoora) din Arabia Saudită și ANAF (e-Factura) din România. Software-ul nostru se asigură că afacerea ta rămâne conformă cu cele mai recente legi fiscale digitale, evitând penalitățile grele și eficientizând în același timp procesele de facturare. Indiferent dacă te afli în Riad, Lahore sau București, aducem facturarea ta în era digitală.\n\nSistemul nostru de e-Facturare este conceput pentru a se integra direct cu software-ul tău existent de ERP, POS sau contabilitate. Ne ocupăm de partea tehnică grea — de la generarea fișierelor XML conforme și a ștampilelor criptografice până la integrarea în timp real cu serverele guvernamentale. Soluția noastră suportă cerințele Fazei 1 și Fazei 2 pentru ZATCA, inclusiv generarea codurilor QR și arhivarea securizată. Pentru ANAF, asigurăm o sincronizare perfectă cu sistemul național e-Factura, oferindu-ți o experiență fluidă care reduce povara administrativă.\n\nDincolo de conformitate, instrumentele noastre de e-Facturare oferă o vizibilitate mai bună asupra finanțelor tale. Urmărirea automată a stării facturilor, reconcilierea simplificată și arhivarea digitală te ajută să îți gestionezi fluxul de numerar mai eficient. Nu lăsa reglementările fiscale să îți încetinească afacerea. Parteneriază cu Loops Tech pentru o soluție de e-Facturare sigură, fiabilă și adaptată perfect nevoilor tale de conformitate regională. Facem transformarea fiscală digitală simplă și lipsită de stres."
-    },
-    "features": [
-      {
-        "title": {
-          "en": "Government Sync",
-          "ar": "مزامنة حكومية",
-          "ro": "Sincronizare Guvernamentală"
-        },
-        "description": {
-          "en": "Automatic submission of invoices to ZATCA and ANAF portals for real-time clearance.",
-          "ar": "تقديم تلقائي للفواتير إلى بوابات ZATCA و ANAF للتخليص الفوري.",
-          "ro": "Trimiterea automată a facturilor către portalurile ZATCA și ANAF pentru validare în timp real."
-        },
-        "icon": "fa-building-columns"
-      },
-      {
-        "title": {
-          "en": "Compliant XML Generation",
-          "ar": "إنشاء XML متوافق",
-          "ro": "Generare XML Conform"
-        },
-        "description": {
-          "en": "Generates perfect XML files (UBL 2.1) according to regional tax authority standards.",
-          "ar": "يولد ملفات XML مثالية (UBL 2.1) وفقاً لمعايير السلطات الضريبية الإقليمية.",
-          "ro": "Generează fișiere XML perfecte (UBL 2.1) conform standardelor autorităților fiscale regionale."
-        },
-        "icon": "fa-file-code"
-      },
-      {
-        "title": {
-          "en": "Cryptographic Signing",
-          "ar": "توقيع مشفر",
-          "ro": "Semnătură Criptografică"
-        },
-        "description": {
-          "en": "Secure digital signatures and hash codes for Phase 2 ZATCA integration.",
-          "ar": "توقيعات رقمية آمنة ورموز تجزئة لتكامل المرحلة الثانية من ZATCA.",
-          "ro": "Semnături digitale securizate și coduri hash pentru integrarea ZATCA Faza 2."
-        },
-        "icon": "fa-key"
-      },
-      {
-        "title": {
-          "en": "QR Code Generation",
-          "ar": "إنشاء رمز QR",
-          "ro": "Generare Cod QR"
-        },
-        "description": {
-          "en": "Instant generation of TLV-encoded QR codes required for compliant simplified tax invoices.",
-          "ar": "إنشاء فوري لرموز QR المشفرة بنظام TLV المطلوبة للفواتير الضريبية المبسطة المتوافقة.",
-          "ro": "Generarea instantanee a codurilor QR codificate TLV, necesare pentru facturile fiscale simplificate conforme."
-        },
-        "icon": "fa-qrcode"
-      }
-    ],
-    "benefits": [
-      {
-        "en": "Zero Legal Risk",
-        "ar": "خالٍ من المخاطر القانونية",
-        "ro": "Risc Legal Zero"
-      },
-      {
-        "en": "Faster Tax Audits",
-        "ar": "عمليات تدقيق ضريبي أسرع",
-        "ro": "Audituri Fiscale mai Rapide"
-      },
-      {
-        "en": "Reduced Admin Paperwork",
-        "ar": "تقليل المعاملات الورقية",
-        "ro": "Reducerea Birocrației"
-      }
-    ],
-    "technologies": [
-      { "name": "PHP", "icon": "fa-php" },
+      { "name": "C/C++", "icon": "fa-c" },
       { "name": "Python", "icon": "fa-python" },
-      { "name": "OpenSSL", "icon": "fa-lock" },
-      { "name": "XML/UBL", "icon": "fa-code" },
-      { "name": "PostgreSQL", "icon": "fa-database" }
+      { "name": "AWS IoT Core", "icon": "fa-aws" },
+      { "name": "MQTT Protocol", "icon": "fa-network-wired" }
     ],
-    "graphic": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2511&auto=format&fit=crop"
-  },
-  {
-    "id": "industry-erp",
-    "icon": "fa-building-shield",
-    "title": {
-      "en": "Industry-Specific Solutions",
-      "ar": "حلول متخصصة للصناعات",
-      "ro": "Soluții Specifice Industriei"
-    },
-    "description": {
-      "en": "Management software for Hospitals, Schools, Restaurants, and Hotels.",
-      "ar": "برمجيات إدارية للمستشفيات والمدارس والمطاعم والفنادق.",
-      "ro": "Software de gestionare pentru spitale, școli, restaurante și hoteluri."
-    },
-    "longDescription": {
-      "en": "Every industry has its own unique set of challenges, and generic software often falls short. At Loops Tech, we provide Industry-Specific ERP Solutions designed to meet the precise needs of sectors like Healthcare, Education, Hospitality, and Retail. Our management systems for Hospitals, Schools, Restaurants, and Hotels are built from the ground up to handle the specific operational workflows that these businesses face daily, ensuring higher efficiency and better service delivery.\n\nFor Hospitals and Clinics, we provide comprehensive Patient Management, Pharmacy, and Laboratory modules. For Schools, our systems manage Student Enrollment, Grading, and Fee Collections seamlessly. Restaurants benefit from our fast POS, Inventory, and Recipe Management tools, while Hotels can leverage our Booking Engines and Housekeeping modules. Each solution is localized for Riyadh and Lahore, ensuring that regional business practices and compliance requirements are met without compromise.\n\nWe believe that specialized software should be easy to use for all staff members. Our user interfaces are intuitive, requiring minimal training to master. We also offer robust mobile companion apps for managers to track performance on the go. With Loops Tech's industry-focused approach, you're not just getting software; you're getting a tool designed by experts who understand your industry's DNA. Let us help you optimize your specific business operations today.",
-      "ar": "كل صناعة لديها مجموعتها الفريدة من التحديات، وغالباً ما تفشل البرمجيات العامة في تلبيتها. في لوبس تيك (Loops Tech)، نقدم حلول ERP المتخصصة للصناعات والمصممة لتلبية الاحتياجات الدقيقة لقطاعات مثل الرعاية الصحية والتعليم والضيافة والتجزئة. تم بناء أنظمة الإدارة الخاصة بنا للمستشفيات والمدارس والمطاعم والفنادق من الألف إلى الياء للتعامل مع سير العمل التشغيلي المحدد الذي تواجهه هذه الشركات يومياً، مما يضمن كفاءة أعلى وتقديم خدمة أفضل.\n\nبالنسبة للمستشفيات والعيادات، نقدم وحدات شاملة لإدارة المرضى والصيدلة والمختبرات. بالنسبة للمدارس، تدير أنظمتنا تسجيل الطلاب والدرجات وتحصيل الرسوم بسلاسة. تستفيد المطاعم من أدواتنا السريعة لنقاط البيع والمخزون وإدارة الوصفات، بينما يمكن للفنادق الاستفادة من محركات الحجز ووحدات التدبير المنزلي. تم تخصيص كل حل للرياض ولاهور، مما يضمن تلبية ممارسات العمل الإقليمية ومتطلبات الامتثال دون تنازلات.\n\nنحن نؤمن بأن البرمجيات المتخصصة يجب أن تكون سهلة الاستخدام لجميع الموظفين. واجهات المستخدم لدينا بديهية، وتتطلب حداً أدنى من التدريب لإتقانها. نقدم أيضاً تطبيقات جوال مرافقة قوية للمديرين لتتبع الأداء أثناء التنقل. مع نهج لوبس تيك الموجه نحو الصناعة، فأنت لا تحصل فقط على برامج؛ بل تحصل على أداة صممها خبراء يفهمون طبيعة صناعتك. دعنا نساعدك في تحسين عمليات عملك المحددة اليوم.",
-      "ro": "Fiecare industrie are propriul set unic de provocări, iar software-ul generic este adesea insuficient. La Loops Tech, oferim soluții ERP specifice industriei, concepute pentru a satisface nevoile precise ale sectoarelor precum Sănătatea, Educația, Ospitalitatea și Retailul. Sistemele noastre de management pentru Spitale, Școli, Restaurante și Hoteluri sunt construite de la zero pentru a gestiona fluxurile de lucru operaționale specifice cu care se confruntă zilnic aceste afaceri, asigurând o eficiență mai mare și o prestare mai bună a serviciilor.\n\nPentru Spitale și Clinici, oferim module cuprinzătoare de Management al Pacienților, Farmacie și Laborator. Pentru Școli, sistemele noastre gestionează fără probleme Înscrierea Elevilor, Notele și Colectarea Taxelor. Restaurantele beneficiază de instrumentele noastre rapide de POS, Inventar și Managementul Rețetelor, în timp ce Hotelurile pot utiliza Motoarele noastre de Rezervări și modulele de Housekeeping. Fiecare soluție este adaptată local, asigurându-se că practicile de afaceri regionale și cerințele de conformitate sunt îndeplinite fără compromisuri.\n\nCredem că software-ul specializat ar trebui să fie ușor de utilizat pentru toți membrii personalului. Interfețele noastre de utilizator sunt intuitive, necesitând instruire minimă pentru a fi stăpânite. De asemenea, oferim aplicații mobile robuste pentru manageri, pentru a urmări performanța din mers. Cu abordarea orientată spre industrie a Loops Tech, nu primești doar software; primești un instrument conceput de experți care înțeleg ADN-ul industriei tale. Lasă-ne să te ajutăm să optimizezi operațiunile specifice afacerii tale astăzi."
-    },
-    "features": [
-      {
-        "title": {
-          "en": "Hospital Management",
-          "ar": "إدارة المستشفيات",
-          "ro": "Management Spitalicesc"
-        },
-        "description": {
-          "en": "Comprehensive EMR, appointment scheduling, and pharmacy inventory control.",
-          "ar": "سجلات طبية إلكترونية شاملة، وجدولة المواعيد، والتحكم في مخزون الصيدلية.",
-          "ro": "EMR cuprinzător, programarea programărilor și controlul inventarului farmaciei."
-        },
-        "icon": "fa-hospital"
-      },
-      {
-        "title": {
-          "en": "School Information Systems",
-          "ar": "أنظمة معلومات المدارس",
-          "ro": "Sisteme Informaționale Școlare"
-        },
-        "description": {
-          "en": "Student life-cycle management from admission to graduation with parent portals.",
-          "ar": "إدارة دورة حياة الطالب من القبول إلى التخرج مع بوابات لأولياء الأمور.",
-          "ro": "Managementul ciclului de viață al elevilor, de la admitere până la absolvire, cu portaluri pentru părinți."
-        },
-        "icon": "fa-graduation-cap"
-      },
-      {
-        "title": {
-          "en": "Restaurant POS & Inventory",
-          "ar": "نقاط بيع ومخزون المطاعم",
-          "ro": "POS & Inventar Restaurante"
-        },
-        "description": {
-          "en": "Kitchen display systems, table management, and ingredient-level tracking.",
-          "ar": "أنظمة عرض المطبخ، وإدارة الطاولات، وتتبع المكونات.",
-          "ro": "Sisteme de afișare pentru bucătărie, managementul meselor și urmărirea la nivel de ingredient."
-        },
-        "icon": "fa-utensils"
-      },
-      {
-        "title": {
-          "en": "Hotel Property Management",
-          "ar": "إدارة الفنادق",
-          "ro": "Managementul Proprietății Hoteliere"
-        },
-        "description": {
-          "en": "Real-time room availability, online booking engine, and staff task management.",
-          "ar": "توفر الغرف في الوقت الفعلي، ومحرك الحجز عبر الإنترنت، وإدارة مهام الموظفين.",
-          "ro": "Disponibilitatea camerelor în timp real, motor de rezervări online și managementul sarcinilor personalului."
-        },
-        "icon": "fa-hotel"
-      }
-    ],
-    "benefits": [
-      {
-        "en": "Operational Precision",
-        "ar": "دقة تشغيلية",
-        "ro": "Precizie Operațională"
-      },
-      {
-        "en": "Improved User Experience",
-        "ar": "تحسين تجربة المستخدم",
-        "ro": "Experiență de Utilizare Îmbunătățită"
-      },
-      {
-        "en": "Faster Decision Making",
-        "ar": "اتخاذ قرارات أسرع",
-        "ro": "Luarea Deciziilor mai Rapidă"
-      }
-    ],
-    "technologies": [
-      { "name": "Laravel", "icon": "fa-laravel" },
-      { "name": "Vue.js", "icon": "fa-vuejs" },
-      { "name": "PostgreSQL", "icon": "fa-database" },
-      { "name": "Flutter", "icon": "fa-flutter" },
-      { "name": "RabbitMQ", "icon": "fa-layer-group" }
-    ],
-    "graphic": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "construction-ai",
-    "icon": "fa-helmet-safety",
-    "title": {
-      "en": "Construction AI Solutions",
-      "ar": "حلول الذكاء الاصطناعي للمقاولات",
-      "ro": "Soluții AI pentru Construcții"
-    },
-    "description": {
-      "en": "AI-driven document control, data analyzers, and lead generators specifically for the construction industry.",
-      "ar": "التحكم في المستندات وتحليل البيانات وتوليد العملاء المحتملين المدعوم بالذكاء الاصطناعي لقطاع المقاولات.",
-      "ro": "Controlul documentelor, analizatoare de date și generatoare de lead-uri bazate pe AI special pentru industria construcțiilor."
-    },
-    "longDescription": {
-      "en": "The construction industry is being redefined by artificial intelligence, and Loops Tech is at the forefront of this revolution. Our Construction AI Solutions are designed to bring unprecedented efficiency to job sites and offices alike. By leveraging advanced data analyzers and AI-driven document control, we help construction firms manage the massive volume of blueprints, contracts, and safety reports with ease. Our AI can automatically categorize documents, highlight potential risks in contracts, and ensure that all team members are working with the latest versions.\n\nBeyond document management, our AI lead generators help construction companies find and win more projects by analyzing market trends and identifying opportunities before they become public knowledge. We also provide specialized AI data analyzers that track project progress, predict delays, and optimize resource allocation. This data-driven approach allows project managers to make informed decisions that keep projects on schedule and under budget, significantly increasing profitability in a competitive industry.\n\nSafety and compliance are also key focus areas. Our AI solutions can analyze site photos and videos to detect safety hazards or non-compliant practices in real-time. By integrating Loops Tech's AI into your construction workflow, you're not just modernizing your business; you're gaining a strategic advantage that reduces waste and enhances safety. Experience the power of AI built specifically for the unique demands of the construction world. Let us build the future of construction together.",
-      "ar": "يتم إعادة تعريف صناعة المقاولات بواسطة الذكاء الاصطناعي، ولوبس تيك (Loops Tech) في طليعة هذه الثورة. تم تصميم حلول الذكاء الاصطناعي للمقاولات لدينا لجلب كفاءة غير مسبوقة لمواقع العمل والمكاتب على حد سواء. من خلال الاستفادة من محللي البيانات المتقدمين والتحكم في المستندات المدعوم بالذكاء الاصطناعي، نساعد شركات المقاولات على إدارة الحجم الهائل من المخططات والعقود وتقارير السلامة بسهولة. يمكن للذكاء الاصطناعي الخاص بنا تصنيف المستندات تلقائياً، وتسليط الضوء على المخاطر المحتملة في العقود، وضمان عمل جميع أعضاء الفريق مع أحدث الإصدارات.\n\nبعيداً عن إدارة المستندات، تساعد أدوات توليد العملاء المحتملين بالذكاء الاصطناعي شركات المقاولات في العثور على المزيد من المشاريع والفوز بها من خلال تحليل اتجاهات السوق وتحديد الفرص قبل أن تصبح معرفة عامة. كما نقدم محللي بيانات متخصصين بالذكاء الاصطناعي يتتبعون تقدم المشروع، ويتوقعون التأخيرات، ويحسنون تخصيص الموارد. يتيح هذا النهج القائم على البيانات لمديري المشاريع اتخاذ قرارات مستنيرة تحافظ على المشاريع وفق الجدول الزمني وتحت الميزانية، مما يزيد الربحية بشكل كبير في صناعة تنافسية.\n\nتعد السلامة والامتثال أيضاً مجالات تركيز رئيسية. يمكن لحلول الذكاء الاصطناعي لدينا تحليل صور وفيديوهات الموقع للكشف عن مخاطر السلامة أو الممارسات غير المتوافقة في الوقت الفعلي. من خلال دمج ذكاء لوبس تيك الاصطناعي في سير عمل المقاولات الخاص بك، فإنك لا تقوم بتحديث عملك فحسب؛ بل تكتسب ميزة استراتيجية تقلل الهدر وتعزز السلامة. جرب قوة الذكاء الاصطناعي المصمم خصيصاً للمطالب الفريدة لعالم المقاولات. دعونا نبني مستقبل البناء معاً.",
-      "ro": "Industria construcțiilor este redefinită de inteligența artificială, iar Loops Tech se află în fruntea acestei revoluții. Soluțiile noastre AI pentru Construcții sunt concepute pentru a aduce o eficiență fără precedent atât pe șantiere, cât și în birouri. Utilizând analizatoare de date avansate și controlul documentelor bazat pe AI, ajutăm firmele de construcții să gestioneze cu ușurință volumul masiv de planuri, contracte și rapoarte de siguranță. AI-ul nostru poate clasifica automat documentele, evidenția riscurile potențiale în contracte și asigura că toți membrii echipei lucrează cu cele mai recente versiuni.\n\nDincolo de managementul documentelor, generatoarele noastre de lead-uri bazate pe AI ajută companiile de construcții să găsească și să câștige mai multe proiecte prin analizarea tendințelor pieței și identificarea oportunităților înainte ca acestea să devină cunoscute public. Oferim, de asemenea, analizatoare de date AI specializate care urmăresc progresul proiectului, prezic întârzierile și optimizează alocarea resurselor. Această abordare bazată pe date permite managerilor de proiect să ia decizii informate care mențin proiectele în grafic și în buget, crescând semnificativ rentabilitatea într-o industrie competitivă.\n\nSiguranța și conformitatea sunt, de asemenea, domenii cheie de interes. Soluțiile noastre AI pot analiza fotografiile și videoclipurile de pe șantier pentru a detecta pericolele de siguranță sau practicile neconforme în timp real. Prin integrarea AI-ului Loops Tech în fluxul tău de lucru în construcții, nu doar îți modernizezi afacerea; obții un avantaj strategic care reduce risipa și sporește siguranța. Experimentează puterea AI-ului construit special pentru cerințele unice ale lumii construcțiilor. Să construim împreună viitorul construcțiilor."
-    },
-    "features": [
-      {
-        "title": {
-          "en": "AI Document Control",
-          "ar": "التحكم في المستندات بالذكاء الاصطناعي",
-          "ro": "Controlul Documentelor cu AI"
-        },
-        "description": {
-          "en": "Automated filing, OCR scanning, and version control for large-scale construction blueprints.",
-          "ar": "أرشفة تلقائية، ومسح ضوئي OCR، وتحكم في الإصدارات لمخططات المقاولات واسعة النطاق.",
-          "ro": "Arhivare automată, scanare OCR și controlul versiunilor pentru planuri de construcție la scară largă."
-        },
-        "icon": "fa-file-lines"
-      },
-      {
-        "title": {
-          "en": "Construction Lead Gen",
-          "ar": "توليد عملاء مقاولات",
-          "ro": "Generare Lead-uri Construcții"
-        },
-        "description": {
-          "en": "Identifies new project tenders and potential clients using predictive market analysis.",
-          "ar": "يحدد مناقصات المشاريع الجديدة والعملاء المحتملين باستخدام تحليل السوق التنبؤي.",
-          "ro": "Identifică noi licitații de proiecte și clienți potențiali folosind analiza predictivă a pieței."
-        },
-        "icon": "fa-magnifying-glass-chart"
-      },
-      {
-        "title": {
-          "en": "Predictive Delay Analysis",
-          "ar": "تحليل التأخير التنبؤي",
-          "ro": "Analiza Predictivă a Întârzierilor"
-        },
-        "description": {
-          "en": "Analyzes weather, logistics, and labor patterns to predict and prevent project delays.",
-          "ar": "يحلل الطقس والخدمات اللوجستية وأنماط العمالة للتنبؤ بتأخيرات المشروع ومنعها.",
-          "ro": "Analizează vremea, logistica și modelele de muncă pentru a prezice și preveni întârzierile proiectelor."
-        },
-        "icon": "fa-clock-rotate-left"
-      },
-      {
-        "title": {
-          "en": "Automated Safety Audits",
-          "ar": "تدقيق السلامة الآلي",
-          "ro": "Audituri de Siguranță Automatizate"
-        },
-        "description": {
-          "en": "Uses computer vision to identify missing PPE and safety violations on construction sites.",
-          "ar": "يستخدم الرؤية الحاسوبية لتحديد معدات الوقاية المفقودة ومخالفات السلامة في مواقع البناء.",
-          "ro": "Utilizează computer vision pentru a identifica echipamentele de protecție lipsă și încălcările de siguranță pe șantiere."
-        },
-        "icon": "fa-hard-hat"
-      }
-    ],
-    "benefits": [
-      {
-        "en": "Zero Project Delays",
-        "ar": "صفر تأخير في المشاريع",
-        "ro": "Zero Întârzieri de Proiect"
-      },
-      {
-        "en": "Reduced Material Waste",
-        "ar": "تقليل هدر المواد",
-        "ro": "Reducerea Risipei de Materiale"
-      },
-      {
-        "en": "Enhanced Site Safety",
-        "ar": "تحسين سلامة الموقع",
-        "ro": "Siguranță Sporită pe Șantier"
-      }
-    ],
-    "technologies": [
-      { "name": "PyTorch", "icon": "fa-microchip" },
-      { "name": "OpenCV", "icon": "fa-eye" },
-      { "name": "TensorFlow", "icon": "fa-brain" },
-      { "name": "Python", "icon": "fa-python" },
-      { "name": "Nvidia CUDA", "icon": "fa-bolt" }
-    ],
-    "graphic": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2662&auto=format&fit=crop"
-  },
-  {
-    "id": "integrations",
-    "icon": "fa-gears",
-    "title": {
-      "en": "API & Third-Party Integrations",
-      "ar": "تكامل واجهات البرمجيات (API)",
-      "ro": "Integrări API și Terțe Părți"
-    },
-    "description": {
-      "en": "Seamless integration with payment gateways, shipping providers, and other third-party services.",
-      "ar": "تكامل سلس مع بوابات الدفع ومزودي الشحن والخدمات الخارجية الأخرى.",
-      "ro": "Integrare perfectă cu procesatoare de plăți, furnizori de transport și alte servicii terțe."
-    },
-    "longDescription": {
-      "en": "Unlock the full potential of your software ecosystem with expert API and Third-Party Integrations from Loops Tech. In today's interconnected world, your applications shouldn't exist in silos. We specialize in building seamless bridges between your primary systems and the vast array of external services available. Whether you need to integrate global payment gateways like Stripe and PayPal, local shipping providers like Aramex, or marketing tools like Mailchimp, we ensure that data flows smoothly and securely across your entire tech stack.\n\nOur integration services go beyond just 'connecting' apps. We focus on creating robust, fault-tolerant pipelines that handle data synchronization, error logging, and real-time updates without missing a beat. We have extensive experience with REST, SOAP, and GraphQL APIs, as well as complex webhook implementations. For businesses looking to automate their workflows, we can connect your ERP to your CRM, your website to your warehouse, and your customer support to your internal communication tools like Slack or Microsoft Teams.\n\nSecurity is paramount in every integration we build. We implement advanced authentication protocols and data encryption to ensure that sensitive information remains protected during transit. By centralizing and automating your data flow, you eliminate manual entry errors, reduce administrative costs, and provide a more cohesive experience for your users and employees. Let Loops Tech help you build a truly connected business that is more agile, efficient, and ready to scale. Connectivity is the key to modern business success.",
-      "ar": "أطلق العنان للإمكانات الكاملة لنظامك البرمجي من خلال تكامل واجهات البرمجيات (API) والخدمات الخارجية من لوبس تيك (Loops Tech). في عالم اليوم المترابط، لا ينبغي أن تكون تطبيقاتك معزولة. نحن متخصصون في بناء جسور سلسة بين أنظمتك الأساسية ومجموعة واسعة من الخدمات الخارجية المتاحة. سواء كنت بحاجة إلى دمج بوابات دفع عالمية مثل Stripe و PayPal، أو مزودي شحن محليين مثل Aramex، أو أدوات تسويق مثل Mailchimp، فإننا نضمن تدفق البيانات بسلاسة وأمان عبر كامل مجموعتك التقنية.\n\nتتجاوز خدمات التكامل لدينا مجرد 'توصيل' التطبيقات. نحن نركز على إنشاء قنوات قوية ومقاومة للأخطاء تتعامل مع مزامنة البيانات وتسجيل الأخطاء والتحديثات في الوقت الفعلي دون انقطاع. لدينا خبرة واسعة في واجهات REST و SOAP و GraphQL، بالإضافة إلى تطبيقات webhook المعقدة. للشركات التي تتطلع إلى أتمتة سير عملها، يمكننا ربط نظام ERP بنظام CRM الخاص بك، وموقعك الإلكتروني بمستودعك، ودعم العملاء بأدوات الاتصال الداخلية مثل Slack أو Microsoft Teams.\n\nالأمان هو الأهم في كل عملية تكامل نبنيها. نحن ننفذ بروتوكولات مصادقة متقدمة وتشفير البيانات لضمان حماية المعلومات الحساسة أثناء النقل. من خلال مركزية وأتمتة تدفق البيانات الخاص بك، يمكنك القضاء على أخطاء الإدخال اليدوي، وتقليل التكاليف الإدارية، وتقديم تجربة أكثر تماسكاً لمستخدميك وموظفيك. دع لوبس تيك تساعدك في بناء عمل مترابط حقاً، أكثر رشاقة وكفاءة وجاهزية للتوسع. الاتصال هو مفتاح النجاح في الأعمال الحديثة.",
-      "ro": "Deblochează întregul potențial al ecosistemului tău software cu integrări API și terțe părți de la Loops Tech. În lumea interconectată de astăzi, aplicațiile tale nu ar trebui să existe în silozuri. Suntem specializați în construirea de punți fluide între sistemele tale principale și vasta gamă de servicii externe disponibile. Indiferent dacă trebuie să integrezi procesatoare de plăți globale precum Stripe și PayPal, furnizori locali de transport precum Aramex sau instrumente de marketing precum Mailchimp, ne asigurăm că datele circulă fără probleme și în siguranță prin întreaga ta stivă tehnologică.\n\nServiciile noastre de integrare merg dincolo de simpla 'conectare' a aplicațiilor. Ne concentrăm pe crearea unor conducte robuste, tolerante la erori, care gestionează sincronizarea datelor, jurnalizarea erorilor și actualizările în timp real fără nicio întrerupere. Avem o experiență vastă cu API-urile REST, SOAP și GraphQL, precum și cu implementări complexe de webhook-uri. Pentru afacerile care doresc să își automatizeze fluxurile de lucru, putem conecta ERP-ul la CRM, site-ul web la depozit și suportul clienți la instrumentele de comunicare internă precum Slack sau Microsoft Teams.\n\nSecuritatea este primordială în fiecare integrare pe care o construim. Implementăm protocoale de autentificare avansate și criptarea datelor pentru a ne asigura că informațiile sensibile rămân protejate în timpul tranzitului. Prin centralizarea și automatizarea fluxului de date, elimini erorile de introducere manuală, reduci costurile administrative și oferi o experiență mai coerentă utilizatorilor și angajaților tăi. Lasă Loops Tech să te ajute să construiești o afacere cu adevărat conectată, care este mai agilă, mai eficientă și gata de scalare. Conectivitatea este cheia succesului în afacerile moderne."
-    },
-    "features": [
-      {
-        "title": {
-          "en": "Payment Gateways",
-          "ar": "بوابات الدفع",
-          "ro": "Procesatoare de Plăți"
-        },
-        "description": {
-          "en": "Seamless integration with Stripe, PayPal, and regional providers like Moyasar or PayTabs.",
-          "ar": "تكامل سلس مع Stripe و PayPal والمزودين الإقليميين مثل Moyasar أو PayTabs.",
-          "ro": "Integrare perfectă cu Stripe, PayPal și furnizori regionali precum Moyasar sau PayTabs."
-        },
-        "icon": "fa-credit-card"
-      },
-      {
-        "title": {
-          "en": "Logistics & Shipping",
-          "ar": "الخدمات اللوجستية والشحن",
-          "ro": "Logistică & Transport"
-        },
-        "description": {
-          "en": "Automated label generation and tracking updates with Aramex, DHL, and FedEx.",
-          "ar": "إنشاء تلقائي للملصقات وتحديثات التتبع مع Aramex و DHL و FedEx.",
-          "ro": "Generarea automată a etichetelor și actualizări de urmărire cu Aramex, DHL și FedEx."
-        },
-        "icon": "fa-truck"
-      },
-      {
-        "title": {
-          "en": "CRM & Marketing Sync",
-          "ar": "مزامنة CRM والتسويق",
-          "ro": "Sincronizare CRM & Marketing"
-        },
-        "description": {
-          "en": "Connects your leads and customer data directly to Mailchimp, HubSpot, or Salesforce.",
-          "ar": "يربط عملاءك المحتملين وبيانات العملاء مباشرة بـ Mailchimp أو HubSpot أو Salesforce.",
-          "ro": "Conectează lead-urile și datele clienților direct la Mailchimp, HubSpot sau Salesforce."
-        },
-        "icon": "fa-arrows-rotate"
-      },
-      {
-        "title": {
-          "en": "Cloud Storage APIs",
-          "ar": "واجهات التخزين السحابي",
-          "ro": "API-uri de Stocare Cloud"
-        },
-        "description": {
-          "en": "Secure file handling and storage with AWS S3, Google Drive, and Dropbox integrations.",
-          "ar": "تعامل آمن مع الملفات وتخزينها مع تكاملات AWS S3 و Google Drive و Dropbox.",
-          "ro": "Gestionarea și stocarea securizată a fișierelor cu integrări AWS S3, Google Drive și Dropbox."
-        },
-        "icon": "fa-cloud-arrow-down"
-      }
-    ],
-    "benefits": [
-      {
-        "en": "Eliminated Data Silos",
-        "ar": "القضاء على عزلة البيانات",
-        "ro": "Eliminarea Silozurilor de Date"
-      },
-      {
-        "en": "Automated Business Logic",
-        "ar": "منطق عمل آلي",
-        "ro": "Logică de Afaceri Automatizată"
-      },
-      {
-        "en": "Better User Experience",
-        "ar": "تجربة مستخدم أفضل",
-        "ro": "Experiență de Utilizare mai Bună"
-      }
-    ],
-    "technologies": [
-      { "name": "REST API", "icon": "fa-link" },
-      { "name": "GraphQL", "icon": "fa-diagram-project" },
-      { "name": "Webhooks", "icon": "fa-anchor" },
-      { "name": "JSON/XML", "icon": "fa-code" },
-      { "name": "OAuth 2.0", "icon": "fa-user-shield" }
-    ],
-    "graphic": "https://images.unsplash.com/photo-1558494949-ef010cbdcc4b?q=80&w=2668&auto=format&fit=crop"
+    "graphic": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop"
   }
 ]
