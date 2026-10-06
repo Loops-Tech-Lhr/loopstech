@@ -18,3 +18,7 @@ pos/
 project/
 projects/
 inv/
+
+# Local dev helpers (not deployed, not pushed)
+serve.js
+start.bat

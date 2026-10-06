@@ -6,8 +6,6 @@
   "type": "module",
   "scripts": {
     "build": "node build/build.js",
-    "serve": "node serve.js dist",
-    "start": "node build/build.js && node serve.js dist",
     "check": "node build/check.js"
   },
   "devDependencies": {
