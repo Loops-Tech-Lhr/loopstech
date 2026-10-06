@@ -149,6 +149,7 @@ export function layout(ctx, page) {
             <a href="${alt.en}" hreflang="en" lang="en" class="lang-btn${lang === 'en' ? ' is-active' : ''}"${lang === 'en' ? ' aria-current="true"' : ''}>EN</a>
             <a href="${alt.ar}" hreflang="ar" lang="ar" class="lang-btn${lang === 'ar' ? ' is-active' : ''}"${lang === 'ar' ? ' aria-current="true"' : ''}>عربي</a>
           </div>
+          ${page.bodyClass === 'sa-page' ? `<a href="tel:+966597441504" class="header-phone" dir="ltr">${ctx.icon('fa-phone')}<span>${SITE.riyadhPhone}</span></a>` : ''}
           <a href="${waLink(ctx)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm header-wa">
             ${ctx.icon('fa-whatsapp')}<span>${t('nav.live_chat')}</span>
           </a>
@@ -368,21 +369,23 @@ export function homePage(ctx) {
       )
     )
   const body = `
-    <section class="hero">
+    <section class="hero hero-home">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">${t('hero.badge')}</span>
-          <h1 class="display" style="margin:20px 0 24px">
+          <span class="eyebrow rise" style="--i:0">${t('hero.badge')}</span>
+          <h1 class="display rise" style="margin:20px 0 24px;--i:1">
             ${t('hero.title_bold')} <span class="accent">${t('hero.title_ideas')}</span>
             ${t('hero.title_smart')} <span class="accent">${t('hero.title_code')}</span>.
           </h1>
-          <p class="lead" style="margin-bottom:32px">${t('hero.subtitle')}</p>
-          <div class="btn-row">
+          <p class="lead rise" style="margin-bottom:32px;--i:2">${t('hero.subtitle')}</p>
+          <div class="btn-row rise" style="--i:3">
             <a href="${url('contact/')}" class="btn btn-primary">${t('hero.btn_audit')}</a>
             <a href="${data.saUrl(lang)}" class="btn btn-outline">${t('hero.btn_saudi')}</a>
           </div>
         </div>
-        <div>
+        <div class="rise" style="--i:2">
           <div class="hero-media">
             <img src="${data.assets.hero[0].src}" srcset="${heroSrcset}" sizes="(min-width:1024px) 560px, 100vw" alt="${esc(t('hero.image_alt'))}" width="${data.assets.hero[0].w}" height="${data.assets.hero[0].h}" fetchpriority="high" decoding="async">
           </div>
@@ -394,9 +397,15 @@ export function homePage(ctx) {
       </div>
     </section>
 
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        ${[0, 1].map(() => `<span>${['Laravel', 'React', 'Flutter', 'Python', 'PyTorch', 'NVIDIA CUDA', 'PostgreSQL', 'ZATCA e-invoicing', 'Arabic NLP', 'Computer vision', 'Edge AI', 'ERP', 'WhatsApp automation'].join('</span><span>')}</span>`).join('')}
+      </div>
+    </div>
+
     <div class="container">
       <div class="stats">
-        ${stats.map(([v, l]) => `<div class="stat"><div class="stat-value">${v}</div><div class="stat-label">${l}</div></div>`).join('')}
+        ${stats.map(([v, l]) => `<div class="stat"><div class="stat-value"${/\d/.test(v) ? ' data-count' : ''}>${v}</div><div class="stat-label">${l}</div></div>`).join('')}
       </div>
     </div>
 
@@ -824,26 +833,36 @@ export function saLanding(ctx) {
     success: form.success,
     error: form.error
   }
+  const phone = SITE.riyadhPhone
+  const tel = 'tel:+966597441504'
   const mock = c.mock
+  const ctaRow = (extra = '') => `
+          <div class="cta-row${extra}">
+            <a href="${tel}" class="btn btn-amber btn-lg" data-cta="call">${icon('fa-phone')}<span class="btn-stack"><small>${c.cta_call}</small><strong dir="ltr">${phone}</strong></span></a>
+            <a href="${wa}" target="_blank" rel="noopener" class="btn btn-wa btn-lg" data-cta="whatsapp">${icon('fa-whatsapp')}<span>${c.cta_wa}</span></a>
+            <a href="#book" class="btn btn-ghost btn-lg" data-cta="contact">${icon('fa-envelope')}<span>${c.cta_contact}</span></a>
+          </div>`
   const body = `
     <section class="sa-hero">
+      <div class="hazard-bar" aria-hidden="true"></div>
+      <div class="sa-glow" aria-hidden="true"></div>
       <div class="container sa-hero-grid">
         <div>
-          <span class="eyebrow">${c.eyebrow}</span>
-          <h1 class="sa-title">${c.title}</h1>
-          <p class="lead sa-sub">${c.subtitle}</p>
-          <div class="btn-row">
-            <a href="#book" class="btn btn-primary">${c.cta_primary} ${arrow(ctx)}</a>
-            <a href="${wa}" target="_blank" rel="noopener" class="btn btn-outline-light">${icon('fa-whatsapp')}${c.cta_secondary}</a>
-          </div>
-          <ul class="chips">${c.chips.map(x => `<li>${icon(x.icon)}${x.text}</li>`).join('')}</ul>
+          <span class="kicker rise" style="--i:0"><span class="live-dot" aria-hidden="true"></span>${c.kicker}</span>
+          <h1 class="sa-title rise" style="--i:1">${c.title}</h1>
+          <p class="sa-sub rise" style="--i:2">${c.subtitle}</p>
+          <div class="rise" style="--i:3">${ctaRow()}</div>
+          <p class="response-note rise" style="--i:4">${icon('fa-circle-check')}${c.response_note}</p>
+          <ul class="chips rise" style="--i:5">${c.chips.map(x => `<li>${icon(x.icon)}${x.text}</li>`).join('')}</ul>
         </div>
-        <div class="mock" aria-label="${esc(mock.label)}">
-          <div class="mock-top"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="mock-label">${mock.label}</span></div>
+        <div class="mock rise" style="--i:3" aria-label="${esc(mock.label)}">
+          <div class="mock-top"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="mock-label">${mock.label}</span><span class="rec"><i></i>LIVE</span></div>
           <div class="mock-view" aria-hidden="true">
+            <div class="scan"></div>
+            <div class="worker w1"></div>
+            <div class="worker w2"></div>
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
-            <div class="grid-lines"></div>
           </div>
           <ul class="mock-feed">
             ${mock.rows.map(r => `<li class="lvl-${r.level}"><span class="pip"></span><span class="mock-text">${r.text}</span><span class="mock-time" dir="ltr">${r.time}</span></li>`).join('')}
@@ -852,13 +871,37 @@ export function saLanding(ctx) {
       </div>
     </section>
 
-    <div class="container sa-stats-wrap">
-      <div class="stats stats-dark">
-        ${c.stats.map(s => `<div class="stat"><div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div></div>`).join('')}
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        ${[0, 1].map(() => `<span>${c.ticker.join('</span><span>')}</span>`).join('')}
       </div>
     </div>
 
-    <section class="section">
+    <div class="container sa-stats-wrap">
+      <div class="stats stats-dark">
+        ${c.stats.map(s => `<div class="stat"><div class="stat-value"${s.count ? ' data-count' : ''}>${s.value}</div><div class="stat-label">${s.label}</div></div>`).join('')}
+      </div>
+    </div>
+
+    <section class="section roles">
+      <div class="container">
+        ${sectionHead(c.roles.eyebrow, c.roles.title)}
+        <div class="role-grid">
+          ${c.roles.items
+            .map(
+              (r, i) => `
+          <article class="role-card reveal-on-scroll" style="transition-delay:${i * 0.08}s">
+            <div class="role-top">${icon(r.icon, 'role-icon')}<span class="role-who">${r.who}</span></div>
+            <h3>${r.title}</h3>
+            <p>${r.text}</p>
+          </article>`
+            )
+            .join('')}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container">
         ${sectionHead(c.problem.eyebrow, c.problem.title)}
         <div class="cells cells-4">
@@ -874,7 +917,7 @@ export function saLanding(ctx) {
       </div>
     </section>
 
-    <section class="section section-alt" id="solutions">
+    <section class="section" id="solutions">
       <div class="container">
         ${sectionHead(c.solutions.eyebrow, c.solutions.title)}
         <div class="bento">
@@ -890,6 +933,7 @@ export function saLanding(ctx) {
             )
             .join('')}
         </div>
+        <div class="inline-cta reveal-on-scroll">${ctaRow(' cta-compact')}</div>
       </div>
     </section>
 
@@ -933,11 +977,11 @@ export function saLanding(ctx) {
     <section class="section section-alt">
       <div class="container">
         ${sectionHead(c.process.eyebrow, c.process.title)}
-        <div class="cells cells-3">
+        <div class="steps">
           ${c.process.items
             .map(
               (p, i) => `
-          <div class="cell reveal-on-scroll"><span class="cell-num">0${i + 1} · ${p.badge}</span><h3 class="cell-title">${p.title}</h3><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
+          <div class="step reveal-on-scroll" style="transition-delay:${i * 0.1}s"><span class="step-n">0${i + 1}</span><span class="step-badge">${p.badge}</span><h3 class="cell-title">${p.title}</h3><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
             )
             .join('')}
         </div>
@@ -953,16 +997,14 @@ export function saLanding(ctx) {
           ${contactForm(ctx, { source: 'sa-landing', labels, options: form.options })}
         </div>
         <aside>
-          <div class="side-box" style="display:grid;gap:24px">
-            <div>
-              <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.office_riyadh')}</h2>
-              <p>${t('contact.riyadh_address')}</p>
-              <a href="tel:+966597441504" class="link-arrow" style="margin-top:10px" dir="ltr">${SITE.riyadhPhone}</a>
+          <div class="phone-card">
+            <span class="phone-label">${c.cta_call}</span>
+            <a href="${tel}" class="phone-number" dir="ltr">${icon('fa-phone')}${phone}</a>
+            <div class="phone-actions">
+              <a href="${wa}" target="_blank" rel="noopener" class="btn btn-wa">${icon('fa-whatsapp')}${c.cta_wa}</a>
+              <a href="mailto:${SITE.email}" class="btn btn-dark">${icon('fa-envelope')}${SITE.email}</a>
             </div>
-            <div style="padding-top:20px;border-top:1px solid var(--line)">
-              <a href="mailto:${SITE.email}" class="link-arrow">${SITE.email}</a>
-              <div style="margin-top:12px"><a href="${wa}" target="_blank" rel="noopener" class="link-arrow">${icon('fa-whatsapp')}${t('contact.whatsapp')}</a></div>
-            </div>
+            <p class="phone-addr">${icon('fa-location-dot')}${t('contact.riyadh_address')}</p>
           </div>
           <div class="faq" style="margin-top:32px">
             <h2 class="eyebrow" style="margin-bottom:12px">${c.faq.title}</h2>
@@ -972,9 +1014,29 @@ export function saLanding(ctx) {
       </div>
     </section>
 
+    <section class="final-cta">
+      <div class="hazard-bar" aria-hidden="true"></div>
+      <div class="container final-inner">
+        <div>
+          <h2>${c.final.title}</h2>
+          <p>${c.final.text}</p>
+        </div>
+        <div class="final-actions">
+          <a href="${tel}" class="final-phone" dir="ltr" data-cta="call">${icon('fa-phone')}${phone}</a>
+          <div class="btn-row">
+            <a href="${wa}" target="_blank" rel="noopener" class="btn btn-wa btn-lg" data-cta="whatsapp">${icon('fa-whatsapp')}<span>${c.cta_wa}</span></a>
+            <a href="#book" class="btn btn-dark btn-lg" data-cta="contact">${icon('fa-envelope')}<span>${c.cta_contact}</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="${wa}" target="_blank" rel="noopener" class="wa-fab" aria-label="${esc(t('contact.whatsapp'))}">${icon('fa-whatsapp')}</a>
+
     <div class="sticky-cta" role="complementary">
-      <a href="#book" class="btn btn-primary">${c.cta_primary}</a>
-      <a href="${wa}" target="_blank" rel="noopener" class="btn btn-outline" aria-label="${esc(t('contact.whatsapp'))}">${icon('fa-whatsapp')}</a>
+      <a href="${tel}" class="btn btn-amber" data-cta="call">${icon('fa-phone')}<span>${c.cta_call}</span></a>
+      <a href="${wa}" target="_blank" rel="noopener" class="btn btn-wa" data-cta="whatsapp">${icon('fa-whatsapp')}<span>WhatsApp</span></a>
+      <a href="#book" class="btn btn-dark" data-cta="contact">${icon('fa-envelope')}<span>${t('nav.contact')}</span></a>
     </div>`
 
   const path = data.saUrl(lang)

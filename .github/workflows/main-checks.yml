@@ -37,6 +37,15 @@ jobs:
       - name: Check built site
         run: npm run check
 
+      # Ready-to-upload bundle for cPanel hosting (see DEPLOY.md)
+      - name: Upload site bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: dist/
+          include-hidden-files: true
+          retention-days: 30
+
   lint-and-scan:
     name: Code Compliance and Security
     runs-on: ubuntu-latest

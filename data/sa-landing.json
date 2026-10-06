@@ -4,9 +4,9 @@
       "title": "AI for Saudi Construction & Mega-Projects | Loops Technologies",
       "description": "Computer vision site safety, predictive delay analytics, Arabic-Urdu-English labor agent, ERP and secure blueprint management. Private AI on in-house GPUs. Riyadh-based, with JNH Systems."
     },
-    "eyebrow": "Built for Saudi construction & mega-projects",
-    "title": "AI that keeps <span class=\"accent\">giga-projects</span> safe, on time and compliant.",
-    "subtitle": "Camera-based safety monitoring, delay prediction, a multilingual site agent and secure project systems. Deployed in your data center or on your own GPU servers, so project data stays in the Kingdom.",
+    "eyebrow": "Construction & mega-projects",
+    "title": "Stop site shutdowns. Beat delay penalties. <span class=\"hl\">Run every project from one screen.</span>",
+    "subtitle": "AI cameras that flag missing helmets and harnesses as they happen, delay prediction before the schedule slips, and one system for procurement, payroll and blueprints. Runs on your own servers, so project data stays in the Kingdom.",
     "cta_primary": "Book a free Operations Study",
     "cta_secondary": "Chat on WhatsApp",
     "chips": [
@@ -29,20 +29,24 @@
     ],
     "stats": [
       {
-        "value": "2013",
-        "label": "Building software since"
+        "value": "5",
+        "label": "Integrated solutions",
+        "count": true
       },
       {
         "value": "250+",
-        "label": "Projects delivered"
+        "label": "Projects delivered",
+        "count": true
       },
       {
         "value": "3",
-        "label": "Languages supported on site"
+        "label": "Languages on site",
+        "count": true
       },
       {
-        "value": "Riyadh",
-        "label": "Saudi Arabia hub"
+        "value": "2013",
+        "label": "Building software since",
+        "count": false
       }
     ],
     "problem": {
@@ -244,6 +248,47 @@
           "time": "09:35"
         }
       ]
+    },
+    "kicker": "For contractors, developers & EPC firms in Saudi Arabia",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "ticker": [
+      "PPE alert · Zone B",
+      "Delay risk flagged · concrete delivery",
+      "Payroll reconciled · 3 contractors",
+      "Blueprint Rev C approved",
+      "Harness check · Crane 3",
+      "Purchase order matched to delivery"
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who answer for the project",
+      "title": "Owners, project managers and HR/HSE leads each get what they need.",
+      "items": [
+        {
+          "icon": "fa-building",
+          "who": "Owners & executives",
+          "title": "See risk before it becomes cost.",
+          "text": "One live view of safety, schedule and spend across every site, with early warning instead of surprises in the monthly report."
+        },
+        {
+          "icon": "fa-clipboard-list",
+          "who": "Project & site managers",
+          "title": "Hear about delays before the client does.",
+          "text": "Delay prediction from supply, weather and attendance data, plus machinery and procurement tracking in one portal."
+        },
+        {
+          "icon": "fa-users",
+          "who": "HR & HSE leaders",
+          "title": "Protect every worker, in their language.",
+          "text": "Instant PPE alerts, and a voice assistant in Arabic, Urdu and English for policies, timesheets and hazard reports."
+        }
+      ]
+    },
+    "final": {
+      "title": "Your next site shouldn't run on guesswork.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
     }
   },
   "ar": {
@@ -251,9 +296,9 @@
       "title": "الذكاء الاصطناعي للمقاولات والمشاريع الكبرى في السعودية | لوبس تكنولوجيز",
       "description": "سلامة المواقع بالرؤية الحاسوبية، وتحليلات التأخير التنبؤية، ومساعد عمالة بالعربية والأردية والإنجليزية، وأنظمة ERP وإدارة المخططات الآمنة. ذكاء اصطناعي خاص على وحدات GPU داخل منشأتك. فريق في الرياض بالتعاون مع JNH Systems."
     },
-    "eyebrow": "مصمم للمقاولات والمشاريع الكبرى في السعودية",
-    "title": "ذكاء اصطناعي يُبقي <span class=\"accent\">المشاريع العملاقة</span> آمنة ومنضبطة وفي موعدها.",
-    "subtitle": "مراقبة السلامة بالكاميرات، والتنبؤ بالتأخير، ومساعد متعدد اللغات للمواقع، وأنظمة مشاريع آمنة. تُنشر في مركز بياناتك أو على خوادم GPU الخاصة بك لتبقى بيانات المشروع داخل المملكة.",
+    "eyebrow": "المقاولات والمشاريع الكبرى",
+    "title": "أوقف توقف المواقع. تجنّب غرامات التأخير. <span class=\"hl\">أدِر كل مشروع من شاشة واحدة.</span>",
+    "subtitle": "كاميرات ذكية تنبّه فور غياب الخوذة أو حزام الأمان، وتنبؤ بالتأخير قبل أن ينحرف الجدول، ونظام واحد للمشتريات والرواتب والمخططات. يعمل على خوادمك الخاصة لتبقى بيانات المشروع داخل المملكة.",
     "cta_primary": "احجز دراسة تشغيلية مجانية",
     "cta_secondary": "تواصل عبر واتساب",
     "chips": [
@@ -276,20 +321,24 @@
     ],
     "stats": [
       {
-        "value": "2013",
-        "label": "نبني البرمجيات منذ"
+        "value": "5",
+        "label": "حلول متكاملة",
+        "count": true
       },
       {
         "value": "+250",
-        "label": "مشروع منجز"
+        "label": "مشروع منجز",
+        "count": true
       },
       {
         "value": "3",
-        "label": "لغات مدعومة في الموقع"
+        "label": "لغات في الموقع",
+        "count": true
       },
       {
-        "value": "الرياض",
-        "label": "مركزنا في السعودية"
+        "value": "2013",
+        "label": "نبني البرمجيات منذ",
+        "count": false
       }
     ],
     "problem": {
@@ -491,6 +540,47 @@
           "time": "09:35"
         }
       ]
+    },
+    "kicker": "لشركات المقاولات والتطوير وEPC في المملكة العربية السعودية",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "ticker": [
+      "تنبيه معدات الوقاية · المنطقة B",
+      "خطر تأخير · توريد الخرسانة",
+      "مطابقة الرواتب · 3 مقاولين",
+      "اعتماد المخطط الإصدار C",
+      "فحص حزام الأمان · الرافعة 3",
+      "مطابقة أمر الشراء مع التسليم"
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يتحملون مسؤولية المشروع",
+      "title": "الملاك ومديرو المشاريع وقادة الموارد البشرية والسلامة، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-building",
+          "who": "الملاك والإدارة التنفيذية",
+          "title": "شاهد الخطر قبل أن يتحول إلى تكلفة.",
+          "text": "رؤية حية واحدة للسلامة والجدول الزمني والإنفاق في جميع المواقع، مع إنذار مبكر بدل مفاجآت التقرير الشهري."
+        },
+        {
+          "icon": "fa-clipboard-list",
+          "who": "مديرو المشاريع والمواقع",
+          "title": "اعرف بالتأخير قبل أن يعرف العميل.",
+          "text": "تنبؤ بالتأخير من بيانات التوريد والطقس والحضور، مع تتبع المعدات والمشتريات في بوابة واحدة."
+        },
+        {
+          "icon": "fa-users",
+          "who": "الموارد البشرية والسلامة",
+          "title": "احمِ كل عامل، بلغته.",
+          "text": "تنبيهات فورية لمعدات الوقاية، ومساعد صوتي بالعربية والأردية والإنجليزية للسياسات وتسجيل الساعات والإبلاغ عن المخاطر."
+        }
+      ]
+    },
+    "final": {
+      "title": "موقعك القادم لا ينبغي أن يُدار بالتخمين.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
     }
   }
 }

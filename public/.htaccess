@@ -1,8 +1,11 @@
 # Loops Technologies: Apache config for the static build (dist/)
 # Every page is a real file, so there is no catch-all rewrite and unknown URLs return a real 404.
 
+# Written for typical cPanel shared hosting (Apache 2.4, AllowOverride on). Every module-specific
+# block is wrapped in <IfModule>, so a host that lacks a module skips it instead of returning a 500.
+# No Options/php_value lines: many shared hosts forbid them in .htaccess.
 DirectoryIndex index.html
-Options -Indexes
+IndexIgnore *
 ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
@@ -39,6 +42,8 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # Never serve server-side leftovers or dotfiles other than .well-known
-<FilesMatch "(^error_log$|\.(log|bak|sql|env)$)">
-  Require all denied
-</FilesMatch>
+<IfModule mod_authz_core.c>
+  <FilesMatch "(^error_log$|\.(log|bak|sql|env)$)">
+    Require all denied
+  </FilesMatch>
+</IfModule>

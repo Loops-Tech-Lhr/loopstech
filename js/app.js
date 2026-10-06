@@ -68,6 +68,99 @@
     })
   }
 
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  // Scroll progress bar + header shadow ----------------------------------
+  var bar = document.createElement('div')
+  bar.className = 'scroll-progress'
+  bar.setAttribute('aria-hidden', 'true')
+  document.body.appendChild(bar)
+  var header = document.querySelector('.site-header')
+  var ticking = false
+  function onScroll() {
+    if (ticking) return
+    ticking = true
+    window.requestAnimationFrame(function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight
+      bar.style.setProperty(
+        '--p',
+        max > 0 ? (window.scrollY / max).toFixed(4) : 0
+      )
+      if (header) header.classList.toggle('is-scrolled', window.scrollY > 8)
+      ticking = false
+    })
+  }
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+
+  // Count-up numbers: <span data-count>250+</span> ------------------------
+  var counters = document.querySelectorAll('[data-count]')
+  function runCounter(el) {
+    var text = el.textContent
+    var m = text.match(/\d+/)
+    if (!m || reduceMotion) return
+    var end = parseInt(m[0], 10)
+    var pre = text.slice(0, m.index)
+    var post = text.slice(m.index + m[0].length)
+    var start = null
+    var dur = 1400
+    function frame(ts) {
+      if (start === null) start = ts
+      var p = Math.min((ts - start) / dur, 1)
+      var eased = 1 - Math.pow(1 - p, 3)
+      el.textContent = pre + Math.round(end * eased) + post
+      if (p < 1) window.requestAnimationFrame(frame)
+    }
+    el.textContent = pre + '0' + post
+    window.requestAnimationFrame(frame)
+  }
+  if ('IntersectionObserver' in window) {
+    var co = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            runCounter(en.target)
+            co.unobserve(en.target)
+          }
+        })
+      },
+      { threshold: 0.6 }
+    )
+    counters.forEach(function (el) {
+      co.observe(el)
+    })
+  }
+
+  // Cursor spotlight on cards (sets --mx / --my, CSS does the rest) ---------
+  if (!reduceMotion && window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener(
+      'pointermove',
+      function (e) {
+        var card =
+          e.target.closest && e.target.closest('.cell, .bento-card, .role-card')
+        if (!card) return
+        var r = card.getBoundingClientRect()
+        card.style.setProperty('--mx', e.clientX - r.left + 'px')
+        card.style.setProperty('--my', e.clientY - r.top + 'px')
+      },
+      { passive: true }
+    )
+  }
+
+  // Result of the no-JavaScript form fallback (?sent=1 / ?error=1) -----------
+  var q = window.location.search
+  var fallbackForm = document.getElementById('contact-form')
+  if (fallbackForm && /[?&](sent|error)=1/.test(q)) {
+    var st = fallbackForm.querySelector('.form-status')
+    var ok = /[?&]sent=1/.test(q)
+    st.textContent = ok
+      ? fallbackForm.dataset.success
+      : fallbackForm.dataset.error
+    st.className = 'form-status ' + (ok ? 'is-ok' : 'is-error')
+  }
+
   // Contact / lead form -------------------------------------------------
   var form = document.getElementById('contact-form')
   if (form) {
