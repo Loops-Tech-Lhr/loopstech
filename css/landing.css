@@ -1,0 +1,496 @@
+/* Saudi Arabia landing page (/sa/, /sa/ar/). Loaded only on those pages. */
+
+.sa-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 0 96px;
+  background:
+    radial-gradient(
+      60% 80% at 85% 0%,
+      rgba(251, 146, 60, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      40% 60% at 0% 100%,
+      rgba(251, 146, 60, 0.1),
+      transparent 60%
+    ),
+    var(--dark);
+  color: #c9c9c9;
+}
+
+/* dot grid, faded toward the edges */
+.sa-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.16) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 30%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  pointer-events: none;
+}
+
+.sa-hero-grid {
+  position: relative;
+  display: grid;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .sa-hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 72px;
+  }
+}
+
+.sa-title {
+  margin: 18px 0 22px;
+  color: #fff;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+html[dir='rtl'] .sa-title {
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.sa-sub {
+  max-width: 580px;
+  margin-bottom: 32px;
+  color: #c9c9c9;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.sa-page .btn-primary {
+  background: var(--brand);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: #e6e6e6;
+  font-size: 12px;
+}
+
+.chips .icon {
+  color: var(--brand-light);
+}
+
+/* ---------- Illustrative dashboard ---------- */
+
+.mock {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 20, 20, 0.85);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.mock-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50% !important;
+}
+
+.dot-r {
+  background: #ef4444;
+}
+.dot-y {
+  background: #f59e0b;
+}
+.dot-g {
+  background: #22c55e;
+}
+
+.mock-label {
+  margin-inline-start: 8px;
+  color: #9a9a9a;
+  font-size: 11px;
+}
+
+.mock-view {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(251, 146, 60, 0.08), transparent 40%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 48px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 48px
+    ),
+    #1b1b1b;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid;
+}
+
+.box span {
+  position: absolute;
+  top: -22px;
+  inset-inline-start: -2px;
+  padding: 2px 8px;
+  color: #111;
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.box-bad {
+  top: 28%;
+  inset-inline-start: 14%;
+  width: 20%;
+  height: 46%;
+  border-color: #ef4444;
+}
+
+.box-bad span {
+  background: #ef4444;
+  color: #fff;
+}
+
+.box-ok {
+  top: 36%;
+  inset-inline-start: 54%;
+  width: 18%;
+  height: 40%;
+  border-color: #22c55e;
+}
+
+.box-ok span {
+  background: #22c55e;
+}
+
+.box-bad::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(239, 68, 68, 0.12);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.mock-feed {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mock-feed li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e6e6e6;
+  font-size: 12.5px;
+}
+
+.mock-text {
+  flex: 1;
+}
+
+.mock-time {
+  color: #8a8a8a;
+  font-size: 11px;
+}
+
+.pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50% !important;
+}
+
+.lvl-alert .pip {
+  background: #ef4444;
+}
+.lvl-warn .pip {
+  background: #f59e0b;
+}
+.lvl-ok .pip {
+  background: #22c55e;
+}
+
+/* ---------- Stats overlapping the hero ---------- */
+
+.sa-stats-wrap {
+  position: relative;
+  margin-top: -40px;
+}
+
+.stats-dark {
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Solutions bento ---------- */
+
+.bento {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+@media (min-width: 768px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bento-1 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .bento-1 {
+    grid-column: span 4;
+  }
+  .bento-2 {
+    grid-column: span 2;
+  }
+  .bento-3 {
+    grid-column: span 2;
+  }
+  .bento-4 {
+    grid-column: span 2;
+  }
+  .bento-5 {
+    grid-column: span 2;
+  }
+}
+
+.bento-card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  background: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.bento-card:hover {
+  background: var(--bg-alt);
+}
+
+.bento-1 {
+  background: var(--dark);
+  color: #b5b5b5;
+}
+
+.bento-1:hover {
+  background: #1c1c1c;
+}
+
+.bento-1 h3 {
+  color: #fff;
+}
+
+.bento-1 .bento-icon,
+.bento-1 .bento-tag {
+  color: var(--brand-light);
+}
+
+.bento-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.bento-icon {
+  color: var(--brand);
+  font-size: 26px;
+}
+
+.bento-tag {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+html[dir='rtl'] .bento-tag {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 12px;
+}
+
+.bento-card h3 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.bento-card p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.bento-1 .badge-partner {
+  border-color: var(--brand-light);
+  color: var(--brand-light);
+}
+
+.bento-card .badge-partner {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* ---------- Local data / GPU ---------- */
+
+.gpu-grid {
+  display: grid;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .gpu-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+  }
+}
+
+.boundary {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 56px 28px 28px;
+  border: 1px dashed rgba(251, 146, 60, 0.6);
+  background: rgba(251, 146, 60, 0.04);
+}
+
+.boundary-label {
+  position: absolute;
+  top: 16px;
+  inset-inline-start: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-light);
+  font-size: 12px;
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid var(--dark-line);
+  background: #1c1c1c;
+  color: #e6e6e6;
+  font-size: 14px;
+}
+
+.node .icon {
+  color: var(--brand-light);
+  font-size: 18px;
+}
+
+.node-main {
+  border-color: var(--brand-light);
+  background: #231a14;
+}
+
+.link {
+  color: #6f6f6f;
+  font-size: 14px;
+}
+
+/* ---------- Mobile sticky CTA ---------- */
+
+.sticky-cta {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.sticky-cta .btn-primary {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sa-page .site-footer {
+    padding-bottom: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .box-bad::after {
+    animation: none;
+  }
+}

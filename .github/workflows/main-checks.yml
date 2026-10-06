@@ -1,6 +1,6 @@
 name: Main Branch Quality & Security Checks
 
-# Trigger this workflow whenever code is pushed or a PR is opened against staging
+# Run on every push and pull request to main
 on:
   push:
     branches: ['main']
@@ -13,36 +13,55 @@ permissions:
   checks: write
 
 jobs:
+  build-and-verify:
+    name: Build and verify site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Builds dist/ and fails on missing i18n keys
+      - name: Build static site
+        run: npm run build
+
+      # Broken links, missing SEO tags, invalid JSON-LD, sitemap coverage
+      - name: Check built site
+        run: npm run check
+
   lint-and-scan:
     name: Code Compliance and Security
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Download your repository code into the virtual server
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Super-linter needs full history to track changes
 
-      # Step 2: Run the All-in-One Linter
-      - name: Run Super-Linter (HTML, CSS, JS, PHP)
+      - name: Run Super-Linter (HTML, CSS, JS, JSON)
         uses: super-linter/super-linter/slim@v7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: true
           CREATE_STATUS_CHECK: false
           VALIDATE_JAVASCRIPT_PRETTIER: false
-          FILTER_REGEX_EXCLUDE: '.*google.*'
-          # Super-Linter scans everything by default.
-          # To ignore something, you can add flags like: VALIDATE_MARKDOWN: false
+          FILTER_REGEX_EXCLUDE: '.*(google|node_modules|dist|package-lock).*'
 
-      # Step 3: Scan the files for secrets & vulnerabilities
       - name: Run Trivy Security Scanner
         uses: aquasecurity/trivy-action@0.35.0
         with:
-          scan-type: 'fs' # 'fs' stands for filesystem
-          scan-ref: '.' # Scan the root directory
+          scan-type: 'fs'
+          scan-ref: '.'
           hide-progress: true
           format: 'table'
-          severity: 'HIGH,CRITICAL' # Flag high risk problems
-          exit-code: '1' # Forces the build to fail if a threat is found
+          severity: 'HIGH,CRITICAL'
+          exit-code: '1'

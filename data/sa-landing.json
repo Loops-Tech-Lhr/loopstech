@@ -1,0 +1,496 @@
+{
+  "en": {
+    "meta": {
+      "title": "AI for Saudi Construction & Mega-Projects | Loops Technologies",
+      "description": "Computer vision site safety, predictive delay analytics, Arabic-Urdu-English labor agent, ERP and secure blueprint management. Private AI on in-house GPUs. Riyadh-based, with JNH Systems."
+    },
+    "eyebrow": "Built for Saudi construction & mega-projects",
+    "title": "AI that keeps <span class=\"accent\">giga-projects</span> safe, on time and compliant.",
+    "subtitle": "Camera-based safety monitoring, delay prediction, a multilingual site agent and secure project systems. Deployed in your data center or on your own GPU servers, so project data stays in the Kingdom.",
+    "cta_primary": "Book a free Operations Study",
+    "cta_secondary": "Chat on WhatsApp",
+    "chips": [
+      {
+        "icon": "fa-location-dot",
+        "text": "Riyadh-based team"
+      },
+      {
+        "icon": "fa-lock",
+        "text": "Data stays in-Kingdom"
+      },
+      {
+        "icon": "fa-language",
+        "text": "Arabic · Urdu · English"
+      },
+      {
+        "icon": "fa-handshake",
+        "text": "With JNH Systems"
+      }
+    ],
+    "stats": [
+      {
+        "value": "2013",
+        "label": "Building software since"
+      },
+      {
+        "value": "250+",
+        "label": "Projects delivered"
+      },
+      {
+        "value": "3",
+        "label": "Languages supported on site"
+      },
+      {
+        "value": "Riyadh",
+        "label": "Saudi Arabia hub"
+      }
+    ],
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Vision 2030 sites move fast. Risk moves faster.",
+      "items": [
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "Safety incidents stop work",
+          "text": "A single uncontrolled incident can trigger an inspection and a shutdown across a site."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "Delays carry penalties",
+          "text": "Supply, weather and labor problems are visible in data weeks before they appear on the schedule."
+        },
+        {
+          "icon": "fa-comments",
+          "title": "Language gaps on site",
+          "text": "Workers speak many languages. HR policies and hazard reporting rarely do."
+        },
+        {
+          "icon": "fa-file-shield",
+          "title": "Documents are scattered",
+          "text": "Blueprints, codes and versions spread across contractors and email threads."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the construction site and the head office.",
+      "items": [
+        {
+          "icon": "fa-helmet-safety",
+          "title": "Site Safety & PPE Compliance",
+          "tag": "Computer Vision",
+          "text": "Camera networks monitor active sites continuously and alert safety managers the moment workers remove helmets or safety harnesses, helping you prevent costly project shutdowns.",
+          "partner": true
+        },
+        {
+          "icon": "fa-chart-line",
+          "title": "Predictive Project Delay Analytics",
+          "tag": "AI",
+          "text": "Analyzes supply chain data, weather and labor attendance to predict timeline delays before they happen, so you can act before penalty fees accrue."
+        },
+        {
+          "icon": "fa-headset",
+          "title": "Multilingual AI Labor Agent",
+          "tag": "AI",
+          "text": "A voice-enabled assistant that understands Arabic, Urdu and English. Site laborers can ask about HR policies, log hours or report hazards without administrative overhead."
+        },
+        {
+          "icon": "fa-truck-ramp-box",
+          "title": "Centralized ERP & Procurement Portal",
+          "tag": "Enterprise software",
+          "text": "One system to track heavy machinery, raw material procurement and complex contractor payrolls, built around how construction firms actually work."
+        },
+        {
+          "icon": "fa-vault",
+          "title": "Secure Document & Blueprint Management",
+          "tag": "Security",
+          "text": "A highly secure digital vault for engineering blueprints and compliance codes, with version control and access rules across multiple contracting teams."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your project data. Your servers. Your Kingdom.",
+      "text": "Blueprints, payroll and site footage should not travel to a foreign AI API. We deploy language and vision models on GPU servers inside your premises or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "On-premise or in-Kingdom GPU deployment",
+        "Private document search in Arabic and English",
+        "No dependency on foreign AI APIs",
+        "Fine-tuning on your own terminology"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from site cameras to an in-house GPU server to dashboards, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Site cameras, drones & sensors",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, alerts & ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Field intelligence with JNH Systems",
+      "text": "Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia, to extend software into the field.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that convert field footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "Drone surveillance & change detection",
+          "text": "Recurring aerial monitoring that identifies changes before ground teams can reach the location."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Embedded & hardware programming",
+          "text": "Flight autonomy, safety logic and edge computing developed and tested in-Kingdom."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your site, data and risks. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot in your environment that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your existing systems and teams."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from project teams",
+      "items": [
+        {
+          "q": "Does our data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or in a data center inside the Kingdom, and the models run without calling foreign AI services."
+        },
+        {
+          "q": "Can it work with the cameras we already have?",
+          "a": "In many cases yes. The Operations Study checks camera positions, resolution and network capacity before we propose anything."
+        },
+        {
+          "q": "Which languages does the labor agent support?",
+          "a": "Arabic, Urdu and English, by text and by voice."
+        },
+        {
+          "q": "Can you connect to our existing ERP or document system?",
+          "a": "Yes. We build integrations so that alerts, reports and documents flow into the tools your teams already use."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your project. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Company",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Site safety & PPE (computer vision)",
+        "Predictive delay analytics",
+        "Multilingual AI labor agent",
+        "ERP & procurement portal",
+        "Blueprint & document management",
+        "Private AI / in-house GPU",
+        "Drone surveillance"
+      ],
+      "message": "Project details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "closing": {
+      "title": "Ready to see it on your site?",
+      "text": "Start with a free study. No obligation."
+    },
+    "mock": {
+      "label": "Illustrative site-safety dashboard",
+      "tag_bad": "No helmet",
+      "tag_ok": "PPE OK",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Zone B · Helmet not detected",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "Crane 3 · Harness check required",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "Zone A · PPE compliant",
+          "time": "09:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "الذكاء الاصطناعي للمقاولات والمشاريع الكبرى في السعودية | لوبس تكنولوجيز",
+      "description": "سلامة المواقع بالرؤية الحاسوبية، وتحليلات التأخير التنبؤية، ومساعد عمالة بالعربية والأردية والإنجليزية، وأنظمة ERP وإدارة المخططات الآمنة. ذكاء اصطناعي خاص على وحدات GPU داخل منشأتك. فريق في الرياض بالتعاون مع JNH Systems."
+    },
+    "eyebrow": "مصمم للمقاولات والمشاريع الكبرى في السعودية",
+    "title": "ذكاء اصطناعي يُبقي <span class=\"accent\">المشاريع العملاقة</span> آمنة ومنضبطة وفي موعدها.",
+    "subtitle": "مراقبة السلامة بالكاميرات، والتنبؤ بالتأخير، ومساعد متعدد اللغات للمواقع، وأنظمة مشاريع آمنة. تُنشر في مركز بياناتك أو على خوادم GPU الخاصة بك لتبقى بيانات المشروع داخل المملكة.",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "cta_secondary": "تواصل عبر واتساب",
+    "chips": [
+      {
+        "icon": "fa-location-dot",
+        "text": "فريق في الرياض"
+      },
+      {
+        "icon": "fa-lock",
+        "text": "البيانات تبقى داخل المملكة"
+      },
+      {
+        "icon": "fa-language",
+        "text": "العربية · الأردية · الإنجليزية"
+      },
+      {
+        "icon": "fa-handshake",
+        "text": "بالتعاون مع JNH Systems"
+      }
+    ],
+    "stats": [
+      {
+        "value": "2013",
+        "label": "نبني البرمجيات منذ"
+      },
+      {
+        "value": "+250",
+        "label": "مشروع منجز"
+      },
+      {
+        "value": "3",
+        "label": "لغات مدعومة في الموقع"
+      },
+      {
+        "value": "الرياض",
+        "label": "مركزنا في السعودية"
+      }
+    ],
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "مواقع رؤية 2030 تتحرك بسرعة، والمخاطر أسرع.",
+      "items": [
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "حوادث السلامة توقف العمل",
+          "text": "حادثة واحدة غير مضبوطة قد تؤدي إلى تفتيش وإيقاف العمل في الموقع بأكمله."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "التأخير يترتب عليه غرامات",
+          "text": "تظهر مشكلات التوريد والطقس والعمالة في البيانات قبل أسابيع من ظهورها في الجدول الزمني."
+        },
+        {
+          "icon": "fa-comments",
+          "title": "فجوة اللغة في الموقع",
+          "text": "يتحدث العاملون لغات كثيرة، بينما نادراً ما تتوفر سياسات الموارد البشرية والإبلاغ عن المخاطر بها."
+        },
+        {
+          "icon": "fa-file-shield",
+          "title": "المستندات مشتتة",
+          "text": "المخططات والاشتراطات والإصدارات موزعة بين المقاولين ورسائل البريد."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لموقع العمل والمكتب الرئيسي.",
+      "items": [
+        {
+          "icon": "fa-helmet-safety",
+          "title": "سلامة المواقع والالتزام بمعدات الوقاية",
+          "tag": "الرؤية الحاسوبية",
+          "text": "شبكات كاميرات تراقب المواقع النشطة باستمرار وتنبّه مديري السلامة فور خلع العاملين للخوذات أو أحزمة الأمان، مما يساعدك على تفادي إيقاف المشاريع المكلف.",
+          "partner": true
+        },
+        {
+          "icon": "fa-chart-line",
+          "title": "تحليلات التنبؤ بتأخر المشاريع",
+          "tag": "الذكاء الاصطناعي",
+          "text": "تحلل بيانات سلاسل التوريد والطقس وحضور العمالة لتتنبأ بالتأخير قبل وقوعه، لتتحرك قبل تراكم غرامات التأخير."
+        },
+        {
+          "icon": "fa-headset",
+          "title": "مساعد عمالة ذكي متعدد اللغات",
+          "tag": "الذكاء الاصطناعي",
+          "text": "مساعد صوتي يفهم العربية والأردية والإنجليزية. يستطيع عمال المواقع الاستفسار عن سياسات الموارد البشرية وتسجيل الساعات والإبلاغ عن المخاطر دون أعباء إدارية."
+        },
+        {
+          "icon": "fa-truck-ramp-box",
+          "title": "بوابة موحدة لـ ERP والمشتريات",
+          "tag": "برمجيات المؤسسات",
+          "text": "نظام واحد لتتبع المعدات الثقيلة ومشتريات المواد الخام ورواتب المقاولين المعقدة، مبني حول طريقة عمل شركات المقاولات فعلياً."
+        },
+        {
+          "icon": "fa-vault",
+          "title": "إدارة آمنة للمستندات والمخططات",
+          "tag": "الأمن",
+          "text": "خزنة رقمية عالية الأمان للمخططات الهندسية واشتراطات الامتثال، مع ضبط الإصدارات وقواعد الوصول بين فرق المقاولين المتعددة."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات مشروعك. خوادمك. داخل مملكتك.",
+      "text": "لا ينبغي أن تنتقل المخططات وكشوف الرواتب ولقطات المواقع إلى واجهة ذكاء اصطناعي أجنبية. ننشر النماذج اللغوية ونماذج الرؤية على خوادم GPU داخل منشأتك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "نشر على خوادم GPU داخل المنشأة أو داخل المملكة",
+        "بحث خاص في المستندات بالعربية والإنجليزية",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "ضبط النماذج على مصطلحاتك الخاصة"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات الموقع إلى خادم GPU داخلي ثم إلى لوحات المتابعة، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات الموقع والطائرات المسيّرة والمستشعرات",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة والتنبيهات وأنظمة ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الذكاء الميداني مع JNH Systems",
+      "text": "تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية، لتمتد البرمجيات إلى الميدان.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل لقطات الميدان وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "المراقبة بالطائرات المسيّرة وكشف التغيرات",
+          "text": "مراقبة جوية دورية تكتشف التغيرات قبل أن تصل إليها الفرق الأرضية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الأنظمة المدمجة وبرمجة العتاد",
+          "text": "الاستقلالية في الطيران ومنطق السلامة والحوسبة الطرفية، تُطوّر وتُختبر داخل المملكة."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لتحديد الموقع والبيانات والمخاطر، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة في بيئتك تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمتك وفرقك الحالية."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق المشاريع",
+      "items": [
+        {
+          "q": "هل يجب أن تغادر بياناتنا المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات داخل المملكة، وتعمل النماذج دون استدعاء خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "هل يعمل مع الكاميرات الموجودة لدينا؟",
+          "a": "في حالات كثيرة نعم. تفحص الدراسة التشغيلية مواقع الكاميرات ودقتها وسعة الشبكة قبل أن نقدم أي مقترح."
+        },
+        {
+          "q": "ما اللغات التي يدعمها مساعد العمالة؟",
+          "a": "العربية والأردية والإنجليزية، نصاً وصوتاً."
+        },
+        {
+          "q": "هل يمكنكم الربط مع نظام ERP أو المستندات الحالي لدينا؟",
+          "a": "نعم. نبني التكاملات لتصل التنبيهات والتقارير والمستندات إلى الأدوات التي تستخدمها فرقك."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن مشروعك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الشركة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "سلامة المواقع ومعدات الوقاية (الرؤية الحاسوبية)",
+        "تحليلات التنبؤ بالتأخير",
+        "مساعد العمالة الذكي متعدد اللغات",
+        "بوابة ERP والمشتريات",
+        "إدارة المخططات والمستندات",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة",
+        "المراقبة بالطائرات المسيّرة"
+      ],
+      "message": "تفاصيل المشروع",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "closing": {
+      "title": "جاهز لرؤيته في موقعك؟",
+      "text": "ابدأ بدراسة مجانية، دون أي التزام."
+    },
+    "mock": {
+      "label": "لوحة توضيحية لسلامة الموقع",
+      "tag_bad": "بلا خوذة",
+      "tag_ok": "معدات الوقاية سليمة",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "المنطقة B · لم تُكتشف الخوذة",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "الرافعة 3 · مطلوب فحص حزام الأمان",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "المنطقة A · الالتزام بمعدات الوقاية",
+          "time": "09:35"
+        }
+      ]
+    }
+  }
+}

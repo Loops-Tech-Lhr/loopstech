@@ -1,0 +1,19 @@
+{
+  "name": "loopstech-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Loops Technologies marketing site: static build (EN/AR) with a Saudi Arabia landing page",
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.js",
+    "serve": "node serve.js dist",
+    "start": "node build/build.js && node serve.js dist",
+    "check": "node build/check.js"
+  },
+  "devDependencies": {
+    "@fontsource/noto-sans-arabic": "^5.1.0",
+    "@fontsource/poppins": "^5.1.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "sharp": "^0.35.5"
+  }
+}

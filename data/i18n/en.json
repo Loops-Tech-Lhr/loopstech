@@ -1,30 +1,57 @@
 {
+  "site": {
+    "name": "Loops Technologies",
+    "tagline": "Software engineering, AI and enterprise systems from Riyadh and Lahore"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
+    "ai_solutions": "AI Solutions",
+    "saudi": "Saudi Arabia",
     "portfolio": "Portfolio",
     "about": "Our Story",
     "contact": "Contact",
-    "ai_solutions": "AI Solutions",
-    "live_chat": "Live Chat"
+    "live_chat": "WhatsApp",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "skip": "Skip to main content",
+    "language": "Language"
+  },
+  "seo": {
+    "home_title": "Loops Technologies | Software, AI & ERP Company in Riyadh",
+    "home_desc": "Riyadh and Lahore software engineering studio: custom web and mobile apps, ERP, ZATCA e-invoicing, private AI on in-house GPUs, and computer vision with JNH Systems.",
+    "services_title": "Software, AI & ERP Services",
+    "services_desc": "Custom web apps, mobile apps, ERP and CRM, ZATCA e-invoicing, AI agents, private GPU deployment and computer vision for Saudi businesses.",
+    "ai_title": "AI Solutions & Private GPU Deployment in Saudi Arabia",
+    "ai_desc": "Arabic-capable AI assistants, computer vision, predictive analytics and in-house GPU deployment so your data stays in the Kingdom.",
+    "projects_title": "Portfolio",
+    "projects_desc": "Selected projects by Loops Technologies: platforms, marketplaces, hospital ERP and fintech systems.",
+    "about_title": "Our Story",
+    "about_desc": "Loops Technologies has built software since 2013 with teams in Riyadh and Lahore.",
+    "contact_title": "Contact",
+    "contact_desc": "Contact Loops Technologies in Riyadh or Lahore. Call, WhatsApp or send a project inquiry.",
+    "partner_title": "JNH Systems Partnership | Computer Vision, Drones & Hardware",
+    "partner_desc": "Loops Technologies works with JNH Systems to deliver computer vision, drone surveillance and embedded hardware programming to Saudi clients."
   },
   "hero": {
-    "title": "Engineering Success Through Smart Code",
-    "badge": "Expert Developers in Riyadh & Lahore",
+    "badge": "Riyadh & Lahore · Software, AI & ERP",
     "title_bold": "Engineering",
     "title_ideas": "Success",
     "title_smart": "Through",
     "title_code": "Smart Code",
-    "subtitle": "With over 10 years of experience, we help businesses transform their ideas into powerful digital products. From web apps to custom ERPs, we deliver tech that scales.",
+    "subtitle": "Since 2013 we have helped businesses turn ideas into reliable digital products: web and mobile apps, custom ERP, ZATCA e-invoicing and AI that can run on your own servers.",
     "btn_audit": "Get a Free Audit",
     "btn_services": "Explore Services",
+    "btn_saudi": "AI for Saudi Construction",
+    "caption_ai": "AI ready",
+    "caption_code": "Clean code",
+    "image_alt": "Laptop showing code on a developer desk",
     "expertise": "10+ Yrs",
     "expertise_text": "Industry Expertise"
   },
   "home": {
     "services_badge": "What We Do Best",
-    "services_title": "Comprehensive Tech <span class=\"text-primary\">Solutions.</span>",
-    "services_subtitle": "We don't just build sites. we build assets that help your business earn more and manage less.",
+    "services_title": "Comprehensive Tech <span class=\"accent\">Solutions.</span>",
     "services_all": "Browse All Capabilities",
     "stats_projects": "250+",
     "stats_projects_text": "Projects Delivered",
@@ -33,40 +60,163 @@
     "stats_lahore": "Lahore",
     "stats_lahore_text": "Pakistan Center",
     "specialized_badge": "Specialized ERPs",
-    "specialized_title": "Software for Your Industry."
+    "specialized_title": "Software for Your Industry.",
+    "industries": [
+      {
+        "icon": "fa-hospital",
+        "title": "Hospitals",
+        "desc": "Comprehensive patient and clinical management systems."
+      },
+      {
+        "icon": "fa-cash-register",
+        "title": "Retail POS",
+        "desc": "Fast checkout and inventory for retail chains."
+      },
+      {
+        "icon": "fa-truck-fast",
+        "title": "Logistics",
+        "desc": "Real-time rider tracking and delivery dispatch systems."
+      },
+      {
+        "icon": "fa-bed",
+        "title": "Hotel ERP",
+        "desc": "Automated booking and housekeeping management."
+      }
+    ],
+    "saudi_badge": "New for Saudi Arabia",
+    "saudi_title": "AI for construction and <span class=\"accent\">mega-projects.</span>",
+    "saudi_text": "Computer vision site safety, delay prediction, a multilingual labor agent and secure project systems, deployed on your own GPU servers.",
+    "saudi_cta": "See the Saudi solution",
+    "partner_badge": "Partnership",
+    "partner_title": "Field intelligence with <span class=\"accent\">JNH Systems.</span>",
+    "partner_text": "Computer vision, drone surveillance and embedded hardware programming, delivered together with an enterprise software layer.",
+    "partner_cta": "About the partnership",
+    "process_badge": "Our process",
+    "process_title": "The loop of <span class=\"accent\">success</span>.",
+    "process": [
+      {
+        "title": "Consult",
+        "desc": "Strategy sessions to align with your business vision."
+      },
+      {
+        "title": "Architect",
+        "desc": "Designing high-performance technical blueprints."
+      },
+      {
+        "title": "Build",
+        "desc": "Agile development with daily progress loops."
+      },
+      { "title": "Scale", "desc": "Global launch and continuous optimization." }
+    ],
+    "work_badge": "Selected work",
+    "work_title": "Global <span class=\"accent\">impact</span>.",
+    "work_all": "All projects",
+    "cta_title": "Built to <span class=\"accent\">win</span>.",
+    "cta_text": "Stop struggling with legacy tech. Let's build your future-proof digital engine today.",
+    "cta_btn": "Get started"
   },
   "services": {
-    "title": "Full <span class=\"text-primary\">Service List.</span>",
-    "subtitle": "We use modern tech stacks like Laravel, PHP, WordPress, and Shopify to build high-speed solutions.",
+    "badge": "Capabilities",
+    "title": "Full <span class=\"accent\">Service List.</span>",
+    "subtitle": "Modern stacks such as Laravel, React, Flutter and Python, plus AI that can run on your own infrastructure.",
+    "ai_title": "AI & <span class=\"accent\">intelligent systems</span>.",
+    "ai_subtitle": "Assistants, computer vision, predictive analytics and private GPU deployment, with field systems from our partner JNH Systems.",
+    "learn_more": "Learn more",
+    "breadcrumb": "Services",
+    "stack": "Stack",
+    "why": "Why choose <span class=\"accent\">Loops</span>?",
+    "hire": "Hire our talent",
+    "partner_label": "With JNH Systems",
+    "partner_note": "Delivered in partnership with JNH Systems, an autonomous systems company engineered in Saudi Arabia.",
+    "group_core": "Software engineering",
+    "group_ai": "Artificial intelligence",
+    "group_jnh": "Field intelligence with JNH Systems",
+    "missing": "Detailed description coming soon.",
     "inquire_now": "Inquire Now"
   },
+  "partner": {
+    "badge": "Partnership",
+    "title": "Loops Technologies <span class=\"accent\">×</span> JNH Systems",
+    "lead": "Loops builds the enterprise software. JNH Systems builds autonomous systems and mission operations, engineered in Saudi Arabia. Together we deliver intelligence from the field to the dashboard.",
+    "jnh_title": "About JNH Systems",
+    "jnh_text": "JNH Systems integrates aircraft, intelligence and operations into one system, turning field data into actionable decisions. Its work spans mission operations, applied intelligence and perception, systems fusion, monitoring and change detection, and autonomous systems and hardware engineering.",
+    "sectors_title": "Sectors",
+    "sectors": [
+      "Public safety",
+      "Smart cities",
+      "Environmental operations",
+      "Mega projects"
+    ],
+    "offers_title": "What we offer together",
+    "path_title": "How an engagement works",
+    "path": [
+      {
+        "title": "Operations Study",
+        "badge": "Free",
+        "text": "One session with the engineering team, not a sales team."
+      },
+      {
+        "title": "Proof of Concept",
+        "badge": "Paid",
+        "text": "Environment-specific validation."
+      },
+      {
+        "title": "Deployment",
+        "badge": "Integrated",
+        "text": "Production integration with your systems."
+      }
+    ],
+    "contact_title": "JNH Systems contact",
+    "location": "Riyadh, Saudi Arabia",
+    "visit": "Visit jnhsystems.com"
+  },
   "portfolio": {
-    "title": "Our <span class=\"text-primary\">Legacy.</span>",
-    "subtitle": "Real projects that solved real problems for our global clients.",
-    "case_study": "Case Study"
+    "badge": "Selected work",
+    "title": "Our <span class=\"accent\">Legacy.</span>",
+    "subtitle": "Real projects that solved real problems for our clients."
   },
   "about": {
-    "title": "Our Journey.",
-    "text1": "Founded in 2013, Loops Technologies has always been about one thing: purely technology-driven solutions. We aren't just developers. we are partners in your growth.",
-    "text2": "Founder Mukarram Hussain has spent over 10 years perfecting the art of software engineering. His expertise in PHP, Laravel, and Modern JS frameworks is the foundation of everything we build.",
+    "badge": "Since 2013",
+    "title": "Our <span class=\"accent\">story</span>.",
+    "text1": "Founded in 2013, Loops Technologies has always been about one thing: purely technology-driven solutions. We aren't just developers, we are partners in your growth.",
+    "text2": "Founder Mukarram Hussain has spent over 10 years perfecting the art of software engineering. His expertise in PHP, Laravel and modern JavaScript frameworks is the foundation of everything we build.",
     "text3": "Today, we operate from Riyadh and Lahore, bringing together the best talent to serve clients in the Middle East and beyond with honesty and excellence.",
+    "image_alt": "The Loops Technologies team",
     "quality_audit": "100%",
     "quality_audit_text": "Quality Audit",
-    "faq_title": "Common Questions",
-    "faq_q1": "How do we start?",
-    "faq_a1": "We start with a free consultation to understand your needs, followed by a detailed quote and roadmap.",
-    "faq_q2": "Do you support after launch?",
-    "faq_a2": "Yes. We provide 30 days of free technical support and affordable monthly maintenance plans.",
-    "faq_q3": "Are the solutions custom?",
-    "faq_a3": "Yes. We build everything from scratch to ensure your software fits your business perfectly.",
-    "faq_q4": "Where are you located?",
-    "faq_a4": "We have a core team in Riyadh, KSA and a large development center in Lahore, Pakistan."
+    "faq_badge": "FAQ",
+    "faq_title": "Common <span class=\"accent\">questions</span>.",
+    "faq": [
+      {
+        "q": "How do we start?",
+        "a": "We start with a free consultation to understand your needs, followed by a detailed quote and roadmap."
+      },
+      {
+        "q": "Do you support after launch?",
+        "a": "Yes. We provide 30 days of free technical support and affordable monthly maintenance plans."
+      },
+      {
+        "q": "Are the solutions custom?",
+        "a": "Yes. We build everything from scratch to ensure your software fits your business perfectly."
+      },
+      {
+        "q": "Where are you located?",
+        "a": "We have a core team in Riyadh, KSA and a development center in Lahore, Pakistan."
+      },
+      {
+        "q": "Can AI run on our own servers?",
+        "a": "Yes. We deploy language and vision models on GPU servers in your premises or a Saudi data center, so your data stays in the Kingdom."
+      }
+    ]
   },
   "contact": {
-    "title": "Let's <span class=\"text-primary\">Talk.</span>",
-    "subtitle": "Based in Riyadh & Lahore . Serving Worldwide.",
-    "form_success_badge": "Success!",
-    "form_success_text": "We've received your request. Expect a reply within 24 hours.",
+    "badge": "Direct connection",
+    "title": "Start <span class=\"accent\">now</span>.",
+    "subtitle": "Based in Riyadh & Lahore. Serving clients worldwide.",
+    "success_title": "Success!",
+    "success_text": "We've received your request. Expect a reply within one working day.",
+    "error_text": "We could not send your message. Please use WhatsApp or email us directly.",
+    "sending": "Sending…",
     "label_name": "Full Name",
     "label_email": "Email Address",
     "label_project_type": "Project Type",
@@ -74,21 +224,43 @@
     "placeholder_name": "e.g. Abdullah Hussain",
     "placeholder_email": "name@company.com",
     "placeholder_message": "Describe your project vision...",
+    "project_types": [
+      "Custom web application",
+      "Mobile app (Android / iOS)",
+      "AI assistant or agent",
+      "Private AI / in-house GPU deployment",
+      "Computer vision / drone surveillance (with JNH Systems)",
+      "ERP / CRM",
+      "ZATCA e-invoicing",
+      "Ecommerce / POS",
+      "Other"
+    ],
     "btn_send": "Send Inquiry",
-    "hq": "Headquarters",
     "office_riyadh": "Riyadh Office",
     "office_lahore": "Lahore Office",
-    "direct_email": "Direct Email"
+    "direct_email": "Direct Email",
+    "whatsapp": "WhatsApp",
+    "riyadh_address": "6943 Ibn Aous Road, Riyadh, Saudi Arabia",
+    "lahore_address": "73 3 D1 Green Town, Lahore, Pakistan"
   },
   "footer": {
     "desc": "Innovative software solutions since 2013. We bridge the gap between business needs and digital execution with expert code.",
     "expertise_title": "Expertise",
     "work_with_us_title": "Work With Us",
-    "quote": "\"Expertise is not just about writing code. it's about understanding the human behind the business.\"",
-    "btn_contact": "Contact Today",
+    "quote": "“Expertise is not just about writing code, it's about understanding the human behind the business.”",
     "audit_badge": "Free Project Audit",
-    "copyright": "© 2026 LOOPS TECHNOLOGIES . All Right are reserved.",
+    "copyright": "© 2026 Loops Technologies. All rights reserved.",
     "link_journey": "Our Journey",
-    "link_start": "Start Project"
+    "link_start": "Start Project",
+    "link_web": "Web Applications",
+    "link_mobile": "Mobile Solutions",
+    "link_ai": "AI & Private GPU",
+    "link_erp": "ERP & CRM",
+    "link_partner": "JNH Systems Partnership"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home"
   }
 }

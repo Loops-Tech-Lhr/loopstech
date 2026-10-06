@@ -1,0 +1,431 @@
+[
+  {
+    "id": "private-ai",
+    "icon": "fa-server",
+    "category": "ai",
+    "graphicFrom": "ai-agents",
+    "title": {
+      "en": "Private AI & In-House GPU Deployment",
+      "ar": "الذكاء الاصطناعي الخاص ونشر وحدات GPU داخل المنشأة"
+    },
+    "description": {
+      "en": "Run large language models and vision AI on GPU servers inside your own premises or a Saudi data center, so your data never leaves the Kingdom.",
+      "ar": "شغّل نماذج اللغة الكبيرة ونماذج الرؤية الحاسوبية على خوادم GPU داخل منشأتك أو في مركز بيانات سعودي، لتبقى بياناتك داخل المملكة."
+    },
+    "longDescription": {
+      "en": "Many Saudi organizations cannot send contracts, blueprints, payroll or site footage to a public cloud AI service. We design and deploy AI that runs on infrastructure you control: GPU servers in your own server room, or capacity hosted in a data center inside the Kingdom.\n\nWe size the hardware to the workload, install and secure open-weight language models and vision models, and connect them to your documents and systems through private retrieval pipelines. Prompts, documents and model outputs stay on your network, with role-based access and audit logs.\n\nOur solutions are designed to support your data residency and data protection obligations, including the Saudi Personal Data Protection Law (PDPL) and National Cybersecurity Authority (NCA) controls. Your compliance team remains the authority on what your organization requires; we build the technical foundation so that the answer can be yes.",
+      "ar": "لا تستطيع كثير من المؤسسات السعودية إرسال العقود والمخططات وكشوف الرواتب أو لقطات المواقع إلى خدمات ذكاء اصطناعي سحابية عامة. نحن نصمم وننشر حلول ذكاء اصطناعي تعمل على بنية تحتية تتحكم بها أنت: خوادم GPU في غرفة الخوادم لديك، أو سعة مستضافة في مركز بيانات داخل المملكة.\n\nنحدد حجم العتاد حسب حجم العمل، ونثبّت ونؤمّن نماذج لغوية ونماذج رؤية مفتوحة الأوزان، ونربطها بمستنداتك وأنظمتك عبر مسارات استرجاع خاصة. تبقى الأسئلة والمستندات ومخرجات النماذج داخل شبكتك، مع صلاحيات وصول حسب الأدوار وسجلات تدقيق.\n\nصُممت حلولنا لدعم التزاماتك المتعلقة بإقامة البيانات وحمايتها، بما في ذلك نظام حماية البيانات الشخصية (PDPL) وضوابط الهيئة الوطنية للأمن السيبراني (NCA). تبقى جهة الامتثال لديك هي المرجع فيما تتطلبه مؤسستك، ونحن نبني الأساس التقني الذي يجعل الامتثال ممكناً."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "On-Premise GPU Servers",
+          "ar": "خوادم GPU داخل المنشأة"
+        },
+        "description": {
+          "en": "Hardware sizing, installation and hardening for LLM and computer vision workloads in your own facility.",
+          "ar": "تحديد حجم العتاد وتركيبه وتأمينه لأحمال النماذج اللغوية والرؤية الحاسوبية داخل منشأتك."
+        },
+        "icon": "fa-microchip"
+      },
+      {
+        "title": {
+          "en": "Data Stays In-Kingdom",
+          "ar": "البيانات تبقى داخل المملكة"
+        },
+        "description": {
+          "en": "Local data storage and inference with no calls to foreign AI APIs, plus encryption and audit logging.",
+          "ar": "تخزين محلي للبيانات واستدلال محلي دون استدعاء واجهات ذكاء اصطناعي خارجية، مع التشفير وسجلات التدقيق."
+        },
+        "icon": "fa-lock"
+      },
+      {
+        "title": {
+          "en": "Private RAG over Your Documents",
+          "ar": "استرجاع معزز بمستنداتك الخاصة"
+        },
+        "description": {
+          "en": "Ask questions in Arabic or English across contracts, specifications and policies, with answers linked to the source page.",
+          "ar": "اطرح أسئلتك بالعربية أو الإنجليزية على العقود والمواصفات والسياسات، مع إجابات مرتبطة بصفحة المصدر."
+        },
+        "icon": "fa-book-open"
+      },
+      {
+        "title": {
+          "en": "Model Fine-Tuning",
+          "ar": "ضبط النماذج"
+        },
+        "description": {
+          "en": "Adapt open-weight models to your terminology, forms and workflows without sharing training data externally.",
+          "ar": "تكييف النماذج مفتوحة الأوزان مع مصطلحاتك ونماذجك وإجراءاتك دون مشاركة بيانات التدريب خارجياً."
+        },
+        "icon": "fa-sliders"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "Sensitive data never leaves your control",
+        "ar": "البيانات الحساسة لا تخرج عن سيطرتك"
+      },
+      {
+        "en": "Predictable cost instead of per-token fees",
+        "ar": "تكلفة متوقعة بدلاً من رسوم الاستخدام لكل رمز"
+      },
+      {
+        "en": "Low latency on your own network",
+        "ar": "زمن استجابة منخفض على شبكتك الخاصة"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "NVIDIA CUDA"
+      },
+      {
+        "name": "PyTorch",
+        "icon": "fa-python"
+      },
+      {
+        "name": "vLLM"
+      },
+      {
+        "name": "Docker",
+        "icon": "fa-docker"
+      },
+      {
+        "name": "Linux",
+        "icon": "fa-linux"
+      }
+    ]
+  },
+  {
+    "id": "ai-solutions",
+    "icon": "fa-wand-magic-sparkles",
+    "category": "ai",
+    "graphicFrom": "ai-agents",
+    "title": {
+      "en": "Artificial Intelligence & AI Solutions",
+      "ar": "الذكاء الاصطناعي وحلوله"
+    },
+    "description": {
+      "en": "Arabic-capable assistants, document intelligence and predictive analytics that turn your business data into decisions.",
+      "ar": "مساعدون يدعمون العربية، وذكاء المستندات، والتحليلات التنبؤية التي تحول بيانات عملك إلى قرارات."
+    },
+    "longDescription": {
+      "en": "We build AI that solves a specific operational problem and can be measured: fewer hours spent searching documents, faster answers for customers and staff, earlier warning of risks.\n\nOur work covers Arabic and English assistants for internal teams and customers, voice agents, document extraction and classification, forecasting and anomaly detection on your operational data, and integration of all of this into the systems your people already use.\n\nEvery engagement starts with a short study of your process and data so we can tell you honestly whether AI is the right tool, what it will cost, and how success will be measured.",
+      "ar": "نبني حلول ذكاء اصطناعي تعالج مشكلة تشغيلية محددة ويمكن قياس نتائجها: ساعات أقل في البحث عن المستندات، وإجابات أسرع للعملاء والموظفين، وإنذار مبكر بالمخاطر.\n\nيشمل عملنا مساعدين بالعربية والإنجليزية للفرق الداخلية والعملاء، ووكلاء صوتيين، واستخراج المستندات وتصنيفها، والتنبؤ وكشف الشذوذ في بيانات التشغيل، وربط ذلك كله بالأنظمة التي يستخدمها موظفوك بالفعل.\n\nيبدأ كل مشروع بدراسة قصيرة لعملياتك وبياناتك لنخبرك بصدق إن كان الذكاء الاصطناعي هو الأداة المناسبة، وكم ستكلف، وكيف سيُقاس النجاح."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Arabic & English Assistants",
+          "ar": "مساعدون بالعربية والإنجليزية"
+        },
+        "description": {
+          "en": "Chat and voice assistants that understand Gulf Arabic and English and hand over to a human when needed.",
+          "ar": "مساعدون نصيون وصوتيون يفهمون العربية الخليجية والإنجليزية ويحوّلون المحادثة إلى موظف عند الحاجة."
+        },
+        "icon": "fa-comments"
+      },
+      {
+        "title": {
+          "en": "Document Intelligence",
+          "ar": "ذكاء المستندات"
+        },
+        "description": {
+          "en": "Extract, classify and search contracts, invoices, forms and drawings at scale.",
+          "ar": "استخراج العقود والفواتير والنماذج والمخططات وتصنيفها والبحث فيها على نطاق واسع."
+        },
+        "icon": "fa-file-lines"
+      },
+      {
+        "title": {
+          "en": "Predictive Analytics",
+          "ar": "التحليلات التنبؤية"
+        },
+        "description": {
+          "en": "Forecast demand, delays and failures from your historical and live operational data.",
+          "ar": "توقّع الطلب والتأخير والأعطال اعتماداً على بياناتك التاريخية والآنية."
+        },
+        "icon": "fa-chart-line"
+      },
+      {
+        "title": {
+          "en": "Workflow Automation",
+          "ar": "أتمتة سير العمل"
+        },
+        "description": {
+          "en": "Connect AI to your ERP, CRM and messaging tools so approvals, reports and follow-ups happen automatically.",
+          "ar": "ربط الذكاء الاصطناعي بأنظمة ERP وCRM وقنوات المراسلة لتتم الموافقات والتقارير والمتابعات تلقائياً."
+        },
+        "icon": "fa-diagram-project"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "Start with a measurable use case",
+        "ar": "ابدأ بحالة استخدام قابلة للقياس"
+      },
+      {
+        "en": "Runs on cloud, on-premise or hybrid",
+        "ar": "يعمل على السحابة أو داخل المنشأة أو بصورة هجينة"
+      },
+      {
+        "en": "Arabic-first interfaces and data handling",
+        "ar": "واجهات ومعالجة بيانات تعطي الأولوية للعربية"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Python",
+        "icon": "fa-python"
+      },
+      {
+        "name": "LangChain"
+      },
+      {
+        "name": "PyTorch"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "Laravel",
+        "icon": "fa-laravel"
+      }
+    ]
+  },
+  {
+    "id": "computer-vision-ais",
+    "icon": "fa-eye",
+    "category": "jnh",
+    "graphicFrom": "construction-ai",
+    "title": {
+      "en": "Computer Vision & Applied Intelligence (AIS)",
+      "ar": "الرؤية الحاسوبية والذكاء التطبيقي (AIS)"
+    },
+    "description": {
+      "en": "Computer vision and language models that turn field footage and sensor data into detections and operational decisions. Delivered with JNH Systems.",
+      "ar": "نماذج رؤية حاسوبية ولغوية تحول لقطات الميدان وبيانات المستشعرات إلى اكتشافات وقرارات تشغيلية. بالتعاون مع JNH Systems."
+    },
+    "longDescription": {
+      "en": "Applied Intelligence & Perception (AIS) is the JNH Systems capability that converts field footage and sensor data into detections and operational decisions. Together with Loops Technologies, it is available to Saudi clients as part of a combined software and field-intelligence offer.\n\nTypical applications include PPE and safety compliance monitoring on construction sites, progress and equipment tracking, and detection of changes across large areas. Loops contributes the enterprise software layer: dashboards, alerting, integrations, ERP connections and Arabic-ready user interfaces.\n\nEngagements follow JNH's path: a free Operations Study, a paid Proof of Concept validated in your environment, then integrated deployment.",
+      "ar": "الذكاء التطبيقي والإدراك (AIS) هو قدرة JNH Systems التي تحوّل لقطات الميدان وبيانات المستشعرات إلى اكتشافات وقرارات تشغيلية. وبالتعاون مع لوبس تكنولوجيز، يتاح للعملاء في السعودية ضمن عرض متكامل يجمع البرمجيات والذكاء الميداني.\n\nتشمل التطبيقات النموذجية مراقبة الالتزام بمعدات الوقاية والسلامة في مواقع الإنشاء، وتتبع التقدم والمعدات، وكشف التغيرات على مساحات واسعة. وتوفر لوبس طبقة البرمجيات المؤسسية: لوحات المتابعة والتنبيهات والتكاملات وربط أنظمة ERP وواجهات جاهزة للعربية.\n\nتتبع المشاريع مسار JNH: دراسة تشغيلية مجانية، ثم إثبات مفهوم مدفوع يُختبر في بيئتك، ثم نشر متكامل."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "PPE & Safety Detection",
+          "ar": "اكتشاف معدات الوقاية والسلامة"
+        },
+        "description": {
+          "en": "Detect missing helmets, vests and harnesses from camera feeds and alert safety managers in real time.",
+          "ar": "اكتشاف غياب الخوذات والسترات وأحزمة الأمان من كاميرات المراقبة وتنبيه مديري السلامة فوراً."
+        },
+        "icon": "fa-helmet-safety"
+      },
+      {
+        "title": {
+          "en": "Footage to Decisions",
+          "ar": "من اللقطات إلى القرارات"
+        },
+        "description": {
+          "en": "Convert video and sensor streams into structured events your teams can act on.",
+          "ar": "تحويل البث المرئي وبيانات المستشعرات إلى أحداث منظمة يمكن لفرقك التصرف بناءً عليها."
+        },
+        "icon": "fa-video"
+      },
+      {
+        "title": {
+          "en": "Language Models for Field Reports",
+          "ar": "نماذج لغوية للتقارير الميدانية"
+        },
+        "description": {
+          "en": "Summarize and structure inspection notes and reports in Arabic and English.",
+          "ar": "تلخيص ملاحظات التفتيش والتقارير وتنظيمها بالعربية والإنجليزية."
+        },
+        "icon": "fa-language"
+      },
+      {
+        "title": {
+          "en": "Enterprise Integration",
+          "ar": "التكامل المؤسسي"
+        },
+        "description": {
+          "en": "Send detections into your ERP, ticketing and reporting tools through Loops' integration layer.",
+          "ar": "إرسال الاكتشافات إلى أنظمة ERP والتذاكر والتقارير عبر طبقة التكامل لدى لوبس."
+        },
+        "icon": "fa-link"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "Proof of Concept before full deployment",
+        "ar": "إثبات مفهوم قبل النشر الكامل"
+      },
+      {
+        "en": "Engineering team access from the first session",
+        "ar": "الوصول إلى الفريق الهندسي منذ الجلسة الأولى"
+      },
+      {
+        "en": "Developed and tested in the Kingdom",
+        "ar": "تطوير واختبار داخل المملكة"
+      }
+    ]
+  },
+  {
+    "id": "drone-surveillance",
+    "icon": "fa-plane",
+    "category": "jnh",
+    "graphicFrom": "construction-ai",
+    "title": {
+      "en": "Drone Surveillance & Mission Operations",
+      "ar": "المراقبة بالطائرات المسيّرة وعمليات المهام"
+    },
+    "description": {
+      "en": "Plan, fly, supervise and report across aircraft and missions from one command surface, with recurring change detection. Delivered with JNH Systems.",
+      "ar": "خطط وحلّق وأشرف وارفع التقارير لجميع الطائرات والمهام من واجهة قيادة واحدة، مع كشف التغيرات الدوري. بالتعاون مع JNH Systems."
+    },
+    "longDescription": {
+      "en": "JNH Systems builds autonomous systems and mission operations software engineered in Saudi Arabia. Its Mission Operations capability lets teams plan, fly, supervise and report across every aircraft and mission from one command surface, and its Monitoring & Change Detection capability runs recurring aerial surveillance that identifies changes before ground teams can reach the location.\n\nFor mega-projects this means regular aerial coverage of large sites: progress capture, stockpile and perimeter monitoring, and detection of unplanned change. JNH's sectors include public safety, smart cities, environmental operations and mega projects.\n\nLoops Technologies connects this field data to your business systems: project dashboards, ERP, document control and Arabic-ready reporting.",
+      "ar": "تبني JNH Systems أنظمة ذاتية التشغيل وبرمجيات عمليات المهام مصممة في المملكة العربية السعودية. تتيح قدرتها في عمليات المهام للفرق التخطيط والطيران والإشراف وإعداد التقارير لجميع الطائرات والمهام من واجهة قيادة واحدة، وتوفر قدرة المراقبة وكشف التغيرات مراقبة جوية دورية تكتشف التغيرات قبل أن تصل إليها الفرق الأرضية.\n\nوفي المشاريع الكبرى يعني ذلك تغطية جوية منتظمة للمواقع الواسعة: توثيق التقدم، ومراقبة المخزونات والمحيط، وكشف التغيرات غير المخططة. وتشمل قطاعات JNH السلامة العامة والمدن الذكية والعمليات البيئية والمشاريع الكبرى.\n\nوتربط لوبس تكنولوجيز هذه البيانات الميدانية بأنظمة أعمالك: لوحات المشاريع وأنظمة ERP وضبط المستندات وتقارير جاهزة للعربية."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Mission Operations",
+          "ar": "عمليات المهام"
+        },
+        "description": {
+          "en": "One command surface to plan, fly, supervise and report across aircraft and missions.",
+          "ar": "واجهة قيادة واحدة للتخطيط والطيران والإشراف وإعداد التقارير عبر الطائرات والمهام."
+        },
+        "icon": "fa-map-location-dot"
+      },
+      {
+        "title": {
+          "en": "Change Detection",
+          "ar": "كشف التغيرات"
+        },
+        "description": {
+          "en": "Recurring aerial surveys that flag changes before ground teams can reach the site.",
+          "ar": "مسوحات جوية دورية تُبرز التغيرات قبل أن تصل الفرق الأرضية إلى الموقع."
+        },
+        "icon": "fa-magnifying-glass-chart"
+      },
+      {
+        "title": {
+          "en": "Systems Fusion",
+          "ar": "دمج الأنظمة"
+        },
+        "description": {
+          "en": "Bring existing command, control and data systems into one decision picture without replacing them.",
+          "ar": "دمج أنظمة القيادة والتحكم والبيانات الحالية في صورة قرار واحدة دون استبدالها."
+        },
+        "icon": "fa-object-group"
+      },
+      {
+        "title": {
+          "en": "Reports for Management",
+          "ar": "تقارير للإدارة"
+        },
+        "description": {
+          "en": "Progress and incident reports delivered to project dashboards in Arabic and English.",
+          "ar": "تقارير التقدم والحوادث تصل إلى لوحات المشاريع بالعربية والإنجليزية."
+        },
+        "icon": "fa-chart-pie"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "Coverage of large sites without sending crews",
+        "ar": "تغطية المواقع الواسعة دون إرسال الفرق"
+      },
+      {
+        "en": "Field data feeds directly into business systems",
+        "ar": "البيانات الميدانية تغذي أنظمة الأعمال مباشرة"
+      },
+      {
+        "en": "Built and tested in-Kingdom",
+        "ar": "بُنيت واختُبرت داخل المملكة"
+      }
+    ]
+  },
+  {
+    "id": "embedded-hardware",
+    "icon": "fa-microchip",
+    "category": "jnh",
+    "graphicFrom": "construction-ai",
+    "title": {
+      "en": "Embedded Systems & Hardware Programming",
+      "ar": "الأنظمة المدمجة وبرمجة العتاد"
+    },
+    "description": {
+      "en": "Flight autonomy, safety logic, edge computing and hardware programs developed and tested in-Kingdom. Delivered with JNH Systems.",
+      "ar": "الاستقلالية في الطيران ومنطق السلامة والحوسبة الطرفية وبرامج العتاد، تُطوّر وتُختبر داخل المملكة. بالتعاون مع JNH Systems."
+    },
+    "longDescription": {
+      "en": "Through JNH Systems, our Saudi clients can access autonomous systems and hardware engineering: flight autonomy, safety logic, edge computing and hardware programs that are developed and tested in-Kingdom.\n\nThis is the layer where software meets devices: firmware and control logic, on-device AI inference on edge hardware, sensor integration and the communication link back to your platform. Loops Technologies adds the cloud or on-premise software, dashboards and mobile apps that operators use every day.\n\nIf you have a device, vehicle or sensor project that needs both embedded engineering and an enterprise software layer, this combined team can scope it in a single Operations Study.",
+      "ar": "عبر JNH Systems، يستطيع عملاؤنا في السعودية الوصول إلى هندسة الأنظمة ذاتية التشغيل والعتاد: الاستقلالية في الطيران ومنطق السلامة والحوسبة الطرفية وبرامج العتاد التي تُطوّر وتُختبر داخل المملكة.\n\nهذه هي الطبقة التي يلتقي فيها البرنامج بالأجهزة: البرامج الثابتة ومنطق التحكم، واستدلال الذكاء الاصطناعي على العتاد الطرفي، وتكامل المستشعرات، وقناة الاتصال بمنصتك. وتضيف لوبس تكنولوجيز البرمجيات السحابية أو داخل المنشأة ولوحات المتابعة وتطبيقات الجوال التي يستخدمها المشغلون يومياً.\n\nإن كان لديك مشروع جهاز أو مركبة أو مستشعر يحتاج إلى هندسة مدمجة وطبقة برمجيات مؤسسية معاً، فيمكن لهذا الفريق المشترك تحديد نطاقه في دراسة تشغيلية واحدة."
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Flight Autonomy & Safety Logic",
+          "ar": "استقلالية الطيران ومنطق السلامة"
+        },
+        "description": {
+          "en": "Control and safety software for autonomous platforms.",
+          "ar": "برمجيات التحكم والسلامة للمنصات ذاتية التشغيل."
+        },
+        "icon": "fa-shield-halved"
+      },
+      {
+        "title": {
+          "en": "Edge Computing",
+          "ar": "الحوسبة الطرفية"
+        },
+        "description": {
+          "en": "Run detection models directly on the device where connectivity or latency is a constraint.",
+          "ar": "تشغيل نماذج الاكتشاف مباشرة على الجهاز حيث تكون الاتصالات أو زمن الاستجابة قيداً."
+        },
+        "icon": "fa-microchip"
+      },
+      {
+        "title": {
+          "en": "Firmware & Sensor Integration",
+          "ar": "البرامج الثابتة وتكامل المستشعرات"
+        },
+        "description": {
+          "en": "Hardware programming and the data link from sensor to platform.",
+          "ar": "برمجة العتاد وقناة البيانات من المستشعر إلى المنصة."
+        },
+        "icon": "fa-tower-broadcast"
+      },
+      {
+        "title": {
+          "en": "Operator Apps & Dashboards",
+          "ar": "تطبيقات المشغلين ولوحات المتابعة"
+        },
+        "description": {
+          "en": "Web and mobile software from Loops for operating and monitoring your devices.",
+          "ar": "برمجيات ويب وجوال من لوبس لتشغيل أجهزتك ومراقبتها."
+        },
+        "icon": "fa-mobile-screen"
+      }
+    ],
+    "benefits": [
+      {
+        "en": "One team for hardware and software",
+        "ar": "فريق واحد للعتاد والبرمجيات"
+      },
+      {
+        "en": "Prototype validated before deployment",
+        "ar": "نموذج أولي يُتحقق منه قبل النشر"
+      },
+      {
+        "en": "Local engineering support",
+        "ar": "دعم هندسي محلي"
+      }
+    ]
+  }
+]
