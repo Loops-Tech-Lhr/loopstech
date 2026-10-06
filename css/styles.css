@@ -69,6 +69,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ::selection {
@@ -1617,5 +1618,65 @@ a.cell:hover {
   .rise {
     opacity: 1;
     animation: none;
+  }
+}
+
+/* ---------- Touch targets (WCAG 2.5.8): at least 40-44px on touch screens ---------- */
+
+@media (pointer: coarse), (max-width: 767px) {
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0;
+  }
+
+  .lang-btn {
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .site-header .container > a:first-child {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .footer-list a,
+  .crumbs a,
+  .link-arrow,
+  .footer-contact a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  .footer-list a {
+    min-width: 44px;
+  }
+
+  .footer-list {
+    gap: 2px;
+  }
+
+  .side-link {
+    min-height: 44px;
+  }
+
+  .faq-item summary {
+    min-height: 48px;
+  }
+
+  .btn-sm {
+    min-height: 40px;
+  }
+
+  .header-actions {
+    gap: 8px;
   }
 }

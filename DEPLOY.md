@@ -22,11 +22,11 @@ Take a backup of `public_html/` first (cPanel > Backup, or download a zip).
 
 ## 3. Check
 
-- `https://loopstech.com/`, `/ar/`, `/sa/`, `/sa/ar/` load.
+- `https://loopstech.com/`, `/ar/`, `/it-services-for-construction-in-saudi-arabia/`, `/ar/it-services-for-construction-in-saudi-arabia/` load.
 - `https://loopstech.com/does-not-exist/` shows the 404 page.
-- Submit the form on `/contact/`. Mail arrives at `info@loopstech.com`.
-  If it does not, create the mailbox `no-reply@loopstech.com` in cPanel (the sender address used by `contact.php`)
-  and check the domain has SPF/DKIM records.
+- Submit the form on `/contact/`. Every inquiry is saved to `leads/leads-YYYY-MM.jsonl` one level above `public_html` (never web-accessible).
+- Email: some hosts (Hostinger included) disable PHP `mail()`. To get inquiries by email, copy `docs/contact-config.sample.php` to
+  `contact-config.php` one level above `public_html`, and fill in the SMTP mailbox password. Until then, read the leads file.
 
 ## Notes
 

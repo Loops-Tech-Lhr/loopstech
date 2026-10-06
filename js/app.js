@@ -113,8 +113,11 @@
       el.textContent = pre + Math.round(end * eased) + post
       if (p < 1) window.requestAnimationFrame(frame)
     }
-    el.textContent = pre + '0' + post
     window.requestAnimationFrame(frame)
+    // if frames are paused (background tab), still end on the real number
+    window.setTimeout(function () {
+      el.textContent = text
+    }, dur + 400)
   }
   if ('IntersectionObserver' in window) {
     var co = new IntersectionObserver(

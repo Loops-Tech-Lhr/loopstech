@@ -18,6 +18,8 @@ const write = (rel, content) => {
 }
 const hash = buf =>
   crypto.createHash('sha1').update(buf).digest('hex').slice(0, 8)
+// Campaign landing page for Saudi construction companies
+const SA_SLUG = 'it-services-for-construction-in-saudi-arabia'
 const today = new Date().toISOString().slice(0, 10)
 
 fs.rmSync(DIST, { recursive: true, force: true })
@@ -170,7 +172,7 @@ const data = {
   services,
   projects: readJson('data/projects.json'),
   sa: readJson('data/sa-landing.json'),
-  saUrl: lang => (lang === 'ar' ? '/sa/ar/' : '/sa/'),
+  saUrl: lang => (lang === 'ar' ? '/ar/' : '/') + SA_SLUG + '/',
   img: (u, w) =>
     /unsplash\.com/.test(u)
       ? u.replace(/([?&])w=\d+/, `$1w=${w}`).replace(/([?&])q=\d+/, '$1q=70')
@@ -285,9 +287,9 @@ for (const [p, build] of pages) {
           : '0.8'
   })
 }
-const saAlt = { en: '/sa/', ar: '/sa/ar/' }
-emitPage('sa/index.html', 'en', T.saLanding, saAlt)
-emitPage('sa/ar/index.html', 'ar', T.saLanding, saAlt)
+const saAlt = { en: '/' + SA_SLUG + '/', ar: '/ar/' + SA_SLUG + '/' }
+emitPage(SA_SLUG + '/index.html', 'en', T.saLanding, saAlt)
+emitPage('ar/' + SA_SLUG + '/index.html', 'ar', T.saLanding, saAlt)
 routes.push({ alternates: saAlt, priority: '1.0' })
 
 // 404 (English shell; served with a real 404 status by .htaccess)

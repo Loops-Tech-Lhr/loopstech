@@ -1,33 +1,26 @@
-# Loops Technologies: Apache config for the static build (dist/)
+# Loops Technologies: Apache/LiteSpeed config for the static build (dist/)
 # Every page is a real file, so there is no catch-all rewrite and unknown URLs return a real 404.
-
-# Written for typical cPanel shared hosting (Apache 2.4, AllowOverride on). Every module-specific
-# block is wrapped in <IfModule>, so a host that lacks a module skips it instead of returning a 500.
+#
+# Written for typical shared hosting (cPanel / hPanel, AllowOverride on). Every module-specific block is
+# wrapped in <IfModule>, so a host that lacks a module skips it instead of returning a 500.
 # No Options/php_value lines: many shared hosts forbid them in .htaccess.
-DirectoryIndex index.html
+#
+# This web root also hosts other apps in sub-folders (pos, rent, inv, pm_crm, ...), so only low-risk headers are
+# set here. The Content-Security-Policy lives in each page of the site (meta tag), and the image/font cache
+# rules live in img/.htaccess and fonts/.htaccess. DirectoryIndex keeps index.php working for those apps.
+
+DirectoryIndex index.html index.htm index.php
 IndexIgnore *
 ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
-  Header always set X-Frame-Options "DENY"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
   Header always set Strict-Transport-Security "max-age=31536000"
-  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: https://images.unsplash.com; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'"
 
-  # Hashed assets never change
+  # Content hashed asset names (css/styles.<hash>.css, js/app.<hash>.js) never change
   <FilesMatch "\.[0-9a-f]{8}\.(css|js)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  <FilesMatch "\.(woff2)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  <FilesMatch "\.(webp|png|jpg|svg)$">
-    Header set Cache-Control "public, max-age=2592000"
-  </FilesMatch>
-  <FilesMatch "\.(html|xml|txt)$">
-    Header set Cache-Control "public, max-age=600, must-revalidate"
   </FilesMatch>
 </IfModule>
 
@@ -41,7 +34,7 @@ ErrorDocument 404 /404.html
   AddCharset utf-8 .html .css .js .xml .txt
 </IfModule>
 
-# Never serve server-side leftovers or dotfiles other than .well-known
+# Never serve server-side leftovers
 <IfModule mod_authz_core.c>
   <FilesMatch "(^error_log$|\.(log|bak|sql|env)$)">
     Require all denied
