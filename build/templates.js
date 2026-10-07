@@ -6,7 +6,13 @@ export const SITE = {
   jnhUrl: 'https://jnhsystems.com',
   jnhEmail: 'info@jnhsystems.com',
   riyadhPhone: '+966 59 744 1504',
-  lahorePhone: '+92 312 4277939'
+  lahorePhone: '+92 312 4277939',
+  // Number used on the construction campaign landing page only (call + WhatsApp)
+  campaign: {
+    phone: '+966 59 167 9165',
+    tel: '+966591679165',
+    whatsapp: '966591679165'
+  }
 }
 
 export const esc = s =>
@@ -50,8 +56,8 @@ export function makeCtx(lang, data, usedIcons) {
   }
 }
 
-const waLink = (ctx, text) =>
-  `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text ?? (ctx.lang === 'ar' ? 'مرحباً، أود الاستفسار عن خدماتكم' : 'Hello, I would like to ask about your services'))}`
+const waLink = (ctx, text, number = SITE.whatsapp) =>
+  `https://wa.me/${number}?text=${encodeURIComponent(text ?? (ctx.lang === 'ar' ? 'مرحباً، أود الاستفسار عن خدماتكم' : 'Hello, I would like to ask about your services'))}`
 
 const arrow = ctx => ctx.icon('fa-arrow-right', 'flip-rtl')
 
@@ -59,6 +65,10 @@ const arrow = ctx => ctx.icon('fa-arrow-right', 'flip-rtl')
 
 export function layout(ctx, page) {
   const { lang, dir, t, data } = ctx
+  const isSa = page.bodyClass === 'sa-page'
+  const contact = isSa
+    ? SITE.campaign
+    : { phone: SITE.riyadhPhone, tel: '+966597441504', whatsapp: SITE.whatsapp }
   const other = lang === 'ar' ? 'en' : 'ar'
   const alt = page.alternates
   const canonical = SITE.url + alt[lang]
@@ -150,8 +160,8 @@ export function layout(ctx, page) {
             <a href="${alt.en}" hreflang="en" lang="en" class="lang-btn${lang === 'en' ? ' is-active' : ''}"${lang === 'en' ? ' aria-current="true"' : ''}>EN</a>
             <a href="${alt.ar}" hreflang="ar" lang="ar" class="lang-btn${lang === 'ar' ? ' is-active' : ''}"${lang === 'ar' ? ' aria-current="true"' : ''}>عربي</a>
           </div>
-          ${page.bodyClass === 'sa-page' ? `<a href="tel:+966597441504" class="header-phone" dir="ltr">${ctx.icon('fa-phone')}<span>${SITE.riyadhPhone}</span></a>` : ''}
-          <a href="${waLink(ctx)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm header-wa">
+          ${isSa ? `<a href="tel:${contact.tel}" class="header-phone" dir="ltr">${ctx.icon('fa-phone')}<span>${contact.phone}</span></a>` : ''}
+          <a href="${waLink(ctx, undefined, contact.whatsapp)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm header-wa">
             ${ctx.icon('fa-whatsapp')}<span>${t('nav.live_chat')}</span>
           </a>
           <button id="mobile-menu-btn" class="icon-btn menu-btn" type="button" aria-label="${esc(t('nav.menu_open'))}" aria-expanded="false" aria-controls="mobile-menu">
@@ -173,14 +183,14 @@ export function layout(ctx, page) {
 ${page.body}
     </main>
 
-${footer(ctx)}
+${footer(ctx, contact)}
     <script src="${data.assets.js}" defer></script>
   </body>
 </html>
 `
 }
 
-function footer(ctx) {
+function footer(ctx, contact) {
   const { t, url, data, lang } = ctx
   return `    <footer class="site-footer">
       <div class="container" style="padding-top:64px;padding-bottom:32px">
@@ -188,7 +198,7 @@ function footer(ctx) {
           <div class="footer-brand">
             <img src="${data.assets.logo}" alt="${esc(t('site.name'))}" width="${data.assets.logoW}" height="${data.assets.logoH}" class="footer-logo">
             <p style="max-width:420px;margin-bottom:20px">${t('footer.desc')}</p>
-            <p class="footer-contact"><a href="tel:+966597441504" dir="ltr">${SITE.riyadhPhone}</a><br><a href="mailto:${SITE.email}">${SITE.email}</a></p>
+            <p class="footer-contact"><a href="tel:${contact.tel}" dir="ltr">${contact.phone}</a><br><a href="mailto:${SITE.email}">${SITE.email}</a></p>
           </div>
           <div>
             <h2 class="footer-h">${t('footer.expertise_title')}</h2>
@@ -819,7 +829,8 @@ export function saLanding(ctx) {
     ctx,
     lang === 'ar'
       ? 'مرحباً، أود حجز دراسة تشغيلية مجانية'
-      : 'Hello, I would like to book a free Operations Study'
+      : 'Hello, I would like to book a free Operations Study',
+    SITE.campaign.whatsapp
   )
   const form = c.form
   const labels = {
@@ -834,8 +845,8 @@ export function saLanding(ctx) {
     success: form.success,
     error: form.error
   }
-  const phone = SITE.riyadhPhone
-  const tel = 'tel:+966597441504'
+  const phone = SITE.campaign.phone
+  const tel = 'tel:' + SITE.campaign.tel
   const mock = c.mock
   const ctaRow = (extra = '') => `
           <div class="cta-row${extra}">
