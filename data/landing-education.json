@@ -1,0 +1,534 @@
+{
+  "en": {
+    "theme": "theme-education",
+    "mockType": "exam",
+    "audience": "Private school owners, university leaders and corporate training centre managers in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Education in Saudi Arabia | Loops Technologies",
+      "description": "IT services for private schools, universities and corporate training centres in Saudi Arabia: AI exam proctoring, personalised Arabic learning paths, automated essay grading, a scalable LMS and a campus ID and payment portal."
+    },
+    "kicker": "For private schools, universities & corporate training centres in Saudi Arabia",
+    "eyebrow": "Education & corporate training",
+    "title": "Run exams you can trust. Teach every student their own way. <span class=\"hl\">Give educators their hours back.</span>",
+    "subtitle": "Remote exam proctoring that flags suspicious behaviour, learning paths that adapt to each student, automatic grading of written work, a scalable LMS and one portal for fees, cafeteria cards and campus access. Runs on your own servers, so student data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Student data stays in-Kingdom" },
+      { "icon": "fa-language", "text": "Arabic-first learning" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Exam flag · second person detected",
+      "Learning gap found · Algebra",
+      "Essays graded · 42 submissions",
+      "Tuition paid · parent portal",
+      "Cafeteria card topped up",
+      "Campus access badge issued"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run the institution",
+      "title": "Leaders, educators and administrators each get what they need.",
+      "items": [
+        {
+          "icon": "fa-school",
+          "who": "School & university leaders",
+          "title": "Compete for students with a modern digital campus.",
+          "text": "Replace legacy systems with a platform parents and students expect, and meet new digital standards with confidence."
+        },
+        {
+          "icon": "fa-chalkboard-user",
+          "who": "Academic heads, teachers & exam controllers",
+          "title": "Give educators their hours back.",
+          "text": "Automatic grading of written work, learning paths that find each student's gaps, and exams you can trust remotely."
+        },
+        {
+          "icon": "fa-wallet",
+          "who": "Finance, admissions & training managers",
+          "title": "Collect fees and manage access from one portal.",
+          "text": "Tuition, cafeteria top-ups and digital campus credentials in one system, with a scalable LMS for courses and corporate training."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Institutions are upgrading legacy systems to compete for students and meet new digital standards.",
+      "items": [
+        {
+          "icon": "fa-shield-halved",
+          "title": "Remote exams are hard to trust",
+          "text": "Without monitoring, unauthorised help and impersonation are difficult to spot."
+        },
+        {
+          "icon": "fa-puzzle-piece",
+          "title": "One pace doesn't fit every student",
+          "text": "Knowledge gaps go unnoticed until the next exam shows them."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "Grading eats teaching time",
+          "text": "Written assignments take educators hours that could go to students."
+        },
+        {
+          "icon": "fa-layer-group",
+          "title": "Fees, IDs and cards sit in separate systems",
+          "text": "Parents, students and staff juggle several portals for payments and access."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the exam room, the classroom and the campus.",
+      "items": [
+        {
+          "icon": "fa-video",
+          "title": "Automated Exam Proctoring",
+          "tag": "Computer Vision",
+          "text": "Secure monitoring software for remote testing that flags suspicious behaviour, unauthorised devices or multiple people in the webcam frame.",
+          "partner": true
+        },
+        {
+          "icon": "fa-graduation-cap",
+          "title": "Personalized Arabic Learning Paths",
+          "tag": "AI",
+          "text": "An intelligent system that tracks student performance on quizzes, identifies knowledge gaps and automatically suggests targeted study materials."
+        },
+        {
+          "icon": "fa-pen-to-square",
+          "title": "Automated Essay & Short-Answer Grader",
+          "tag": "AI",
+          "text": "Natural language processing software that scores written assignments, saving educators hours of manual grading time."
+        },
+        {
+          "icon": "fa-chalkboard-user",
+          "title": "Scalable Learning Management System (LMS)",
+          "tag": "Web platform",
+          "text": "A modern, cloud-based platform for hosting video lectures, distributing assignments and tracking student progress."
+        },
+        {
+          "icon": "fa-id-card",
+          "title": "Campus ID & Secure Payment Portal",
+          "tag": "Web platform",
+          "text": "A unified web system where students and parents pay tuition fees, top up cafeteria cards and manage digital campus access credentials."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your student data. Your servers. Your Kingdom.",
+      "text": "Student records, exam footage and payment details are sensitive, often involving minors. We deploy vision and AI models on GPU servers inside your campus or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Exam webcam analysis processed on your own servers",
+        "Student records and grades stay under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your curriculum and your students"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from exam webcams, the learning platform and the campus portal to an in-house GPU server to dashboards, grades and payments, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Exam webcams, LMS & campus portal",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, grades & payments"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision and systems integration with JNH Systems",
+      "text": "Where an institution needs computer vision, campus hardware or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your systems, exams and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot with one faculty, grade level or training programme that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your student information, finance and campus systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from education teams",
+      "items": [
+        {
+          "q": "Does the proctoring system fail students automatically?",
+          "a": "No. It flags events for a human reviewer. Decisions about a student always stay with your exam team."
+        },
+        {
+          "q": "How is exam footage and student privacy handled?",
+          "a": "Footage is processed on your own servers and kept only as long as your policy requires. Students are informed in line with your privacy policy, and the study defines what is analysed."
+        },
+        {
+          "q": "Do teachers stay in control of grades?",
+          "a": "Yes. The grader proposes scores and feedback that teachers can review and override."
+        },
+        {
+          "q": "Does student data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "Can the portal connect to our payment provider?",
+          "a": "It is built to integrate with payment providers and banks that support local payment methods. The exact options depend on your provider."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your school, university or training centre. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Institution",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Exam proctoring (computer vision)",
+        "Personalised Arabic learning paths",
+        "Essay & short-answer grading",
+        "Learning management system (LMS)",
+        "Campus ID & payment portal",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Institution details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next exam season shouldn't run on trust alone.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative exam proctoring view",
+      "tag_bad": "Second person",
+      "tag_extra": "Device detected",
+      "tag_ok": "Verified",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Exam 214 · Second person in frame",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "Exam 218 · Device detected, sent for review",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "Exam 220 · Identity verified",
+          "time": "09:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-education",
+    "mockType": "exam",
+    "audience": "ملاك المدارس الخاصة وقادة الجامعات ومديرو مراكز التدريب المؤسسي في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للتعليم في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات للمدارس الخاصة والجامعات ومراكز التدريب المؤسسي في السعودية: مراقبة الاختبارات بالذكاء الاصطناعي، ومسارات تعلم عربية مخصصة، وتصحيح آلي للمقالات، ونظام إدارة تعلم قابل للتوسع، وبوابة للهوية الجامعية والدفع."
+    },
+    "kicker": "للمدارس الخاصة والجامعات ومراكز التدريب المؤسسي في المملكة العربية السعودية",
+    "eyebrow": "التعليم والتدريب المؤسسي",
+    "title": "أجرِ اختبارات يمكنك الوثوق بها. علّم كل طالب بطريقته. <span class=\"hl\">أعد للمعلمين ساعاتهم.</span>",
+    "subtitle": "مراقبة اختبارات عن بعد ترصد السلوك المشبوه، ومسارات تعلم تتكيف مع كل طالب، وتصحيح آلي للأعمال الكتابية، ونظام إدارة تعلم قابل للتوسع، وبوابة واحدة للرسوم وبطاقات المقصف ودخول الحرم. يعمل على خوادمك الخاصة لتبقى بيانات الطلاب داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "بيانات الطلاب تبقى داخل المملكة" },
+      { "icon": "fa-language", "text": "تعلّم بالعربية أولاً" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "تنبيه اختبار · رصد شخص ثانٍ",
+      "رصد فجوة تعلم · الجبر",
+      "تصحيح المقالات · 42 تسليماً",
+      "تم دفع الرسوم · بوابة ولي الأمر",
+      "تعبئة بطاقة المقصف",
+      "إصدار بطاقة دخول الحرم"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون المؤسسة التعليمية",
+      "title": "القادة والمعلمون والإداريون، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-school",
+          "who": "قادة المدارس والجامعات",
+          "title": "نافس على الطلاب بحرم رقمي حديث.",
+          "text": "استبدل الأنظمة القديمة بمنصة يتوقعها أولياء الأمور والطلاب، والتزم بالمعايير الرقمية الجديدة بثقة."
+        },
+        {
+          "icon": "fa-chalkboard-user",
+          "who": "رؤساء الأقسام والمعلمون ومراقبو الاختبارات",
+          "title": "أعد للمعلمين ساعاتهم.",
+          "text": "تصحيح آلي للأعمال الكتابية، ومسارات تعلم تكشف فجوات كل طالب، واختبارات موثوقة عن بعد."
+        },
+        {
+          "icon": "fa-wallet",
+          "who": "مديرو المالية والقبول والتدريب",
+          "title": "حصّل الرسوم وأدِر الدخول من بوابة واحدة.",
+          "text": "الرسوم وتعبئة بطاقات المقصف وبيانات دخول الحرم الرقمية في نظام واحد، مع نظام إدارة تعلم قابل للتوسع للمقررات والتدريب المؤسسي."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "المؤسسات التعليمية تحدّث أنظمتها القديمة لتنافس على الطلاب وتلتزم بالمعايير الرقمية الجديدة.",
+      "items": [
+        {
+          "icon": "fa-shield-halved",
+          "title": "الاختبارات عن بعد يصعب الوثوق بها",
+          "text": "دون مراقبة، يصعب رصد المساعدة غير المصرح بها وانتحال الشخصية."
+        },
+        {
+          "icon": "fa-puzzle-piece",
+          "title": "وتيرة واحدة لا تناسب كل طالب",
+          "text": "تبقى فجوات المعرفة خفية حتى يكشفها الاختبار التالي."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "التصحيح يلتهم وقت التدريس",
+          "text": "الأعمال الكتابية تستهلك ساعات من المعلمين كان يمكن أن تُمنح للطلاب."
+        },
+        {
+          "icon": "fa-layer-group",
+          "title": "الرسوم والهويات والبطاقات في أنظمة منفصلة",
+          "text": "يتنقل أولياء الأمور والطلاب والموظفون بين بوابات عدة للدفع والدخول."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لقاعة الاختبار والفصل والحرم.",
+      "items": [
+        {
+          "icon": "fa-video",
+          "title": "المراقبة الآلية للاختبارات",
+          "tag": "الرؤية الحاسوبية",
+          "text": "برنامج مراقبة آمن للاختبارات عن بعد يرصد السلوك المشبوه أو الأجهزة غير المصرح بها أو وجود أكثر من شخص في إطار الكاميرا.",
+          "partner": true
+        },
+        {
+          "icon": "fa-graduation-cap",
+          "title": "مسارات تعلم عربية مخصصة",
+          "tag": "الذكاء الاصطناعي",
+          "text": "نظام ذكي يتتبع أداء الطالب في الاختبارات القصيرة، ويحدد فجوات المعرفة، ويقترح تلقائياً مواد دراسية موجهة."
+        },
+        {
+          "icon": "fa-pen-to-square",
+          "title": "المصحح الآلي للمقالات والإجابات القصيرة",
+          "tag": "الذكاء الاصطناعي",
+          "text": "برنامج معالجة لغات طبيعية يقيّم الأعمال الكتابية ويوفر على المعلمين ساعات من التصحيح اليدوي."
+        },
+        {
+          "icon": "fa-chalkboard-user",
+          "title": "نظام إدارة التعلم (LMS) القابل للتوسع",
+          "tag": "منصة ويب",
+          "text": "منصة حديثة قائمة على السحابة لاستضافة المحاضرات المرئية وتوزيع الواجبات وتتبع تقدم الطلاب."
+        },
+        {
+          "icon": "fa-id-card",
+          "title": "الهوية الجامعية وبوابة الدفع الآمن",
+          "tag": "منصة ويب",
+          "text": "نظام ويب موحد يدفع فيه الطلاب وأولياء الأمور الرسوم الدراسية، ويعبّئون بطاقات المقصف، ويديرون بيانات الدخول الرقمية للحرم."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات طلابك. خوادمك. داخل مملكتك.",
+      "text": "سجلات الطلاب ولقطات الاختبارات وبيانات الدفع حساسة، وكثيراً ما تخص قاصرين. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل حرمك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "تحليل كاميرات الاختبارات يُعالج على خوادمك الخاصة",
+        "سجلات الطلاب ودرجاتهم تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على مناهجك وطلابك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات الاختبارات ومنصة التعلم وبوابة الحرم إلى خادم GPU داخلي ثم إلى لوحات المتابعة والدرجات والمدفوعات، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات الاختبارات ومنصة التعلم وبوابة الحرم",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة والدرجات والمدفوعات"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية الحاسوبية ودمج الأنظمة مع JNH Systems",
+      "text": "حين تحتاج المؤسسة التعليمية إلى رؤية حاسوبية أو عتاد للحرم أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة أنظمتك واختباراتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة مع كلية أو مرحلة دراسية أو برنامج تدريبي واحد تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة معلومات الطلاب والمالية والحرم لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق التعليم",
+      "items": [
+        {
+          "q": "هل يرسّب نظام المراقبة الطلاب تلقائياً؟",
+          "a": "لا. يرصد الأحداث ويحيلها إلى مراجع بشري. وتبقى القرارات بشأن الطالب دائماً بيد فريق الاختبارات لديك."
+        },
+        {
+          "q": "كيف تُعالج لقطات الاختبارات وخصوصية الطلاب؟",
+          "a": "تُعالج اللقطات على خوادمك الخاصة وتُحفظ بالمدة التي تتطلبها سياستك فقط. ويُبلَّغ الطلاب وفق سياسة الخصوصية لديك، وتحدد الدراسة ما يُحلَّل."
+        },
+        {
+          "q": "هل يبقى المعلمون متحكمين بالدرجات؟",
+          "a": "نعم. يقترح المصحح درجات وملاحظات يمكن للمعلمين مراجعتها وتعديلها."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات الطلاب المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "هل ترتبط البوابة بمزود الدفع لدينا؟",
+          "a": "صُممت للتكامل مع مزودي الدفع والبنوك التي تدعم وسائل الدفع المحلية. وتعتمد الخيارات الدقيقة على مزودك."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن مدرستك أو جامعتك أو مركز التدريب، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "المؤسسة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "مراقبة الاختبارات (الرؤية الحاسوبية)",
+        "مسارات تعلم عربية مخصصة",
+        "تصحيح المقالات والإجابات القصيرة",
+        "نظام إدارة التعلم (LMS)",
+        "الهوية الجامعية وبوابة الدفع",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المؤسسة",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "موسم اختباراتك القادم لا ينبغي أن يعتمد على الثقة وحدها.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "عرض توضيحي لمراقبة اختبار",
+      "tag_bad": "شخص ثانٍ",
+      "tag_extra": "جهاز مرصود",
+      "tag_ok": "تم التحقق",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "الاختبار 214 · شخص ثانٍ في الإطار",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "الاختبار 218 · رصد جهاز، أُحيل للمراجعة",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "الاختبار 220 · تم التحقق من الهوية",
+          "time": "09:35"
+        }
+      ]
+    }
+  }
+}

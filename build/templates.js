@@ -218,6 +218,7 @@ function footer(ctx, contact) {
               <li><a href="${data.landingUrl('healthcare', lang)}">${t('footer.link_healthcare')}</a></li>
               <li><a href="${data.landingUrl('retail', lang)}">${t('footer.link_retail')}</a></li>
               <li><a href="${data.landingUrl('tourism', lang)}">${t('footer.link_tourism')}</a></li>
+              <li><a href="${data.landingUrl('education', lang)}">${t('footer.link_education')}</a></li>
               <li><a href="${url('partners/jnh-systems/')}">${t('footer.link_partner')}</a></li>
               <li><a href="${url('about/')}">${t('footer.link_journey')}</a></li>
               <li><a href="${url('contact/')}">${t('footer.link_start')}</a></li>
@@ -470,7 +471,13 @@ export function homePage(ctx) {
           <p style="max-width:520px">${t('home.tourism_text')}</p>
           <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('tourism', lang)}" class="btn btn-primary">${t('home.tourism_cta')} ${arrow(ctx)}</a></div>
         </div>
-        <div class="promo-wide">
+        <div>
+          <span class="eyebrow">${t('home.education_badge')}</span>
+          <h2 class="heading" style="margin:10px 0 14px">${t('home.education_title')}</h2>
+          <p style="max-width:520px">${t('home.education_text')}</p>
+          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('education', lang)}" class="btn btn-primary">${t('home.education_cta')} ${arrow(ctx)}</a></div>
+        </div>
+        <div>
           <span class="eyebrow">${t('home.partner_badge')}</span>
           <h2 class="heading" style="margin:10px 0 14px">${t('home.partner_title')}</h2>
           <p style="max-width:520px">${t('home.partner_text')}</p>
@@ -882,8 +889,18 @@ export function saLanding(ctx, key = 'construction') {
   }
   const mock = c.mock
   const mockView =
-    c.mockType === 'crowd'
-      ? `<div class="mock-view crowd" aria-hidden="true">
+    c.mockType === 'exam'
+      ? `<div class="mock-view exam" aria-hidden="true">
+            <div class="student s1"></div>
+            <div class="student s2"></div>
+            <div class="phone"></div>
+            <div class="scan"></div>
+            <div class="box box-ok"><span>${mock.tag_ok}</span></div>
+            <div class="box box-bad"><span>${mock.tag_bad}</span></div>
+            <div class="box box-dev"><span>${mock.tag_extra}</span></div>
+          </div>`
+      : c.mockType === 'crowd'
+        ? `<div class="mock-view crowd" aria-hidden="true">
             <div class="stage"></div>
             <div class="hz"></div>
             <div class="pack dense"></div>
@@ -893,8 +910,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-      : c.mockType === 'store'
-        ? `<div class="mock-view store" aria-hidden="true">
+        : c.mockType === 'store'
+          ? `<div class="mock-view store" aria-hidden="true">
             <div class="heat h1"></div>
             <div class="heat h2"></div>
             <div class="shelf sh1"></div><div class="shelf sh2"></div><div class="shelf sh3"></div>
@@ -903,8 +920,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-        : c.mockType === 'ward'
-          ? `<div class="mock-view ward" aria-hidden="true">
+          : c.mockType === 'ward'
+            ? `<div class="mock-view ward" aria-hidden="true">
             <div class="scan"></div>
             <div class="beds">
               <i class="bed occ"></i><i class="bed occ"></i><i class="bed free"></i><i class="bed occ"></i>
@@ -916,22 +933,22 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-          : c.mockType === 'facade'
-            ? `<div class="mock-view facade" aria-hidden="true">
+            : c.mockType === 'facade'
+              ? `<div class="mock-view facade" aria-hidden="true">
             <div class="scan"></div>
             <div class="drone"></div>
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-            : c.mockType === 'conveyor'
-              ? `<div class="mock-view conveyor" aria-hidden="true">
+              : c.mockType === 'conveyor'
+                ? `<div class="mock-view conveyor" aria-hidden="true">
             <div class="scan-v"></div>
             <div class="belt"></div>
             <div class="parcel p1" style="--d:0"><span class="ptag ok">${mock.tag_ok}</span></div>
             <div class="parcel p2 bad" style="--d:1"><span class="ptag bad">${mock.tag_bad}</span></div>
             <div class="parcel p3" style="--d:2"><span class="ptag ok">${mock.tag_ok}</span></div>
           </div>`
-              : `<div class="mock-view" aria-hidden="true">
+                : `<div class="mock-view" aria-hidden="true">
             <div class="scan"></div>
             <div class="worker w1"></div>
             <div class="worker w2"></div>

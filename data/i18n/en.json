@@ -136,7 +136,11 @@
     "tourism_badge": "New for Saudi tourism & events",
     "tourism_title": "AI for tourism, hospitality and <span class=\"accent\">events.</span>",
     "tourism_text": "Crowd safety monitoring, dynamic room and ticket pricing, an Arabic concierge chatbot and commission-free direct booking.",
-    "tourism_cta": "See the tourism solution"
+    "tourism_cta": "See the tourism solution",
+    "education_badge": "New for Saudi education",
+    "education_title": "AI for schools, universities and <span class=\"accent\">training.</span>",
+    "education_text": "Exam proctoring, personalised learning paths, automated grading, an LMS and a campus ID and payment portal.",
+    "education_cta": "See the education solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -285,7 +289,8 @@
     "link_realestate": "IT for Real Estate",
     "link_healthcare": "IT for Healthcare",
     "link_retail": "IT for Retail",
-    "link_tourism": "IT for Tourism & Hospitality"
+    "link_tourism": "IT for Tourism & Hospitality",
+    "link_education": "IT for Education"
   },
   "notfound": {
     "title": "Page not found",
