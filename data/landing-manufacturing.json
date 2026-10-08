@@ -1,0 +1,526 @@
+{
+  "en": {
+    "theme": "theme-manufacturing",
+    "mockType": "qc",
+    "audience": "Factory owners, plant managers and industrial manufacturers in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Manufacturing in Saudi Arabia | Loops Technologies",
+      "description": "IT services for factories in Saudi Arabia: high-speed AI quality control on the line, predictive machine maintenance, supply chain shortage prediction, a warehouse management system and a B2B supplier portal."
+    },
+    "kicker": "For factories & industrial manufacturers in Saudi Arabia, from Made in Saudi to local content",
+    "eyebrow": "Local manufacturing",
+    "title": "Catch defects at line speed. Fix machines before they fail. <span class=\"hl\">Never let a shortage stop the line.</span>",
+    "subtitle": "Cameras that spot microdefects instantly, vibration and temperature monitoring that schedules maintenance before breakdowns, shortage prediction, a warehouse system and a supplier portal. Runs on your own servers, so production and supplier data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Production data stays in-Kingdom" },
+      { "icon": "fa-industry", "text": "Built for Made in Saudi" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Defect flagged · line 2",
+      "Label missing · item rejected",
+      "Bearing vibration rising · press 4",
+      "Maintenance scheduled · before breakdown",
+      "Shortage risk · resin supplier",
+      "PO status updated · supplier portal"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run the plant",
+      "title": "Plant leaders, maintenance teams and procurement each get what they need.",
+      "items": [
+        {
+          "icon": "fa-industry",
+          "who": "Factory owners & plant managers",
+          "title": "More output, higher quality, fewer repetitive checks.",
+          "text": "Automated inspection at line speed reduces reliance on manual labor and keeps product quality consistent."
+        },
+        {
+          "icon": "fa-gears",
+          "who": "Operations & maintenance managers",
+          "title": "Fix machines before they break.",
+          "text": "Vibration and temperature data schedule maintenance precisely before a costly breakdown, not after."
+        },
+        {
+          "icon": "fa-boxes-packing",
+          "who": "Procurement & supply chain leaders",
+          "title": "See shortages coming, and run suppliers from one portal.",
+          "text": "Predict raw material shortages, track pallets and bins, and let vendors submit invoices and check purchase orders themselves."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Factories are expanding under local content goals. Manual operations limit how far they can go.",
+      "items": [
+        {
+          "icon": "fa-magnifying-glass",
+          "title": "People can't inspect at line speed",
+          "text": "Microdefects, colour differences and missing labels slip through manual checks."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "Breakdowns halt production",
+          "text": "An unplanned stop costs far more than maintenance scheduled in advance."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "Shortages arrive without warning",
+          "text": "Raw material gaps are discovered when the line is already waiting."
+        },
+        {
+          "icon": "fa-table-list",
+          "title": "Storage and suppliers run on spreadsheets",
+          "text": "Pallets, bins, invoices and purchase orders are tracked by hand and by email."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the line, the machines and the supply chain.",
+      "items": [
+        {
+          "icon": "fa-microscope",
+          "title": "High-Speed Automated Quality Control",
+          "tag": "Computer Vision",
+          "text": "Cameras mounted on assembly lines instantly detect microdefects, color inconsistencies or missing labels on products at high speeds.",
+          "partner": true
+        },
+        {
+          "icon": "fa-gears",
+          "title": "Predictive Machine Maintenance",
+          "tag": "AI",
+          "text": "Algorithms that monitor the vibration and temperature data of factory machinery and schedule maintenance precisely before a costly breakdown occurs."
+        },
+        {
+          "icon": "fa-ship",
+          "title": "Supply Chain Bottleneck Predictor",
+          "tag": "AI",
+          "text": "Software that analyzes local supplier trends and global shipping data to predict raw material shortages before they impact the production line."
+        },
+        {
+          "icon": "fa-warehouse",
+          "title": "Warehouse Management System (WMS)",
+          "tag": "Enterprise software",
+          "text": "Digital tracking software for managing pallets, bins and forklift operations to maximize factory storage space."
+        },
+        {
+          "icon": "fa-handshake-angle",
+          "title": "B2B Supplier Portal",
+          "tag": "Web platform",
+          "text": "A streamlined digital gateway for local vendors to submit invoices, update material availability and check purchase order statuses."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your production data. Your servers. Your Kingdom.",
+      "text": "Line footage, machine telemetry and supplier pricing are core business assets. We deploy vision and AI models on GPU servers inside your plant or a Saudi data center, close to the line for speed, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Inspection analysed on-site, at line speed",
+        "Machine and supplier data stays under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your own products and machines"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from line cameras, machine sensors and the supplier portal to an in-house GPU server to dashboards and alerts, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Line cameras, machine sensors & supplier portal",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, maintenance alerts & ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision, sensors and edge hardware with JNH Systems",
+      "text": "Where a plant needs cameras, edge devices or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your lines, machines and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot on one line or one machine group that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your ERP, warehouse and plant systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from plant teams",
+      "items": [
+        {
+          "q": "Do we need to replace our line equipment?",
+          "a": "No. The Operations Study checks camera mounting, lighting and line speed on your existing equipment before we propose anything."
+        },
+        {
+          "q": "What data does predictive maintenance use?",
+          "a": "Vibration and temperature readings from your machines. We use existing data where available and add sensors where needed."
+        },
+        {
+          "q": "How reliable are the shortage predictions?",
+          "a": "They are estimates built from supplier trends and shipping data, meant to give your team early warning, not guarantees."
+        },
+        {
+          "q": "Can it connect to our ERP and plant systems?",
+          "a": "Where the system exposes an interface, yes. We build integrations so alerts, stock and orders flow into the tools your teams already use."
+        },
+        {
+          "q": "Does production data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own plant or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your plant. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Factory / company",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Automated quality control (computer vision)",
+        "Predictive machine maintenance",
+        "Supply chain bottleneck prediction",
+        "Warehouse management system (WMS)",
+        "B2B supplier portal",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Plant details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next shift shouldn't depend on luck.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative assembly line inspection",
+      "tag_bad": "Missing label",
+      "tag_extra": "Colour off",
+      "tag_ok": "Pass",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Line 2 · Missing label, item rejected",
+          "time": "08:42"
+        },
+        {
+          "level": "warn",
+          "text": "Press 4 · Vibration rising, service scheduled",
+          "time": "08:38"
+        },
+        { "level": "ok", "text": "Line 1 · Quality pass", "time": "08:35" }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-manufacturing",
+    "mockType": "qc",
+    "audience": "ملاك المصانع ومديرو المصانع والمصنّعون الصناعيون في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للتصنيع في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات للمصانع في السعودية: مراقبة جودة عالية السرعة بالذكاء الاصطناعي على خط الإنتاج، وصيانة تنبؤية للآلات، والتنبؤ بنقص المواد في سلاسل الإمداد، ونظام إدارة مستودعات، وبوابة للموردين."
+    },
+    "kicker": "للمصانع والمصنّعين الصناعيين في المملكة العربية السعودية، من «صنع في السعودية» إلى المحتوى المحلي",
+    "eyebrow": "التصنيع المحلي",
+    "title": "اكتشف العيوب بسرعة خط الإنتاج. أصلح الآلات قبل أن تتعطل. <span class=\"hl\">لا تدع نقص المواد يوقف الخط.</span>",
+    "subtitle": "كاميرات ترصد العيوب الدقيقة فوراً، ومراقبة للاهتزاز والحرارة تجدول الصيانة قبل الأعطال، وتنبؤ بنقص المواد، ونظام للمستودعات، وبوابة للموردين. يعمل على خوادمك الخاصة لتبقى بيانات الإنتاج والموردين داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "بيانات الإنتاج تبقى داخل المملكة" },
+      { "icon": "fa-industry", "text": "مصمم لـ «صنع في السعودية»" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "رصد عيب · الخط 2",
+      "ملصق مفقود · رفض المنتج",
+      "ارتفاع اهتزاز المحمل · المكبس 4",
+      "جدولة الصيانة · قبل العطل",
+      "خطر نقص · مورد الراتنج",
+      "تحديث حالة أمر الشراء · بوابة الموردين"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون المصنع",
+      "title": "قادة المصانع وفرق الصيانة والمشتريات، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-industry",
+          "who": "ملاك المصانع ومديرو المصانع",
+          "title": "إنتاج أكبر وجودة أعلى وفحوصات متكررة أقل.",
+          "text": "فحص آلي بسرعة خط الإنتاج يقلل الاعتماد على العمالة اليدوية ويحافظ على اتساق جودة المنتج."
+        },
+        {
+          "icon": "fa-gears",
+          "who": "مديرو العمليات والصيانة",
+          "title": "أصلح الآلات قبل أن تتعطل.",
+          "text": "تجدول بيانات الاهتزاز والحرارة الصيانة بدقة قبل عطل مكلف، لا بعده."
+        },
+        {
+          "icon": "fa-boxes-packing",
+          "who": "قادة المشتريات وسلاسل الإمداد",
+          "title": "اكتشف النقص قبل وقوعه، وأدِر الموردين من بوابة واحدة.",
+          "text": "تنبؤ بنقص المواد الخام، وتتبع للمنصات والصناديق، ويرفع الموردون فواتيرهم ويتابعون أوامر الشراء بأنفسهم."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "المصانع تتوسع وفق أهداف المحتوى المحلي، والعمليات اليدوية تحدّ من مدى توسعها.",
+      "items": [
+        {
+          "icon": "fa-magnifying-glass",
+          "title": "الإنسان لا يفحص بسرعة الخط",
+          "text": "العيوب الدقيقة وفروق الألوان والملصقات المفقودة تفلت من الفحص اليدوي."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "الأعطال توقف الإنتاج",
+          "text": "التوقف غير المخطط يكلف أكثر بكثير من صيانة مجدولة مسبقاً."
+        },
+        {
+          "icon": "fa-hourglass-half",
+          "title": "النقص يأتي دون إنذار",
+          "text": "تُكتشف فجوات المواد الخام حين يكون الخط في انتظارها فعلاً."
+        },
+        {
+          "icon": "fa-table-list",
+          "title": "التخزين والموردون على جداول البيانات",
+          "text": "المنصات والصناديق والفواتير وأوامر الشراء تُتابَع يدوياً وبالبريد."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لخط الإنتاج والآلات وسلسلة الإمداد.",
+      "items": [
+        {
+          "icon": "fa-microscope",
+          "title": "مراقبة الجودة الآلية عالية السرعة",
+          "tag": "الرؤية الحاسوبية",
+          "text": "كاميرات مركبة على خطوط التجميع ترصد فوراً العيوب الدقيقة وعدم اتساق الألوان أو الملصقات المفقودة على المنتجات بسرعات عالية.",
+          "partner": true
+        },
+        {
+          "icon": "fa-gears",
+          "title": "الصيانة التنبؤية للآلات",
+          "tag": "الذكاء الاصطناعي",
+          "text": "خوارزميات تراقب بيانات الاهتزاز والحرارة لآلات المصنع وتجدول الصيانة بدقة قبل وقوع عطل مكلف."
+        },
+        {
+          "icon": "fa-ship",
+          "title": "متنبئ اختناقات سلسلة الإمداد",
+          "tag": "الذكاء الاصطناعي",
+          "text": "برنامج يحلل اتجاهات الموردين المحليين وبيانات الشحن العالمية للتنبؤ بنقص المواد الخام قبل أن يؤثر على خط الإنتاج."
+        },
+        {
+          "icon": "fa-warehouse",
+          "title": "نظام إدارة المستودعات (WMS)",
+          "tag": "برمجيات المؤسسات",
+          "text": "برنامج تتبع رقمي لإدارة المنصات والصناديق وعمليات الرافعات الشوكية لتعظيم استغلال مساحة التخزين في المصنع."
+        },
+        {
+          "icon": "fa-handshake-angle",
+          "title": "بوابة الموردين من شركة إلى شركة",
+          "tag": "منصة ويب",
+          "text": "بوابة رقمية مبسطة للموردين المحليين لرفع الفواتير وتحديث توفر المواد ومتابعة حالة أوامر الشراء."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات إنتاجك. خوادمك. داخل مملكتك.",
+      "text": "لقطات خط الإنتاج وقياسات الآلات وأسعار الموردين أصول أساسية للأعمال. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل مصنعك أو في مركز بيانات سعودي، قريباً من الخط للسرعة، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "الفحص يُحلَّل داخل المصنع بسرعة الخط",
+        "بيانات الآلات والموردين تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على منتجاتك وآلاتك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات الخط ومستشعرات الآلات وبوابة الموردين إلى خادم GPU داخلي ثم إلى لوحات المتابعة والتنبيهات، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات الخط ومستشعرات الآلات وبوابة الموردين",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة وتنبيهات الصيانة وأنظمة ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية والمستشعرات والعتاد الطرفي مع JNH Systems",
+      "text": "حين يحتاج المصنع إلى كاميرات أو أجهزة طرفية أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة خطوطك وآلاتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة على خط واحد أو مجموعة آلات تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة ERP والمستودعات والمصنع لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق المصانع",
+      "items": [
+        {
+          "q": "هل نحتاج إلى استبدال معدات الخط؟",
+          "a": "لا. تفحص الدراسة التشغيلية تركيب الكاميرات والإضاءة وسرعة الخط على معداتك الحالية قبل أي مقترح."
+        },
+        {
+          "q": "ما البيانات التي تستخدمها الصيانة التنبؤية؟",
+          "a": "قراءات الاهتزاز والحرارة من آلاتك. نستخدم البيانات الموجودة حيثما توفرت ونضيف المستشعرات عند الحاجة."
+        },
+        {
+          "q": "ما مدى موثوقية توقعات النقص؟",
+          "a": "هي تقديرات مبنية على اتجاهات الموردين وبيانات الشحن، تمنح فريقك إنذاراً مبكراً، وليست ضمانات."
+        },
+        {
+          "q": "هل يرتبط بأنظمة ERP والمصنع لدينا؟",
+          "a": "نعم حيث يوفر النظام واجهة للربط. نبني التكاملات لتصل التنبيهات والمخزون والطلبات إلى الأدوات التي تستخدمها فرقك."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات الإنتاج المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في مصنعك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن مصنعك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "المصنع / الشركة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "مراقبة الجودة الآلية (الرؤية الحاسوبية)",
+        "الصيانة التنبؤية للآلات",
+        "التنبؤ باختناقات سلسلة الإمداد",
+        "نظام إدارة المستودعات (WMS)",
+        "بوابة الموردين",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المصنع",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "وردية العمل القادمة لا ينبغي أن تعتمد على الحظ.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "فحص توضيحي لخط تجميع",
+      "tag_bad": "ملصق مفقود",
+      "tag_extra": "لون مختلف",
+      "tag_ok": "سليم",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "الخط 2 · ملصق مفقود، رفض المنتج",
+          "time": "08:42"
+        },
+        {
+          "level": "warn",
+          "text": "المكبس 4 · ارتفاع الاهتزاز، جدولة الصيانة",
+          "time": "08:38"
+        },
+        { "level": "ok", "text": "الخط 1 · اجتياز الجودة", "time": "08:35" }
+      ]
+    }
+  }
+}

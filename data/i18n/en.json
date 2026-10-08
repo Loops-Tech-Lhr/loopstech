@@ -144,7 +144,11 @@
     "consulting_badge": "New for Saudi government & consulting",
     "consulting_title": "AI for consulting and <span class=\"accent\">government contracting.</span>",
     "consulting_text": "Secure archive OCR, report insight extraction, an RFP drafting assistant and an encrypted client portal.",
-    "consulting_cta": "See the consulting solution"
+    "consulting_cta": "See the consulting solution",
+    "manufacturing_badge": "New for Saudi manufacturing",
+    "manufacturing_title": "AI for factories and <span class=\"accent\">Made in Saudi.</span>",
+    "manufacturing_text": "Line-speed quality control, predictive maintenance, shortage prediction, a WMS and a supplier portal.",
+    "manufacturing_cta": "See the manufacturing solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -295,7 +299,8 @@
     "link_retail": "IT for Retail",
     "link_tourism": "IT for Tourism & Hospitality",
     "link_education": "IT for Education",
-    "link_consulting": "IT for Consulting & Government"
+    "link_consulting": "IT for Consulting & Government",
+    "link_manufacturing": "IT for Manufacturing"
   },
   "notfound": {
     "title": "Page not found",

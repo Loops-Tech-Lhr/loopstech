@@ -2485,3 +2485,182 @@ html[dir='rtl'] .final-cta h2 {
     background: #e2e8f0;
   }
 }
+
+/* ================= Manufacturing landing theme (industrial orange on warm charcoal) ================= */
+
+.theme-manufacturing {
+  --amber: #ff7a3d;
+  --amber-dark: #f25c1a;
+  --amber-rgb: 255, 122, 61;
+  --ink-dark: #120b08;
+  --steel: #22130c;
+  --brand: #c2410c;
+  --brand-dark: #9a3412;
+  --brand-light: #fdba74;
+}
+
+.theme-manufacturing .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #120b08 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-manufacturing .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #120b08 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-manufacturing .ticker {
+  border-block-color: #120b08;
+  color: #120b08;
+}
+
+.theme-manufacturing .ticker-track span::after {
+  border-inline-start-color: #120b08;
+}
+
+.theme-manufacturing .node-main {
+  background: #2a160c;
+}
+
+.theme-manufacturing .bento-1:hover {
+  background: #1a0f0a;
+}
+
+/* ---------- Bottling line inspection (replaces the camera view) ---------- */
+
+@keyframes beam {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.qc {
+  direction: ltr;
+  background:
+    linear-gradient(180deg, rgba(var(--amber-rgb), 0.1), transparent 45%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 44px
+    ),
+    #17100c;
+}
+
+/* inspection camera head with its light cone */
+.cam {
+  position: absolute;
+  top: 5%;
+  left: 49%;
+  z-index: 3;
+  width: 8%;
+  height: 12%;
+  border: 1px solid #5a4a40;
+  background: #2b1f18;
+}
+
+.cam::before {
+  content: '';
+  position: absolute;
+  bottom: 18%;
+  left: 36%;
+  width: 28%;
+  aspect-ratio: 1;
+  border-radius: 50% !important;
+  background: var(--amber);
+  box-shadow: 0 0 12px 2px rgba(var(--amber-rgb), 0.7);
+}
+
+.cam::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  width: 180%;
+  height: 520%;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--amber-rgb), 0.28),
+    transparent
+  );
+  clip-path: polygon(38% 0, 62% 0, 100% 100%, 0 100%);
+  animation: beam 1.8s ease-in-out infinite;
+}
+
+.qc .scan-v {
+  left: 52%;
+}
+
+/* bottles riding the belt (reuses belt/ride from the conveyor visual) */
+.item {
+  position: absolute;
+  bottom: 34%;
+  left: 0;
+  width: 10%;
+  height: 34%;
+  border-radius: 14% 14% 6% 6% / 8% 8% 4% 4% !important;
+  background: linear-gradient(90deg, #8fa3b8, #b9c8d8 45%, #7d90a6);
+  animation: ride 10s linear infinite;
+  animation-delay: calc(var(--d) * -3.33s);
+}
+
+/* cap */
+.item::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 28%;
+  width: 44%;
+  height: 12%;
+  background: #475569;
+}
+
+/* label */
+.item::after {
+  content: '';
+  position: absolute;
+  top: 36%;
+  inset-inline: -2%;
+  height: 30%;
+  background:
+    repeating-linear-gradient(90deg, #1a1a1a 0 2px, transparent 2px 4px) 50%
+      78% / 70% 30% no-repeat,
+    #f4f1ea;
+}
+
+.item.nolabel::after {
+  display: none;
+}
+
+.item.off {
+  background: linear-gradient(90deg, #a16207, #ca8a04 45%, #854d0e);
+}
+
+.item .ptag {
+  bottom: calc(100% + 14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cam::after {
+    animation: none;
+  }
+
+  .i1 {
+    left: 8%;
+  }
+
+  .i2 {
+    left: 38%;
+  }
+
+  .i3 {
+    left: 68%;
+  }
+}
