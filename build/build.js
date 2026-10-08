@@ -275,6 +275,7 @@ function emitPage(rel, lang, build, alternates) {
 const pages = [
   ['', ctx => T.homePage(ctx)],
   ['services/', ctx => T.servicesPage(ctx)],
+  ['industries/', ctx => T.industriesPage(ctx)],
   ['ai-solutions/', ctx => T.servicesPage(ctx, true)],
   ['projects/', ctx => T.projectsPage(ctx)],
   ['about/', ctx => T.aboutPage(ctx)],

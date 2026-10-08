@@ -82,19 +82,19 @@ export function layout(ctx, page) {
     ['home', ''],
     ['services', 'services/'],
     ['ai_solutions', 'ai-solutions/'],
-    ['saudi', null],
+    ['industries', 'industries/'],
     ['portfolio', 'projects/'],
     ['about', 'about/'],
     ['contact', 'contact/']
   ]
-  const hrefFor = (key, p) => (key === 'saudi' ? data.saUrl(lang) : ctx.url(p))
+  const hrefFor = (key, p) => ctx.url(p)
   const isActive = (key, p) =>
     page.nav === key || (key === 'services' && page.nav === 'services')
   const navHtml = cls =>
     navItems
       .map(([key, p]) => {
         const href = hrefFor(key, p)
-        const hi = key === 'saudi' ? ' nav-highlight' : ''
+        const hi = key === 'industries' ? ' nav-highlight' : ''
         const act = isActive(key, p) ? ' active' : ''
         const cur = isActive(key, p) ? ' aria-current="page"' : ''
         return `<a href="${href}" class="${cls}${hi}${act}"${cur}>${t('nav.' + key)}</a>`
@@ -533,6 +533,51 @@ export function homePage(ctx) {
     nav: 'home',
     body,
     preload: `<link rel="preload" as="image" href="${data.assets.hero[0].src}" imagesrcset="${heroSrcset}" imagesizes="(min-width:1024px) 560px, 100vw" fetchpriority="high">`
+  }
+}
+
+export function industriesPage(ctx) {
+  const { t, data, url, lang } = ctx
+  const cards = HOME_LANDINGS.map(
+    ([key, pre], i) => `
+          <a href="${data.landingUrl(key, lang)}" class="cell reveal-on-scroll" style="transition-delay:${(i % 3) * 0.05}s">
+            <span class="eyebrow">${t('home.' + pre + '_badge')}</span>
+            <h3 class="cell-title" style="margin-top:14px">${t('footer.link_' + key)}</h3>
+            <p class="cell-text">${t('home.' + pre + '_text')}</p>
+            <span class="link-arrow">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
+          </a>`
+  ).join('')
+  const body = `${pageHead(t('home.industries_badge'), t('home.industries_title'), t('industries.lead'))}
+    <section class="section">
+      <div class="container">
+        <div class="cells cells-3 industry-hub">${cards}</div>
+        <div class="btn-row" style="margin-top:48px">
+          <a href="${url('contact/')}" class="btn btn-primary">${t('hero.btn_audit')}</a>
+        </div>
+      </div>
+    </section>`
+  const ld = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: HOME_LANDINGS.map(([key], i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: t('footer.link_' + key),
+        url: SITE.url + data.landingUrl(key, lang)
+      }))
+    },
+    breadcrumbLd(ctx, [
+      [t('nav.home'), url()],
+      [t('nav.industries'), url('industries/')]
+    ])
+  ]
+  return {
+    title: t('seo.industries_title') + ' | ' + t('site.name'),
+    description: t('seo.industries_desc'),
+    nav: 'industries',
+    body,
+    jsonld: ld
   }
 }
 
@@ -1197,7 +1242,7 @@ export function saLanding(ctx, key = 'construction') {
   return {
     title: c.meta.title,
     description: c.meta.description,
-    nav: key === 'construction' ? 'saudi' : '',
+    nav: 'industries',
     bodyClass: 'sa-page' + (c.theme ? ' ' + c.theme : ''),
     extraCss: [data.assets.landingCss],
     body,

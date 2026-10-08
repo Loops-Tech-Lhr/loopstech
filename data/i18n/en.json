@@ -15,7 +15,8 @@
     "menu_open": "Open menu",
     "menu_close": "Close menu",
     "skip": "Skip to main content",
-    "language": "Language"
+    "language": "Language",
+    "industries": "Industries"
   },
   "seo": {
     "home_title": "Loops Technologies | Software, AI & ERP Company in Riyadh",
@@ -31,7 +32,9 @@
     "contact_title": "Contact",
     "contact_desc": "Contact Loops Technologies in Riyadh, Saudi Arabia. Call, WhatsApp or send a project inquiry.",
     "partner_title": "JNH Systems Partnership | Computer Vision, Drones & Hardware",
-    "partner_desc": "Loops Technologies works with JNH Systems to deliver computer vision, drone surveillance and embedded hardware programming to Saudi clients."
+    "partner_desc": "Loops Technologies works with JNH Systems to deliver computer vision, drone surveillance and embedded hardware programming to Saudi clients.",
+    "industries_title": "IT Services by Industry in Saudi Arabia",
+    "industries_desc": "IT and AI solutions for Saudi construction, logistics, real estate, healthcare, retail, tourism, education, consulting, manufacturing and equipment rental."
   },
   "hero": {
     "badge": "Riyadh, Saudi Arabia · Software, AI & ERP",
@@ -311,5 +314,8 @@
     "title": "Page not found",
     "text": "The page you are looking for does not exist or has moved.",
     "home": "Back to home"
+  },
+  "industries": {
+    "lead": "Pick your sector. Each solution starts with a free Operations Study with our engineers."
   }
 }
