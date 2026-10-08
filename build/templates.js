@@ -214,6 +214,7 @@ function footer(ctx, contact) {
             <ul class="footer-list">
               <li><a href="${data.landingUrl('construction', lang)}">${t('footer.link_construction')}</a></li>
               <li><a href="${data.landingUrl('logistics', lang)}">${t('footer.link_logistics')}</a></li>
+              <li><a href="${data.landingUrl('realestate', lang)}">${t('footer.link_realestate')}</a></li>
               <li><a href="${url('partners/jnh-systems/')}">${t('footer.link_partner')}</a></li>
               <li><a href="${url('about/')}">${t('footer.link_journey')}</a></li>
               <li><a href="${url('contact/')}">${t('footer.link_start')}</a></li>
@@ -441,6 +442,12 @@ export function homePage(ctx) {
           <h2 class="heading" style="margin:10px 0 14px">${t('home.logistics_title')}</h2>
           <p style="max-width:520px">${t('home.logistics_text')}</p>
           <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('logistics', lang)}" class="btn btn-primary">${t('home.logistics_cta')} ${arrow(ctx)}</a></div>
+        </div>
+        <div>
+          <span class="eyebrow">${t('home.realestate_badge')}</span>
+          <h2 class="heading" style="margin:10px 0 14px">${t('home.realestate_title')}</h2>
+          <p style="max-width:520px">${t('home.realestate_text')}</p>
+          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('realestate', lang)}" class="btn btn-primary">${t('home.realestate_cta')} ${arrow(ctx)}</a></div>
         </div>
         <div>
           <span class="eyebrow">${t('home.partner_badge')}</span>
@@ -854,15 +861,22 @@ export function saLanding(ctx, key = 'construction') {
   }
   const mock = c.mock
   const mockView =
-    c.mockType === 'conveyor'
-      ? `<div class="mock-view conveyor" aria-hidden="true">
+    c.mockType === 'facade'
+      ? `<div class="mock-view facade" aria-hidden="true">
+            <div class="scan"></div>
+            <div class="drone"></div>
+            <div class="box box-bad"><span>${mock.tag_bad}</span></div>
+            <div class="box box-ok"><span>${mock.tag_ok}</span></div>
+          </div>`
+      : c.mockType === 'conveyor'
+        ? `<div class="mock-view conveyor" aria-hidden="true">
             <div class="scan-v"></div>
             <div class="belt"></div>
             <div class="parcel p1" style="--d:0"><span class="ptag ok">${mock.tag_ok}</span></div>
             <div class="parcel p2 bad" style="--d:1"><span class="ptag bad">${mock.tag_bad}</span></div>
             <div class="parcel p3" style="--d:2"><span class="ptag ok">${mock.tag_ok}</span></div>
           </div>`
-      : `<div class="mock-view" aria-hidden="true">
+        : `<div class="mock-view" aria-hidden="true">
             <div class="scan"></div>
             <div class="worker w1"></div>
             <div class="worker w2"></div>

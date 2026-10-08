@@ -22,7 +22,8 @@ const hash = buf =>
 const SA_SLUG = 'it-services-for-construction-in-saudi-arabia'
 const LANDING_SLUGS = {
   construction: SA_SLUG,
-  logistics: 'it-services-for-logistics-in-saudi-arabia'
+  logistics: 'it-services-for-logistics-in-saudi-arabia',
+  realestate: 'it-services-for-real-estate-in-saudi-arabia'
 }
 const today = new Date().toISOString().slice(0, 10)
 
@@ -177,7 +178,8 @@ const data = {
   projects: readJson('data/projects.json'),
   landings: {
     construction: readJson('data/sa-landing.json'),
-    logistics: readJson('data/landing-logistics.json')
+    logistics: readJson('data/landing-logistics.json'),
+    realestate: readJson('data/landing-realestate.json')
   },
   landingUrl: (key, lang) =>
     (lang === 'ar' ? '/ar/' : '/') + LANDING_SLUGS[key] + '/',

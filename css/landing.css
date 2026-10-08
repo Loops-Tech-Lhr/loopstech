@@ -1460,3 +1460,133 @@ html[dir='rtl'] .final-cta h2 {
     left: 68%;
   }
 }
+
+/* ================= Real estate landing theme (deep indigo + violet) ================= */
+
+.theme-realestate {
+  --amber: #a78bfa;
+  --amber-dark: #8b5cf6;
+  --amber-rgb: 167, 139, 250;
+  --ink-dark: #0b0a1a;
+  --steel: #15132b;
+  --brand: #6d28d9;
+  --brand-dark: #5b21b6;
+  --brand-light: #c4b5fd;
+}
+
+.theme-realestate .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #0b0a1a 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-realestate .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #0b0a1a 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-realestate .ticker {
+  border-block-color: #0b0a1a;
+  color: #0b0a1a;
+}
+
+.theme-realestate .ticker-track span::after {
+  border-inline-start-color: #0b0a1a;
+}
+
+.theme-realestate .node-main {
+  background: #1c1840;
+}
+
+.theme-realestate .bento-1:hover {
+  background: #12102b;
+}
+
+/* ---------- Facade inspection (replaces the camera view) ---------- */
+
+@keyframes fly {
+  from {
+    left: 8%;
+  }
+
+  to {
+    left: 62%;
+  }
+}
+
+@keyframes hover-bob {
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* a tower: window grid between two dark edges, lit from above */
+.facade {
+  direction: ltr;
+  background:
+    linear-gradient(90deg, #0b0a1a 0 14%, transparent 14% 86%, #0b0a1a 86%),
+    linear-gradient(90deg, #0a0818 0 16px, transparent 16px) 0 0 / 40px 32px,
+    linear-gradient(0deg, #0a0818 0 14px, transparent 14px) 0 0 / 40px 32px,
+    #3b2f7a;
+}
+
+.facade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--amber-rgb), 0.16),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.drone {
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  z-index: 4;
+  width: 26px;
+  height: 8px;
+  background: #f1ecff;
+  animation: fly 7s ease-in-out infinite alternate;
+}
+
+.drone::before,
+.drone::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 12px;
+  height: 3px;
+  background: #f1ecff;
+  animation: hover-bob 0.4s ease-in-out infinite;
+}
+
+.drone::before {
+  left: -8px;
+}
+
+.drone::after {
+  right: -8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drone,
+  .drone::before,
+  .drone::after {
+    animation: none;
+  }
+
+  .drone {
+    left: 40%;
+  }
+}

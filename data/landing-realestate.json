@@ -1,0 +1,524 @@
+{
+  "en": {
+    "theme": "theme-realestate",
+    "mockType": "facade",
+    "audience": "Property developers, property and facilities managers, investors and real estate marketers in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Real Estate in Saudi Arabia | Loops Technologies",
+      "description": "IT services for real estate, PropTech and facilities management in Saudi Arabia: drone damage inspection, smart building energy savings, rental yield forecasting, a tenant and owner portal with Mada and SADAD, and investor lead generation."
+    },
+    "kicker": "For developers, property managers, REITs & facilities operators in Riyadh, Jeddah and across Saudi Arabia",
+    "eyebrow": "Real estate, PropTech & facilities",
+    "title": "Manage thousands of units. Cut cooling costs. <span class=\"hl\">Spot damage before your tenants do.</span>",
+    "subtitle": "Drone and camera inspection that finds cracks and leaks, AI that adapts cooling to real occupancy, a yield forecast for investors, and one portal for tenants and owners. Runs on your own servers, so tenant and property data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Data stays in-Kingdom" },
+      { "icon": "fa-credit-card", "text": "Mada & SADAD ready" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Facade crack flagged · Tower B",
+      "Cooling adjusted · low-occupancy floors",
+      "Rent received · Mada",
+      "Maintenance request assigned",
+      "Lease signed digitally",
+      "Yield forecast updated · Riyadh"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who answer for the portfolio",
+      "title": "Owners, property managers and leasing leaders each get what they need.",
+      "items": [
+        {
+          "icon": "fa-chart-line",
+          "who": "Owners & investors",
+          "title": "Know a property's likely yield before you commit.",
+          "text": "Forecasts built from Riyadh market trends, infrastructure plans and historical data, as decision support for acquisitions and pricing."
+        },
+        {
+          "icon": "fa-building",
+          "who": "Property & facilities managers",
+          "title": "Run thousands of units without thousands of site visits.",
+          "text": "Automated inspection, smarter cooling and a portal that handles rent, requests and contracts, so your team handles exceptions."
+        },
+        {
+          "icon": "fa-bullseye",
+          "who": "Leasing, sales & marketing heads",
+          "title": "Reach corporate investors and luxury buyers across the GCC.",
+          "text": "Targeted digital campaigns designed to capture high-net-worth leads, not just clicks."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Riyadh and Jeddah are building fast. Manual management does not scale.",
+      "items": [
+        {
+          "icon": "fa-city",
+          "title": "Scale outgrows inspections",
+          "text": "Towers and large campuses take days to inspect by hand, so problems wait."
+        },
+        {
+          "icon": "fa-droplet",
+          "title": "Hidden damage gets expensive",
+          "text": "A small crack or leak found late becomes a structural repair and an unhappy tenant."
+        },
+        {
+          "icon": "fa-bolt",
+          "title": "Cooling is the biggest bill",
+          "text": "HVAC that ignores real occupancy cools empty floors all day."
+        },
+        {
+          "icon": "fa-file-contract",
+          "title": "Tenant admin eats time",
+          "text": "Rent chasing, maintenance calls and paper leases keep teams busy with routine work."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the building, the tenant and the investor.",
+      "items": [
+        {
+          "icon": "fa-helicopter-symbol",
+          "title": "Automated Facility Damage Inspection",
+          "tag": "Computer Vision",
+          "text": "Drone and camera analysis of building exteriors and large campuses detects structural cracks, leaks and window damage without manual human inspection.",
+          "partner": true
+        },
+        {
+          "icon": "fa-temperature-half",
+          "title": "Smart Building Energy Optimization",
+          "tag": "AI",
+          "text": "Integrates with commercial HVAC systems and learns tenant occupancy patterns to adjust cooling automatically, cutting electricity costs."
+        },
+        {
+          "icon": "fa-chart-simple",
+          "title": "AI-Powered Property Yield Predictor",
+          "tag": "AI",
+          "text": "Analyzes local Riyadh market trends, infrastructure plans and historical data to forecast the future rental yield of a property for investors."
+        },
+        {
+          "icon": "fa-key",
+          "title": "Tenant & Owner Management Portal",
+          "tag": "Web platform",
+          "text": "A secure platform where tenants pay rent via Mada and SADAD, submit maintenance requests and download digital lease contracts."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "High-Net-Worth Lead Generation",
+          "tag": "Marketing",
+          "text": "Targeted digital marketing campaigns designed to capture corporate investors and luxury home buyers across the GCC."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your property data. Your servers. Your Kingdom.",
+      "text": "Leases, tenant details, payment records and building imagery are sensitive. We deploy vision and AI models on GPU servers in your own facility or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "On-premise or in-Kingdom GPU for inspection imagery",
+        "Tenant and payment data stays under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your own buildings and portfolio"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from drones, cameras and building sensors to an in-house GPU server to the portal and dashboards, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Drones, cameras & building sensors",
+        "n2": "Your in-house GPU server",
+        "n3": "Portal, alerts & facilities system"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Aerial and field intelligence with JNH Systems",
+      "text": "For large campuses and towers, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "Monitoring & change detection",
+          "text": "Recurring aerial monitoring that identifies changes before ground teams can reach the location."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your portfolio, systems and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot on one tower, campus or system that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your existing property, finance and building systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from property teams",
+      "items": [
+        {
+          "q": "Can it integrate with our existing HVAC or building management system?",
+          "a": "Where the system exposes an interface, yes. The Operations Study checks what your equipment supports before we propose anything."
+        },
+        {
+          "q": "How does the portal handle Mada and SADAD payments?",
+          "a": "It is built to integrate with payment providers that support Mada and SADAD. The exact options depend on the provider and bank you use."
+        },
+        {
+          "q": "How accurate is the yield predictor?",
+          "a": "It is decision support based on market trends, infrastructure plans and historical data. It is an estimate, not a guarantee of returns."
+        },
+        {
+          "q": "Does our property and tenant data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your portfolio. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Company",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Facility damage inspection (drones & cameras)",
+        "Smart building energy optimisation",
+        "Property yield predictor",
+        "Tenant & owner portal (Mada / SADAD)",
+        "High-net-worth lead generation",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Portfolio details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next tower shouldn't be managed by clipboard.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative facade inspection",
+      "tag_bad": "Crack detected",
+      "tag_ok": "Facade OK",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Tower B · Facade crack flagged",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "Floor 12 · Cooling reduced, low occupancy",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "Unit 804 · Rent received via Mada",
+          "time": "09:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-realestate",
+    "mockType": "facade",
+    "audience": "مطورو العقارات ومديرو العقارات والمرافق والمستثمرون ومسوقو العقارات في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للعقارات في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات للعقارات والتقنية العقارية وإدارة المرافق في السعودية: فحص أضرار المباني بالطائرات المسيّرة، وتوفير الطاقة في المباني الذكية، والتنبؤ بالعائد الإيجاري، وبوابة للمستأجرين والملاك بمدى وسداد، وجذب المستثمرين."
+    },
+    "kicker": "للمطورين ومديري العقارات وصناديق الريت ومشغلي المرافق في الرياض وجدة وأنحاء المملكة",
+    "eyebrow": "العقارات والتقنية العقارية وإدارة المرافق",
+    "title": "أدِر آلاف الوحدات. اخفض تكلفة التبريد. <span class=\"hl\">اكتشف الأضرار قبل أن يلاحظها المستأجرون.</span>",
+    "subtitle": "فحص بالطائرات المسيّرة والكاميرات يكشف الشروخ والتسربات، وذكاء اصطناعي يضبط التبريد حسب الإشغال الفعلي، وتوقع للعائد للمستثمرين، وبوابة واحدة للمستأجرين والملاك. يعمل على خوادمك الخاصة لتبقى بيانات المستأجرين والعقارات داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "البيانات تبقى داخل المملكة" },
+      { "icon": "fa-credit-card", "text": "جاهز لمدى وسداد" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "رصد شرخ في الواجهة · البرج B",
+      "ضبط التبريد · طوابق منخفضة الإشغال",
+      "استلام الإيجار · مدى",
+      "إسناد طلب صيانة",
+      "توقيع عقد إيجار رقمياً",
+      "تحديث توقع العائد · الرياض"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يتحملون مسؤولية المحفظة العقارية",
+      "title": "الملاك ومديرو العقارات وقادة التأجير، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-chart-line",
+          "who": "الملاك والمستثمرون",
+          "title": "اعرف العائد المحتمل للعقار قبل أن تلتزم.",
+          "text": "توقعات مبنية على اتجاهات سوق الرياض وخطط البنية التحتية والبيانات التاريخية، كدعم لقرارات الشراء والتسعير."
+        },
+        {
+          "icon": "fa-building",
+          "who": "مديرو العقارات والمرافق",
+          "title": "أدِر آلاف الوحدات دون آلاف الزيارات الميدانية.",
+          "text": "فحص آلي، وتبريد أذكى، وبوابة تتولى الإيجار والطلبات والعقود، ليتفرغ فريقك للحالات الاستثنائية."
+        },
+        {
+          "icon": "fa-bullseye",
+          "who": "قادة التأجير والمبيعات والتسويق",
+          "title": "صِل إلى المستثمرين من الشركات ومشتري الفلل الفاخرة في الخليج.",
+          "text": "حملات رقمية موجهة صُممت لجذب العملاء من أصحاب الثروات، لا مجرد نقرات."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "الرياض وجدة تبنيان بسرعة، والإدارة اليدوية لا تتسع لذلك.",
+      "items": [
+        {
+          "icon": "fa-city",
+          "title": "الحجم يفوق قدرة الفحص",
+          "text": "الأبراج والمجمعات الكبيرة تحتاج أياماً للفحص اليدوي، فتبقى المشكلات تنتظر."
+        },
+        {
+          "icon": "fa-droplet",
+          "title": "الأضرار الخفية تصبح مكلفة",
+          "text": "شرخ أو تسرب صغير يُكتشف متأخراً يتحول إلى إصلاح إنشائي ومستأجر غير راضٍ."
+        },
+        {
+          "icon": "fa-bolt",
+          "title": "التبريد أكبر فاتورة",
+          "text": "أنظمة التكييف التي تتجاهل الإشغال الفعلي تبرّد طوابق فارغة طوال اليوم."
+        },
+        {
+          "icon": "fa-file-contract",
+          "title": "إدارة المستأجرين تستهلك الوقت",
+          "text": "ملاحقة الإيجارات ومكالمات الصيانة وعقود الورق تشغل الفرق بأعمال روتينية."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة للمبنى والمستأجر والمستثمر.",
+      "items": [
+        {
+          "icon": "fa-helicopter-symbol",
+          "title": "الفحص الآلي لأضرار المرافق",
+          "tag": "الرؤية الحاسوبية",
+          "text": "تحليل بالطائرات المسيّرة والكاميرات لواجهات المباني والمجمعات الكبيرة يكشف الشروخ الإنشائية والتسربات وأضرار النوافذ دون فحص بشري يدوي.",
+          "partner": true
+        },
+        {
+          "icon": "fa-temperature-half",
+          "title": "تحسين الطاقة في المباني الذكية",
+          "tag": "الذكاء الاصطناعي",
+          "text": "يتكامل مع أنظمة التكييف التجارية ويتعلم أنماط إشغال المستأجرين لضبط التبريد تلقائياً، فتنخفض تكاليف الكهرباء."
+        },
+        {
+          "icon": "fa-chart-simple",
+          "title": "متنبئ العائد العقاري بالذكاء الاصطناعي",
+          "tag": "الذكاء الاصطناعي",
+          "text": "يحلل اتجاهات سوق الرياض وخطط البنية التحتية والبيانات التاريخية لتوقع العائد الإيجاري المستقبلي للعقار لصالح المستثمرين."
+        },
+        {
+          "icon": "fa-key",
+          "title": "بوابة إدارة المستأجرين والملاك",
+          "tag": "منصة ويب",
+          "text": "منصة آمنة يدفع فيها المستأجرون الإيجار عبر مدى وسداد، ويقدمون طلبات الصيانة، ويحمّلون عقود الإيجار الرقمية."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "جذب العملاء من أصحاب الثروات",
+          "tag": "التسويق",
+          "text": "حملات تسويق رقمي موجهة صُممت لجذب المستثمرين من الشركات ومشتري المنازل الفاخرة في دول الخليج."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات عقاراتك. خوادمك. داخل مملكتك.",
+      "text": "عقود الإيجار وبيانات المستأجرين وسجلات الدفع وصور المباني بيانات حساسة. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU في منشأتك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "خوادم GPU داخل المنشأة أو داخل المملكة لصور الفحص",
+        "بيانات المستأجرين والمدفوعات تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على مبانيك ومحفظتك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من الطائرات المسيّرة والكاميرات ومستشعرات المبنى إلى خادم GPU داخلي ثم إلى البوابة ولوحات المتابعة، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "الطائرات المسيّرة والكاميرات ومستشعرات المبنى",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "البوابة والتنبيهات ونظام المرافق"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الذكاء الجوي والميداني مع JNH Systems",
+      "text": "للمجمعات الكبيرة والأبراج، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "المراقبة وكشف التغيرات",
+          "text": "مراقبة جوية دورية تكتشف التغيرات قبل أن تصل إليها الفرق الأرضية."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة محفظتك وأنظمتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة على برج أو مجمع أو نظام واحد تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة العقارات والمالية والمباني لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق العقارات",
+      "items": [
+        {
+          "q": "هل يتكامل مع أنظمة التكييف أو إدارة المباني لدينا؟",
+          "a": "نعم حيث يوفر النظام واجهة للربط. وتفحص الدراسة التشغيلية ما تدعمه معداتك قبل أي مقترح."
+        },
+        {
+          "q": "كيف تتعامل البوابة مع مدفوعات مدى وسداد؟",
+          "a": "صُممت للتكامل مع مزودي الدفع الذين يدعمون مدى وسداد. وتعتمد الخيارات الدقيقة على المزود والبنك الذي تستخدمه."
+        },
+        {
+          "q": "ما مدى دقة متنبئ العائد؟",
+          "a": "هو أداة دعم قرار مبنية على اتجاهات السوق وخطط البنية التحتية والبيانات التاريخية. وهو تقدير وليس ضماناً للعوائد."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات عقاراتنا ومستأجرينا المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن محفظتك العقارية، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الشركة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "فحص أضرار المرافق (الطائرات المسيّرة والكاميرات)",
+        "تحسين الطاقة في المباني الذكية",
+        "متنبئ العائد العقاري",
+        "بوابة المستأجرين والملاك (مدى / سداد)",
+        "جذب العملاء من أصحاب الثروات",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المحفظة",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "برجك القادم لا ينبغي أن يُدار بالورقة والقلم.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "فحص توضيحي لواجهة مبنى",
+      "tag_bad": "شرخ مكتشف",
+      "tag_ok": "الواجهة سليمة",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "البرج B · رصد شرخ في الواجهة",
+          "time": "09:42"
+        },
+        {
+          "level": "warn",
+          "text": "الطابق 12 · خفض التبريد، إشغال منخفض",
+          "time": "09:38"
+        },
+        {
+          "level": "ok",
+          "text": "الوحدة 804 · استلام الإيجار عبر مدى",
+          "time": "09:35"
+        }
+      ]
+    }
+  }
+}

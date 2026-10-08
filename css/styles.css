@@ -1057,10 +1057,17 @@ html[dir='rtl'] .footer-h {
   gap: 56px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .promo-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 48px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .promo-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
 }
 

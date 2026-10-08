@@ -120,7 +120,11 @@
     "logistics_badge": "New for Saudi logistics",
     "logistics_title": "AI for logistics and <span class=\"accent\">supply chain.</span>",
     "logistics_text": "Conveyor damage detection, a route engine built for Saudi roads, fleet maintenance prediction and one live tracking dashboard.",
-    "logistics_cta": "See the logistics solution"
+    "logistics_cta": "See the logistics solution",
+    "realestate_badge": "New for Saudi real estate",
+    "realestate_title": "AI for real estate and <span class=\"accent\">facilities.</span>",
+    "realestate_text": "Drone facade inspection, smart cooling, yield forecasting and a tenant portal with Mada and SADAD.",
+    "realestate_cta": "See the real estate solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -265,7 +269,8 @@
     "link_erp": "ERP & CRM",
     "link_partner": "JNH Systems Partnership",
     "link_construction": "IT for Construction",
-    "link_logistics": "IT for Logistics"
+    "link_logistics": "IT for Logistics",
+    "link_realestate": "IT for Real Estate"
   },
   "notfound": {
     "title": "Page not found",
