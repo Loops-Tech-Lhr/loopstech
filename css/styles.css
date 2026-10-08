@@ -1726,3 +1726,8 @@ a.cell:hover {
 .promo .cell .eyebrow {
   min-height: 2.8em;
 }
+
+/* contact side box: label above the value */
+.side-box .eyebrow {
+  display: block;
+}

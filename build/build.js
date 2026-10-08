@@ -231,7 +231,7 @@ data.orgLd = {
   foundingDate: '2013',
   founder: { '@type': 'Person', name: 'Mukarram Hussain' },
   description:
-    'Software engineering studio in Riyadh and Lahore: web and mobile apps, ERP, ZATCA e-invoicing, private AI and computer vision.',
+    'Saudi software engineering company in Riyadh: web and mobile apps, ERP, ZATCA e-invoicing, private AI and computer vision.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '6943 Ibn Aous Road',
@@ -248,22 +248,9 @@ data.orgLd = {
         addressLocality: 'Riyadh',
         addressCountry: 'SA'
       }
-    },
-    {
-      '@type': 'Place',
-      name: 'Lahore Office',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '73 3 D1 Green Town',
-        addressLocality: 'Lahore',
-        addressCountry: 'PK'
-      }
     }
   ],
-  areaServed: [
-    { '@type': 'Country', name: 'Saudi Arabia' },
-    { '@type': 'Country', name: 'Pakistan' }
-  ],
+  areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   knowsAbout: [
     'Custom software',
     'ERP',

@@ -6,7 +6,6 @@ export const SITE = {
   jnhUrl: 'https://jnhsystems.com',
   jnhEmail: 'info@jnhsystems.com',
   riyadhPhone: '+966 59 744 1504',
-  lahorePhone: '+92 312 4277939',
   // Number used on the construction campaign landing page only (call + WhatsApp)
   campaign: {
     phone: '+966 59 167 9165',
@@ -392,7 +391,7 @@ export function homePage(ctx) {
     [t('home.stats_projects'), t('home.stats_projects_text')],
     [t('hero.expertise'), t('hero.expertise_text')],
     [t('home.stats_riyadh'), t('home.stats_riyadh_text')],
-    [t('home.stats_lahore'), t('home.stats_lahore_text')]
+    [t('home.stats_sectors'), t('home.stats_sectors_text')]
   ]
   const services = data.services
     .filter(s => s.category === 'core')
@@ -659,10 +658,7 @@ export function serviceDetailPage(ctx, s) {
       description: stripTags(L(s.description)),
       serviceType: title,
       provider: { '@id': SITE.url + '/#org' },
-      areaServed: [
-        { '@type': 'Country', name: 'Saudi Arabia' },
-        { '@type': 'Country', name: 'Pakistan' }
-      ],
+      areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
       url: SITE.url + url('services/' + s.id + '/')
     },
     breadcrumbLd(ctx, [
@@ -756,11 +752,6 @@ export function contactPage(ctx) {
               <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.office_riyadh')}</h2>
               <p>${t('contact.riyadh_address')}</p>
               <a href="tel:+966597441504" class="link-arrow" style="margin-top:10px" dir="ltr">${SITE.riyadhPhone}</a>
-            </div>
-            <div style="padding-top:24px;border-top:1px solid var(--line)">
-              <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.office_lahore')}</h2>
-              <p>${t('contact.lahore_address')}</p>
-              <a href="tel:+923124277939" class="link-arrow" style="margin-top:10px" dir="ltr">${SITE.lahorePhone}</a>
             </div>
             <div style="padding-top:24px;border-top:1px solid var(--line)">
               <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.direct_email')}</h2>

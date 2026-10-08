@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Loops Technologies",
-    "tagline": "Software engineering, AI and enterprise systems from Riyadh and Lahore"
+    "tagline": "Software engineering, AI and enterprise systems from Riyadh, Saudi Arabia"
   },
   "nav": {
     "home": "Home",
@@ -19,7 +19,7 @@
   },
   "seo": {
     "home_title": "Loops Technologies | Software, AI & ERP Company in Riyadh",
-    "home_desc": "Riyadh and Lahore software engineering studio: custom web and mobile apps, ERP, ZATCA e-invoicing, private AI on in-house GPUs, and computer vision with JNH Systems.",
+    "home_desc": "Saudi software engineering company in Riyadh: custom web and mobile apps, ERP, ZATCA e-invoicing, private AI on in-house GPUs, and computer vision with JNH Systems.",
     "services_title": "Software, AI & ERP Services",
     "services_desc": "Custom web apps, mobile apps, ERP and CRM, ZATCA e-invoicing, AI agents, private GPU deployment and computer vision for Saudi businesses.",
     "ai_title": "AI Solutions & Private GPU Deployment in Saudi Arabia",
@@ -27,14 +27,14 @@
     "projects_title": "Portfolio",
     "projects_desc": "Selected projects by Loops Technologies: platforms, marketplaces, hospital ERP and fintech systems.",
     "about_title": "Our Story",
-    "about_desc": "Loops Technologies has built software since 2013 with teams in Riyadh and Lahore.",
+    "about_desc": "Loops Technologies is a Saudi software company based in Riyadh, building software since 2013.",
     "contact_title": "Contact",
-    "contact_desc": "Contact Loops Technologies in Riyadh or Lahore. Call, WhatsApp or send a project inquiry.",
+    "contact_desc": "Contact Loops Technologies in Riyadh, Saudi Arabia. Call, WhatsApp or send a project inquiry.",
     "partner_title": "JNH Systems Partnership | Computer Vision, Drones & Hardware",
     "partner_desc": "Loops Technologies works with JNH Systems to deliver computer vision, drone surveillance and embedded hardware programming to Saudi clients."
   },
   "hero": {
-    "badge": "Riyadh & Lahore · Software, AI & ERP",
+    "badge": "Riyadh, Saudi Arabia · Software, AI & ERP",
     "title_bold": "Engineering",
     "title_ideas": "Success",
     "title_smart": "Through",
@@ -57,8 +57,6 @@
     "stats_projects_text": "Projects Delivered",
     "stats_riyadh": "Riyadh",
     "stats_riyadh_text": "Saudi Arabia Hub",
-    "stats_lahore": "Lahore",
-    "stats_lahore_text": "Pakistan Center",
     "specialized_badge": "Specialized ERPs",
     "specialized_title": "Software for Your Industry.",
     "industries": [
@@ -108,11 +106,11 @@
       },
       {
         "title": "Scale",
-        "desc": "Global launch and continuous optimization."
+        "desc": "Launch and continuous optimization."
       }
     ],
     "work_badge": "Selected work",
-    "work_title": "Global <span class=\"accent\">impact</span>.",
+    "work_title": "Proven <span class=\"accent\">impact</span>.",
     "work_all": "All projects",
     "cta_title": "Built to <span class=\"accent\">win</span>.",
     "cta_text": "Stop struggling with legacy tech. Let's build your future-proof digital engine today.",
@@ -154,7 +152,9 @@
     "rental_badge": "New for Saudi equipment rental",
     "rental_title": "AI for car and heavy equipment <span class=\"accent\">rental.</span>",
     "rental_text": "Damage-detection kiosks, dynamic fleet pricing, predictive maintenance and a corporate booking portal.",
-    "rental_cta": "See the rental solution"
+    "rental_cta": "See the rental solution",
+    "stats_sectors": "10",
+    "stats_sectors_text": "Saudi Industry Solutions"
   },
   "services": {
     "badge": "Capabilities",
@@ -221,7 +221,7 @@
     "title": "Our <span class=\"accent\">story</span>.",
     "text1": "Founded in 2013, Loops Technologies has always been about one thing: purely technology-driven solutions. We aren't just developers, we are partners in your growth.",
     "text2": "Founder Mukarram Hussain has spent over 10 years perfecting the art of software engineering. His expertise in PHP, Laravel and modern JavaScript frameworks is the foundation of everything we build.",
-    "text3": "Today, we operate from Riyadh and Lahore, bringing together the best talent to serve clients in the Middle East and beyond with honesty and excellence.",
+    "text3": "Today, we operate from Riyadh, bringing together the best talent to serve Saudi businesses with honesty and excellence.",
     "image_alt": "The Loops Technologies team",
     "quality_audit": "100%",
     "quality_audit_text": "Quality Audit",
@@ -242,7 +242,7 @@
       },
       {
         "q": "Where are you located?",
-        "a": "We have a core team in Riyadh, KSA and a development center in Lahore, Pakistan."
+        "a": "We are a Saudi company based in Riyadh, KSA."
       },
       {
         "q": "Can AI run on our own servers?",
@@ -253,7 +253,7 @@
   "contact": {
     "badge": "Direct connection",
     "title": "Start <span class=\"accent\">now</span>.",
-    "subtitle": "Based in Riyadh & Lahore. Serving clients worldwide.",
+    "subtitle": "Based in Riyadh, serving clients across Saudi Arabia.",
     "success_title": "Success!",
     "success_text": "We've received your request. Expect a reply within one working day.",
     "error_text": "We could not send your message. Please use WhatsApp or email us directly.",
@@ -278,11 +278,9 @@
     ],
     "btn_send": "Send Inquiry",
     "office_riyadh": "Riyadh Office",
-    "office_lahore": "Lahore Office",
     "direct_email": "Direct Email",
     "whatsapp": "WhatsApp",
-    "riyadh_address": "6943 Ibn Aous Road, Riyadh, Saudi Arabia",
-    "lahore_address": "73 3 D1 Green Town, Lahore, Pakistan"
+    "riyadh_address": "6943 Ibn Aous Road, Riyadh, Saudi Arabia"
   },
   "footer": {
     "desc": "Innovative software solutions since 2013. We bridge the gap between business needs and digital execution with expert code.",
