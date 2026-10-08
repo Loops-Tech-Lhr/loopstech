@@ -1972,3 +1972,181 @@ html[dir='rtl'] .final-cta h2 {
     left: 75%;
   }
 }
+
+/* ================= Tourism & events landing theme (fuchsia on aubergine) ================= */
+
+.theme-tourism {
+  --amber: #e879f9;
+  --amber-dark: #d946ef;
+  --amber-rgb: 232, 121, 249;
+  --ink-dark: #140716;
+  --steel: #20102a;
+  --brand: #a21caf;
+  --brand-dark: #86198f;
+  --brand-light: #f0abfc;
+}
+
+.theme-tourism .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #140716 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-tourism .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #140716 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-tourism .ticker {
+  border-block-color: #140716;
+  color: #140716;
+}
+
+.theme-tourism .ticker-track span::after {
+  border-inline-start-color: #140716;
+}
+
+.theme-tourism .node-main {
+  background: #2a1236;
+}
+
+.theme-tourism .bento-1:hover {
+  background: #1b0a20;
+}
+
+/* ---------- Venue crowd monitor (replaces the camera view) ---------- */
+
+@keyframes dispatch {
+  from {
+    top: 90%;
+    left: 40%;
+  }
+
+  to {
+    top: 62%;
+    left: 30%;
+  }
+}
+
+.crowd {
+  direction: ltr;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 44px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 44px
+    ),
+    #190b1e;
+}
+
+/* the stage */
+.stage {
+  position: absolute;
+  top: 7%;
+  left: 28%;
+  width: 44%;
+  height: 11%;
+  border: 1px solid rgba(var(--amber-rgb), 0.6);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--amber-rgb), 0.3),
+    rgba(var(--amber-rgb), 0.08)
+  );
+}
+
+/* people: a dot grid, masked into an oval crowd */
+.pack {
+  position: absolute;
+  background-image: radial-gradient(circle, #f5d0fe 1.6px, transparent 2.2px);
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 52%,
+    transparent 72%
+  );
+  mask-image: radial-gradient(ellipse at center, #000 52%, transparent 72%);
+}
+
+.dense {
+  top: 30%;
+  left: 12%;
+  width: 38%;
+  height: 40%;
+  background-size: 8px 7px;
+}
+
+.sparse {
+  top: 34%;
+  left: 56%;
+  width: 32%;
+  height: 44%;
+  background-size: 20px 17px;
+}
+
+.hz {
+  position: absolute;
+  top: 28%;
+  left: 12%;
+  width: 38%;
+  height: 44%;
+  border-radius: 50% !important;
+  background: radial-gradient(
+    circle,
+    rgba(239, 68, 68, 0.6),
+    rgba(239, 68, 68, 0.12) 60%,
+    transparent 74%
+  );
+  filter: blur(12px);
+  animation: heat 2.2s ease-in-out infinite alternate;
+}
+
+/* a staff member heading to the crowd surge */
+.staff {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  z-index: 3;
+  width: 11px;
+  height: 11px;
+  border-radius: 50% !important;
+  background: #22c55e;
+  box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.3);
+  animation: dispatch 5s ease-in-out infinite alternate;
+}
+
+.crowd .box-bad {
+  top: 26%;
+  left: 12%;
+  width: 38%;
+  height: 46%;
+}
+
+.crowd .box-ok {
+  top: 31%;
+  left: 56%;
+  width: 32%;
+  height: 48%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hz,
+  .staff {
+    animation: none;
+  }
+
+  .staff {
+    top: 70%;
+    left: 34%;
+  }
+}

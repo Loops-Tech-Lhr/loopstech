@@ -1,0 +1,588 @@
+{
+  "en": {
+    "theme": "theme-tourism",
+    "mockType": "crowd",
+    "audience": "Hotel and resort operators, venue managers and event organisers in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Tourism in Saudi Arabia | Loops Technologies",
+      "description": "IT services for hotels, venues and event organisers in Saudi Arabia: crowd density and safety monitoring, dynamic room and ticket pricing, an Arabic dialect concierge chatbot, a commission-free direct booking engine and an event app."
+    },
+    "kicker": "For hotels, resorts, venues & event organisers in Riyadh, Jeddah, the Red Sea and across Saudi Arabia",
+    "eyebrow": "Tourism, hospitality & events",
+    "title": "Fill every room. Keep every crowd safe. <span class=\"hl\">Welcome guests in their own dialect.</span>",
+    "subtitle": "Live crowd-density monitoring, minute-by-minute pricing for rooms and tickets, an Arabic concierge chatbot, a commission-free direct booking engine and a polished event app. Runs on your own servers, so guest and booking data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      {
+        "icon": "fa-location-dot",
+        "text": "Riyadh-based team"
+      },
+      {
+        "icon": "fa-lock",
+        "text": "Guest data stays in-Kingdom"
+      },
+      {
+        "icon": "fa-language",
+        "text": "Saudi-dialect Arabic chatbot"
+      },
+      {
+        "icon": "fa-handshake",
+        "text": "With JNH Systems"
+      }
+    ],
+    "ticker": [
+      "Gate 3 · Density rising",
+      "Staff dispatched · North entrance",
+      "Room rate updated · event demand",
+      "Booking modified · concierge bot",
+      "Direct booking received",
+      "Push alert sent · schedule change"
+    ],
+    "stats": [
+      {
+        "value": "5",
+        "label": "Integrated solutions",
+        "count": true
+      },
+      {
+        "value": "250+",
+        "label": "Projects delivered",
+        "count": true
+      },
+      {
+        "value": "Riyadh",
+        "label": "Saudi Arabia hub",
+        "count": false
+      },
+      {
+        "value": "2013",
+        "label": "Building software since",
+        "count": false
+      }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who host the guests",
+      "title": "Hoteliers, venue operators and guest-experience leaders each get what they need.",
+      "items": [
+        {
+          "icon": "fa-hotel",
+          "who": "Hotel & resort owners and GMs",
+          "title": "Fill every room at the right price, without commissions.",
+          "text": "Pricing that follows real demand and local events, and a direct booking engine on your own website."
+        },
+        {
+          "icon": "fa-ticket",
+          "who": "Event & venue operators",
+          "title": "Keep every gate flowing and every crowd safe.",
+          "text": "Live density analysis flags dangerous bottlenecks and directs security and staff to the right spot automatically."
+        },
+        {
+          "icon": "fa-bell-concierge",
+          "who": "Guest experience & marketing heads",
+          "title": "Serve guests in their own dialect, 24/7.",
+          "text": "A concierge chatbot that understands Saudi dialects, plus an event app with maps, schedules and instant alerts."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Riyadh Season, the Red Sea and religious tourism bring huge visitor volumes. Manual operations don't scale.",
+      "items": [
+        {
+          "icon": "fa-users",
+          "title": "Crowds create safety risk",
+          "text": "A bottleneck at one gate can become an incident before anyone is aware of it."
+        },
+        {
+          "icon": "fa-tags",
+          "title": "Static prices leave money behind",
+          "text": "Fixed rates ignore sold-out events, competitor moves and last-minute demand."
+        },
+        {
+          "icon": "fa-percent",
+          "title": "Commissions erode margin",
+          "text": "Every booking through a third-party platform costs a share of the revenue."
+        },
+        {
+          "icon": "fa-clock",
+          "title": "Guests expect help at any hour",
+          "text": "Requests for changes, room service and recommendations do not wait for office hours."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the venue floor, the front desk and the guest.",
+      "items": [
+        {
+          "icon": "fa-people-group",
+          "title": "Crowd Density & Safety Monitoring",
+          "tag": "Computer Vision",
+          "text": "Live analysis of concert venues and hotel lobbies detects dangerous bottlenecks and automatically directs security and staff to the area.",
+          "partner": true
+        },
+        {
+          "icon": "fa-tags",
+          "title": "Dynamic Room & Ticket Pricing Engine",
+          "tag": "AI",
+          "text": "Software that adjusts hotel room or event ticket rates minute by minute based on real-time demand, competitor pricing and local event schedules."
+        },
+        {
+          "icon": "fa-robot",
+          "title": "Arabic-Speaking Concierge Chatbot",
+          "tag": "AI",
+          "text": "A virtual assistant trained on local Saudi dialects that handles booking changes, room service and local recommendations 24/7."
+        },
+        {
+          "icon": "fa-calendar-check",
+          "title": "Centralized Booking & Venue System",
+          "tag": "Web platform",
+          "text": "A commission-free direct booking engine for hotels and event spaces, integrated directly into your main website."
+        },
+        {
+          "icon": "fa-map-location-dot",
+          "title": "Interactive Event & Venue App",
+          "tag": "Mobile",
+          "text": "A highly polished mobile app with interactive digital maps, live event schedules and instant push notifications for attendees."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your guest data. Your servers. Your Kingdom.",
+      "text": "Guest identities, booking histories and venue camera feeds are sensitive. We deploy vision and AI models on GPU servers inside your property or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Venue camera analytics processed on your own servers",
+        "Guest conversations and bookings stay under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your venues, seasons and guests"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from venue cameras, the booking engine and the guest app to an in-house GPU server to dashboards and alerts, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Venue cameras, booking engine & guest app",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, staff alerts & pricing"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision and aerial monitoring with JNH Systems",
+      "text": "For large venues and resorts, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "Monitoring & change detection",
+          "text": "Recurring aerial monitoring that identifies changes before ground teams can reach the location."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your venues, systems and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot at one property or one event that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your property management, ticketing and payment systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from hospitality and event teams",
+      "items": [
+        {
+          "q": "Does the crowd monitor replace our safety procedures?",
+          "a": "No. It supports your trained safety team with live density alerts and staff direction. It measures crowd density and flow, not identities."
+        },
+        {
+          "q": "Can we control the pricing engine?",
+          "a": "Yes. Prices stay within the minimum and maximum limits you set, and you can approve changes or let it run automatically."
+        },
+        {
+          "q": "Is the booking engine really commission-free?",
+          "a": "We take no per-booking commission. Payment gateway fees from your provider still apply."
+        },
+        {
+          "q": "How good is the chatbot with Saudi dialects?",
+          "a": "It is built for Arabic dialects and English, handles routine requests and hands over to your staff when a request needs a person."
+        },
+        {
+          "q": "Does guest data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your hotel, venue or event. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Hotel / venue / organiser",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Crowd density & safety monitoring (computer vision)",
+        "Dynamic room & ticket pricing",
+        "Arabic concierge chatbot",
+        "Direct booking & venue system",
+        "Event & venue mobile app",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Property or event details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next big event shouldn't run on guesswork.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative venue crowd monitor",
+      "tag_bad": "Crowd surge",
+      "tag_ok": "Clear",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Gate 3 · Crowd surge, staff dispatched",
+          "time": "21:42"
+        },
+        {
+          "level": "warn",
+          "text": "Suites · Rates raised for event demand",
+          "time": "21:38"
+        },
+        {
+          "level": "ok",
+          "text": "Lobby · Flow normal",
+          "time": "21:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-tourism",
+    "mockType": "crowd",
+    "audience": "مشغلو الفنادق والمنتجعات ومديرو الفعاليات والمنظمون في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للسياحة والضيافة في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات للفنادق وأماكن الفعاليات والمنظمين في السعودية: مراقبة كثافة الحشود والسلامة، وتسعير ديناميكي للغرف والتذاكر، ومساعد افتراضي بلهجات سعودية، ونظام حجز مباشر بلا عمولات، وتطبيق للفعاليات."
+    },
+    "kicker": "للفنادق والمنتجعات وأماكن الفعاليات ومنظميها في الرياض وجدة والبحر الأحمر وأنحاء المملكة",
+    "eyebrow": "السياحة والضيافة والفعاليات",
+    "title": "املأ كل غرفة. حافظ على أمان كل حشد. <span class=\"hl\">رحّب بضيوفك بلهجتهم.</span>",
+    "subtitle": "مراقبة حية لكثافة الحشود، وتسعير للغرف والتذاكر دقيقة بدقيقة، ومساعد افتراضي بالعربية، ونظام حجز مباشر بلا عمولات، وتطبيق متقن للفعاليات. يعمل على خوادمك الخاصة لتبقى بيانات الضيوف والحجوزات داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      {
+        "icon": "fa-location-dot",
+        "text": "فريق في الرياض"
+      },
+      {
+        "icon": "fa-lock",
+        "text": "بيانات الضيوف تبقى داخل المملكة"
+      },
+      {
+        "icon": "fa-language",
+        "text": "مساعد افتراضي بلهجات سعودية"
+      },
+      {
+        "icon": "fa-handshake",
+        "text": "بالتعاون مع JNH Systems"
+      }
+    ],
+    "ticker": [
+      "البوابة 3 · ارتفاع الكثافة",
+      "إرسال الموظفين · المدخل الشمالي",
+      "تحديث سعر الغرفة · طلب الفعالية",
+      "تعديل حجز · المساعد الافتراضي",
+      "استلام حجز مباشر",
+      "إرسال تنبيه · تغيير الجدول"
+    ],
+    "stats": [
+      {
+        "value": "5",
+        "label": "حلول متكاملة",
+        "count": true
+      },
+      {
+        "value": "+250",
+        "label": "مشروع منجز",
+        "count": true
+      },
+      {
+        "value": "الرياض",
+        "label": "مركزنا في السعودية",
+        "count": false
+      },
+      {
+        "value": "2013",
+        "label": "نبني البرمجيات منذ",
+        "count": false
+      }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يستضيفون الضيوف",
+      "title": "أصحاب الفنادق ومشغلو الفعاليات وقادة تجربة الضيف، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-hotel",
+          "who": "ملاك الفنادق والمنتجعات والمديرون العامون",
+          "title": "املأ كل غرفة بالسعر المناسب، دون عمولات.",
+          "text": "تسعير يتبع الطلب الفعلي والفعاليات المحلية، ومحرك حجز مباشر على موقعك."
+        },
+        {
+          "icon": "fa-ticket",
+          "who": "مشغلو الفعاليات وأماكنها",
+          "title": "حافظ على انسياب كل بوابة وأمان كل حشد.",
+          "text": "يرصد التحليل الحي للكثافة الاختناقات الخطرة ويوجّه الأمن والموظفين إلى الموقع المناسب تلقائياً."
+        },
+        {
+          "icon": "fa-bell-concierge",
+          "who": "قادة تجربة الضيف والتسويق",
+          "title": "اخدم ضيوفك بلهجتهم على مدار الساعة.",
+          "text": "مساعد افتراضي يفهم اللهجات السعودية، وتطبيق للفعاليات بالخرائط والجداول والتنبيهات الفورية."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "موسم الرياض والبحر الأحمر والسياحة الدينية تجلب أعداداً ضخمة من الزوار، والإدارة اليدوية لا تتسع لها.",
+      "items": [
+        {
+          "icon": "fa-users",
+          "title": "الحشود تصنع خطراً",
+          "text": "اختناق عند بوابة واحدة قد يتحول إلى حادثة قبل أن ينتبه أحد."
+        },
+        {
+          "icon": "fa-tags",
+          "title": "الأسعار الثابتة تترك المال",
+          "text": "الأسعار المثبتة تتجاهل الفعاليات المكتملة وتحركات المنافسين والطلب في اللحظات الأخيرة."
+        },
+        {
+          "icon": "fa-percent",
+          "title": "العمولات تأكل الهامش",
+          "text": "كل حجز عبر منصة طرف ثالث يكلفك حصة من الإيراد."
+        },
+        {
+          "icon": "fa-clock",
+          "title": "الضيوف يتوقعون المساعدة في أي ساعة",
+          "text": "طلبات التعديل وخدمة الغرف والتوصيات لا تنتظر ساعات الدوام."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لأرضية المكان والاستقبال والضيف.",
+      "items": [
+        {
+          "icon": "fa-people-group",
+          "title": "مراقبة كثافة الحشود والسلامة",
+          "tag": "الرؤية الحاسوبية",
+          "text": "تحليل حي لقاعات الحفلات وردهات الفنادق يكشف الاختناقات الخطرة ويوجّه الأمن والموظفين إلى المنطقة تلقائياً.",
+          "partner": true
+        },
+        {
+          "icon": "fa-tags",
+          "title": "محرك التسعير الديناميكي للغرف والتذاكر",
+          "tag": "الذكاء الاصطناعي",
+          "text": "برنامج يعدّل أسعار غرف الفنادق أو تذاكر الفعاليات دقيقة بدقيقة بحسب الطلب اللحظي وأسعار المنافسين وجداول الفعاليات المحلية."
+        },
+        {
+          "icon": "fa-robot",
+          "title": "مساعد افتراضي ناطق بالعربية",
+          "tag": "الذكاء الاصطناعي",
+          "text": "مساعد افتراضي مدرَّب على اللهجات السعودية المحلية يتولى تعديل الحجوزات وخدمة الغرف والتوصيات السياحية على مدار الساعة."
+        },
+        {
+          "icon": "fa-calendar-check",
+          "title": "نظام مركزي للحجز وإدارة الأماكن",
+          "tag": "منصة ويب",
+          "text": "محرك حجز مباشر بلا عمولات للفنادق وقاعات الفعاليات، متكامل مباشرة مع موقعك الرئيسي."
+        },
+        {
+          "icon": "fa-map-location-dot",
+          "title": "تطبيق تفاعلي للفعاليات والأماكن",
+          "tag": "تطبيقات الجوال",
+          "text": "تطبيق جوال متقن بخرائط رقمية تفاعلية وجداول فعاليات حية وإشعارات فورية للحضور."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات ضيوفك. خوادمك. داخل مملكتك.",
+      "text": "هويات الضيوف وسجلات الحجوزات وبث كاميرات الأماكن بيانات حساسة. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل منشأتك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "تحليلات كاميرات الأماكن تُعالج على خوادمك الخاصة",
+        "محادثات الضيوف وحجوزاتهم تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على أماكنك ومواسمك وضيوفك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات الأماكن ومحرك الحجز وتطبيق الضيف إلى خادم GPU داخلي ثم إلى لوحات المتابعة والتنبيهات، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات الأماكن ومحرك الحجز وتطبيق الضيف",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة وتنبيهات الموظفين والتسعير"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية الحاسوبية والمراقبة الجوية مع JNH Systems",
+      "text": "للأماكن الكبيرة والمنتجعات، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-plane",
+          "title": "المراقبة وكشف التغيرات",
+          "text": "مراقبة جوية دورية تكتشف التغيرات قبل أن تصل إليها الفرق الأرضية."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة أماكنك وأنظمتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة في منشأة واحدة أو فعالية واحدة تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة إدارة الفنادق والتذاكر والدفع لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق الضيافة والفعاليات",
+      "items": [
+        {
+          "q": "هل تحل مراقبة الحشود محل إجراءات السلامة لدينا؟",
+          "a": "لا. هي تدعم فريق السلامة المدرَّب لديك بتنبيهات حية للكثافة وتوجيه للموظفين. وتقيس كثافة الحشود وتدفقها، لا الهويات."
+        },
+        {
+          "q": "هل نتحكم بمحرك التسعير؟",
+          "a": "نعم. تبقى الأسعار ضمن الحدين الأدنى والأعلى اللذين تحددهما، ويمكنك اعتماد التغييرات أو تركه يعمل تلقائياً."
+        },
+        {
+          "q": "هل محرك الحجز بلا عمولات فعلاً؟",
+          "a": "لا نأخذ عمولة على كل حجز. لكن تبقى رسوم بوابة الدفع من مزودك."
+        },
+        {
+          "q": "ما مدى إتقان المساعد الافتراضي للهجات السعودية؟",
+          "a": "صُمم للهجات العربية والإنجليزية، ويتولى الطلبات الروتينية ويحيل إلى موظفيك حين يحتاج الطلب إلى شخص."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات الضيوف المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن فندقك أو مكانك أو فعاليتك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الفندق / المكان / المنظم",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "مراقبة كثافة الحشود والسلامة (الرؤية الحاسوبية)",
+        "التسعير الديناميكي للغرف والتذاكر",
+        "المساعد الافتراضي العربي",
+        "نظام الحجز المباشر وإدارة الأماكن",
+        "تطبيق جوال للفعاليات والأماكن",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المنشأة أو الفعالية",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "فعاليتك الكبرى القادمة لا ينبغي أن تُدار بالتخمين.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "شاشة توضيحية لمراقبة حشود الأماكن",
+      "tag_bad": "ازدحام حاد",
+      "tag_ok": "انسيابي",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "البوابة 3 · ازدحام حاد، تم إرسال الموظفين",
+          "time": "21:42"
+        },
+        {
+          "level": "warn",
+          "text": "الأجنحة · رفع الأسعار لطلب الفعالية",
+          "time": "21:38"
+        },
+        {
+          "level": "ok",
+          "text": "الردهة · الحركة طبيعية",
+          "time": "21:35"
+        }
+      ]
+    }
+  }
+}

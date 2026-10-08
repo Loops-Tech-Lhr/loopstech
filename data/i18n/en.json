@@ -132,7 +132,11 @@
     "retail_badge": "New for Saudi retail",
     "retail_title": "AI for retail and <span class=\"accent\">e-commerce.</span>",
     "retail_text": "Footfall heatmaps, Ramadan and Eid demand forecasting, churn prediction and an omnichannel store with local payments.",
-    "retail_cta": "See the retail solution"
+    "retail_cta": "See the retail solution",
+    "tourism_badge": "New for Saudi tourism & events",
+    "tourism_title": "AI for tourism, hospitality and <span class=\"accent\">events.</span>",
+    "tourism_text": "Crowd safety monitoring, dynamic room and ticket pricing, an Arabic concierge chatbot and commission-free direct booking.",
+    "tourism_cta": "See the tourism solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -280,7 +284,8 @@
     "link_logistics": "IT for Logistics",
     "link_realestate": "IT for Real Estate",
     "link_healthcare": "IT for Healthcare",
-    "link_retail": "IT for Retail"
+    "link_retail": "IT for Retail",
+    "link_tourism": "IT for Tourism & Hospitality"
   },
   "notfound": {
     "title": "Page not found",
