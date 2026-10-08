@@ -124,7 +124,11 @@
     "realestate_badge": "New for Saudi real estate",
     "realestate_title": "AI for real estate and <span class=\"accent\">facilities.</span>",
     "realestate_text": "Drone facade inspection, smart cooling, yield forecasting and a tenant portal with Mada and SADAD.",
-    "realestate_cta": "See the real estate solution"
+    "realestate_cta": "See the real estate solution",
+    "healthcare_badge": "New for Saudi healthcare",
+    "healthcare_title": "AI for hospitals and <span class=\"accent\">clinics.</span>",
+    "healthcare_text": "Patient flow and bed monitoring, an Arabic medical scribe, no-show prediction and a secure patient app.",
+    "healthcare_cta": "See the healthcare solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -270,7 +274,8 @@
     "link_partner": "JNH Systems Partnership",
     "link_construction": "IT for Construction",
     "link_logistics": "IT for Logistics",
-    "link_realestate": "IT for Real Estate"
+    "link_realestate": "IT for Real Estate",
+    "link_healthcare": "IT for Healthcare"
   },
   "notfound": {
     "title": "Page not found",

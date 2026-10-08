@@ -1590,3 +1590,170 @@ html[dir='rtl'] .final-cta h2 {
     left: 40%;
   }
 }
+
+/* ================= Healthcare landing theme (deep maroon-black + rose) ================= */
+
+.theme-healthcare {
+  --amber: #fb7185;
+  --amber-dark: #f43f5e;
+  --amber-rgb: 251, 113, 133;
+  --ink-dark: #12080d;
+  --steel: #1f0e15;
+  --brand: #be123c;
+  --brand-dark: #9f1239;
+  --brand-light: #fda4af;
+}
+
+.theme-healthcare .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #12080d 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-healthcare .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #12080d 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-healthcare .ticker {
+  border-block-color: #12080d;
+  color: #12080d;
+}
+
+.theme-healthcare .ticker-track span::after {
+  border-inline-start-color: #12080d;
+}
+
+.theme-healthcare .node-main {
+  background: #2a0f1a;
+}
+
+.theme-healthcare .bento-1:hover {
+  background: #1a0b12;
+}
+
+/* ---------- Ward & ER monitor (replaces the camera view) ---------- */
+
+@keyframes walk {
+  from {
+    left: -6%;
+  }
+
+  to {
+    left: 104%;
+  }
+}
+
+.ward {
+  direction: ltr;
+  background:
+    linear-gradient(180deg, rgba(var(--amber-rgb), 0.1), transparent 45%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 0 1px,
+      transparent 1px 44px
+    ),
+    #150a10;
+}
+
+.beds {
+  position: absolute;
+  inset: 16% 7% 40%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* a bed: mattress with a pillow */
+.bed {
+  position: relative;
+  border: 1px solid #4a2a37;
+  background: #2b1620;
+}
+
+.bed::before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  width: 22%;
+  height: 76%;
+  background: #4a2f3b;
+}
+
+.bed.occ {
+  border-color: rgba(var(--amber-rgb), 0.55);
+  background: rgba(var(--amber-rgb), 0.18);
+}
+
+.bed.free {
+  border: 1px dashed #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.corridor {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 12%;
+  height: 20%;
+  border-block: 1px solid #3a2230;
+  background: #1c0e15;
+}
+
+.pt {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border-radius: 50% !important;
+  background: #f1d5dc;
+  animation: walk 9s linear infinite;
+  animation-delay: calc(var(--d) * -2.25s);
+}
+
+.ward .box-bad {
+  top: auto;
+  bottom: 8%;
+  left: 52%;
+  width: 24%;
+  height: 28%;
+}
+
+.ward .box-ok {
+  top: 15%;
+  left: 50%;
+  width: 20%;
+  height: 22%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pt {
+    animation: none;
+  }
+
+  .pt:nth-child(1) {
+    left: 10%;
+  }
+
+  .pt:nth-child(2) {
+    left: 35%;
+  }
+
+  .pt:nth-child(3) {
+    left: 60%;
+  }
+
+  .pt:nth-child(4) {
+    left: 85%;
+  }
+}

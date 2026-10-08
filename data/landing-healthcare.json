@@ -1,0 +1,516 @@
+{
+  "en": {
+    "theme": "theme-healthcare",
+    "mockType": "ward",
+    "audience": "Hospital directors, clinic owners, healthcare administrators and medical group operators in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Healthcare in Saudi Arabia | Loops Technologies",
+      "description": "IT services for hospitals and specialized clinics in Saudi Arabia: patient flow and bed monitoring, an Arabic and English AI medical scribe, no-show prediction with WhatsApp reminders, clinic and billing software and a secure patient app."
+    },
+    "kicker": "For hospitals, specialized clinics & healthcare groups in Saudi Arabia",
+    "eyebrow": "Hospitals & specialized clinics",
+    "title": "Fewer bottlenecks. Fewer no-shows. <span class=\"hl\">More time with patients.</span>",
+    "subtitle": "Computer vision for patient flow and bed availability, an Arabic and English medical scribe, no-show prediction with WhatsApp reminders, one clinic and billing system and a secure patient app. Runs on your own servers, so patient data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Patient data stays in-Kingdom" },
+      { "icon": "fa-language", "text": "Arabic & English" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Bed 12 available · Ward 3",
+      "ER wait rising · triage",
+      "No-show risk flagged · 10:30 appointment",
+      "Reminder sent · WhatsApp",
+      "Insurance claim submitted",
+      "Lab result ready · patient app"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run care delivery",
+      "title": "Administrators, doctors and billing teams each get what they need.",
+      "items": [
+        {
+          "icon": "fa-hospital",
+          "who": "Hospital directors & administrators",
+          "title": "See every bed and bottleneck in real time.",
+          "text": "Live visibility of bed availability and patient movement, so ER and ward delays are fixed while they happen, not discovered in a report."
+        },
+        {
+          "icon": "fa-user-doctor",
+          "who": "Doctors & clinical leaders",
+          "title": "Spend consultations with patients, not keyboards.",
+          "text": "A medical scribe that drafts structured notes in Arabic and English for the doctor to review and sign."
+        },
+        {
+          "icon": "fa-file-invoice-dollar",
+          "who": "Clinic operations & billing managers",
+          "title": "Fill every slot and get claims paid.",
+          "text": "No-show prediction with automatic WhatsApp reminders, plus records, pharmacy stock and insurance claims in one system."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Healthcare is growing fast. Administration is slowing it down.",
+      "items": [
+        {
+          "icon": "fa-hourglass-half",
+          "title": "Bottlenecks hide in plain sight",
+          "text": "Without live bed and flow data, ER and ward delays are noticed only after patients have waited."
+        },
+        {
+          "icon": "fa-keyboard",
+          "title": "Doctors type more than they treat",
+          "text": "Documentation takes time that belongs to consultations."
+        },
+        {
+          "icon": "fa-calendar-xmark",
+          "title": "No-shows waste capacity",
+          "text": "Empty appointment slots cost revenue and delay patients who need care."
+        },
+        {
+          "icon": "fa-folder-open",
+          "title": "Records and claims are scattered",
+          "text": "Separate systems for records, pharmacy and insurance billing create rework and delays."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the ward, the clinic and the patient.",
+      "items": [
+        {
+          "icon": "fa-bed-pulse",
+          "title": "Real-Time Patient Flow & Bed Monitoring",
+          "tag": "Computer Vision",
+          "text": "Analyzes hospital camera feeds to track bed availability and patient movement, and alerts administrators to bottlenecks in the ER or wards.",
+          "partner": true
+        },
+        {
+          "icon": "fa-microphone-lines",
+          "title": "Voice-to-Text Arabic Medical Scribe",
+          "tag": "AI",
+          "text": "A highly secure tool that listens to doctor-patient consultations and drafts structured medical notes in English and Arabic, ready for the doctor to review and sign."
+        },
+        {
+          "icon": "fa-calendar-xmark",
+          "title": "Appointment No-Show Predictor",
+          "tag": "AI",
+          "text": "Analyzes patient histories to flag high-risk appointments, then triggers WhatsApp reminders or double-booking strategies to maximize doctor utilization."
+        },
+        {
+          "icon": "fa-file-medical",
+          "title": "Clinic Management & Billing System",
+          "tag": "Enterprise software",
+          "text": "Comprehensive software for electronic health records, pharmacy inventory and automated insurance claim billing."
+        },
+        {
+          "icon": "fa-mobile-screen-button",
+          "title": "Secure Patient Mobile App",
+          "tag": "Mobile",
+          "text": "A centralized app where patients view test results, book virtual telehealth appointments and request prescription refills."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your patient data. Your servers. Your Kingdom.",
+      "text": "Medical records, consultation audio and camera footage are among the most sensitive data an organization holds. We deploy vision and AI models on GPU servers inside your hospital or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Consultation audio stays on your own network",
+        "On-premise GPU for camera analytics",
+        "No foreign AI APIs for medical notes",
+        "Role-based access and full audit logs"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from cameras, consultation audio and the patient app to an in-house GPU server to dashboards, records and billing, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Cameras, consultation audio & patient app",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, health records & billing"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision and systems integration with JNH Systems",
+      "text": "Where a facility needs cameras, edge devices or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your patient flow, systems and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot in one ward, ER or clinic that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your existing hospital and billing systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from healthcare teams",
+      "items": [
+        {
+          "q": "Can it connect to our existing hospital information system or EMR?",
+          "a": "Where the system exposes an interface, yes. The Operations Study checks what your systems support before we propose anything."
+        },
+        {
+          "q": "How is patient privacy handled in camera analytics?",
+          "a": "Footage is processed on your own servers, and the study defines with you what is analysed, such as bed status and movement flow, under your privacy policies."
+        },
+        {
+          "q": "Do doctors stay in control of the medical notes?",
+          "a": "Yes. The scribe drafts structured notes for the doctor to review, edit and sign. It never replaces clinical judgment."
+        },
+        {
+          "q": "Does patient data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your hospital or clinics. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Hospital / clinic",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Patient flow & bed monitoring (computer vision)",
+        "Arabic medical scribe (voice-to-text)",
+        "Appointment no-show predictor",
+        "Clinic management & billing system",
+        "Secure patient mobile app",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Facility details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next patient shouldn't wait on paperwork.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative ward & ER monitor",
+      "tag_bad": "Bottleneck",
+      "tag_ok": "Bed free",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "ER · Bottleneck at triage",
+          "time": "10:42"
+        },
+        {
+          "level": "warn",
+          "text": "Clinic B · No-show risk, reminder sent",
+          "time": "10:38"
+        },
+        { "level": "ok", "text": "Ward 3 · Bed 12 available", "time": "10:35" }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-healthcare",
+    "mockType": "ward",
+    "audience": "مديرو المستشفيات وملاك العيادات ومسؤولو الإدارة الصحية ومشغلو المجموعات الطبية في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للقطاع الصحي في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات للمستشفيات والعيادات التخصصية في السعودية: مراقبة تدفق المرضى والأسرّة، وكاتب طبي بالذكاء الاصطناعي بالعربية والإنجليزية، والتنبؤ بالغياب عن المواعيد مع تذكيرات واتساب، وبرنامج للعيادات والفوترة، وتطبيق آمن للمرضى."
+    },
+    "kicker": "للمستشفيات والعيادات التخصصية والمجموعات الصحية في المملكة العربية السعودية",
+    "eyebrow": "المستشفيات والعيادات التخصصية",
+    "title": "اختناقات أقل. غياب أقل عن المواعيد. <span class=\"hl\">وقت أكثر مع المرضى.</span>",
+    "subtitle": "رؤية حاسوبية لتدفق المرضى وتوفر الأسرّة، وكاتب طبي بالعربية والإنجليزية، وتنبؤ بالغياب عن المواعيد مع تذكيرات واتساب، ونظام واحد للعيادات والفوترة، وتطبيق آمن للمرضى. يعمل على خوادمك الخاصة لتبقى بيانات المرضى داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "بيانات المرضى تبقى داخل المملكة" },
+      { "icon": "fa-language", "text": "العربية والإنجليزية" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "السرير 12 متاح · الجناح 3",
+      "ارتفاع زمن الانتظار في الطوارئ · الفرز",
+      "رصد خطر غياب · موعد 10:30",
+      "تم إرسال تذكير · واتساب",
+      "تم تقديم مطالبة التأمين",
+      "نتيجة المختبر جاهزة · تطبيق المريض"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون تقديم الرعاية",
+      "title": "الإداريون والأطباء وفرق الفوترة، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-hospital",
+          "who": "مديرو المستشفيات والإدارة",
+          "title": "شاهد كل سرير وكل اختناق لحظياً.",
+          "text": "رؤية حية لتوفر الأسرّة وحركة المرضى، لتُعالج تأخيرات الطوارئ والأجنحة وقت حدوثها لا بعد قراءة التقرير."
+        },
+        {
+          "icon": "fa-user-doctor",
+          "who": "الأطباء والقادة السريريون",
+          "title": "اقضِ وقت الاستشارة مع المريض لا مع لوحة المفاتيح.",
+          "text": "كاتب طبي يصيغ ملاحظات منظمة بالعربية والإنجليزية ليراجعها الطبيب ويوقعها."
+        },
+        {
+          "icon": "fa-file-invoice-dollar",
+          "who": "مديرو العمليات والفوترة في العيادات",
+          "title": "املأ كل موعد واحصل على مطالباتك.",
+          "text": "تنبؤ بالغياب مع تذكيرات واتساب تلقائية، إضافة إلى السجلات ومخزون الصيدلية ومطالبات التأمين في نظام واحد."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "القطاع الصحي ينمو بسرعة، والإجراءات الإدارية تبطئه.",
+      "items": [
+        {
+          "icon": "fa-hourglass-half",
+          "title": "الاختناقات تختبئ أمام الأعين",
+          "text": "بدون بيانات حية للأسرّة والتدفق، لا تُلاحظ تأخيرات الطوارئ والأجنحة إلا بعد انتظار المرضى."
+        },
+        {
+          "icon": "fa-keyboard",
+          "title": "الأطباء يكتبون أكثر مما يعالجون",
+          "text": "التوثيق يستهلك وقتاً هو حق للاستشارة."
+        },
+        {
+          "icon": "fa-calendar-xmark",
+          "title": "الغياب يهدر الطاقة",
+          "text": "المواعيد الفارغة تكلف إيرادات وتؤخر مرضى بحاجة إلى الرعاية."
+        },
+        {
+          "icon": "fa-folder-open",
+          "title": "السجلات والمطالبات متفرقة",
+          "text": "أنظمة منفصلة للسجلات والصيدلية وفوترة التأمين تسبب إعادة عمل وتأخيراً."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة للجناح والعيادة والمريض.",
+      "items": [
+        {
+          "icon": "fa-bed-pulse",
+          "title": "مراقبة تدفق المرضى والأسرّة لحظياً",
+          "tag": "الرؤية الحاسوبية",
+          "text": "تحلل بث كاميرات المستشفى لتتبع توفر الأسرّة وحركة المرضى، وتنبّه الإداريين إلى الاختناقات في الطوارئ أو الأجنحة.",
+          "partner": true
+        },
+        {
+          "icon": "fa-microphone-lines",
+          "title": "كاتب طبي عربي من الصوت إلى النص",
+          "tag": "الذكاء الاصطناعي",
+          "text": "أداة عالية الأمان تستمع إلى استشارات الطبيب والمريض وتصيغ ملاحظات طبية منظمة بالإنجليزية والعربية، جاهزة ليراجعها الطبيب ويوقعها."
+        },
+        {
+          "icon": "fa-calendar-xmark",
+          "title": "متنبئ الغياب عن المواعيد",
+          "tag": "الذكاء الاصطناعي",
+          "text": "يحلل سجلات المرضى لرصد المواعيد عالية الخطورة، ثم يطلق تذكيرات واتساب أو استراتيجيات الحجز المزدوج لتعظيم استفادة الأطباء."
+        },
+        {
+          "icon": "fa-file-medical",
+          "title": "نظام إدارة العيادات والفوترة",
+          "tag": "برمجيات المؤسسات",
+          "text": "برنامج شامل للسجلات الصحية الإلكترونية ومخزون الصيدلية والفوترة الآلية لمطالبات التأمين."
+        },
+        {
+          "icon": "fa-mobile-screen-button",
+          "title": "تطبيق آمن للمرضى",
+          "tag": "تطبيقات الجوال",
+          "text": "تطبيق مركزي يطلع فيه المرضى على نتائج الفحوص، ويحجزون مواعيد الطب عن بعد، ويطلبون تجديد الوصفات."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات مرضاك. خوادمك. داخل مملكتك.",
+      "text": "السجلات الطبية وصوت الاستشارات ولقطات الكاميرات من أكثر البيانات حساسية لدى أي منظمة. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل مستشفاك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "صوت الاستشارات يبقى على شبكتك الخاصة",
+        "خوادم GPU داخل المنشأة لتحليل الكاميرات",
+        "دون واجهات ذكاء اصطناعي أجنبية للملاحظات الطبية",
+        "صلاحيات حسب الأدوار وسجلات تدقيق كاملة"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من الكاميرات وصوت الاستشارات وتطبيق المريض إلى خادم GPU داخلي ثم إلى لوحات المتابعة والسجلات والفوترة، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "الكاميرات وصوت الاستشارات وتطبيق المريض",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة والسجلات الصحية والفوترة"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية الحاسوبية ودمج الأنظمة مع JNH Systems",
+      "text": "حين تحتاج المنشأة إلى كاميرات أو أجهزة طرفية أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة تدفق المرضى وأنظمتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة في جناح أو طوارئ أو عيادة واحدة تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة المستشفى والفوترة لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة الفرق الصحية",
+      "items": [
+        {
+          "q": "هل يرتبط بنظام معلومات المستشفى أو السجل الطبي الإلكتروني لدينا؟",
+          "a": "نعم حيث يوفر النظام واجهة للربط. وتفحص الدراسة التشغيلية ما تدعمه أنظمتك قبل أي مقترح."
+        },
+        {
+          "q": "كيف تُراعى خصوصية المرضى في تحليل الكاميرات؟",
+          "a": "تُعالج اللقطات على خوادمك الخاصة، وتحدد الدراسة معك ما يُحلَّل، مثل حالة الأسرّة وتدفق الحركة، وفق سياسات الخصوصية لديك."
+        },
+        {
+          "q": "هل يبقى الأطباء متحكمين بالملاحظات الطبية؟",
+          "a": "نعم. يصيغ الكاتب الطبي ملاحظات منظمة ليراجعها الطبيب ويعدلها ويوقعها، ولا يحل محل الحكم السريري."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات المرضى المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن مستشفاك أو عياداتك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "المستشفى / العيادة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "مراقبة تدفق المرضى والأسرّة (الرؤية الحاسوبية)",
+        "الكاتب الطبي العربي (من الصوت إلى النص)",
+        "متنبئ الغياب عن المواعيد",
+        "نظام إدارة العيادات والفوترة",
+        "تطبيق جوال آمن للمرضى",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المنشأة",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "مريضك القادم لا ينبغي أن ينتظر الأوراق.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "شاشة توضيحية لمراقبة الأجنحة والطوارئ",
+      "tag_bad": "اختناق",
+      "tag_ok": "سرير متاح",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "الطوارئ · اختناق عند الفرز",
+          "time": "10:42"
+        },
+        {
+          "level": "warn",
+          "text": "العيادة B · خطر غياب، تم إرسال تذكير",
+          "time": "10:38"
+        },
+        { "level": "ok", "text": "الجناح 3 · السرير 12 متاح", "time": "10:35" }
+      ]
+    }
+  }
+}

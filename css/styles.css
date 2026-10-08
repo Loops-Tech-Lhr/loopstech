@@ -1687,3 +1687,10 @@ a.cell:hover {
     gap: 8px;
   }
 }
+
+/* partner block spans the full row under the landing-page promos */
+.promo-wide {
+  grid-column: 1 / -1;
+  padding-top: 40px;
+  border-top: 1px solid var(--dark-line);
+}
