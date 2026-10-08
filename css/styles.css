@@ -1066,8 +1066,8 @@ html[dir='rtl'] .footer-h {
 
 @media (min-width: 1100px) {
   .promo-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 48px;
   }
 }
 
@@ -1686,11 +1686,4 @@ a.cell:hover {
   .header-actions {
     gap: 8px;
   }
-}
-
-/* partner block spans the full row under the landing-page promos */
-.promo-wide {
-  grid-column: 1 / -1;
-  padding-top: 40px;
-  border-top: 1px solid var(--dark-line);
 }

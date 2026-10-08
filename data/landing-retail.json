@@ -1,0 +1,532 @@
+{
+  "en": {
+    "theme": "theme-retail",
+    "mockType": "store",
+    "audience": "Retail chain owners, supermarket operators, merchandising and e-commerce leaders in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Retail in Saudi Arabia | Loops Technologies",
+      "description": "IT services for retail chains and e-commerce brands in Saudi Arabia: in-store footfall heatmaps, Ramadan and Eid demand forecasting, churn prediction, an omnichannel store with Mada, STC Pay and Apple Pay, and a customer loyalty app."
+    },
+    "kicker": "For retail chains, supermarkets & e-commerce brands in Saudi Arabia",
+    "eyebrow": "Retail & e-commerce",
+    "title": "See what shoppers do. Stock what they'll buy. <span class=\"hl\">Win them back before they leave.</span>",
+    "subtitle": "Footfall heatmaps from your existing cameras, demand forecasts that understand Ramadan and Eid, churn prediction with automatic offers, an omnichannel store with local payments and a loyalty app. Runs on your own servers, so customer and sales data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Customer data stays in-Kingdom" },
+      { "icon": "fa-credit-card", "text": "Mada, STC Pay & Apple Pay ready" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Aisle 4 · Footfall below average",
+      "Stock order recommended · Eid",
+      "Loyalty member at risk · offer sent",
+      "Order paid · Apple Pay",
+      "Digital receipt sent",
+      "Push notification delivered"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run the chain",
+      "title": "Executives, store managers and marketing leaders each get what they need.",
+      "items": [
+        {
+          "icon": "fa-briefcase",
+          "who": "Retail executives & owners",
+          "title": "Know which stores, aisles and customers make the money.",
+          "text": "One view of footfall, stock and customer value across every branch and your online store, instead of separate reports."
+        },
+        {
+          "icon": "fa-store",
+          "who": "Store & merchandising managers",
+          "title": "Place products where shoppers actually walk.",
+          "text": "Heatmaps show the busy and dead zones, and forecasts recommend exact orders for Ramadan and Eid, without overstocking."
+        },
+        {
+          "icon": "fa-bullhorn",
+          "who": "E-commerce, CRM & marketing heads",
+          "title": "Bring lapsing customers back, and sell everywhere as one.",
+          "text": "Churn prediction triggers personalised offers, while one omnichannel platform and a loyalty app connect stores and online."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Shoppers move between stores and screens. Your data doesn't.",
+      "items": [
+        {
+          "icon": "fa-eye-slash",
+          "title": "Stores are a blind spot",
+          "text": "Without footfall data, floor layouts and promotions are guesswork."
+        },
+        {
+          "icon": "fa-box-open",
+          "title": "Peak seasons break stock plans",
+          "text": "Ramadan and Eid swing demand. Overstock ties up cash and stock-outs lose sales."
+        },
+        {
+          "icon": "fa-user-minus",
+          "title": "Loyal customers quietly leave",
+          "text": "By the time a member's absence shows in a report, they have already switched."
+        },
+        {
+          "icon": "fa-link-slash",
+          "title": "Online and stores run apart",
+          "text": "Separate systems for web, stores and loyalty mean a fragmented customer view."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the shop floor, the warehouse and the customer.",
+      "items": [
+        {
+          "icon": "fa-fire",
+          "title": "In-Store Footfall & Heatmap Tracking",
+          "tag": "Computer Vision",
+          "text": "Analyzes your security camera feeds to show store managers which aisles get the most traffic, so you can optimize product placement and floor layouts.",
+          "partner": true
+        },
+        {
+          "icon": "fa-boxes-stacked",
+          "title": "Inventory & Demand Forecasting",
+          "tag": "AI",
+          "text": "A predictive engine that analyzes historical sales, Ramadan and Eid trends and marketing schedules to recommend exact stock orders and prevent overstocking."
+        },
+        {
+          "icon": "fa-user-minus",
+          "title": "Customer Churn & Lifetime Value Predictor",
+          "tag": "AI",
+          "text": "Identifies loyalty members who are likely to stop shopping and automatically triggers personalized SMS or email discount codes to retain them."
+        },
+        {
+          "icon": "fa-cart-shopping",
+          "title": "Omnichannel E-Commerce Platform",
+          "tag": "Web platform",
+          "text": "A high-performance online storefront integrated with local payment gateways (Mada, STC Pay, Apple Pay) and local shipping APIs."
+        },
+        {
+          "icon": "fa-gift",
+          "title": "Personalized Customer Loyalty App",
+          "tag": "Mobile",
+          "text": "A branded mobile app with dynamic reward points, digital receipts and targeted push notifications based on past purchases."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your customer data. Your servers. Your Kingdom.",
+      "text": "Store video, purchase histories and loyalty profiles are valuable and sensitive. We deploy vision and AI models on GPU servers inside your premises or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Store camera analytics processed on your own servers",
+        "Customer and sales data stays under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your own stores and seasons"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from store cameras, point of sale and the loyalty app to an in-house GPU server to dashboards and the e-commerce platform, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Store cameras, POS & loyalty app",
+        "n2": "Your in-house GPU server",
+        "n3": "Dashboards, offers & e-commerce"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision and systems integration with JNH Systems",
+      "text": "Where a retailer needs cameras, edge devices or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your stores, systems and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot in one store or one category that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your POS, ERP and e-commerce systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from retail teams",
+      "items": [
+        {
+          "q": "Can it use the security cameras we already have?",
+          "a": "Often yes. The Operations Study checks camera positions, resolution and network capacity before we propose anything."
+        },
+        {
+          "q": "Can it connect to our POS and ERP?",
+          "a": "Yes. We build integrations so that sales, stock and customer data flow between the systems your teams already use."
+        },
+        {
+          "q": "How are Mada, STC Pay and Apple Pay handled?",
+          "a": "The platform is built to integrate with payment gateways that support them. The exact options depend on the provider and bank you use."
+        },
+        {
+          "q": "Do customers get messages without consent?",
+          "a": "No. Offers by SMS or email go only to customers who agreed to receive them, in line with your privacy policy and PDPL obligations."
+        },
+        {
+          "q": "Does our customer data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your stores and online channels. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Company / brand",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "In-store footfall & heatmaps (computer vision)",
+        "Inventory & demand forecasting",
+        "Customer churn & lifetime value prediction",
+        "Omnichannel e-commerce platform",
+        "Customer loyalty app",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Store and channel details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next Eid season shouldn't run on guesswork.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative store heatmap",
+      "tag_bad": "Cold zone",
+      "tag_ok": "Hot zone",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Aisle 7 · Cold zone, move promotion",
+          "time": "11:42"
+        },
+        {
+          "level": "warn",
+          "text": "Dairy · Stock order recommended before Eid",
+          "time": "11:38"
+        },
+        {
+          "level": "ok",
+          "text": "Entrance · Peak footfall detected",
+          "time": "11:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-retail",
+    "mockType": "store",
+    "audience": "ملاك سلاسل التجزئة ومشغلو المتاجر الكبرى وقادة التسويق بالتجزئة والتجارة الإلكترونية في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات لقطاع التجزئة في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات لسلاسل التجزئة وعلامات التجارة الإلكترونية في السعودية: خرائط حرارية لحركة الزوار داخل المتاجر، والتنبؤ بالطلب في رمضان والعيد، والتنبؤ بفقدان العملاء، ومتجر متعدد القنوات يدعم مدى وSTC Pay وApple Pay، وتطبيق ولاء للعملاء."
+    },
+    "kicker": "لسلاسل التجزئة والمتاجر الكبرى وعلامات التجارة الإلكترونية في المملكة العربية السعودية",
+    "eyebrow": "التجزئة والتجارة الإلكترونية",
+    "title": "شاهد ما يفعله المتسوقون. وفّر ما سيشترونه. <span class=\"hl\">استعد عملاءك قبل أن يغادروا.</span>",
+    "subtitle": "خرائط حرارية لحركة الزوار من كاميراتك الحالية، وتوقعات للطلب تفهم رمضان والعيد، وتنبؤ بفقدان العملاء مع عروض تلقائية، ومتجر متعدد القنوات بمدفوعات محلية، وتطبيق ولاء. يعمل على خوادمك الخاصة لتبقى بيانات العملاء والمبيعات داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "بيانات العملاء تبقى داخل المملكة" },
+      { "icon": "fa-credit-card", "text": "جاهز لمدى وSTC Pay وApple Pay" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "الممر 4 · حركة الزوار أقل من المعتاد",
+      "توصية بطلب مخزون · العيد",
+      "عضو ولاء معرّض للمغادرة · تم إرسال عرض",
+      "تم دفع الطلب · Apple Pay",
+      "تم إرسال الإيصال الرقمي",
+      "تم تسليم الإشعار"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون السلسلة",
+      "title": "التنفيذيون ومديرو المتاجر وقادة التسويق، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-briefcase",
+          "who": "التنفيذيون وملاك التجزئة",
+          "title": "اعرف أي المتاجر والممرات والعملاء يحققون الربح.",
+          "text": "رؤية واحدة لحركة الزوار والمخزون وقيمة العملاء في كل فرع ومتجرك الإلكتروني، بدل تقارير منفصلة."
+        },
+        {
+          "icon": "fa-store",
+          "who": "مديرو المتاجر والتسويق التجاري",
+          "title": "ضع المنتجات حيث يمشي المتسوقون فعلاً.",
+          "text": "تكشف الخرائط الحرارية المناطق المزدحمة والميتة، وتوصي التوقعات بكميات الطلب الدقيقة لرمضان والعيد دون تكديس."
+        },
+        {
+          "icon": "fa-bullhorn",
+          "who": "قادة التجارة الإلكترونية وإدارة العملاء والتسويق",
+          "title": "أعد العملاء المنقطعين، وبِع في كل القنوات كأنها واحدة.",
+          "text": "يطلق التنبؤ بالفقدان عروضاً مخصصة، بينما تربط منصة متعددة القنوات وتطبيق الولاء بين المتاجر والإنترنت."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "المتسوقون يتنقلون بين المتاجر والشاشات، أما بياناتك فلا.",
+      "items": [
+        {
+          "icon": "fa-eye-slash",
+          "title": "المتاجر نقطة عمياء",
+          "text": "دون بيانات حركة الزوار، يصبح تصميم الأرضية والعروض تخميناً."
+        },
+        {
+          "icon": "fa-box-open",
+          "title": "المواسم تُربك خطط المخزون",
+          "text": "رمضان والعيد يغيران الطلب. التكديس يجمّد النقد ونفاد المخزون يضيّع المبيعات."
+        },
+        {
+          "icon": "fa-user-minus",
+          "title": "العملاء الأوفياء يغادرون بصمت",
+          "text": "حين يظهر غياب العضو في التقرير يكون قد انتقل إلى منافس."
+        },
+        {
+          "icon": "fa-link-slash",
+          "title": "الإنترنت والمتاجر منفصلان",
+          "text": "أنظمة منفصلة للمتجر الإلكتروني والفروع والولاء تعني رؤية مجزأة للعميل."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لأرضية المتجر والمستودع والعميل.",
+      "items": [
+        {
+          "icon": "fa-fire",
+          "title": "تتبع حركة الزوار والخرائط الحرارية داخل المتجر",
+          "tag": "الرؤية الحاسوبية",
+          "text": "تحلل بث كاميرات المراقبة لديك لتُري مديري المتاجر أي الممرات الأكثر حركة، لتحسين توزيع المنتجات وتصميم الأرضية.",
+          "partner": true
+        },
+        {
+          "icon": "fa-boxes-stacked",
+          "title": "التنبؤ بالمخزون والطلب",
+          "tag": "الذكاء الاصطناعي",
+          "text": "محرك تنبؤي يحلل المبيعات التاريخية واتجاهات رمضان والعيد وجداول التسويق ليوصي بكميات الطلب الدقيقة ويمنع التكديس."
+        },
+        {
+          "icon": "fa-user-minus",
+          "title": "التنبؤ بفقدان العملاء وقيمتهم الدائمة",
+          "tag": "الذكاء الاصطناعي",
+          "text": "يحدد أعضاء الولاء المرجح أن يتوقفوا عن التسوق، ويطلق تلقائياً رموز خصم مخصصة عبر الرسائل النصية أو البريد للاحتفاظ بهم."
+        },
+        {
+          "icon": "fa-cart-shopping",
+          "title": "منصة تجارة إلكترونية متعددة القنوات",
+          "tag": "منصة ويب",
+          "text": "متجر إلكتروني عالي الأداء متكامل مع بوابات الدفع المحلية (مدى وSTC Pay وApple Pay) وواجهات الشحن المحلية."
+        },
+        {
+          "icon": "fa-gift",
+          "title": "تطبيق ولاء مخصص للعملاء",
+          "tag": "تطبيقات الجوال",
+          "text": "تطبيق جوال بعلامتك التجارية بنقاط مكافآت ديناميكية وإيصالات رقمية وإشعارات موجهة بناءً على المشتريات السابقة."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات عملائك. خوادمك. داخل مملكتك.",
+      "text": "فيديو المتاجر وسجلات الشراء وملفات الولاء بيانات قيّمة وحساسة. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل منشآتك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "تحليلات كاميرات المتاجر تُعالج على خوادمك الخاصة",
+        "بيانات العملاء والمبيعات تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على متاجرك ومواسمك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات المتاجر ونقاط البيع وتطبيق الولاء إلى خادم GPU داخلي ثم إلى لوحات المتابعة ومنصة التجارة الإلكترونية، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات المتاجر ونقاط البيع وتطبيق الولاء",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحات المتابعة والعروض والتجارة الإلكترونية"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية الحاسوبية ودمج الأنظمة مع JNH Systems",
+      "text": "حين يحتاج تاجر التجزئة إلى كاميرات أو أجهزة طرفية أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة متاجرك وأنظمتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة في متجر واحد أو فئة واحدة تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة نقاط البيع وERP والتجارة الإلكترونية لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق التجزئة",
+      "items": [
+        {
+          "q": "هل يمكن استخدام كاميرات المراقبة الموجودة لدينا؟",
+          "a": "غالباً نعم. تفحص الدراسة التشغيلية مواقع الكاميرات ودقتها وسعة الشبكة قبل أي مقترح."
+        },
+        {
+          "q": "هل يرتبط بنقاط البيع وERP لدينا؟",
+          "a": "نعم. نبني التكاملات لتتدفق بيانات المبيعات والمخزون والعملاء بين الأنظمة التي تستخدمها فرقك."
+        },
+        {
+          "q": "كيف تُعالج مدفوعات مدى وSTC Pay وApple Pay؟",
+          "a": "صُممت المنصة للتكامل مع بوابات الدفع التي تدعمها. وتعتمد الخيارات الدقيقة على المزود والبنك الذي تستخدمه."
+        },
+        {
+          "q": "هل يتلقى العملاء رسائل دون موافقتهم؟",
+          "a": "لا. تذهب العروض عبر الرسائل النصية أو البريد إلى العملاء الذين وافقوا على استلامها فقط، وفق سياسة الخصوصية لديك والتزامات PDPL."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات عملائنا المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن متاجرك وقنواتك الإلكترونية، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الشركة / العلامة التجارية",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "حركة الزوار والخرائط الحرارية داخل المتجر (الرؤية الحاسوبية)",
+        "التنبؤ بالمخزون والطلب",
+        "التنبؤ بفقدان العملاء وقيمتهم الدائمة",
+        "منصة تجارة إلكترونية متعددة القنوات",
+        "تطبيق ولاء العملاء",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المتاجر والقنوات",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "موسم العيد القادم لا ينبغي أن يُدار بالتخمين.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "خريطة حرارية توضيحية لمتجر",
+      "tag_bad": "منطقة باردة",
+      "tag_ok": "منطقة ساخنة",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "الممر 7 · منطقة باردة، انقل العرض",
+          "time": "11:42"
+        },
+        {
+          "level": "warn",
+          "text": "الألبان · توصية بطلب مخزون قبل العيد",
+          "time": "11:38"
+        },
+        {
+          "level": "ok",
+          "text": "المدخل · رصد ذروة في حركة الزوار",
+          "time": "11:35"
+        }
+      ]
+    }
+  }
+}

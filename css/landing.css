@@ -1757,3 +1757,218 @@ html[dir='rtl'] .final-cta h2 {
     left: 85%;
   }
 }
+
+/* ================= Retail landing theme (electric blue on graphite) ================= */
+
+.theme-retail {
+  --amber: #60a5fa;
+  --amber-dark: #3b82f6;
+  --amber-rgb: 96, 165, 250;
+  --ink-dark: #090b14;
+  --steel: #131726;
+  --brand: #1d4ed8;
+  --brand-dark: #1e40af;
+  --brand-light: #93c5fd;
+}
+
+.theme-retail .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #090b14 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-retail .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #090b14 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-retail .ticker {
+  border-block-color: #090b14;
+  color: #090b14;
+}
+
+.theme-retail .ticker-track span::after {
+  border-inline-start-color: #090b14;
+}
+
+.theme-retail .node-main {
+  background: #101a33;
+}
+
+.theme-retail .bento-1:hover {
+  background: #0d1020;
+}
+
+/* ---------- Store floor heatmap (replaces the camera view) ---------- */
+
+@keyframes shop {
+  from {
+    left: -5%;
+  }
+
+  to {
+    left: 102%;
+  }
+}
+
+@keyframes heat {
+  from {
+    opacity: 0.55;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+.store {
+  direction: ltr;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 44px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 44px
+    ),
+    #0f1220;
+}
+
+.shelf {
+  position: absolute;
+  left: 12%;
+  width: 76%;
+  height: 8%;
+  border: 1px solid #38405e;
+  background: repeating-linear-gradient(
+    90deg,
+    #232a45 0 22px,
+    #2b3354 22px 24px
+  );
+}
+
+.sh1 {
+  top: 18%;
+}
+
+.sh2 {
+  top: 44%;
+}
+
+.sh3 {
+  top: 70%;
+}
+
+.heat {
+  position: absolute;
+  border-radius: 50% !important;
+  filter: blur(14px);
+  animation: heat 2.6s ease-in-out infinite alternate;
+}
+
+.h1 {
+  top: 20%;
+  left: 14%;
+  width: 34%;
+  height: 34%;
+  background: radial-gradient(
+    circle,
+    rgba(239, 68, 68, 0.75),
+    rgba(250, 204, 21, 0.35) 55%,
+    transparent 72%
+  );
+}
+
+.h2 {
+  top: 40%;
+  left: 52%;
+  width: 24%;
+  height: 26%;
+  background: radial-gradient(
+    circle,
+    rgba(250, 204, 21, 0.55),
+    rgba(250, 204, 21, 0.1) 60%,
+    transparent 74%
+  );
+  animation-delay: -1.2s;
+}
+
+.cust {
+  position: absolute;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50% !important;
+  background: #e8f1ff;
+  animation: shop 8s linear infinite;
+}
+
+.c1 {
+  top: 33%;
+}
+
+.c2 {
+  top: 33%;
+  animation-delay: -3.5s;
+}
+
+.c3 {
+  top: 59%;
+  animation-duration: 11s;
+  animation-delay: -2s;
+}
+
+.c4 {
+  top: 85%;
+  animation-duration: 14s;
+  animation-delay: -6s;
+}
+
+.store .box-ok {
+  top: 24%;
+  left: 14%;
+  width: 30%;
+  height: 24%;
+}
+
+.store .box-bad {
+  top: 68%;
+  left: 54%;
+  width: 30%;
+  height: 24%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heat,
+  .cust {
+    animation: none;
+  }
+
+  .c1 {
+    left: 20%;
+  }
+
+  .c2 {
+    left: 60%;
+  }
+
+  .c3 {
+    left: 40%;
+  }
+
+  .c4 {
+    left: 75%;
+  }
+}

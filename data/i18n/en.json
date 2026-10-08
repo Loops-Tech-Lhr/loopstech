@@ -128,7 +128,11 @@
     "healthcare_badge": "New for Saudi healthcare",
     "healthcare_title": "AI for hospitals and <span class=\"accent\">clinics.</span>",
     "healthcare_text": "Patient flow and bed monitoring, an Arabic medical scribe, no-show prediction and a secure patient app.",
-    "healthcare_cta": "See the healthcare solution"
+    "healthcare_cta": "See the healthcare solution",
+    "retail_badge": "New for Saudi retail",
+    "retail_title": "AI for retail and <span class=\"accent\">e-commerce.</span>",
+    "retail_text": "Footfall heatmaps, Ramadan and Eid demand forecasting, churn prediction and an omnichannel store with local payments.",
+    "retail_cta": "See the retail solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -275,7 +279,8 @@
     "link_construction": "IT for Construction",
     "link_logistics": "IT for Logistics",
     "link_realestate": "IT for Real Estate",
-    "link_healthcare": "IT for Healthcare"
+    "link_healthcare": "IT for Healthcare",
+    "link_retail": "IT for Retail"
   },
   "notfound": {
     "title": "Page not found",
