@@ -20,6 +20,10 @@ const hash = buf =>
   crypto.createHash('sha1').update(buf).digest('hex').slice(0, 8)
 // Campaign landing page for Saudi construction companies
 const SA_SLUG = 'it-services-for-construction-in-saudi-arabia'
+const LANDING_SLUGS = {
+  construction: SA_SLUG,
+  logistics: 'it-services-for-logistics-in-saudi-arabia'
+}
 const today = new Date().toISOString().slice(0, 10)
 
 fs.rmSync(DIST, { recursive: true, force: true })
@@ -171,7 +175,12 @@ const data = {
   },
   services,
   projects: readJson('data/projects.json'),
-  sa: readJson('data/sa-landing.json'),
+  landings: {
+    construction: readJson('data/sa-landing.json'),
+    logistics: readJson('data/landing-logistics.json')
+  },
+  landingUrl: (key, lang) =>
+    (lang === 'ar' ? '/ar/' : '/') + LANDING_SLUGS[key] + '/',
   saUrl: lang => (lang === 'ar' ? '/ar/' : '/') + SA_SLUG + '/',
   img: (u, w) =>
     /unsplash\.com/.test(u)
@@ -287,10 +296,14 @@ for (const [p, build] of pages) {
           : '0.8'
   })
 }
-const saAlt = { en: '/' + SA_SLUG + '/', ar: '/ar/' + SA_SLUG + '/' }
-emitPage(SA_SLUG + '/index.html', 'en', T.saLanding, saAlt)
-emitPage('ar/' + SA_SLUG + '/index.html', 'ar', T.saLanding, saAlt)
-routes.push({ alternates: saAlt, priority: '1.0' })
+for (const key of Object.keys(LANDING_SLUGS)) {
+  const slug = LANDING_SLUGS[key]
+  const alternates = { en: '/' + slug + '/', ar: '/ar/' + slug + '/' }
+  const build = ctx => T.saLanding(ctx, key)
+  emitPage(slug + '/index.html', 'en', build, alternates)
+  emitPage('ar/' + slug + '/index.html', 'ar', build, alternates)
+  routes.push({ alternates, priority: '1.0' })
+}
 
 // 404 (English shell; served with a real 404 status by .htaccess)
 emitPage('404.html', 'en', T.notFoundPage, { en: '/404.html', ar: '/404.html' })

@@ -65,7 +65,7 @@ const arrow = ctx => ctx.icon('fa-arrow-right', 'flip-rtl')
 
 export function layout(ctx, page) {
   const { lang, dir, t, data } = ctx
-  const isSa = page.bodyClass === 'sa-page'
+  const isSa = (page.bodyClass || '').split(' ').includes('sa-page')
   const contact = isSa
     ? SITE.campaign
     : { phone: SITE.riyadhPhone, tel: '+966597441504', whatsapp: SITE.whatsapp }
@@ -212,7 +212,8 @@ function footer(ctx, contact) {
           <div>
             <h2 class="footer-h">${t('footer.work_with_us_title')}</h2>
             <ul class="footer-list">
-              <li><a href="${data.saUrl(lang)}">${t('nav.saudi')}</a></li>
+              <li><a href="${data.landingUrl('construction', lang)}">${t('footer.link_construction')}</a></li>
+              <li><a href="${data.landingUrl('logistics', lang)}">${t('footer.link_logistics')}</a></li>
               <li><a href="${url('partners/jnh-systems/')}">${t('footer.link_partner')}</a></li>
               <li><a href="${url('about/')}">${t('footer.link_journey')}</a></li>
               <li><a href="${url('contact/')}">${t('footer.link_start')}</a></li>
@@ -434,6 +435,12 @@ export function homePage(ctx) {
           <h2 class="heading" style="margin:10px 0 14px">${t('home.saudi_title')}</h2>
           <p style="max-width:520px">${t('home.saudi_text')}</p>
           <div class="btn-row" style="margin-top:28px"><a href="${data.saUrl(lang)}" class="btn btn-primary">${t('home.saudi_cta')} ${arrow(ctx)}</a></div>
+        </div>
+        <div>
+          <span class="eyebrow">${t('home.logistics_badge')}</span>
+          <h2 class="heading" style="margin:10px 0 14px">${t('home.logistics_title')}</h2>
+          <p style="max-width:520px">${t('home.logistics_text')}</p>
+          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('logistics', lang)}" class="btn btn-primary">${t('home.logistics_cta')} ${arrow(ctx)}</a></div>
         </div>
         <div>
           <span class="eyebrow">${t('home.partner_badge')}</span>
@@ -821,9 +828,9 @@ export function notFoundPage(ctx) {
 
 // ---------- Saudi landing page ----------
 
-export function saLanding(ctx) {
+export function saLanding(ctx, key = 'construction') {
   const { lang, icon, data, url } = ctx
-  const c = data.sa[lang]
+  const c = data.landings[key][lang]
   const t = ctx.t
   const wa = waLink(
     ctx,
@@ -845,9 +852,25 @@ export function saLanding(ctx) {
     success: form.success,
     error: form.error
   }
+  const mock = c.mock
+  const mockView =
+    c.mockType === 'conveyor'
+      ? `<div class="mock-view conveyor" aria-hidden="true">
+            <div class="scan-v"></div>
+            <div class="belt"></div>
+            <div class="parcel p1" style="--d:0"><span class="ptag ok">${mock.tag_ok}</span></div>
+            <div class="parcel p2 bad" style="--d:1"><span class="ptag bad">${mock.tag_bad}</span></div>
+            <div class="parcel p3" style="--d:2"><span class="ptag ok">${mock.tag_ok}</span></div>
+          </div>`
+      : `<div class="mock-view" aria-hidden="true">
+            <div class="scan"></div>
+            <div class="worker w1"></div>
+            <div class="worker w2"></div>
+            <div class="box box-bad"><span>${mock.tag_bad}</span></div>
+            <div class="box box-ok"><span>${mock.tag_ok}</span></div>
+          </div>`
   const phone = SITE.campaign.phone
   const tel = 'tel:' + SITE.campaign.tel
-  const mock = c.mock
   const ctaRow = (extra = '') => `
           <div class="cta-row${extra}">
             <a href="${tel}" class="btn btn-amber btn-lg" data-cta="call">${icon('fa-phone')}<span class="btn-stack"><small>${c.cta_call}</small><strong dir="ltr">${phone}</strong></span></a>
@@ -869,13 +892,7 @@ export function saLanding(ctx) {
         </div>
         <div class="mock rise" style="--i:3" aria-label="${esc(mock.label)}">
           <div class="mock-top"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="mock-label">${mock.label}</span><span class="rec"><i></i>LIVE</span></div>
-          <div class="mock-view" aria-hidden="true">
-            <div class="scan"></div>
-            <div class="worker w1"></div>
-            <div class="worker w2"></div>
-            <div class="box box-bad"><span>${mock.tag_bad}</span></div>
-            <div class="box box-ok"><span>${mock.tag_ok}</span></div>
-          </div>
+          ${mockView}
           <ul class="mock-feed">
             ${mock.rows.map(r => `<li class="lvl-${r.level}"><span class="pip"></span><span class="mock-text">${r.text}</span><span class="mock-time" dir="ltr">${r.time}</span></li>`).join('')}
           </ul>
@@ -1006,7 +1023,7 @@ export function saLanding(ctx) {
           <span class="eyebrow">${c.process.items[0].badge} · ${c.process.items[0].title}</span>
           <h2 class="heading" style="margin:10px 0 14px">${form.title}</h2>
           <p class="lead" style="margin-bottom:28px">${form.text}</p>
-          ${contactForm(ctx, { source: 'sa-landing', labels, options: form.options })}
+          ${contactForm(ctx, { source: 'landing-' + key, labels, options: form.options })}
         </div>
         <aside>
           <div class="phone-card">
@@ -1051,7 +1068,7 @@ export function saLanding(ctx) {
       <a href="#book" class="btn btn-dark" data-cta="contact">${icon('fa-envelope')}<span>${t('nav.contact')}</span></a>
     </div>`
 
-  const path = data.saUrl(lang)
+  const path = data.landingUrl(key, lang)
   const ld = [
     {
       '@context': 'https://schema.org',
@@ -1062,10 +1079,7 @@ export function saLanding(ctx) {
       areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
       audience: {
         '@type': 'Audience',
-        audienceType:
-          lang === 'ar'
-            ? 'شركات المقاولات والمشاريع الكبرى'
-            : 'Construction contractors and mega-project developers'
+        audienceType: c.audience
       },
       url: SITE.url + path,
       hasOfferCatalog: {
@@ -1084,14 +1098,14 @@ export function saLanding(ctx) {
     faqLd(c.faq.items),
     breadcrumbLd(ctx, [
       [t('nav.home'), url()],
-      [t('nav.saudi'), path]
+      [c.eyebrow, path]
     ])
   ]
   return {
     title: c.meta.title,
     description: c.meta.description,
-    nav: 'saudi',
-    bodyClass: 'sa-page',
+    nav: key === 'construction' ? 'saudi' : '',
+    bodyClass: 'sa-page' + (c.theme ? ' ' + c.theme : ''),
     extraCss: [data.assets.landingCss],
     body,
     jsonld: ld

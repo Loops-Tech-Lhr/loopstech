@@ -106,14 +106,21 @@
         "title": "Build",
         "desc": "Agile development with daily progress loops."
       },
-      { "title": "Scale", "desc": "Global launch and continuous optimization." }
+      {
+        "title": "Scale",
+        "desc": "Global launch and continuous optimization."
+      }
     ],
     "work_badge": "Selected work",
     "work_title": "Global <span class=\"accent\">impact</span>.",
     "work_all": "All projects",
     "cta_title": "Built to <span class=\"accent\">win</span>.",
     "cta_text": "Stop struggling with legacy tech. Let's build your future-proof digital engine today.",
-    "cta_btn": "Get started"
+    "cta_btn": "Get started",
+    "logistics_badge": "New for Saudi logistics",
+    "logistics_title": "AI for logistics and <span class=\"accent\">supply chain.</span>",
+    "logistics_text": "Conveyor damage detection, a route engine built for Saudi roads, fleet maintenance prediction and one live tracking dashboard.",
+    "logistics_cta": "See the logistics solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -256,7 +263,9 @@
     "link_mobile": "Mobile Solutions",
     "link_ai": "AI & Private GPU",
     "link_erp": "ERP & CRM",
-    "link_partner": "JNH Systems Partnership"
+    "link_partner": "JNH Systems Partnership",
+    "link_construction": "IT for Construction",
+    "link_logistics": "IT for Logistics"
   },
   "notfound": {
     "title": "Page not found",

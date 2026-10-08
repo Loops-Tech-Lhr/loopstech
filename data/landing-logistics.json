@@ -1,0 +1,524 @@
+{
+  "en": {
+    "theme": "theme-logistics",
+    "mockType": "conveyor",
+    "audience": "Logistics, 3PL, e-commerce fulfilment and fleet operators in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Logistics in Saudi Arabia | Loops Technologies",
+      "description": "IT services for logistics and supply chain companies in Saudi Arabia: AI damage detection at the conveyor, route optimisation for Saudi roads, fleet maintenance prediction, live fleet dashboard and an Arabic-first driver app."
+    },
+    "kicker": "For logistics, 3PL, e-commerce fulfilment & fleet operators in Saudi Arabia",
+    "eyebrow": "Logistics & supply chain",
+    "title": "Ship faster. Burn less fuel. <span class=\"hl\">Catch damage before the truck leaves.</span>",
+    "subtitle": "Computer vision at the conveyor, an AI route engine built for Saudi roads, predictive fleet maintenance and one live dashboard for every vehicle. Runs on your own servers, so shipment and customer data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Data stays in-Kingdom" },
+      { "icon": "fa-language", "text": "Arabic-first apps" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Parcel damaged · belt 3",
+      "Route re-planned · road closure",
+      "Barcode matched to manifest",
+      "Maintenance window suggested · truck 14",
+      "Delivery signed · Riyadh",
+      "Fuel-saving route selected"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run the network",
+      "title": "Operations, fleet and warehouse leaders each get what they need.",
+      "items": [
+        {
+          "icon": "fa-warehouse",
+          "who": "Operations & logistics directors",
+          "title": "See every hub, truck and parcel on one screen.",
+          "text": "One live view of throughput, delivery completion and exceptions across your whole network, instead of reports that arrive after the problem."
+        },
+        {
+          "icon": "fa-truck-fast",
+          "who": "Fleet & dispatch managers",
+          "title": "Cut fuel waste and avoid breakdowns in peak windows.",
+          "text": "Routes that react to closures in real time, and maintenance scheduled only when the data says it is needed."
+        },
+        {
+          "icon": "fa-boxes-stacked",
+          "who": "Warehouse & e-commerce leads",
+          "title": "Stop damaged parcels leaving the dock.",
+          "text": "Cameras over the conveyor read barcodes at speed and flag damage before packages are loaded, so claims and returns drop."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Saudi e-commerce is booming. Manual operations can't keep up.",
+      "items": [
+        {
+          "icon": "fa-box-open",
+          "title": "Peak volumes overwhelm sorting",
+          "text": "More parcels, tighter delivery promises and the same manual checks at the dock."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "Damage is found too late",
+          "text": "A crushed parcel discovered at the customer's door means a claim, a return and a lost customer."
+        },
+        {
+          "icon": "fa-gas-pump",
+          "title": "Fuel and breakdowns eat margin",
+          "text": "Unplanned stops during critical delivery windows cost far more than planned maintenance."
+        },
+        {
+          "icon": "fa-phone-volume",
+          "title": "Dispatch runs on calls and chats",
+          "text": "Without one live view, dispatchers chase drivers by phone and WhatsApp."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the warehouse, the road and the control room.",
+      "items": [
+        {
+          "icon": "fa-camera",
+          "title": "Automated Freight Sorting & Damage Detection",
+          "tag": "Computer Vision",
+          "text": "Camera systems over warehouse conveyor belts read barcodes at high speed and flag damaged packages before they are loaded onto trucks.",
+          "partner": true
+        },
+        {
+          "icon": "fa-route",
+          "title": "Hyper-Local Route Engine",
+          "tag": "AI",
+          "text": "A dispatch system built for Saudi road networks that calculates the fastest driver routes, actively avoids real-time closures and minimises fuel consumption."
+        },
+        {
+          "icon": "fa-screwdriver-wrench",
+          "title": "Fleet Fuel & Maintenance Predictor",
+          "tag": "AI",
+          "text": "Machine learning on delivery-truck telematics schedules maintenance only when necessary and prevents breakdowns during critical delivery windows."
+        },
+        {
+          "icon": "fa-tower-broadcast",
+          "title": "Unified Fleet Tracking Dashboard",
+          "tag": "Enterprise software",
+          "text": "A live command centre where dispatchers track vehicle locations, driver speeds and daily delivery completion rates on a single screen."
+        },
+        {
+          "icon": "fa-mobile-screen-button",
+          "title": "Driver Operations Mobile App",
+          "tag": "Mobile",
+          "text": "A streamlined, Arabic-first app for drivers to scan packages, capture digital signatures and communicate with the warehouse."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your shipment data. Your servers. Your Kingdom.",
+      "text": "Customer addresses, delivery signatures and live vehicle locations are sensitive. We deploy vision and AI models on GPU servers inside your hub or a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "On-premise GPU at the warehouse for conveyor vision",
+        "Private route and telematics data, no foreign AI APIs",
+        "Edge processing close to the cameras for speed",
+        "Models tuned on your own parcels and routes"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from conveyor cameras, telematics and the driver app to an in-house GPU server to dashboards, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Conveyor cameras, telematics & driver app",
+        "n2": "Your in-house GPU server",
+        "n3": "Dispatch dashboard, alerts & WMS/ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Field and hardware systems with JNH Systems",
+      "text": "Where an operation needs cameras, edge devices or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that convert footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your hub, fleet and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot on one belt, route or depot that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your WMS, TMS and ERP."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from operations teams",
+      "items": [
+        {
+          "q": "Can it connect to our existing WMS, TMS or ERP?",
+          "a": "Yes. We build integrations so that scans, routes and alerts flow into the systems your teams already use."
+        },
+        {
+          "q": "Do we need new cameras for conveyor damage detection?",
+          "a": "Often not. The Operations Study checks camera positions, lighting, belt speed and network capacity before we propose anything."
+        },
+        {
+          "q": "Is the driver app really Arabic-first?",
+          "a": "Yes. It is designed in Arabic first, with English available, for scanning, digital signatures and warehouse messages."
+        },
+        {
+          "q": "Does our shipment data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers in your own facility or in a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your hub or fleet. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Company",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Freight sorting & damage detection (computer vision)",
+        "Route optimisation",
+        "Fleet fuel & maintenance prediction",
+        "Fleet tracking dashboard",
+        "Driver mobile app",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Operation details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next delivery window shouldn't depend on luck.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative conveyor scan",
+      "tag_bad": "Damaged",
+      "tag_ok": "Barcode OK",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Belt 3 · Damaged parcel flagged",
+          "time": "10:42"
+        },
+        {
+          "level": "warn",
+          "text": "Truck 14 · Service window suggested",
+          "time": "10:38"
+        },
+        {
+          "level": "ok",
+          "text": "Route 7 · Re-planned around closure",
+          "time": "10:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-logistics",
+    "mockType": "conveyor",
+    "audience": "شركات الخدمات اللوجستية والتجارة الإلكترونية وتشغيل الأساطيل في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للخدمات اللوجستية في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات لشركات الخدمات اللوجستية وسلاسل الإمداد في السعودية: كشف تلف الطرود بالذكاء الاصطناعي على السيور، وتحسين المسارات للطرق السعودية، والتنبؤ بصيانة الأساطيل، ولوحة تتبع مباشرة، وتطبيق للسائقين بالعربية أولاً."
+    },
+    "kicker": "لشركات الخدمات اللوجستية والتجارة الإلكترونية وتشغيل الأساطيل في المملكة",
+    "eyebrow": "الخدمات اللوجستية وسلاسل الإمداد",
+    "title": "اشحن أسرع. استهلك وقوداً أقل. <span class=\"hl\">اكتشف التلف قبل أن تغادر الشاحنة.</span>",
+    "subtitle": "رؤية حاسوبية على السيور، ومحرك مسارات بالذكاء الاصطناعي مصمم للطرق السعودية، وتنبؤ بصيانة الأسطول، ولوحة مباشرة واحدة لكل مركبة. يعمل على خوادمك الخاصة لتبقى بيانات الشحنات والعملاء داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "البيانات تبقى داخل المملكة" },
+      { "icon": "fa-language", "text": "تطبيقات بالعربية أولاً" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "طرد تالف · السير 3",
+      "إعادة تخطيط المسار · إغلاق طريق",
+      "مطابقة الباركود مع بيان الشحنة",
+      "اقتراح موعد صيانة · الشاحنة 14",
+      "تم توقيع التسليم · الرياض",
+      "اختيار مسار موفر للوقود"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون الشبكة",
+      "title": "مديرو العمليات والأسطول والمستودعات، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-warehouse",
+          "who": "مديرو العمليات واللوجستيات",
+          "title": "شاهد كل مركز وشاحنة وطرد على شاشة واحدة.",
+          "text": "رؤية حية واحدة للإنتاجية ونسب إتمام التسليم والاستثناءات في شبكتك كلها، بدل تقارير تصل بعد وقوع المشكلة."
+        },
+        {
+          "icon": "fa-truck-fast",
+          "who": "مديرو الأسطول والتوزيع",
+          "title": "قلّل هدر الوقود وتجنّب الأعطال في أوقات الذروة.",
+          "text": "مسارات تتفاعل مع إغلاق الطرق لحظياً، وصيانة تُجدول فقط عندما تدل البيانات على الحاجة إليها."
+        },
+        {
+          "icon": "fa-boxes-stacked",
+          "who": "قادة المستودعات والتجارة الإلكترونية",
+          "title": "امنع خروج الطرود التالفة من الرصيف.",
+          "text": "كاميرات فوق السيور تقرأ الباركود بسرعة وتنبّه إلى التلف قبل التحميل، فتنخفض المطالبات والمرتجعات."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "التجارة الإلكترونية في السعودية تنمو بسرعة، والعمليات اليدوية لا تواكبها.",
+      "items": [
+        {
+          "icon": "fa-box-open",
+          "title": "ذروة الأحجام تُربك الفرز",
+          "text": "طرود أكثر ووعود تسليم أضيق، بينما الفحص عند الرصيف ما زال يدوياً."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "التلف يُكتشف متأخراً",
+          "text": "طرد مسحوق يُكتشف عند باب العميل يعني مطالبة ومرتجعاً وعميلاً خسرناه."
+        },
+        {
+          "icon": "fa-gas-pump",
+          "title": "الوقود والأعطال تلتهم الهامش",
+          "text": "التوقف غير المخطط في أوقات التسليم الحرجة يكلف أكثر بكثير من الصيانة المخططة."
+        },
+        {
+          "icon": "fa-phone-volume",
+          "title": "التوزيع يعتمد على المكالمات والمحادثات",
+          "text": "بلا رؤية مباشرة واحدة، يلاحق المنسقون السائقين عبر الهاتف وواتساب."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة للمستودع والطريق وغرفة التحكم.",
+      "items": [
+        {
+          "icon": "fa-camera",
+          "title": "الفرز الآلي للشحنات وكشف التلف",
+          "tag": "الرؤية الحاسوبية",
+          "text": "أنظمة كاميرات فوق سيور المستودعات تقرأ الباركود بسرعة عالية وتنبّه إلى الطرود التالفة قبل تحميلها على الشاحنات.",
+          "partner": true
+        },
+        {
+          "icon": "fa-route",
+          "title": "محرك المسارات المحلي الدقيق",
+          "tag": "الذكاء الاصطناعي",
+          "text": "نظام توزيع مصمم لشبكة الطرق السعودية يحسب أسرع مسارات السائقين، ويتفادى إغلاقات الطرق لحظياً، ويقلل استهلاك الوقود."
+        },
+        {
+          "icon": "fa-screwdriver-wrench",
+          "title": "التنبؤ باستهلاك الوقود وصيانة الأسطول",
+          "tag": "الذكاء الاصطناعي",
+          "text": "تعلّم آلي على بيانات التتبع من شاحنات التوصيل يجدول الصيانة عند الحاجة فقط، ويمنع الأعطال في أوقات التسليم الحرجة."
+        },
+        {
+          "icon": "fa-tower-broadcast",
+          "title": "لوحة موحدة لتتبع الأسطول",
+          "tag": "برمجيات المؤسسات",
+          "text": "مركز قيادة مباشر يتتبع فيه المنسقون مواقع المركبات وسرعات السائقين ونسب إتمام التسليم اليومية على شاشة واحدة."
+        },
+        {
+          "icon": "fa-mobile-screen-button",
+          "title": "تطبيق عمليات السائقين",
+          "tag": "تطبيقات الجوال",
+          "text": "تطبيق مبسط بالعربية أولاً يتيح للسائقين مسح الطرود والتقاط التوقيعات الرقمية والتواصل مع المستودع."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات شحناتك. خوادمك. داخل مملكتك.",
+      "text": "عناوين العملاء وتوقيعات التسليم ومواقع المركبات الحية بيانات حساسة. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU داخل مركزك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "خوادم GPU داخل المستودع لرؤية السيور",
+        "بيانات المسارات والتتبع خاصة، دون واجهات ذكاء اصطناعي أجنبية",
+        "معالجة طرفية قرب الكاميرات للسرعة",
+        "نماذج مضبوطة على طرودك ومساراتك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من كاميرات السيور وأجهزة التتبع وتطبيق السائق إلى خادم GPU داخلي ثم إلى لوحات المتابعة، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "كاميرات السيور وأجهزة التتبع وتطبيق السائق",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحة التوزيع والتنبيهات وأنظمة WMS/ERP"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الأنظمة الميدانية والعتاد مع JNH Systems",
+      "text": "حين تحتاج العمليات إلى كاميرات أو أجهزة طرفية أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة مركزك وأسطولك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة على سير أو مسار أو مستودع واحد تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة WMS وTMS وERP لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق العمليات",
+      "items": [
+        {
+          "q": "هل يرتبط بأنظمة WMS أو TMS أو ERP الحالية لدينا؟",
+          "a": "نعم. نبني التكاملات لتصل عمليات المسح والمسارات والتنبيهات إلى الأنظمة التي تستخدمها فرقك."
+        },
+        {
+          "q": "هل نحتاج كاميرات جديدة لكشف التلف على السيور؟",
+          "a": "غالباً لا. تفحص الدراسة التشغيلية مواقع الكاميرات والإضاءة وسرعة السير وسعة الشبكة قبل أي مقترح."
+        },
+        {
+          "q": "هل التطبيق للسائقين بالعربية أولاً فعلاً؟",
+          "a": "نعم. يُصمم بالعربية أولاً مع توفر الإنجليزية، للمسح والتوقيعات الرقمية ورسائل المستودع."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات شحناتنا المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في منشأتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن مركزك أو أسطولك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الشركة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "الفرز الآلي وكشف تلف الشحنات (الرؤية الحاسوبية)",
+        "تحسين المسارات",
+        "التنبؤ بالوقود وصيانة الأسطول",
+        "لوحة تتبع الأسطول",
+        "تطبيق جوال للسائقين",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل العمليات",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "موعد تسليمك القادم لا ينبغي أن يعتمد على الحظ.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "مسح توضيحي لسير الطرود",
+      "tag_bad": "تالف",
+      "tag_ok": "الباركود سليم",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "السير 3 · تم تنبيه طرد تالف",
+          "time": "10:42"
+        },
+        {
+          "level": "warn",
+          "text": "الشاحنة 14 · اقتراح موعد صيانة",
+          "time": "10:38"
+        },
+        {
+          "level": "ok",
+          "text": "المسار 7 · إعادة تخطيط حول إغلاق الطريق",
+          "time": "10:35"
+        }
+      ]
+    }
+  }
+}

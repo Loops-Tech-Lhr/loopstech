@@ -289,7 +289,8 @@
     "final": {
       "title": "Your next site shouldn't run on guesswork.",
       "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
-    }
+    },
+    "audience": "Construction contractors and mega-project developers in Saudi Arabia"
   },
   "ar": {
     "meta": {
@@ -581,6 +582,7 @@
     "final": {
       "title": "موقعك القادم لا ينبغي أن يُدار بالتخمين.",
       "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
-    }
+    },
+    "audience": "شركات المقاولات ومطورو المشاريع الكبرى في المملكة العربية السعودية"
   }
 }

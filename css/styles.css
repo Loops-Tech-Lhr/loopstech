@@ -1059,8 +1059,8 @@ html[dir='rtl'] .footer-h {
 
 @media (min-width: 900px) {
   .promo-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
   }
 }
 

@@ -10,6 +10,7 @@
   --brand-dark: #92400e;
   --brand-light: #fbbf24;
   --wa: #25d366;
+  --amber-rgb: 255, 176, 0;
 }
 
 @keyframes stripes {
@@ -20,21 +21,21 @@
 
 @keyframes pulse-dot {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 176, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(var(--amber-rgb), 0.7);
   }
 
   100% {
-    box-shadow: 0 0 0 12px rgba(255, 176, 0, 0);
+    box-shadow: 0 0 0 12px rgba(var(--amber-rgb), 0);
   }
 }
 
 @keyframes ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 176, 0, 0.55);
+    box-shadow: 0 0 0 0 rgba(var(--amber-rgb), 0.55);
   }
 
   100% {
-    box-shadow: 0 0 0 18px rgba(255, 176, 0, 0);
+    box-shadow: 0 0 0 18px rgba(var(--amber-rgb), 0);
   }
 }
 
@@ -79,7 +80,7 @@
 
 @keyframes glow {
   50% {
-    box-shadow: 0 0 40px rgba(255, 176, 0, 0.35);
+    box-shadow: 0 0 40px rgba(var(--amber-rgb), 0.35);
   }
 }
 
@@ -173,7 +174,11 @@
   width: 640px;
   height: 640px;
   border-radius: 50% !important;
-  background: radial-gradient(circle, rgba(255, 176, 0, 0.3), transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(var(--amber-rgb), 0.3),
+    transparent 65%
+  );
   filter: blur(20px);
   pointer-events: none;
 }
@@ -197,8 +202,8 @@
   align-items: center;
   gap: 10px;
   padding: 7px 14px;
-  border: 1px solid rgba(255, 176, 0, 0.4);
-  background: rgba(255, 176, 0, 0.08);
+  border: 1px solid rgba(var(--amber-rgb), 0.4);
+  background: rgba(var(--amber-rgb), 0.08);
   color: var(--amber);
   font-size: 12px;
   font-weight: 500;
@@ -390,7 +395,7 @@ html[dir='rtl'] .btn-stack small {
   background: rgba(20, 22, 26, 0.9);
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.55),
-    0 0 60px rgba(255, 176, 0, 0.12);
+    0 0 60px rgba(var(--amber-rgb), 0.12);
 }
 
 .mock-top {
@@ -449,7 +454,7 @@ html[dir='rtl'] .btn-stack small {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(255, 176, 0, 0.1), transparent 45%),
+    linear-gradient(180deg, rgba(var(--amber-rgb), 0.1), transparent 45%),
     repeating-linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.045) 0 1px,
@@ -468,7 +473,7 @@ html[dir='rtl'] .btn-stack small {
   inset-inline: 0;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--amber), transparent);
-  box-shadow: 0 0 18px 4px rgba(255, 176, 0, 0.45);
+  box-shadow: 0 0 18px 4px rgba(var(--amber-rgb), 0.45);
   animation: scan 3.6s linear infinite;
 }
 
@@ -917,8 +922,8 @@ html[dir='rtl'] .bento-tag {
   justify-items: center;
   gap: 4px;
   padding: 56px 28px 28px;
-  border: 1px dashed rgba(255, 176, 0, 0.6);
-  background: rgba(255, 176, 0, 0.04);
+  border: 1px dashed rgba(var(--amber-rgb), 0.6);
+  background: rgba(var(--amber-rgb), 0.04);
 }
 
 .boundary-label {
@@ -1251,5 +1256,207 @@ html[dir='rtl'] .final-cta h2 {
   .sticky-cta .btn-amber,
   .sa-title .hl {
     animation: none;
+  }
+}
+
+/* ================= Logistics landing theme (freight blue + cyan) ================= */
+
+.theme-logistics {
+  --amber: #22d3ee;
+  --amber-dark: #06b6d4;
+  --amber-rgb: 34, 211, 238;
+  --ink-dark: #07101f;
+  --steel: #0e1a2e;
+  --brand: #0e7490;
+  --brand-dark: #155e75;
+  --brand-light: #67e8f9;
+}
+
+.theme-logistics .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber) 0 14px,
+    #07101f 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-logistics .final-cta .hazard-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #07101f 0 14px,
+    var(--amber) 14px 28px
+  );
+  background-size: 56px 100%;
+}
+
+.theme-logistics .ticker {
+  border-block-color: #07101f;
+  color: #07101f;
+}
+
+.theme-logistics .ticker-track span::after {
+  border-inline-start-color: #07101f;
+}
+
+.theme-logistics .sa-glow {
+  background: radial-gradient(
+    circle,
+    rgba(var(--amber-rgb), 0.28),
+    transparent 65%
+  );
+}
+
+.theme-logistics .node-main {
+  background: #0b2230;
+}
+
+.theme-logistics .bento-1,
+.theme-logistics .phone-card,
+.theme-logistics .sa-hero {
+  background: var(--ink-dark);
+}
+
+.theme-logistics .bento-1:hover {
+  background: #0c1a30;
+}
+
+.theme-logistics .stats-dark {
+  border-top-color: var(--amber);
+}
+
+/* ---------- Conveyor scan (replaces the camera view) ---------- */
+
+@keyframes belt {
+  to {
+    background-position: 38px 0;
+  }
+}
+
+@keyframes ride {
+  from {
+    left: -22%;
+  }
+
+  to {
+    left: 105%;
+  }
+}
+
+.conveyor {
+  direction: ltr;
+  background:
+    linear-gradient(180deg, rgba(var(--amber-rgb), 0.1), transparent 45%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 44px
+    ),
+    #0b1626;
+}
+
+.scan-v {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 52%;
+  z-index: 3;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--amber), transparent);
+  box-shadow: 0 0 18px 4px rgba(var(--amber-rgb), 0.5);
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+.belt {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 14%;
+  height: 20%;
+  border-block: 2px solid #2f4a78;
+  background: repeating-linear-gradient(
+    90deg,
+    #1a2a47 0 34px,
+    #243a63 34px 38px
+  );
+  animation: belt 0.9s linear infinite;
+}
+
+.parcel {
+  position: absolute;
+  bottom: 34%;
+  left: 0;
+  width: 17%;
+  height: 30%;
+  border: 1px solid #7a5522;
+  background: linear-gradient(#c9984f, #a97a36);
+  animation: ride 10s linear infinite;
+  animation-delay: calc(var(--d) * -3.33s);
+}
+
+/* shipping label with barcode */
+.parcel::before {
+  content: '';
+  position: absolute;
+  top: 26%;
+  inset-inline: 16%;
+  height: 34%;
+  background:
+    repeating-linear-gradient(90deg, #1a1a1a 0 2px, transparent 2px 4px),
+    #efefef;
+}
+
+.parcel.bad {
+  outline: 2px solid #ef4444;
+}
+
+.parcel.bad::after {
+  content: '';
+  position: absolute;
+  top: -4%;
+  right: 24%;
+  width: 3px;
+  height: 78%;
+  background: #3a2410;
+  transform: rotate(16deg);
+  box-shadow: 8px 6px 0 -1px #3a2410;
+}
+
+.ptag {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ptag.ok {
+  background: #22c55e;
+  color: #04210f;
+}
+
+.ptag.bad {
+  background: #ef4444;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .belt,
+  .parcel,
+  .scan-v {
+    animation: none;
+  }
+
+  .p1 {
+    left: 8%;
+  }
+
+  .p2 {
+    left: 38%;
+  }
+
+  .p3 {
+    left: 68%;
   }
 }
