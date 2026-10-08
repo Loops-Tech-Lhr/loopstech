@@ -1,0 +1,530 @@
+{
+  "en": {
+    "theme": "theme-consulting",
+    "mockType": "doc",
+    "audience": "Consulting firm partners, government contractors and semi-government entity leaders in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Consulting & Government | Loops Technologies",
+      "description": "IT services for consulting firms, government contractors and semi-government entities in Saudi Arabia: secure Arabic and English archive digitisation, document insight extraction, an RFP drafting assistant, an encrypted client portal and executive BI dashboards."
+    },
+    "kicker": "For consulting firms, government contractors & semi-government entities in Saudi Arabia",
+    "eyebrow": "Government contracting & consulting",
+    "title": "Win more mandates. Find insight in minutes. <span class=\"hl\">Keep every document secure and in the Kingdom.</span>",
+    "subtitle": "Digitise decades of Arabic and English archives, extract insight from long reports, draft proposals from your own past bids, share files through an encrypted client portal and see business health on one executive dashboard. Runs on your own servers, so sensitive project data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Data stays in-Kingdom" },
+      { "icon": "fa-language", "text": "Arabic & English documents" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "Archive page digitised · 1987",
+      "Insight extracted · market report",
+      "RFP draft ready · 3 sections",
+      "Client document shared · encrypted",
+      "Dashboard refreshed · all departments",
+      "Access logged · audit trail"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who carry the mandate",
+      "title": "Partners, consultants and security leaders each get what they need.",
+      "items": [
+        {
+          "icon": "fa-briefcase",
+          "who": "Managing partners & executives",
+          "title": "Draft winning proposals in hours, and see the whole firm at a glance.",
+          "text": "An assistant trained on your own past bids, and a dashboard that brings every department's numbers into one live view."
+        },
+        {
+          "icon": "fa-chart-line",
+          "who": "Consultants & research directors",
+          "title": "Find the insight in a thousand pages in minutes.",
+          "text": "Key statistics, trends and executive summaries pulled from reports and legal frameworks, in Arabic and English."
+        },
+        {
+          "icon": "fa-shield-halved",
+          "who": "IT, security & records heads",
+          "title": "Keep sensitive national-project data secure, local and auditable.",
+          "text": "Encrypted storage, an in-Kingdom client portal and full audit logs, on servers you control."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "National projects generate sensitive documents faster than teams can handle them.",
+      "items": [
+        {
+          "icon": "fa-box-archive",
+          "title": "Decades of knowledge on paper",
+          "text": "Physical archives can't be searched, shared or protected like data."
+        },
+        {
+          "icon": "fa-book-open",
+          "title": "Reports too long to read",
+          "text": "Consultants lose days digging statistics out of industry reports and legal frameworks."
+        },
+        {
+          "icon": "fa-clock",
+          "title": "Proposals are written under deadline",
+          "text": "Every RFP starts from scratch, even when similar bids were already won."
+        },
+        {
+          "icon": "fa-envelope-open-text",
+          "title": "Client files travel by email",
+          "text": "Financial and legal documents shared by email are hard to control and audit."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the archive, the analyst and the boardroom.",
+      "items": [
+        {
+          "icon": "fa-box-archive",
+          "title": "Secure Archive OCR & Digitization",
+          "tag": "Computer Vision",
+          "text": "High-accuracy scanning technology that converts decades of physical Arabic and English archives into fully searchable, editable and secure digital databases."
+        },
+        {
+          "icon": "fa-magnifying-glass-chart",
+          "title": "Arabic Document Insight Extraction",
+          "tag": "AI",
+          "text": "A tool that instantly processes massive industry reports or legal frameworks, extracting key statistics, trends and executive summaries for consultants."
+        },
+        {
+          "icon": "fa-file-signature",
+          "title": "RFP Generation Assistant",
+          "tag": "AI",
+          "text": "An internal assistant trained on a firm's past successful bids to help consultants rapidly draft high-quality proposals for government contracts."
+        },
+        {
+          "icon": "fa-user-shield",
+          "title": "B2B Secure Client Data Portal",
+          "tag": "Web platform",
+          "text": "An encrypted, localized platform for sharing sensitive financial, strategic or legal documents with corporate clients and stakeholders."
+        },
+        {
+          "icon": "fa-gauge-high",
+          "title": "Executive Dashboard & BI Reporting",
+          "tag": "Enterprise software",
+          "text": "Custom dashboards that aggregate data from multiple company departments to give C-level executives a real-time view of business health."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your documents. Your servers. Your Kingdom.",
+      "text": "Archives, reports and client files for national projects must not travel to foreign AI services. We deploy OCR and language models on GPU servers inside your premises or a Saudi data center, trained only on your own documents, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Archives and reports never leave your network",
+        "Models trained only on your firm's own documents",
+        "No dependency on foreign AI APIs",
+        "Encryption, role-based access and full audit logs"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from scanners, documents and the client portal to an in-house GPU server to search, drafts and executive dashboards, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Scanners, documents & client portal",
+        "n2": "Your in-house GPU server",
+        "n3": "Search, drafts & executive dashboards"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Secure, in-Kingdom engineering with JNH Systems",
+      "text": "Where an organisation needs integration with existing systems or in-Kingdom engineering, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        },
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn data into detections and operational decisions."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Engineering developed and tested in-Kingdom",
+          "text": "Edge computing and hardware programs developed and tested inside Saudi Arabia."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your documents, systems and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot on one archive, report set or proposal workflow that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your document, finance and reporting systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from consulting and government teams",
+      "items": [
+        {
+          "q": "Are our documents processed outside Saudi Arabia?",
+          "a": "No. OCR and language models run on your own servers or in a Saudi data center, and documents are never sent to foreign AI services."
+        },
+        {
+          "q": "How accurate is the OCR on old Arabic documents?",
+          "a": "Accuracy depends on scan quality. Pages the system is unsure about are flagged for human review rather than silently accepted."
+        },
+        {
+          "q": "What does the RFP assistant learn from?",
+          "a": "Only your firm's own past bids, on your own servers. Consultants review and edit every draft; it speeds up writing, it does not replace your judgment."
+        },
+        {
+          "q": "How is the client portal secured?",
+          "a": "Documents are encrypted, access is role-based and every action is logged. It is designed to support PDPL and NCA requirements, and your compliance team confirms what applies."
+        },
+        {
+          "q": "Can the dashboard pull from our existing systems?",
+          "a": "Yes. We build integrations with the finance, HR, project and CRM systems your departments already use."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your firm or entity. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Firm / entity",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Archive OCR & digitisation",
+        "Arabic document insight extraction",
+        "RFP generation assistant",
+        "Secure client data portal",
+        "Executive dashboard & BI reporting",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Organisation details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Sensitive documents shouldn't sit in a cabinet or a foreign cloud.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative archive digitisation",
+      "tag_bad": "Needs review",
+      "tag_ok": "Title extracted",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Archive 1987-B · Low-quality page, sent for review",
+          "time": "14:42"
+        },
+        {
+          "level": "warn",
+          "text": "RFP draft · Compliance section missing",
+          "time": "14:38"
+        },
+        {
+          "level": "ok",
+          "text": "Market report · Executive summary ready",
+          "time": "14:35"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-consulting",
+    "mockType": "doc",
+    "audience": "شركاء شركات الاستشارات ومقاولو القطاع الحكومي وقادة الجهات شبه الحكومية في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات للاستشارات والقطاع الحكومي | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات لشركات الاستشارات ومقاولي القطاع الحكومي والجهات شبه الحكومية في السعودية: رقمنة آمنة للأرشيف العربي والإنجليزي، واستخراج الرؤى من المستندات، ومساعد لصياغة العروض، وبوابة مشفرة للعملاء، ولوحات تنفيذية لذكاء الأعمال."
+    },
+    "kicker": "لشركات الاستشارات ومقاولي القطاع الحكومي والجهات شبه الحكومية في المملكة العربية السعودية",
+    "eyebrow": "التعاقد الحكومي والاستشارات",
+    "title": "اكسب مزيداً من العقود. استخرج الرؤى في دقائق. <span class=\"hl\">حافظ على كل مستند آمناً وداخل المملكة.</span>",
+    "subtitle": "ارقمن عقوداً من الأرشيف العربي والإنجليزي، واستخرج الرؤى من التقارير الطويلة، وصُغ العروض من عروضك السابقة، وشارك الملفات عبر بوابة عملاء مشفرة، وراقب صحة أعمالك على لوحة تنفيذية واحدة. يعمل على خوادمك الخاصة لتبقى بيانات المشاريع الحساسة داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "البيانات تبقى داخل المملكة" },
+      { "icon": "fa-language", "text": "مستندات عربية وإنجليزية" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "رقمنة صفحة أرشيف · 1987",
+      "استخراج رؤى · تقرير السوق",
+      "مسودة العرض جاهزة · 3 أقسام",
+      "مشاركة مستند مع العميل · مشفر",
+      "تحديث اللوحة · جميع الإدارات",
+      "تسجيل الوصول · سجل التدقيق"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يتحملون مسؤولية التكليف",
+      "title": "الشركاء والمستشارون وقادة الأمن، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-briefcase",
+          "who": "الشركاء المديرون والتنفيذيون",
+          "title": "صُغ عروضاً رابحة في ساعات، وشاهد الشركة كلها بنظرة.",
+          "text": "مساعد مدرَّب على عروضك السابقة، ولوحة تجمع أرقام كل إدارة في رؤية حية واحدة."
+        },
+        {
+          "icon": "fa-chart-line",
+          "who": "المستشارون ومديرو الأبحاث",
+          "title": "اعثر على الرؤية في ألف صفحة خلال دقائق.",
+          "text": "إحصاءات واتجاهات وملخصات تنفيذية تُستخرج من التقارير والأطر القانونية، بالعربية والإنجليزية."
+        },
+        {
+          "icon": "fa-shield-halved",
+          "who": "مسؤولو تقنية المعلومات والأمن والسجلات",
+          "title": "حافظ على بيانات المشاريع الوطنية الحساسة آمنة ومحلية وقابلة للتدقيق.",
+          "text": "تخزين مشفر وبوابة عملاء داخل المملكة وسجلات تدقيق كاملة، على خوادم تتحكم بها."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "المشاريع الوطنية تنتج مستندات حساسة أسرع مما تستطيع الفرق معالجته.",
+      "items": [
+        {
+          "icon": "fa-box-archive",
+          "title": "عقود من المعرفة على الورق",
+          "text": "الأرشيف الورقي لا يمكن البحث فيه أو مشاركته أو حمايته كما تُحمى البيانات."
+        },
+        {
+          "icon": "fa-book-open",
+          "title": "تقارير أطول من أن تُقرأ",
+          "text": "يضيع على المستشارين أيام في استخراج الإحصاءات من تقارير القطاع والأطر القانونية."
+        },
+        {
+          "icon": "fa-clock",
+          "title": "العروض تُكتب تحت ضغط الموعد",
+          "text": "كل طلب عروض يبدأ من الصفر، حتى لو سبق الفوز بعروض مشابهة."
+        },
+        {
+          "icon": "fa-envelope-open-text",
+          "title": "ملفات العملاء تنتقل بالبريد",
+          "text": "المستندات المالية والقانونية المرسلة بالبريد يصعب ضبطها وتدقيقها."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة للأرشيف والمحلل وقاعة الاجتماعات.",
+      "items": [
+        {
+          "icon": "fa-box-archive",
+          "title": "رقمنة الأرشيف الآمنة بتقنية التعرف الضوئي",
+          "tag": "الرؤية الحاسوبية",
+          "text": "تقنية مسح عالية الدقة تحوّل عقوداً من الأرشيف الورقي العربي والإنجليزي إلى قواعد بيانات رقمية قابلة للبحث والتحرير وآمنة."
+        },
+        {
+          "icon": "fa-magnifying-glass-chart",
+          "title": "استخراج الرؤى من المستندات العربية",
+          "tag": "الذكاء الاصطناعي",
+          "text": "أداة تعالج فوراً تقارير القطاع الضخمة أو الأطر القانونية، وتستخرج الإحصاءات الرئيسية والاتجاهات والملخصات التنفيذية للمستشارين."
+        },
+        {
+          "icon": "fa-file-signature",
+          "title": "مساعد صياغة طلبات العروض (RFP)",
+          "tag": "الذكاء الاصطناعي",
+          "text": "مساعد داخلي مدرَّب على عروض الشركة الفائزة السابقة ليساعد المستشارين على صياغة عروض عالية الجودة للعقود الحكومية بسرعة."
+        },
+        {
+          "icon": "fa-user-shield",
+          "title": "بوابة آمنة لبيانات العملاء من شركة إلى شركة",
+          "tag": "منصة ويب",
+          "text": "منصة مشفرة ومحلية لمشاركة المستندات المالية أو الاستراتيجية أو القانونية الحساسة مع العملاء والأطراف المعنية."
+        },
+        {
+          "icon": "fa-gauge-high",
+          "title": "اللوحة التنفيذية وتقارير ذكاء الأعمال",
+          "tag": "برمجيات المؤسسات",
+          "text": "لوحات مخصصة تجمع بيانات إدارات الشركة المتعددة لتمنح التنفيذيين على مستوى الإدارة العليا رؤية لحظية لصحة الأعمال."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "مستنداتك. خوادمك. داخل مملكتك.",
+      "text": "أرشيف المشاريع الوطنية وتقاريرها وملفات عملائها يجب ألا تنتقل إلى خدمات ذكاء اصطناعي أجنبية. ننشر نماذج التعرف الضوئي واللغة على خوادم GPU داخل منشأتك أو في مركز بيانات سعودي، مدرَّبة على مستنداتك أنت فقط، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "الأرشيف والتقارير لا تغادر شبكتك",
+        "نماذج مدرَّبة على مستندات شركتك فقط",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "تشفير وصلاحيات حسب الأدوار وسجلات تدقيق كاملة"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من الماسحات والمستندات وبوابة العملاء إلى خادم GPU داخلي ثم إلى البحث والمسودات واللوحات التنفيذية، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "الماسحات والمستندات وبوابة العملاء",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "البحث والمسودات واللوحات التنفيذية"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "هندسة آمنة داخل المملكة مع JNH Systems",
+      "text": "حين تحتاج المنظمة إلى التكامل مع أنظمتها القائمة أو إلى هندسة داخل المملكة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        },
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل البيانات إلى اكتشافات وقرارات تشغيلية."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "هندسة تُطوَّر وتُختبر داخل المملكة",
+          "text": "حوسبة طرفية وبرامج عتاد تُطوَّر وتُختبر داخل السعودية."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة مستنداتك وأنظمتك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة على أرشيف واحد أو مجموعة تقارير أو مسار صياغة عروض تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة المستندات والمالية والتقارير لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق الاستشارات والقطاع الحكومي",
+      "items": [
+        {
+          "q": "هل تُعالج مستنداتنا خارج السعودية؟",
+          "a": "لا. يعمل التعرف الضوئي ونماذج اللغة على خوادمك الخاصة أو في مركز بيانات سعودي، ولا تُرسل المستندات إلى خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "ما مدى دقة التعرف الضوئي على المستندات العربية القديمة؟",
+          "a": "تعتمد الدقة على جودة المسح. والصفحات التي لا يتأكد منها النظام تُحال إلى مراجعة بشرية بدل قبولها بصمت."
+        },
+        {
+          "q": "ممَّ يتعلم مساعد طلبات العروض؟",
+          "a": "من عروض شركتك السابقة فقط، وعلى خوادمك الخاصة. ويراجع المستشارون كل مسودة ويعدلونها؛ فهو يسرّع الكتابة ولا يحل محل حكمكم."
+        },
+        {
+          "q": "كيف تُؤمَّن بوابة العملاء؟",
+          "a": "تُشفَّر المستندات، والوصول حسب الأدوار، وكل إجراء مسجَّل. وهي مصممة لدعم متطلبات PDPL وNCA، وتؤكد جهة الامتثال لديك ما ينطبق."
+        },
+        {
+          "q": "هل تسحب اللوحة من أنظمتنا القائمة؟",
+          "a": "نعم. نبني التكاملات مع أنظمة المالية والموارد البشرية والمشاريع وإدارة العملاء التي تستخدمها إداراتك."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن شركتك أو جهتك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "الشركة / الجهة",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "رقمنة الأرشيف بالتعرف الضوئي",
+        "استخراج الرؤى من المستندات العربية",
+        "مساعد صياغة طلبات العروض",
+        "بوابة آمنة لبيانات العملاء",
+        "اللوحة التنفيذية وتقارير ذكاء الأعمال",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل المنظمة",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "المستندات الحساسة لا ينبغي أن تبقى في خزانة أو في سحابة أجنبية.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "رقمنة أرشيف توضيحية",
+      "tag_bad": "تحتاج مراجعة",
+      "tag_ok": "تم استخراج العنوان",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "أرشيف 1987-B · صفحة منخفضة الجودة، أُحيلت للمراجعة",
+          "time": "14:42"
+        },
+        {
+          "level": "warn",
+          "text": "مسودة العرض · قسم الامتثال ناقص",
+          "time": "14:38"
+        },
+        {
+          "level": "ok",
+          "text": "تقرير السوق · الملخص التنفيذي جاهز",
+          "time": "14:35"
+        }
+      ]
+    }
+  }
+}

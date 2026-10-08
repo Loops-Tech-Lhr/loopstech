@@ -140,7 +140,11 @@
     "education_badge": "New for Saudi education",
     "education_title": "AI for schools, universities and <span class=\"accent\">training.</span>",
     "education_text": "Exam proctoring, personalised learning paths, automated grading, an LMS and a campus ID and payment portal.",
-    "education_cta": "See the education solution"
+    "education_cta": "See the education solution",
+    "consulting_badge": "New for Saudi government & consulting",
+    "consulting_title": "AI for consulting and <span class=\"accent\">government contracting.</span>",
+    "consulting_text": "Secure archive OCR, report insight extraction, an RFP drafting assistant and an encrypted client portal.",
+    "consulting_cta": "See the consulting solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -290,7 +294,8 @@
     "link_healthcare": "IT for Healthcare",
     "link_retail": "IT for Retail",
     "link_tourism": "IT for Tourism & Hospitality",
-    "link_education": "IT for Education"
+    "link_education": "IT for Education",
+    "link_consulting": "IT for Consulting & Government"
   },
   "notfound": {
     "title": "Page not found",

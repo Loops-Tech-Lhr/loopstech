@@ -27,7 +27,8 @@ const LANDING_SLUGS = {
   healthcare: 'it-services-for-healthcare-in-saudi-arabia',
   retail: 'it-services-for-retail-in-saudi-arabia',
   tourism: 'it-services-for-tourism-and-hospitality-in-saudi-arabia',
-  education: 'it-services-for-education-in-saudi-arabia'
+  education: 'it-services-for-education-in-saudi-arabia',
+  consulting: 'it-services-for-government-and-consulting-in-saudi-arabia'
 }
 const today = new Date().toISOString().slice(0, 10)
 
@@ -187,7 +188,8 @@ const data = {
     healthcare: readJson('data/landing-healthcare.json'),
     retail: readJson('data/landing-retail.json'),
     tourism: readJson('data/landing-tourism.json'),
-    education: readJson('data/landing-education.json')
+    education: readJson('data/landing-education.json'),
+    consulting: readJson('data/landing-consulting.json')
   },
   landingUrl: (key, lang) =>
     (lang === 'ar' ? '/ar/' : '/') + LANDING_SLUGS[key] + '/',
