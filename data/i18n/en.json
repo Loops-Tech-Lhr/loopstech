@@ -83,10 +83,10 @@
         "desc": "Automated booking and housekeeping management."
       }
     ],
-    "saudi_badge": "New for Saudi Arabia",
+    "saudi_badge": "New for Saudi construction",
     "saudi_title": "AI for construction and <span class=\"accent\">mega-projects.</span>",
     "saudi_text": "Computer vision site safety, delay prediction, a multilingual labor agent and secure project systems, deployed on your own GPU servers.",
-    "saudi_cta": "See the Saudi solution",
+    "saudi_cta": "See the construction solution",
     "partner_badge": "Partnership",
     "partner_title": "Field intelligence with <span class=\"accent\">JNH Systems.</span>",
     "partner_text": "Computer vision, drone surveillance and embedded hardware programming, delivered together with an enterprise software layer.",
@@ -148,7 +148,13 @@
     "manufacturing_badge": "New for Saudi manufacturing",
     "manufacturing_title": "AI for factories and <span class=\"accent\">Made in Saudi.</span>",
     "manufacturing_text": "Line-speed quality control, predictive maintenance, shortage prediction, a WMS and a supplier portal.",
-    "manufacturing_cta": "See the manufacturing solution"
+    "manufacturing_cta": "See the manufacturing solution",
+    "industries_badge": "Industries",
+    "industries_title": "Built for the sectors driving <span class=\"accent\">Saudi growth.</span>",
+    "rental_badge": "New for Saudi equipment rental",
+    "rental_title": "AI for car and heavy equipment <span class=\"accent\">rental.</span>",
+    "rental_text": "Damage-detection kiosks, dynamic fleet pricing, predictive maintenance and a corporate booking portal.",
+    "rental_cta": "See the rental solution"
   },
   "services": {
     "badge": "Capabilities",
@@ -300,7 +306,8 @@
     "link_tourism": "IT for Tourism & Hospitality",
     "link_education": "IT for Education",
     "link_consulting": "IT for Consulting & Government",
-    "link_manufacturing": "IT for Manufacturing"
+    "link_manufacturing": "IT for Manufacturing",
+    "link_rental": "IT for Equipment Rental"
   },
   "notfound": {
     "title": "Page not found",

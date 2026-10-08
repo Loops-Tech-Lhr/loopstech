@@ -221,6 +221,7 @@ function footer(ctx, contact) {
               <li><a href="${data.landingUrl('education', lang)}">${t('footer.link_education')}</a></li>
               <li><a href="${data.landingUrl('consulting', lang)}">${t('footer.link_consulting')}</a></li>
               <li><a href="${data.landingUrl('manufacturing', lang)}">${t('footer.link_manufacturing')}</a></li>
+              <li><a href="${data.landingUrl('rental', lang)}">${t('footer.link_rental')}</a></li>
               <li><a href="${url('partners/jnh-systems/')}">${t('footer.link_partner')}</a></li>
               <li><a href="${url('about/')}">${t('footer.link_journey')}</a></li>
               <li><a href="${url('contact/')}">${t('footer.link_start')}</a></li>
@@ -370,6 +371,20 @@ export function contactForm(ctx, { source, labels, options }) {
 
 // ---------- pages ----------
 
+// Landing pages shown on the home page: [key, i18n prefix used by the home.* strings]
+const HOME_LANDINGS = [
+  ['construction', 'saudi'],
+  ['logistics', 'logistics'],
+  ['realestate', 'realestate'],
+  ['healthcare', 'healthcare'],
+  ['retail', 'retail'],
+  ['tourism', 'tourism'],
+  ['education', 'education'],
+  ['consulting', 'consulting'],
+  ['manufacturing', 'manufacturing'],
+  ['rental', 'rental']
+]
+
 export function homePage(ctx) {
   const { t, get, data, url, icon, lang } = ctx
   const heroSrcset = data.assets.hero.map(h => `${h.src} ${h.w}w`).join(', ')
@@ -436,65 +451,23 @@ export function homePage(ctx) {
     </section>
 
     <section class="section section-dark promo">
-      <div class="container promo-grid">
-        <div>
-          <span class="eyebrow">${t('home.saudi_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.saudi_title')}</h2>
-          <p style="max-width:520px">${t('home.saudi_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.saUrl(lang)}" class="btn btn-primary">${t('home.saudi_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.logistics_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.logistics_title')}</h2>
-          <p style="max-width:520px">${t('home.logistics_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('logistics', lang)}" class="btn btn-primary">${t('home.logistics_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.realestate_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.realestate_title')}</h2>
-          <p style="max-width:520px">${t('home.realestate_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('realestate', lang)}" class="btn btn-primary">${t('home.realestate_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.healthcare_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.healthcare_title')}</h2>
-          <p style="max-width:520px">${t('home.healthcare_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('healthcare', lang)}" class="btn btn-primary">${t('home.healthcare_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.retail_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.retail_title')}</h2>
-          <p style="max-width:520px">${t('home.retail_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('retail', lang)}" class="btn btn-primary">${t('home.retail_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.tourism_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.tourism_title')}</h2>
-          <p style="max-width:520px">${t('home.tourism_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('tourism', lang)}" class="btn btn-primary">${t('home.tourism_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.education_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.education_title')}</h2>
-          <p style="max-width:520px">${t('home.education_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('education', lang)}" class="btn btn-primary">${t('home.education_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.consulting_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.consulting_title')}</h2>
-          <p style="max-width:520px">${t('home.consulting_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('consulting', lang)}" class="btn btn-primary">${t('home.consulting_cta')} ${arrow(ctx)}</a></div>
-        </div>
-        <div>
-          <span class="eyebrow">${t('home.manufacturing_badge')}</span>
-          <h2 class="heading" style="margin:10px 0 14px">${t('home.manufacturing_title')}</h2>
-          <p style="max-width:520px">${t('home.manufacturing_text')}</p>
-          <div class="btn-row" style="margin-top:28px"><a href="${data.landingUrl('manufacturing', lang)}" class="btn btn-primary">${t('home.manufacturing_cta')} ${arrow(ctx)}</a></div>
+      <div class="container">
+        ${sectionHead(t('home.industries_badge'), t('home.industries_title'))}
+        <div class="cells cells-5">
+          ${HOME_LANDINGS.map(
+            ([key, pre], i) => `
+          <a href="${data.landingUrl(key, lang)}" class="cell reveal-on-scroll" style="transition-delay:${(i % 5) * 0.05}s">
+            <span class="eyebrow">${t('home.' + pre + '_badge')}</span>
+            <h3 class="cell-title" style="margin-top:14px">${t('footer.link_' + key)}</h3>
+            <p class="cell-text">${t('home.' + pre + '_text')}</p>
+            <span class="link-arrow">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
+          </a>`
+          ).join('')}
         </div>
         <div class="promo-wide">
           <span class="eyebrow">${t('home.partner_badge')}</span>
           <h2 class="heading" style="margin:10px 0 14px">${t('home.partner_title')}</h2>
-          <p style="max-width:520px">${t('home.partner_text')}</p>
+          <p style="max-width:640px">${t('home.partner_text')}</p>
           <div class="btn-row" style="margin-top:28px"><a href="${url('partners/jnh-systems/')}" class="btn btn-light">${t('home.partner_cta')} ${arrow(ctx)}</a></div>
         </div>
       </div>
@@ -903,8 +876,18 @@ export function saLanding(ctx, key = 'construction') {
   }
   const mock = c.mock
   const mockView =
-    c.mockType === 'qc'
-      ? `<div class="mock-view qc" aria-hidden="true">
+    c.mockType === 'yard'
+      ? `<div class="mock-view yard" aria-hidden="true">
+            <div class="gantry"></div>
+            <div class="sweep"></div>
+            <div class="truck"><i class="cargo"></i><i class="cab"></i><i class="wh w1"></i><i class="wh w2"></i></div>
+            <div class="ground"></div>
+            <div class="box box-bad"><span>${mock.tag_bad}</span></div>
+            <div class="box box-dev"><span>${mock.tag_extra}</span></div>
+            <div class="box box-ok"><span>${mock.tag_ok}</span></div>
+          </div>`
+      : c.mockType === 'qc'
+        ? `<div class="mock-view qc" aria-hidden="true">
             <div class="cam"></div>
             <div class="scan-v"></div>
             <div class="belt"></div>
@@ -912,8 +895,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="item i2 nolabel" style="--d:1"><span class="ptag bad">${mock.tag_bad}</span></div>
             <div class="item i3 off" style="--d:2"><span class="ptag bad">${mock.tag_extra}</span></div>
           </div>`
-      : c.mockType === 'doc'
-        ? `<div class="mock-view docscan" aria-hidden="true">
+        : c.mockType === 'doc'
+          ? `<div class="mock-view docscan" aria-hidden="true">
             <div class="paper" dir="rtl">
               <i class="seal"></i>
               <i class="ln l1" style="--n:0"></i><i class="ln l2" style="--n:1"></i><i class="ln l3" style="--n:2"></i><i class="ln l4" style="--n:3"></i><i class="ln l5" style="--n:4"></i><i class="ln l6" style="--n:5"></i><i class="ln l7" style="--n:6"></i><i class="ln l8" style="--n:7"></i><i class="ln l9" style="--n:8"></i>
@@ -922,8 +905,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
           </div>`
-        : c.mockType === 'exam'
-          ? `<div class="mock-view exam" aria-hidden="true">
+          : c.mockType === 'exam'
+            ? `<div class="mock-view exam" aria-hidden="true">
             <div class="student s1"></div>
             <div class="student s2"></div>
             <div class="phone"></div>
@@ -932,8 +915,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-dev"><span>${mock.tag_extra}</span></div>
           </div>`
-          : c.mockType === 'crowd'
-            ? `<div class="mock-view crowd" aria-hidden="true">
+            : c.mockType === 'crowd'
+              ? `<div class="mock-view crowd" aria-hidden="true">
             <div class="stage"></div>
             <div class="hz"></div>
             <div class="pack dense"></div>
@@ -943,8 +926,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-            : c.mockType === 'store'
-              ? `<div class="mock-view store" aria-hidden="true">
+              : c.mockType === 'store'
+                ? `<div class="mock-view store" aria-hidden="true">
             <div class="heat h1"></div>
             <div class="heat h2"></div>
             <div class="shelf sh1"></div><div class="shelf sh2"></div><div class="shelf sh3"></div>
@@ -953,8 +936,8 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-              : c.mockType === 'ward'
-                ? `<div class="mock-view ward" aria-hidden="true">
+                : c.mockType === 'ward'
+                  ? `<div class="mock-view ward" aria-hidden="true">
             <div class="scan"></div>
             <div class="beds">
               <i class="bed occ"></i><i class="bed occ"></i><i class="bed free"></i><i class="bed occ"></i>
@@ -966,22 +949,22 @@ export function saLanding(ctx, key = 'construction') {
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-                : c.mockType === 'facade'
-                  ? `<div class="mock-view facade" aria-hidden="true">
+                  : c.mockType === 'facade'
+                    ? `<div class="mock-view facade" aria-hidden="true">
             <div class="scan"></div>
             <div class="drone"></div>
             <div class="box box-bad"><span>${mock.tag_bad}</span></div>
             <div class="box box-ok"><span>${mock.tag_ok}</span></div>
           </div>`
-                  : c.mockType === 'conveyor'
-                    ? `<div class="mock-view conveyor" aria-hidden="true">
+                    : c.mockType === 'conveyor'
+                      ? `<div class="mock-view conveyor" aria-hidden="true">
             <div class="scan-v"></div>
             <div class="belt"></div>
             <div class="parcel p1" style="--d:0"><span class="ptag ok">${mock.tag_ok}</span></div>
             <div class="parcel p2 bad" style="--d:1"><span class="ptag bad">${mock.tag_bad}</span></div>
             <div class="parcel p3" style="--d:2"><span class="ptag ok">${mock.tag_ok}</span></div>
           </div>`
-                    : `<div class="mock-view" aria-hidden="true">
+                      : `<div class="mock-view" aria-hidden="true">
             <div class="scan"></div>
             <div class="worker w1"></div>
             <div class="worker w2"></div>

@@ -1,0 +1,530 @@
+{
+  "en": {
+    "theme": "theme-rental",
+    "mockType": "yard",
+    "audience": "Car and heavy equipment rental company owners, fleet managers and corporate rental sales teams in Saudi Arabia",
+    "meta": {
+      "title": "IT Services for Equipment Rental in Saudi Arabia | Loops Technologies",
+      "description": "IT services for car and heavy equipment rental fleets in Saudi Arabia: damage detection kiosks at return lots, dynamic fleet pricing, predictive maintenance, a live fleet dashboard and a corporate client booking portal."
+    },
+    "kicker": "For car & heavy equipment rental fleets serving mega-projects and enterprises in Saudi Arabia",
+    "eyebrow": "Car & heavy equipment rental",
+    "title": "Log every dent at return. Price every asset right. <span class=\"hl\">Keep every machine earning.</span>",
+    "subtitle": "Camera kiosks that log new damage the moment a vehicle comes back, pricing that follows demand and seasons like Eid, maintenance predicted from sensor data, one live fleet dashboard and a booking portal for corporate clients. Runs on your own servers, so fleet and client data stays in the Kingdom.",
+    "cta_call": "Call now",
+    "cta_wa": "WhatsApp us",
+    "cta_contact": "Contact us",
+    "cta_primary": "Book a free Operations Study",
+    "response_note": "Free Operations Study · Engineers, not salespeople · Reply within one working day",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "Riyadh-based team" },
+      { "icon": "fa-lock", "text": "Fleet data stays in-Kingdom" },
+      { "icon": "fa-truck", "text": "Cars & heavy equipment" },
+      { "icon": "fa-handshake", "text": "With JNH Systems" }
+    ],
+    "ticker": [
+      "New dent logged · truck 214",
+      "Return scan complete · excavator",
+      "Rate raised · Eid demand",
+      "Service due · loader 7",
+      "Booking confirmed · corporate portal",
+      "Invoice downloaded"
+    ],
+    "stats": [
+      { "value": "5", "label": "Integrated solutions", "count": true },
+      { "value": "250+", "label": "Projects delivered", "count": true },
+      { "value": "Riyadh", "label": "Saudi Arabia hub", "count": false },
+      { "value": "2013", "label": "Building software since", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "Built for the people who run the fleet",
+      "title": "Owners, fleet managers and corporate sales teams each get what they need.",
+      "items": [
+        {
+          "icon": "fa-sack-dollar",
+          "who": "Rental company owners & GMs",
+          "title": "Earn more per asset: right price, no disputes, fewer breakdowns.",
+          "text": "Rates that follow demand, a record of every return, and maintenance planned before assets sit idle."
+        },
+        {
+          "icon": "fa-screwdriver-wrench",
+          "who": "Fleet & maintenance managers",
+          "title": "Know every asset's condition and when it needs service.",
+          "text": "Sensor data, mileage and usage history predict servicing, extending the life of heavy machinery and cars."
+        },
+        {
+          "icon": "fa-file-contract",
+          "who": "Corporate sales & account managers",
+          "title": "Let enterprise clients self-serve fleets, contracts and invoices.",
+          "text": "A dedicated portal where B2B clients rent fleets, manage active contracts and download invoices."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "The challenge",
+      "title": "Mega-projects need big fleets. Manual rental operations can't keep up.",
+      "items": [
+        {
+          "icon": "fa-car-burst",
+          "title": "Damage disputes at return",
+          "text": "Without a before-and-after record, every scratch becomes an argument."
+        },
+        {
+          "icon": "fa-calendar-days",
+          "title": "Fixed rates miss the peaks",
+          "text": "Eid and major construction phases push demand up, and static pricing leaves money behind."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "Breakdowns idle paying assets",
+          "text": "A machine that fails on site earns nothing and damages the client relationship."
+        },
+        {
+          "icon": "fa-location-crosshairs",
+          "title": "Fleet visibility is scattered",
+          "text": "Locations, bookings and revenue sit in different tools, so decisions run late."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "Five systems for the return lot, the workshop and the client.",
+      "items": [
+        {
+          "icon": "fa-car-burst",
+          "title": "Vehicle & Equipment Damage Detection",
+          "tag": "Computer Vision",
+          "text": "Automated camera kiosks at rental return lots scan vehicles or machinery to instantly log new scratches, dents or missing parts.",
+          "partner": true
+        },
+        {
+          "icon": "fa-tags",
+          "title": "Dynamic Fleet Pricing Engine",
+          "tag": "AI",
+          "text": "An algorithm that adjusts rental rates based on current inventory, corporate demand and high seasons like Eid or major construction phases."
+        },
+        {
+          "icon": "fa-wrench",
+          "title": "Predictive Fleet Maintenance",
+          "tag": "AI",
+          "text": "Analyzes vehicle sensor data, mileage and usage history to alert management when heavy machinery or cars need servicing, extending asset life."
+        },
+        {
+          "icon": "fa-gauge-high",
+          "title": "Unified Fleet Management Dashboard",
+          "tag": "Enterprise software",
+          "text": "A centralized software platform to track equipment locations, booking statuses and daily revenue generation in real time."
+        },
+        {
+          "icon": "fa-file-invoice",
+          "title": "Corporate Client Booking Portal",
+          "tag": "Web platform",
+          "text": "A dedicated web application for B2B clients to easily rent fleets of vehicles, manage active contracts and download invoices."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "Local data · In-house GPU",
+      "title": "Your fleet data. Your servers. Your Kingdom.",
+      "text": "Return-lot imagery, telematics and client contracts are core business data. We deploy vision and AI models on GPU servers at your yard or in a Saudi data center, with encryption, role-based access and audit logs. Our solutions are designed to support PDPL and NCA requirements; your compliance team confirms what applies to you.",
+      "points": [
+        "Return scans analysed on your own servers",
+        "Fleet, pricing and client data stay under your control",
+        "No dependency on foreign AI APIs",
+        "Models tuned to your own vehicles and equipment"
+      ],
+      "link": "Learn about Private AI",
+      "diagram": {
+        "label": "Data flows from return-lot kiosks, vehicle sensors and the client portal to an in-house GPU server to the fleet dashboard, inside the Kingdom",
+        "boundary": "Inside the Kingdom of Saudi Arabia",
+        "n1": "Return-lot kiosks, vehicle sensors & client portal",
+        "n2": "Your in-house GPU server",
+        "n3": "Fleet dashboard, pricing & alerts"
+      }
+    },
+    "jnh": {
+      "eyebrow": "Partnership",
+      "title": "Vision and edge hardware with JNH Systems",
+      "text": "Where a fleet operator needs cameras, edge devices or a link to existing systems, Loops Technologies works with JNH Systems, an autonomous systems and mission operations company engineered in Saudi Arabia.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "Applied Intelligence & Perception (AIS)",
+          "text": "Computer vision and language models that turn footage and sensor data into detections and decisions."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Edge computing & hardware programming",
+          "text": "Hardware programs and edge computing developed and tested in-Kingdom."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "Systems Fusion & Integration",
+          "text": "Bring existing command, control and data systems into one decision picture without replacing current infrastructure."
+        }
+      ],
+      "link": "Visit jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "How we start",
+      "title": "From study to deployment in three steps.",
+      "items": [
+        {
+          "title": "Operations Study",
+          "badge": "Free",
+          "text": "One session with the engineering team to map your yards, fleet and data. No sales pitch."
+        },
+        {
+          "title": "Proof of Concept",
+          "badge": "Paid",
+          "text": "A focused pilot at one return lot or one asset class that proves the result before you commit."
+        },
+        {
+          "title": "Deployment",
+          "badge": "Integrated",
+          "text": "Production rollout connected to your fleet, billing and telematics systems."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions from rental and fleet teams",
+      "items": [
+        {
+          "q": "Do we need to rebuild our return lot for the kiosks?",
+          "a": "Usually not. The Operations Study checks lot layout, lighting and traffic flow before we propose where the cameras go."
+        },
+        {
+          "q": "Does damage detection replace our inspectors?",
+          "a": "No. It records time-stamped before-and-after images and flags new damage, and your team confirms any dispute."
+        },
+        {
+          "q": "Can we control the pricing engine?",
+          "a": "Yes. Rates stay within the minimum and maximum limits you set, and you can approve changes or let it run automatically."
+        },
+        {
+          "q": "What data does predictive maintenance use?",
+          "a": "Vehicle sensor data, mileage and usage history. We use your existing telematics where available."
+        },
+        {
+          "q": "Does fleet and client data have to leave Saudi Arabia?",
+          "a": "No. We can deploy on GPU servers at your yard or a Saudi data center, and the models run without foreign AI services."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The Operations Study is free. After it, we give a fixed scope and price for the Proof of Concept."
+        }
+      ]
+    },
+    "form": {
+      "title": "Book your free Operations Study",
+      "text": "Tell us about your fleet and yards. A member of our engineering team will reply within one working day.",
+      "name": "Full name",
+      "company": "Rental company",
+      "email": "Work email",
+      "phone": "Phone / WhatsApp",
+      "interest": "I am interested in",
+      "options": [
+        "Damage detection kiosks (computer vision)",
+        "Dynamic fleet pricing",
+        "Predictive fleet maintenance",
+        "Fleet management dashboard",
+        "Corporate client booking portal",
+        "Private AI / in-house GPU"
+      ],
+      "message": "Fleet and yard details",
+      "submit": "Request Operations Study",
+      "sending": "Sending…",
+      "success": "Thank you. We have received your request and will reply within one working day.",
+      "error": "Something went wrong. Please message us on WhatsApp instead."
+    },
+    "final": {
+      "title": "Your next return shouldn't end in an argument.",
+      "text": "Book a free Operations Study with our engineers. Call, WhatsApp or send a message."
+    },
+    "mock": {
+      "label": "Illustrative return-lot scan",
+      "tag_bad": "New dent",
+      "tag_extra": "Part missing",
+      "tag_ok": "Panel OK",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "Truck 214 · New dent logged at return",
+          "time": "16:42"
+        },
+        {
+          "level": "warn",
+          "text": "Loader 7 · Service due in 3 days",
+          "time": "16:38"
+        },
+        { "level": "ok", "text": "Fleet · Eid rates updated", "time": "16:35" }
+      ]
+    }
+  },
+  "ar": {
+    "theme": "theme-rental",
+    "mockType": "yard",
+    "audience": "ملاك شركات تأجير السيارات والمعدات الثقيلة ومديرو الأساطيل وفرق مبيعات التأجير للشركات في المملكة العربية السعودية",
+    "meta": {
+      "title": "خدمات تقنية المعلومات لتأجير المعدات في السعودية | لوبس تكنولوجيز",
+      "description": "خدمات تقنية المعلومات لأساطيل تأجير السيارات والمعدات الثقيلة في السعودية: أكشاك لكشف الأضرار عند الإرجاع، وتسعير ديناميكي للأسطول، وصيانة تنبؤية، ولوحة مباشرة للأسطول، وبوابة حجز للشركات."
+    },
+    "kicker": "لأساطيل تأجير السيارات والمعدات الثقيلة التي تخدم المشاريع الكبرى والشركات في المملكة العربية السعودية",
+    "eyebrow": "تأجير السيارات والمعدات الثقيلة",
+    "title": "سجّل كل خدش عند الإرجاع. سعّر كل أصل بشكل صحيح. <span class=\"hl\">أبقِ كل آلة تدرّ دخلاً.</span>",
+    "subtitle": "أكشاك بكاميرات تسجّل الأضرار الجديدة لحظة عودة المركبة، وتسعير يتبع الطلب والمواسم مثل العيد، وصيانة يُتنبأ بها من بيانات المستشعرات، ولوحة مباشرة واحدة للأسطول، وبوابة حجز للعملاء من الشركات. يعمل على خوادمك الخاصة لتبقى بيانات الأسطول والعملاء داخل المملكة.",
+    "cta_call": "اتصل الآن",
+    "cta_wa": "راسلنا واتساب",
+    "cta_contact": "تواصل معنا",
+    "cta_primary": "احجز دراسة تشغيلية مجانية",
+    "response_note": "دراسة تشغيلية مجانية · مهندسون لا مندوبو مبيعات · الرد خلال يوم عمل واحد",
+    "chips": [
+      { "icon": "fa-location-dot", "text": "فريق في الرياض" },
+      { "icon": "fa-lock", "text": "بيانات الأسطول تبقى داخل المملكة" },
+      { "icon": "fa-truck", "text": "سيارات ومعدات ثقيلة" },
+      { "icon": "fa-handshake", "text": "بالتعاون مع JNH Systems" }
+    ],
+    "ticker": [
+      "تسجيل خدش جديد · الشاحنة 214",
+      "اكتمال مسح الإرجاع · الحفارة",
+      "رفع السعر · طلب العيد",
+      "موعد صيانة · اللودر 7",
+      "تأكيد حجز · بوابة الشركات",
+      "تنزيل فاتورة"
+    ],
+    "stats": [
+      { "value": "5", "label": "حلول متكاملة", "count": true },
+      { "value": "+250", "label": "مشروع منجز", "count": true },
+      { "value": "الرياض", "label": "مركزنا في السعودية", "count": false },
+      { "value": "2013", "label": "نبني البرمجيات منذ", "count": false }
+    ],
+    "roles": {
+      "eyebrow": "مصمم لمن يديرون الأسطول",
+      "title": "الملاك ومديرو الأساطيل وفرق مبيعات الشركات، لكلٍّ ما يحتاجه.",
+      "items": [
+        {
+          "icon": "fa-sack-dollar",
+          "who": "ملاك شركات التأجير والمديرون العامون",
+          "title": "اكسب أكثر من كل أصل: سعر صحيح، دون نزاعات، وأعطال أقل.",
+          "text": "أسعار تتبع الطلب، وسجل لكل عملية إرجاع، وصيانة مخططة قبل أن تتوقف الأصول."
+        },
+        {
+          "icon": "fa-screwdriver-wrench",
+          "who": "مديرو الأسطول والصيانة",
+          "title": "اعرف حالة كل أصل ومتى يحتاج إلى صيانة.",
+          "text": "بيانات المستشعرات والمسافة المقطوعة وسجل الاستخدام تتنبأ بالصيانة، فيمتد عمر الآلات الثقيلة والسيارات."
+        },
+        {
+          "icon": "fa-file-contract",
+          "who": "مبيعات الشركات ومديرو الحسابات",
+          "title": "دع عملاء المؤسسات يخدمون أنفسهم في الأساطيل والعقود والفواتير.",
+          "text": "بوابة مخصصة يستأجر فيها عملاء الشركات الأساطيل، ويديرون العقود السارية، ويحمّلون الفواتير."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "التحدي",
+      "title": "المشاريع الكبرى تحتاج أساطيل ضخمة، والتأجير اليدوي لا يواكبها.",
+      "items": [
+        {
+          "icon": "fa-car-burst",
+          "title": "نزاعات الأضرار عند الإرجاع",
+          "text": "بدون سجل قبل وبعد، يصبح كل خدش مصدر خلاف."
+        },
+        {
+          "icon": "fa-calendar-days",
+          "title": "الأسعار الثابتة تفوّت الذروات",
+          "text": "العيد ومراحل الإنشاءات الكبرى يرفعان الطلب، والتسعير الثابت يترك المال."
+        },
+        {
+          "icon": "fa-triangle-exclamation",
+          "title": "الأعطال توقف الأصول المدرّة للدخل",
+          "text": "آلة تتعطل في الموقع لا تدرّ دخلاً وتضر بعلاقة العميل."
+        },
+        {
+          "icon": "fa-location-crosshairs",
+          "title": "رؤية الأسطول مبعثرة",
+          "text": "المواقع والحجوزات والإيرادات في أدوات مختلفة، فتتأخر القرارات."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "الحلول",
+      "title": "خمسة أنظمة لساحة الإرجاع وورشة الصيانة والعميل.",
+      "items": [
+        {
+          "icon": "fa-car-burst",
+          "title": "كشف أضرار المركبات والمعدات",
+          "tag": "الرؤية الحاسوبية",
+          "text": "أكشاك كاميرات آلية في ساحات إرجاع المركبات تمسح المركبات أو الآلات لتسجل فوراً الخدوش والانبعاجات والأجزاء المفقودة الجديدة.",
+          "partner": true
+        },
+        {
+          "icon": "fa-tags",
+          "title": "محرك التسعير الديناميكي للأسطول",
+          "tag": "الذكاء الاصطناعي",
+          "text": "خوارزمية تعدّل أسعار التأجير بحسب المخزون الحالي وطلب الشركات والمواسم المرتفعة مثل العيد ومراحل الإنشاءات الكبرى."
+        },
+        {
+          "icon": "fa-wrench",
+          "title": "الصيانة التنبؤية للأسطول",
+          "tag": "الذكاء الاصطناعي",
+          "text": "تحلل بيانات مستشعرات المركبات والمسافة المقطوعة وسجل الاستخدام لتنبّه الإدارة حين تحتاج الآلات الثقيلة أو السيارات إلى صيانة، فيمتد عمر الأصل."
+        },
+        {
+          "icon": "fa-gauge-high",
+          "title": "لوحة موحدة لإدارة الأسطول",
+          "tag": "برمجيات المؤسسات",
+          "text": "منصة برمجية مركزية لتتبع مواقع المعدات وحالات الحجز والإيرادات اليومية لحظياً."
+        },
+        {
+          "icon": "fa-file-invoice",
+          "title": "بوابة حجز للعملاء من الشركات",
+          "tag": "منصة ويب",
+          "text": "تطبيق ويب مخصص لعملاء الشركات لاستئجار أساطيل المركبات بسهولة وإدارة العقود السارية وتنزيل الفواتير."
+        }
+      ]
+    },
+    "gpu": {
+      "eyebrow": "بيانات محلية · وحدات GPU داخل المنشأة",
+      "title": "بيانات أسطولك. خوادمك. داخل مملكتك.",
+      "text": "صور ساحات الإرجاع وبيانات التتبع وعقود العملاء بيانات أساسية للأعمال. ننشر نماذج الرؤية والذكاء الاصطناعي على خوادم GPU في ساحتك أو في مركز بيانات سعودي، مع التشفير وصلاحيات الأدوار وسجلات التدقيق. صُممت حلولنا لدعم متطلبات نظام حماية البيانات الشخصية (PDPL) وضوابط الأمن السيبراني (NCA)، وتؤكد جهة الامتثال لديك ما ينطبق عليك.",
+      "points": [
+        "مسوحات الإرجاع تُحلَّل على خوادمك الخاصة",
+        "بيانات الأسطول والتسعير والعملاء تبقى تحت سيطرتك",
+        "دون اعتماد على واجهات ذكاء اصطناعي أجنبية",
+        "نماذج مضبوطة على مركباتك ومعداتك"
+      ],
+      "link": "اعرف المزيد عن الذكاء الاصطناعي الخاص",
+      "diagram": {
+        "label": "تتدفق البيانات من أكشاك ساحة الإرجاع ومستشعرات المركبات وبوابة العملاء إلى خادم GPU داخلي ثم إلى لوحة الأسطول، داخل المملكة",
+        "boundary": "داخل المملكة العربية السعودية",
+        "n1": "أكشاك ساحة الإرجاع ومستشعرات المركبات وبوابة العملاء",
+        "n2": "خادم GPU الخاص بك",
+        "n3": "لوحة الأسطول والتسعير والتنبيهات"
+      }
+    },
+    "jnh": {
+      "eyebrow": "الشراكة",
+      "title": "الرؤية الحاسوبية والعتاد الطرفي مع JNH Systems",
+      "text": "حين يحتاج مشغل الأسطول إلى كاميرات أو أجهزة طرفية أو ربط بالأنظمة القائمة، تعمل لوبس تكنولوجيز مع JNH Systems، شركة الأنظمة ذاتية التشغيل وعمليات المهام المصممة في السعودية.",
+      "items": [
+        {
+          "icon": "fa-eye",
+          "title": "الذكاء التطبيقي والإدراك (AIS)",
+          "text": "نماذج رؤية حاسوبية ولغوية تحوّل اللقطات وبيانات المستشعرات إلى اكتشافات وقرارات."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "الحوسبة الطرفية وبرمجة العتاد",
+          "text": "برامج عتاد وحوسبة طرفية تُطوّر وتُختبر داخل المملكة."
+        },
+        {
+          "icon": "fa-object-group",
+          "title": "دمج الأنظمة وتكاملها",
+          "text": "دمج أنظمة القيادة والتحكم والبيانات القائمة في صورة قرار واحدة دون استبدال البنية الحالية."
+        }
+      ],
+      "link": "زيارة jnhsystems.com"
+    },
+    "process": {
+      "eyebrow": "كيف نبدأ",
+      "title": "من الدراسة إلى النشر في ثلاث خطوات.",
+      "items": [
+        {
+          "title": "دراسة تشغيلية",
+          "badge": "مجانية",
+          "text": "جلسة واحدة مع الفريق الهندسي لرسم خريطة ساحاتك وأسطولك وبياناتك، دون عروض مبيعات."
+        },
+        {
+          "title": "إثبات المفهوم",
+          "badge": "مدفوع",
+          "text": "تجربة مركزة في ساحة إرجاع واحدة أو فئة أصول واحدة تثبت النتيجة قبل الالتزام."
+        },
+        {
+          "title": "النشر",
+          "badge": "متكامل",
+          "text": "تشغيل فعلي مرتبط بأنظمة الأسطول والفوترة والتتبع لديك."
+        }
+      ]
+    },
+    "faq": {
+      "title": "أسئلة فرق التأجير والأساطيل",
+      "items": [
+        {
+          "q": "هل نحتاج إلى إعادة بناء ساحة الإرجاع للأكشاك؟",
+          "a": "غالباً لا. تفحص الدراسة التشغيلية تخطيط الساحة والإضاءة وحركة المرور قبل أن نقترح أماكن الكاميرات."
+        },
+        {
+          "q": "هل يحل كشف الأضرار محل المفتشين لدينا؟",
+          "a": "لا. يسجل صوراً مؤرخة قبل وبعد ويرصد الأضرار الجديدة، ويؤكد فريقك أي نزاع."
+        },
+        {
+          "q": "هل نتحكم بمحرك التسعير؟",
+          "a": "نعم. تبقى الأسعار ضمن الحدين الأدنى والأعلى اللذين تحددهما، ويمكنك اعتماد التغييرات أو تركه يعمل تلقائياً."
+        },
+        {
+          "q": "ما البيانات التي تستخدمها الصيانة التنبؤية؟",
+          "a": "بيانات مستشعرات المركبات والمسافة المقطوعة وسجل الاستخدام. ونستخدم أنظمة التتبع الموجودة لديك حيثما توفرت."
+        },
+        {
+          "q": "هل يجب أن تغادر بيانات الأسطول والعملاء المملكة؟",
+          "a": "لا. يمكن النشر على خوادم GPU في ساحتك أو في مركز بيانات سعودي، وتعمل النماذج دون خدمات ذكاء اصطناعي أجنبية."
+        },
+        {
+          "q": "كم التكلفة؟",
+          "a": "الدراسة التشغيلية مجانية. وبعدها نقدم نطاقاً وسعراً ثابتين لإثبات المفهوم."
+        }
+      ]
+    },
+    "form": {
+      "title": "احجز دراستك التشغيلية المجانية",
+      "text": "أخبرنا عن أسطولك وساحاتك، وسيرد عليك أحد أعضاء فريقنا الهندسي خلال يوم عمل واحد.",
+      "name": "الاسم الكامل",
+      "company": "شركة التأجير",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "الهاتف / واتساب",
+      "interest": "أهتم بـ",
+      "options": [
+        "أكشاك كشف الأضرار (الرؤية الحاسوبية)",
+        "التسعير الديناميكي للأسطول",
+        "الصيانة التنبؤية للأسطول",
+        "لوحة إدارة الأسطول",
+        "بوابة حجز العملاء من الشركات",
+        "الذكاء الاصطناعي الخاص / وحدات GPU داخل المنشأة"
+      ],
+      "message": "تفاصيل الأسطول والساحات",
+      "submit": "اطلب دراسة تشغيلية",
+      "sending": "جارٍ الإرسال…",
+      "success": "شكراً لك. استلمنا طلبك وسنرد عليك خلال يوم عمل واحد.",
+      "error": "حدث خطأ. يرجى مراسلتنا عبر واتساب."
+    },
+    "final": {
+      "title": "عملية الإرجاع القادمة لا ينبغي أن تنتهي بخلاف.",
+      "text": "احجز دراسة تشغيلية مجانية مع مهندسينا. اتصل أو راسلنا عبر واتساب أو أرسل رسالة."
+    },
+    "mock": {
+      "label": "مسح توضيحي في ساحة الإرجاع",
+      "tag_bad": "خدش جديد",
+      "tag_extra": "جزء مفقود",
+      "tag_ok": "اللوحة سليمة",
+      "rows": [
+        {
+          "level": "alert",
+          "text": "الشاحنة 214 · تسجيل خدش جديد عند الإرجاع",
+          "time": "16:42"
+        },
+        {
+          "level": "warn",
+          "text": "اللودر 7 · موعد صيانة بعد 3 أيام",
+          "time": "16:38"
+        },
+        {
+          "level": "ok",
+          "text": "الأسطول · تحديث أسعار العيد",
+          "time": "16:35"
+        }
+      ]
+    }
+  }
+}
