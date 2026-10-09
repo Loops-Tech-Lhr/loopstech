@@ -2237,3 +2237,56 @@ a.cell:hover {
 .role-head {
   align-items: flex-start;
 }
+
+/* home stats: icon on the left, number and label beside it */
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-row .stat-ico {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  margin: 0;
+}
+
+.stat-row .stat-ico .icon {
+  font-size: 22px;
+}
+
+.stat-text {
+  min-width: 0;
+}
+
+.stat-row .stat-value {
+  line-height: 1.15;
+}
+
+/* small phones: keep the two stat columns inside the screen */
+.stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 479px) {
+  .stat-row {
+    gap: 12px;
+    padding: 20px 14px;
+  }
+
+  .stat-row .stat-ico {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stat-row .stat-ico .icon {
+    font-size: 18px;
+  }
+}

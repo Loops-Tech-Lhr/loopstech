@@ -531,7 +531,7 @@ export function homePage(ctx) {
 
     <div class="container">
       <div class="stats">
-        ${stats.map(([v, l], i) => `<div class="stat"><span class="stat-ico">${icon(STAT_ICONS[i])}</span><div class="stat-value"${/\d/.test(v) ? ' data-count' : ''}>${v}</div><div class="stat-label">${l}</div></div>`).join('')}
+        ${stats.map(([v, l], i) => `<div class="stat stat-row"><span class="stat-ico">${icon(STAT_ICONS[i])}</span><div class="stat-text"><div class="stat-value"${/\d/.test(v) ? ' data-count' : ''}>${v}</div><div class="stat-label">${l}</div></div></div>`).join('')}
       </div>
     </div>
 
