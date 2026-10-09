@@ -2103,3 +2103,137 @@ a.cell:hover {
     font-size: 22px;
   }
 }
+
+/* ================= One card pattern everywhere: icon on the left, heading beside it ================= */
+
+/* generic cards (services, problems, features, process, industries ERP, JNH, ...) */
+.cell:has(> .cell-icon) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.cell:has(> .cell-icon) > .cell-icon {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.cell:has(> .cell-icon) > .cell-title {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cell:has(> .cell-icon) > :not(.cell-icon):not(.cell-title):not(.cell-num) {
+  grid-column: 1 / -1;
+}
+
+.cell:has(> .cell-icon) > .cell-text {
+  align-self: start;
+  margin-top: 18px;
+}
+
+.cell:has(> .cell-icon) > .link-arrow,
+.cell:has(> .cell-icon) > .badge-partner {
+  justify-self: start;
+}
+
+/* step numbers become a quiet corner label */
+.cell > .cell-num {
+  position: absolute;
+  top: 14px;
+  inset-inline-end: 18px;
+  margin: 0;
+  opacity: 0.55;
+}
+
+/* role cards */
+.role-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.role-headtext {
+  min-width: 0;
+}
+
+.role-head .role-icon {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  padding: 13px;
+}
+
+.role-who {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.role-card h3 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+/* solution (bento) cards */
+.bento-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.bento-headtext {
+  min-width: 0;
+}
+
+.bento-head .bento-icon {
+  flex: none;
+  width: 54px;
+  height: 54px;
+}
+
+.bento-tag {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bento-card h3 {
+  margin: 0;
+}
+
+/* process steps on the landing pages */
+.step-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.step-head .step-n {
+  flex: none;
+  margin: 0;
+}
+
+.step-headtext {
+  min-width: 0;
+}
+
+.step-headtext .cell-title {
+  margin: 0;
+}
+
+.step-headtext .step-badge {
+  margin: 6px 0 0;
+}
+
+/* role cards: icon aligned with the top of the label + heading */
+.role-head {
+  align-items: flex-start;
+}

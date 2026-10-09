@@ -929,7 +929,7 @@ export function partnerPage(ctx) {
           ${get('partner.path')
             .map(
               (p, i) => `
-          <div class="cell reveal-on-scroll"><span class="cell-num">0${i + 1} · ${p.badge}</span><h3 class="cell-title">${p.title}</h3><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
+          <div class="cell reveal-on-scroll">${icon(['fa-clipboard-list', 'fa-flask', 'fa-rocket'][i] || 'fa-circle-check', 'cell-icon')}<span class="cell-num">0${i + 1} · ${p.badge}</span><h3 class="cell-title">${p.title}</h3><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
             )
             .join('')}
         </div>
@@ -1137,8 +1137,7 @@ export function saLanding(ctx, key = 'construction') {
             .map(
               (r, i) => `
           <article class="role-card reveal-on-scroll" style="transition-delay:${i * 0.08}s">
-            <div class="role-top">${icon(r.icon, 'role-icon')}<span class="role-who">${r.who}</span></div>
-            <h3>${r.title}</h3>
+            <div class="role-head">${icon(r.icon, 'role-icon')}<div class="role-headtext"><span class="role-who">${r.who}</span><h3>${r.title}</h3></div></div>
             <p>${r.text}</p>
           </article>`
             )
@@ -1171,8 +1170,7 @@ export function saLanding(ctx, key = 'construction') {
             .map(
               (s, i) => `
           <article class="bento-card bento-${i + 1} reveal-on-scroll">
-            <div class="bento-top">${icon(s.icon, 'bento-icon')}<span class="bento-tag">${s.tag}</span></div>
-            <h3>${s.title}</h3>
+            <div class="bento-head">${icon(s.icon, 'bento-icon')}<div class="bento-headtext"><span class="bento-tag">${s.tag}</span><h3>${s.title}</h3></div></div>
             <p>${s.text}</p>
             ${s.partner ? `<span class="badge-partner">${icon('fa-handshake')}${t('services.partner_label')}</span>` : ''}
           </article>`
@@ -1227,7 +1225,7 @@ export function saLanding(ctx, key = 'construction') {
           ${c.process.items
             .map(
               (p, i) => `
-          <div class="step reveal-on-scroll" style="transition-delay:${i * 0.1}s"><span class="step-n">0${i + 1}</span><span class="step-badge">${p.badge}</span><h3 class="cell-title">${p.title}</h3><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
+          <div class="step reveal-on-scroll" style="transition-delay:${i * 0.1}s"><div class="step-head"><span class="step-n">0${i + 1}</span><div class="step-headtext"><h3 class="cell-title">${p.title}</h3><span class="step-badge">${p.badge}</span></div></div><p class="cell-text" style="margin-bottom:0">${p.text}</p></div>`
             )
             .join('')}
         </div>
