@@ -262,7 +262,7 @@ function partnerBadge(ctx) {
 function serviceCell(ctx, s, idx) {
   const { L, t, icon, url } = ctx
   return `
-        <a href="${url('services/' + s.id + '/')}" class="cell reveal-on-scroll" style="transition-delay:${(idx % 3) * 0.05}s">
+        <a href="${url('services/' + s.id + '/')}" class="cell reveal-on-scroll" style="--c:${CAT_COLOR[s.category] || CAT_COLOR.core};transition-delay:${(idx % 3) * 0.05}s">
           ${icon(s.icon, 'cell-icon')}
           <h3 class="cell-title">${L(s.title)}</h3>
           <p class="cell-text">${L(s.description)}</p>
@@ -384,6 +384,95 @@ const HOME_LANDINGS = [
   ['rental', 'rental']
 ]
 
+// Colour + icons for each sector (colours match the sector landing pages)
+const INDUSTRY_META = {
+  construction: {
+    c: '#ffb000',
+    icon: 'fa-helmet-safety',
+    chips: ['fa-helmet-safety', 'fa-chart-line', 'fa-language']
+  },
+  logistics: {
+    c: '#22d3ee',
+    icon: 'fa-truck-fast',
+    chips: ['fa-camera', 'fa-route', 'fa-screwdriver-wrench']
+  },
+  realestate: {
+    c: '#a78bfa',
+    icon: 'fa-building',
+    chips: ['fa-plane', 'fa-temperature-half', 'fa-key']
+  },
+  healthcare: {
+    c: '#fb7185',
+    icon: 'fa-hospital',
+    chips: ['fa-bed-pulse', 'fa-microphone-lines', 'fa-calendar-xmark']
+  },
+  retail: {
+    c: '#60a5fa',
+    icon: 'fa-store',
+    chips: ['fa-fire', 'fa-boxes-stacked', 'fa-gift']
+  },
+  tourism: {
+    c: '#e879f9',
+    icon: 'fa-hotel',
+    chips: ['fa-people-group', 'fa-tags', 'fa-robot']
+  },
+  education: {
+    c: '#a3e635',
+    icon: 'fa-graduation-cap',
+    chips: ['fa-video', 'fa-book-open', 'fa-pen-to-square']
+  },
+  consulting: {
+    c: '#94a3b8',
+    icon: 'fa-briefcase',
+    chips: ['fa-box-archive', 'fa-file-signature', 'fa-user-shield']
+  },
+  manufacturing: {
+    c: '#ff7a3d',
+    icon: 'fa-industry',
+    chips: ['fa-microscope', 'fa-gears', 'fa-ship']
+  },
+  rental: {
+    c: '#2dd4bf',
+    icon: 'fa-truck-pickup',
+    chips: ['fa-car-burst', 'fa-tags', 'fa-gauge-high']
+  }
+}
+const CAT_COLOR = { core: '#ea580c', ai: '#7c3aed', jnh: '#0d9488' }
+const GROUP_META = {
+  group_core: { icon: 'fa-code', c: CAT_COLOR.core },
+  group_ai: { icon: 'fa-brain', c: CAT_COLOR.ai },
+  group_jnh: { icon: 'fa-handshake', c: CAT_COLOR.jnh }
+}
+const STAT_ICONS = [
+  'fa-diagram-project',
+  'fa-medal',
+  'fa-location-dot',
+  'fa-layer-group'
+]
+const PROCESS_ICONS = [
+  'fa-comments',
+  'fa-compass-drafting',
+  'fa-code',
+  'fa-rocket'
+]
+
+function industryCard(ctx, key, pre, i, compact = false) {
+  const { t, get, data, lang, icon } = ctx
+  const m = INDUSTRY_META[key]
+  const card = get('industries.cards.' + key)
+  const chips = compact
+    ? ''
+    : `<ul class="ind-chips">${card.chips.map((x, n) => `<li>${icon(m.chips[n])}<span>${x}</span></li>`).join('')}</ul>`
+  return `
+          <a href="${data.landingUrl(key, lang)}" class="ind-card reveal-on-scroll" style="--c:${m.c};transition-delay:${(i % 5) * 0.05}s">
+            <span class="ind-ico">${icon(m.icon)}</span>
+            <h3 class="ind-title">${t('footer.link_' + key)}</h3>
+            <p class="ind-tag">${card.tag}</p>
+            ${chips}
+            <span class="ind-go">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
+          </a>`
+}
+
 export function homePage(ctx) {
   const { t, get, data, url, icon, lang } = ctx
   const heroSrcset = data.assets.hero.map(h => `${h.src} ${h.w}w`).join(', ')
@@ -438,11 +527,11 @@ export function homePage(ctx) {
 
     <div class="container">
       <div class="stats">
-        ${stats.map(([v, l]) => `<div class="stat"><div class="stat-value"${/\d/.test(v) ? ' data-count' : ''}>${v}</div><div class="stat-label">${l}</div></div>`).join('')}
+        ${stats.map(([v, l], i) => `<div class="stat"><span class="stat-ico">${icon(STAT_ICONS[i])}</span><div class="stat-value"${/\d/.test(v) ? ' data-count' : ''}>${v}</div><div class="stat-label">${l}</div></div>`).join('')}
       </div>
     </div>
 
-    <section class="section">
+    <section class="section section-tint-sky">
       <div class="container">
         ${sectionHead(t('home.services_badge'), t('home.services_title'), `<a href="${url('services/')}" class="link-arrow">${t('home.services_all')} ${arrow(ctx)}</a>`)}
         <div class="cells cells-3">${services.map((s, i) => serviceCell(ctx, s, i)).join('')}</div>
@@ -452,16 +541,8 @@ export function homePage(ctx) {
     <section class="section section-dark promo">
       <div class="container">
         ${sectionHead(t('home.industries_badge'), t('home.industries_title'))}
-        <div class="cells cells-5">
-          ${HOME_LANDINGS.map(
-            ([key, pre], i) => `
-          <a href="${data.landingUrl(key, lang)}" class="cell reveal-on-scroll" style="transition-delay:${(i % 5) * 0.05}s">
-            <span class="eyebrow">${t('home.' + pre + '_badge')}</span>
-            <h3 class="cell-title" style="margin-top:14px">${t('footer.link_' + key)}</h3>
-            <p class="cell-text">${t('home.' + pre + '_text')}</p>
-            <span class="link-arrow">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
-          </a>`
-          ).join('')}
+        <div class="ind-grid ind-grid-5">
+          ${HOME_LANDINGS.map(([key, pre], i) => industryCard(ctx, key, pre, i, true)).join('')}
         </div>
         <div class="promo-wide">
           <span class="eyebrow">${t('home.partner_badge')}</span>
@@ -490,7 +571,7 @@ export function homePage(ctx) {
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-tint-mint">
       <div class="container">
         ${sectionHead(t('home.process_badge'), t('home.process_title'))}
         <div class="cells cells-4">
@@ -498,7 +579,7 @@ export function homePage(ctx) {
             .map(
               (p, i) => `
           <div class="cell reveal-on-scroll" style="transition-delay:${i * 0.05}s">
-            <span class="cell-num">0${i + 1}</span>
+            ${icon(PROCESS_ICONS[i], 'cell-icon')}<span class="cell-num">0${i + 1}</span>
             <h3 class="cell-title">${p.title}</h3>
             <p class="cell-text" style="margin-bottom:0">${p.desc}</p>
           </div>`
@@ -538,19 +619,13 @@ export function homePage(ctx) {
 
 export function industriesPage(ctx) {
   const { t, data, url, lang } = ctx
-  const cards = HOME_LANDINGS.map(
-    ([key, pre], i) => `
-          <a href="${data.landingUrl(key, lang)}" class="cell reveal-on-scroll" style="transition-delay:${(i % 3) * 0.05}s">
-            <span class="eyebrow">${t('home.' + pre + '_badge')}</span>
-            <h3 class="cell-title" style="margin-top:14px">${t('footer.link_' + key)}</h3>
-            <p class="cell-text">${t('home.' + pre + '_text')}</p>
-            <span class="link-arrow">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
-          </a>`
+  const cards = HOME_LANDINGS.map(([key, pre], i) =>
+    industryCard(ctx, key, pre, i)
   ).join('')
   const body = `${pageHead(t('home.industries_badge'), t('home.industries_title'), t('industries.lead'))}
     <section class="section">
       <div class="container">
-        <div class="cells cells-3 industry-hub">${cards}</div>
+        <div class="ind-grid">${cards}</div>
         <div class="btn-row" style="margin-top:48px">
           <a href="${url('contact/')}" class="btn btn-primary">${t('hero.btn_audit')}</a>
         </div>
@@ -582,7 +657,7 @@ export function industriesPage(ctx) {
 }
 
 export function servicesPage(ctx, aiOnly = false) {
-  const { t, data, L } = ctx
+  const { t, data, L, icon } = ctx
   const groups = aiOnly
     ? [
         ['group_ai', data.services.filter(s => s.category === 'ai')],
@@ -599,8 +674,8 @@ export function servicesPage(ctx, aiOnly = false) {
         ${groups
           .map(
             ([key, list]) => `
-        <div>
-          <h2 class="group-title">${t('services.' + key)}</h2>
+        <div class="group" style="--c:${GROUP_META[key].c}">
+          <h2 class="group-title">${icon(GROUP_META[key].icon)}<span>${t('services.' + key)}</span></h2>
           <div class="cells cells-3">${list.map((s, i) => serviceCell(ctx, s, i)).join('')}</div>
         </div>`
           )
@@ -773,7 +848,7 @@ export function aboutPage(ctx) {
 }
 
 export function contactPage(ctx) {
-  const { t, get } = ctx
+  const { t, get, icon } = ctx
   const labels = {
     name: t('contact.label_name'),
     email: t('contact.label_email'),
@@ -794,14 +869,14 @@ export function contactPage(ctx) {
         <aside class="reveal-on-scroll">
           <div class="side-box" style="display:grid;gap:28px">
             <div>
-              <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.office_riyadh')}</h2>
+              <h2 class="eyebrow contact-h">${icon('fa-location-dot')}${t('contact.office_riyadh')}</h2>
               <p>${t('contact.riyadh_address')}</p>
-              <a href="tel:+966597441504" class="link-arrow" style="margin-top:10px" dir="ltr">${SITE.riyadhPhone}</a>
+              <a href="tel:+966597441504" class="link-arrow" style="margin-top:10px" dir="ltr">${icon('fa-phone')}${SITE.riyadhPhone}</a>
             </div>
             <div style="padding-top:24px;border-top:1px solid var(--line)">
-              <h2 class="eyebrow" style="margin-bottom:10px">${t('contact.direct_email')}</h2>
+              <h2 class="eyebrow contact-h">${icon('fa-envelope')}${t('contact.direct_email')}</h2>
               <a href="mailto:${SITE.email}" class="link-arrow">${SITE.email}</a>
-              <div style="margin-top:14px"><a href="${waLink(ctx)}" target="_blank" rel="noopener" class="link-arrow">${t('contact.whatsapp')}</a></div>
+              <div style="margin-top:14px"><a href="${waLink(ctx)}" target="_blank" rel="noopener" class="link-arrow">${icon('fa-whatsapp')}${t('contact.whatsapp')}</a></div>
             </div>
           </div>
         </aside>

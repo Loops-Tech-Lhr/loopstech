@@ -2884,3 +2884,63 @@ html[dir='rtl'] .final-cta h2 {
     left: 50%;
   }
 }
+
+/* ================= Landing pages: tint light sections with each page's own colour ================= */
+
+.sa-page .section-alt {
+  background: color-mix(in srgb, var(--amber) 10%, #fff);
+  border-color: color-mix(in srgb, var(--amber) 32%, #e5e7eb);
+}
+
+.sa-page .cells {
+  background: color-mix(in srgb, var(--amber) 5%, #fff);
+}
+
+.sa-page .cell-icon {
+  background: color-mix(in srgb, var(--amber) 26%, #fff);
+  color: color-mix(in srgb, var(--brand) 100%, #000);
+}
+
+.sa-page .cell:hover .cell-icon {
+  background: var(--amber);
+  color: #111;
+}
+
+.sa-page .role-card {
+  border-color: color-mix(in srgb, var(--amber) 34%, #e5e7eb);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--amber) 13%, #fff) 0%,
+    #fff 66%
+  );
+}
+
+.sa-page .step {
+  border-color: color-mix(in srgb, var(--amber) 32%, #e5e7eb);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--amber) 11%, #fff) 0%,
+    #fff 70%
+  );
+}
+
+.sa-page .bento-card:not(.bento-1) {
+  background: color-mix(in srgb, var(--amber) 6%, #fff);
+}
+
+.sa-page .bento-card:not(.bento-1):hover {
+  background: color-mix(in srgb, var(--amber) 14%, #fff);
+}
+
+.sa-page .bento-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  padding: 13px;
+  background: color-mix(in srgb, var(--amber) 26%, #fff);
+}
+
+.sa-page .bento-1 .bento-icon {
+  background: rgba(var(--amber-rgb), 0.16);
+}

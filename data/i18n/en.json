@@ -316,6 +316,84 @@
     "home": "Back to home"
   },
   "industries": {
-    "lead": "Pick your sector. Each solution starts with a free Operations Study with our engineers."
+    "lead": "Pick your sector. Each solution starts with a free Operations Study with our engineers.",
+    "cards": {
+      "construction": {
+        "tag": "Safer sites, fewer delays.",
+        "chips": [
+          "PPE detection by camera",
+          "Delay prediction",
+          "Arabic · Urdu · English site agent"
+        ]
+      },
+      "logistics": {
+        "tag": "Faster routes, damage-free dispatch.",
+        "chips": [
+          "Conveyor damage detection",
+          "Route engine for Saudi roads",
+          "Fleet maintenance prediction"
+        ]
+      },
+      "realestate": {
+        "tag": "Smarter buildings, better yields.",
+        "chips": [
+          "Drone facade inspection",
+          "Smart cooling savings",
+          "Tenant portal with Mada & SADAD"
+        ]
+      },
+      "healthcare": {
+        "tag": "Less admin, more patient time.",
+        "chips": [
+          "Bed and patient flow",
+          "Arabic medical scribe",
+          "No-show prediction"
+        ]
+      },
+      "retail": {
+        "tag": "Know shoppers, stock smarter.",
+        "chips": ["Footfall heatmaps", "Eid demand forecasting", "Loyalty app"]
+      },
+      "tourism": {
+        "tag": "Full rooms, safe crowds.",
+        "chips": [
+          "Crowd safety monitoring",
+          "Dynamic room pricing",
+          "Saudi-dialect concierge bot"
+        ]
+      },
+      "education": {
+        "tag": "Trusted exams, personal learning.",
+        "chips": [
+          "AI exam proctoring",
+          "Arabic learning paths",
+          "Automatic grading"
+        ]
+      },
+      "consulting": {
+        "tag": "Win mandates, secure documents.",
+        "chips": [
+          "Archive OCR",
+          "RFP drafting assistant",
+          "Encrypted client portal"
+        ]
+      },
+      "manufacturing": {
+        "tag": "Steadier production lines.",
+        "chips": [
+          "Line-speed quality control",
+          "Predictive maintenance",
+          "Shortage prediction"
+        ]
+      },
+      "rental": {
+        "tag": "Every asset earning.",
+        "chips": [
+          "Return-lot damage scan",
+          "Dynamic fleet pricing",
+          "Live fleet dashboard"
+        ]
+      }
+    }
   }
 }
