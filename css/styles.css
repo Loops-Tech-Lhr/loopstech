@@ -1631,7 +1631,7 @@ a.cell:hover {
 
 /* ---------- Touch targets (WCAG 2.5.8): at least 40-44px on touch screens ---------- */
 
-@media (pointer: coarse), (max-width: 767px) {
+@media (pointer: coarse), (max-width: 1023px) {
   .icon-btn {
     width: 44px;
     height: 44px;
@@ -2288,5 +2288,38 @@ a.cell:hover {
 
   .stat-row .stat-ico .icon {
     font-size: 18px;
+  }
+}
+
+/* iOS zooms the page when a field under 16px is focused: keep fields at 16px on touch screens and phones */
+@media (pointer: coarse), (max-width: 767px) {
+  .input,
+  select.input,
+  textarea.input {
+    font-size: 16px;
+  }
+}
+
+/* small laptops and landscape tablets: give the crowded header room */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .desktop-nav {
+    gap: 18px;
+  }
+
+  .sa-page .header-wa {
+    display: none;
+  }
+}
+
+/* touch screens in landscape (iPad etc.): menu links get a comfortable tap height */
+@media (pointer: coarse) {
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .nav-link::after {
+    bottom: 6px;
   }
 }
