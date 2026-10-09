@@ -2052,3 +2052,54 @@ a.cell:hover {
     transform: none;
   }
 }
+
+/* industry card header: icon on the left, title + subtitle beside it */
+.ind-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ind-headtext {
+  min-width: 0;
+}
+
+.ind-head .ind-ico {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+}
+
+.ind-title {
+  margin: 0;
+}
+
+.ind-tag {
+  margin: 4px 0 0;
+}
+
+.ind-grid-5 .ind-head {
+  gap: 12px;
+}
+
+.ind-grid-5 .ind-head .ind-ico {
+  width: 44px;
+  height: 44px;
+  font-size: 19px;
+}
+
+/* five narrow columns on wide screens: stack the icon above the title */
+@media (min-width: 1100px) {
+  .ind-grid-5 .ind-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .ind-grid-5 .ind-head .ind-ico {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}

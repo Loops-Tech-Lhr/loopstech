@@ -465,9 +465,13 @@ function industryCard(ctx, key, pre, i, compact = false) {
     : `<ul class="ind-chips">${card.chips.map((x, n) => `<li>${icon(m.chips[n])}<span>${x}</span></li>`).join('')}</ul>`
   return `
           <a href="${data.landingUrl(key, lang)}" class="ind-card reveal-on-scroll" style="--c:${m.c};transition-delay:${(i % 5) * 0.05}s">
-            <span class="ind-ico">${icon(m.icon)}</span>
-            <h3 class="ind-title">${t('footer.link_' + key)}</h3>
-            <p class="ind-tag">${card.tag}</p>
+            <div class="ind-head">
+              <span class="ind-ico">${icon(m.icon)}</span>
+              <div class="ind-headtext">
+                <h3 class="ind-title">${t('footer.link_' + key)}</h3>
+                <p class="ind-tag">${card.tag}</p>
+              </div>
+            </div>
             ${chips}
             <span class="ind-go">${t('home.' + pre + '_cta')} ${arrow(ctx)}</span>
           </a>`

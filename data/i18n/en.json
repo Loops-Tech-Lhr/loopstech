@@ -327,7 +327,7 @@
         ]
       },
       "logistics": {
-        "tag": "Faster routes, damage-free dispatch.",
+        "tag": "Faster routes, safer parcels.",
         "chips": [
           "Conveyor damage detection",
           "Route engine for Saudi roads",
